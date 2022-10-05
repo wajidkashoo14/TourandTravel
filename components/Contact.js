@@ -5,7 +5,7 @@ function Contact() {
   return (
     <Container maxW={"80%"} height={"80vh"} bg={"#fff"}>
       <Box py={"6"} borderBottom={"2px solid #E5E5E5"}>
-        <Heading>Let's Get in Touch!</Heading>
+        <Heading>{`Let's Get in Touch!`}</Heading>
         <Text>Get Assistance From Expert Tour Advisors!</Text>
       </Box>
       <Box display={"flex"} flexDir={"column"} gap={"5"} py={"10"}>
