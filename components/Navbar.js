@@ -13,12 +13,12 @@ function Navbar() {
       display={"flex"}
       px={"10"}
     >
-      <Box>
+      <Box zIndex={"10000"}>
         <Link fontSize={"1.4rem"} _hover={{ textDecoration: "none" }} href="#">
           Redoq Top Floor
         </Link>
       </Box>
-      <Box>
+      <Box zIndex={"10000"}>
         <Flex gap={"5"}>
           <Button fontSize={"1.2rem"} backgroundColor={"transparent"}>
             <Link _hover={{ textDecoration: "none" }} href="#">
@@ -50,14 +50,9 @@ function Navbar() {
               Contact Us
             </Link>
           </Button>
-          {/* <Link href="#">Tours</Link>
-          <Link href="#">Hotels</Link>
-          <Link href="#">Activities</Link>
-          <Link href="#">About Us</Link>
-          <Link href="#">Contact Us</Link> */}
         </Flex>
       </Box>
-      <Box>
+      <Box zIndex={"10000"}>
         <Button backgroundColor={"#25D366"}>WhatsApp</Button>
       </Box>
     </Container>

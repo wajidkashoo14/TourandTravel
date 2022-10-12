@@ -16,8 +16,9 @@ function Conatactstrip() {
       justifyContent="space-between"
       px="3rem"
       py="3"
+      zIndex={"10000"}
     >
-      <Flex maxW="100%" alignItems={"center"}>
+      <Flex maxW="100%" alignItems={"center"} zIndex={"10000"}>
         <Flex gap={"10"} justifyContent="center" alignItems="center">
           <Flex
             alignItems="center"

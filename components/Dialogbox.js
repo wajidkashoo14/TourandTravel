@@ -3,7 +3,7 @@ import React from "react";
 
 function Dialogbox() {
   return (
-    <Container maxW={"80vw"} height={"65vh"} bg={"#fff"} mt={"12rem"}>
+    <Container maxW={"80vw"} height={"65vh"} bg={"#fff"} mt={"50vh"}>
       <Box border={"3px solid #5191FA "} maxW={"90vw"} height={"35vh"}>
         <Box
           p={"4"}
