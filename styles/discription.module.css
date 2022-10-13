@@ -1,0 +1,64 @@
+.heading {
+  background-image: linear-gradient(to right, #0f659a, #06283d);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
+}
+
+.heading:hover {
+  transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.heading__secondary {
+  background-image: linear-gradient(to right, #0f659a, #06283d);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+}
+
+.button {
+  background-color: transparent;
+  color: #0f659a;
+  border-bottom: 1px solid #0f659a;
+  padding: 0.5rem 0.2rem;
+  margin-top: 1rem;
+  transition: all 0.3s;
+  font-weight: 300;
+}
+
+.button:hover {
+  background-color: #06283d;
+  color: #fff;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* .box {
+  max-width: 35rem;
+  position: relative;
+} */
+
+.imageone {
+  /* position: absolute; */
+  margin-left: 20%;
+  /* top: -2rem; */
+
+  z-index: 10;
+}
+.imagetwo {
+  /* position: absolute; */
+  right: 0;
+  margin-top: 4rem;
+
+  z-index: 20;
+  outline: 1.5rem solid #55c57a;
+}
+.imagethree {
+  /* position: absolute; */
+  left: 20%;
+  /* t  op: 10rem; */
+
+  margin-top: 3rem;
+  z-index: 30;
+}

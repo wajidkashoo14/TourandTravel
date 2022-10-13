@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 function Input() {
   return (
     <Container
-      marginTop={"-40rem"}
+      marginTop={"-30rem"}
       gap={"8rem"}
       display={"flex"}
       flexDir={"column"}

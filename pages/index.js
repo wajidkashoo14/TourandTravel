@@ -2,7 +2,6 @@ import Conatactstrip from "../components/Conatactstrip";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import Input from "../components/Input";
-import Dialogbox from "../components/Dialogbox";
 import Cards from "../components/Cards";
 import Tourcategories from "../components/Tourcategories";
 import TrendingDestinations from "../components/TrendingDestinations";
@@ -11,6 +10,7 @@ import Subscribe from "../components/Subscribe";
 import Testimonials from "../components/Testimonials";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import Discription from "../components/Discription";
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Input />
-      <Dialogbox />
+      <Discription />
       <Cards />
       <Tourcategories />
       <TrendingDestinations />
