@@ -32,7 +32,7 @@ function Discription() {
             YOU'RE GOING TO FALL IN LOVE WITH NATURE
           </Heading>
           <Text maxW={"50rem"} textAlign={"left"} fontWeight={"350"}>
-            The Union Territory of Jammu and Kashmir is a great tourist
+            {` The Union Territory of Jammu and Kashmir is a great tourist
             destination. Picturesque and enchanting, Kashmir is cradled high in
             the lofty green Himalayas and hailed all over the world for its
             incredible natural beauty. Surrounded by mountain peaks, lush green
@@ -41,7 +41,7 @@ function Discription() {
             crisscrossed by chinar tree-lined roads and quaint wooden bridges;
             and is home to bustling bazaars, sufi shrines and forts. Add to
             this, the charms of flavourful Kashmiri cuisine and apples and
-            walnuts from the lush orchards surrounding it.
+            walnuts from the lush orchards surrounding it.`}
           </Text>
           <Heading
             className={styles.heading__secondary}
@@ -51,10 +51,10 @@ function Discription() {
             LIVE ADVENTURES LIKE YOU NEVER HAVE BEFORE
           </Heading>
           <Text fontWeight={"350"} maxW={"35rem"}>
-            In winter, Kashmir takes on a white glow, covered in soft snow and
+            {` In winter, Kashmir takes on a white glow, covered in soft snow and
             skiers making a beeline for its famous slopes. And in summer, as the
             snow melts, and the flowers in the meadows bloom, it resembles an
-            artist's canvas.
+            artist's canvas.`}
           </Text>
 
           <button className={styles.button}>Learn more &rarr;</button>
