@@ -1,4 +1,4 @@
-import { Box, Container, Image, Link, Text } from "@chakra-ui/react";
+import { Box, Container, Image, Link, Text, Heading } from "@chakra-ui/react";
 import { GoLocation } from "react-icons/go";
 import { AiTwotoneStar } from "react-icons/ai";
 import { AiOutlineClockCircle } from "react-icons/ai";
@@ -7,9 +7,9 @@ import React from "react";
 
 function Tourcard() {
   return (
-    <Box w={"300px"} h={"350px"}>
-      <Box position={"relative"}>
-        <Image src="parimahal.jpg" objectFit={"cover"} h={"175px"} w={"100%"} />
+    <Box w={"350px"} minH={"550px"}>
+      <Box position={"relative"} zIndex={"10"}>
+        <Image src="parimahal.jpg" objectFit={"cover"} h={"250px"} w={"100%"} />
         <Text
           background={"#ED0925"}
           color={"#fff"}
@@ -24,11 +24,19 @@ function Tourcard() {
           Featured
         </Text>
       </Box>
-      <Box border={"2px solid #E5E5E5"} px={"2"} py={"2"}>
-        <Box display={"flex"} py={"5"} gap={"2"} alignItems={"center"}>
-          <GoLocation />
-          <Text>Kashmir</Text>
-        </Box>
+      <Box
+        px={"2"}
+        mt={"-3rem"}
+        zIndex={"1000"}
+        position={"absolute"}
+        backgroundImage="linear(to-b, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%))"
+        height={"3rem"}
+      >
+        <Heading opacity={"1"} zIndex={"100000"} color={"#06283d"}>
+          Kashmir
+        </Heading>
+      </Box>
+      <Box>
         <Box>
           <Link> Kashmir 3D 2N Tour</Link>
         </Box>

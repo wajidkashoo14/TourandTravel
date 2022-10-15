@@ -4,7 +4,7 @@ import Tourcard from "./Tourcard";
 
 function Cards() {
   return (
-    <Container maxW={"80vw"} height={"60vh"} bg={"#fff"}>
+    <Container maxW={"80vw"} height={"100vh"} bg={"#fff"}>
       <Heading my={"5"}>Best rated Tours</Heading>
 
       <Box
@@ -16,7 +16,7 @@ function Cards() {
         <Tourcard />
         <Tourcard />
         <Tourcard />
-        <Tourcard />
+        {/* <Tourcard /> */}
       </Box>
     </Container>
   );
