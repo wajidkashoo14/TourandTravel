@@ -29,7 +29,7 @@ function Discription() {
             my={"4"}
             className={styles.heading__secondary}
           >
-            YOU'RE GOING TO FALL IN LOVE WITH NATURE
+            {`YOU'RE GOING TO FALL IN LOVE WITH NATURE`}
           </Heading>
           <Text maxW={"35rem"} textAlign={"left"} fontWeight={"350"}>
             {` The Union Territory of Jammu and Kashmir is a great tourist
