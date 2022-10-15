@@ -34,31 +34,46 @@
   transform: translateY(-2px);
 }
 
-/* .box {
-  max-width: 35rem;
-  position: relative;
-} */
-
 .imageone {
   /* position: absolute; */
-  margin-left: 20%;
-  /* top: -2rem; */
-
+  left: 0;
+  top: -2rem;
+  width: 280px;
+  height: 180px;
+  cursor: pointer;
   z-index: 10;
+  border-radius: 0.3rem;
+  transition: all 0.2s;
+  outline-offset: 1rem;
 }
 .imagetwo {
-  /* position: absolute; */
-  right: 0;
-  margin-top: 4rem;
+  left: 20%;
 
-  z-index: 20;
-  outline: 1.5rem solid #55c57a;
+  width: 280px;
+  height: 180px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 0.3rem;
+  transition: all 0.2s;
+  outline-offset: 1rem;
 }
 .imagethree {
-  /* position: absolute; */
-  left: 20%;
-  /* t  op: 10rem; */
-
-  margin-top: 3rem;
-  z-index: 30;
+  left: 40%;
+  top: 40rem;
+  width: 280px;
+  height: 180px;
+  cursor: pointer;
+  margin-top: -8rem;
+  z-index: 10;
+  border-radius: 0.3rem;
+  transition: all 0.2s;
+  outline-offset: 1rem;
+}
+.imageone:hover,
+.imagetwo:hover,
+.imagethree:hover {
+  outline: 1rem solid #55c57a;
+  transform: scale(1.05) translateY(-0.5rem);
+  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 20;
 }

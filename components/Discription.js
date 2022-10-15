@@ -1,5 +1,5 @@
 import { Box, Button, Container, Heading, Text, Flex } from "@chakra-ui/react";
-import Image from "next/image";
+import { AiOutlineArrowRight } from "react-icons/ai";
 import React from "react";
 import styles from "../styles/discription.module.css";
 
@@ -7,7 +7,7 @@ function Discription() {
   return (
     <Container
       maxW={"100vw"}
-      height={"100vh"}
+      // height={"100vh"}
       bg={"#fff"}
       mt={"20vh"}
       backgroundColor={"#F7F7F7"}
@@ -22,7 +22,7 @@ function Discription() {
       >
         EXCITING TOURS FOR ADVENTUROUS PEOPLE
       </Heading>
-      <Flex mt={"5rem"} gap={"10rem"} position={"relative"}>
+      <Flex mt={"5rem"} gap={"5rem"} position={"relative"}>
         <Box>
           <Heading
             fontSize={"1.2rem"}
@@ -31,7 +31,7 @@ function Discription() {
           >
             YOU'RE GOING TO FALL IN LOVE WITH NATURE
           </Heading>
-          <Text maxW={"50rem"} textAlign={"left"} fontWeight={"350"}>
+          <Text maxW={"35rem"} textAlign={"left"} fontWeight={"350"}>
             {` The Union Territory of Jammu and Kashmir is a great tourist
             destination. Picturesque and enchanting, Kashmir is cradled high in
             the lofty green Himalayas and hailed all over the world for its
@@ -57,28 +57,26 @@ function Discription() {
             artist's canvas.`}
           </Text>
 
-          <button className={styles.button}>Learn more &rarr;</button>
+          <button className={styles.button}>
+            <Flex justifyContent={"center"} alignItems={"center"} gap={"1"}>
+              Learn more <AiOutlineArrowRight />
+            </Flex>
+          </button>
         </Box>
-        <Box position={"relative"} maxW={"50rem"}>
-          {/* <Image
-            src="/dallake.jpg"
-            className={styles.imageone}
-            width={700}
-            height={600}
-          /> */}
-          <Image
-            src="/gulmarg.jpg"
-            className={styles.imagetwo}
-            width={700}
-            height={600}
-            style={{ outline: "1.5rem solid #55c57a" }}
-          />
-          {/* <Image
-            src="/pahalgam.jpg"
-            className={styles.imagethree}
-            width={300}
-            height={200}
-          /> */}
+        <Box
+          position={"relative"}
+          display={"flex"}
+          flexDir={"column"}
+          gap={"10"}
+          justifyContent={"center"}
+        >
+          <Box display={"flex"} gap={"8"}>
+            <img src="/dallake.jpg" className={styles.imageone} />
+            <img src="/gulmarg.jpg" className={styles.imagetwo} />
+          </Box>
+          <Box display={"flex"} justifyContent={"center"}>
+            <img src="/pahalgam.jpg" className={styles.imagethree} />
+          </Box>
         </Box>
       </Flex>
     </Container>
