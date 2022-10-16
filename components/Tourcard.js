@@ -20,8 +20,8 @@ function Tourcard() {
     <Box
       w={"400px"}
       minH={"580px"}
-      border={"1px solid #E5DBDE"}
-      boxShadow={"lg"}
+      border={"1px solid #D7C7CC"}
+      boxShadow={"md"}
       position={"relative"}
     >
       <Box position={"relative"} zIndex={"10"}>
@@ -37,7 +37,7 @@ function Tourcard() {
           borderBottomRightRadius={"3px"}
           borderTopRightRadius={"3px"}
         >
-          Featured
+          Festive offer
         </Text>
       </Box>
       <Box

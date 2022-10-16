@@ -4,14 +4,18 @@ import Categories from "./Categories";
 
 function Tourcategories() {
   return (
-    <Container maxW={"80%"} height={"80vh"} bg={"#fff"}>
+    <Container maxW={"100%"} height={"100vh"} bg={"#fff"}>
       <Heading textAlign={"center"} my={"8"}>
         Tour categories
       </Heading>
-      <Box display={"flex"} flexWrap={"wrap"} gap={"5"} w={"100%"}>
-        <Categories />
-        <Categories />
-        <Categories />
+      <Box
+        display={"flex"}
+        gap={"10"}
+        w={"100%"}
+        justifyContent={"center"}
+        alignItems={"center"}
+        mt={"5rem"}
+      >
         <Categories />
         <Categories />
         <Categories />
