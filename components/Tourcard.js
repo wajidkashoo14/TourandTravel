@@ -6,6 +6,7 @@ import {
   Text,
   Heading,
   Flex,
+  Button,
 } from "@chakra-ui/react";
 import { GoLocation } from "react-icons/go";
 import { AiTwotoneStar } from "react-icons/ai";
@@ -16,7 +17,13 @@ import React from "react";
 
 function Tourcard() {
   return (
-    <Box w={"400px"} minH={"530px"} border={"1px solid grey"}>
+    <Box
+      w={"400px"}
+      minH={"580px"}
+      border={"1px solid #E5DBDE"}
+      boxShadow={"lg"}
+      position={"relative"}
+    >
       <Box position={"relative"} zIndex={"10"}>
         <Image src="parimahal.jpg" objectFit={"cover"} h={"300px"} w={"100%"} />
         <Text
@@ -113,6 +120,9 @@ function Tourcard() {
           Explore the Kashmir Valley with our best 3-Nights and 4-Days Tour
           Package crafted for you.
         </Box>
+        <Link textDecoration={"none"} className={styles.button}>
+          More info
+        </Link>
       </Box>
     </Box>
   );
