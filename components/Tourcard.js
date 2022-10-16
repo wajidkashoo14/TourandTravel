@@ -1,15 +1,24 @@
-import { Box, Container, Image, Link, Text, Heading } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Image,
+  Link,
+  Text,
+  Heading,
+  Flex,
+} from "@chakra-ui/react";
 import { GoLocation } from "react-icons/go";
 import { AiTwotoneStar } from "react-icons/ai";
 import { AiOutlineClockCircle } from "react-icons/ai";
+import styles from "../styles/card.module.css";
 
 import React from "react";
 
 function Tourcard() {
   return (
-    <Box w={"350px"} minH={"550px"}>
+    <Box w={"400px"} minH={"530px"} border={"1px solid grey"}>
       <Box position={"relative"} zIndex={"10"}>
-        <Image src="parimahal.jpg" objectFit={"cover"} h={"250px"} w={"100%"} />
+        <Image src="parimahal.jpg" objectFit={"cover"} h={"300px"} w={"100%"} />
         <Text
           background={"#ED0925"}
           color={"#fff"}
@@ -25,20 +34,68 @@ function Tourcard() {
         </Text>
       </Box>
       <Box
-        px={"2"}
-        mt={"-3rem"}
+        px={"3"}
+        mt={"-4rem"}
         zIndex={"1000"}
-        position={"absolute"}
-        backgroundImage="linear(to-b, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%))"
-        height={"3rem"}
+        height={"4rem"}
+        className={styles.fade}
+        width={"400px"}
       >
-        <Heading opacity={"1"} zIndex={"100000"} color={"#06283d"}>
+        <Heading
+          opacity={"1"}
+          zIndex={"10000"}
+          color={"#06283d"}
+          position={"absolute"}
+          top={"20%"}
+          fontSize={"5xl"}
+          fontWeight={"700"}
+          letterSpacing={".1rem"}
+        >
           Kashmir
         </Heading>
       </Box>
-      <Box>
+      <Flex gap={"5"} py={"3"} px={"3"}>
+        <Box
+          bg={"#0f659a"}
+          px={"3"}
+          color={"#fff"}
+          py={"1"}
+          borderRadius={".2rem"}
+          borderStyle={"ridge"}
+        >
+          <Text>Srinagar</Text>
+        </Box>
+        <Box
+          bg={"#0f659a"}
+          px={"2"}
+          color={"#fff"}
+          py={"1"}
+          borderRadius={".2rem"}
+        >
+          <Text>Pahalgam</Text>
+        </Box>
+        <Box
+          bg={"#0f659a"}
+          px={"2"}
+          color={"#fff"}
+          py={"1"}
+          borderRadius={".2rem"}
+        >
+          <Text>Gulmarg</Text>
+        </Box>
+        <Box
+          bg={"#0f659a"}
+          px={"2"}
+          color={"#fff"}
+          py={"1"}
+          borderRadius={".2rem"}
+        >
+          <Text>Sonmarg</Text>
+        </Box>
+      </Flex>
+      <Box px={"3"}>
         <Box>
-          <Link> Kashmir 3D 2N Tour</Link>
+          <Link> 3D 2N Tour</Link>
         </Box>
         <Box display={"flex"} gap={"1"} alignItems={"center"} mt={"3"}>
           <AiTwotoneStar color={"#FFDC00"} />
@@ -51,6 +108,10 @@ function Tourcard() {
         <Box display={"flex"} gap={"1"} alignItems={"center"} mt={"3"}>
           <AiOutlineClockCircle />
           <Text>3 days 2 nights</Text>
+        </Box>
+        <Box py={"2"}>
+          Explore the Kashmir Valley with our best 3-Nights and 4-Days Tour
+          Package crafted for you.
         </Box>
       </Box>
     </Box>
