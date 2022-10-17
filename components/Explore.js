@@ -1,6 +1,7 @@
 import { Container, Button, Box, Heading } from "@chakra-ui/react";
 import React from "react";
 import styles from "../styles/explore.module.css";
+import Explorecard from "./Explorecard";
 
 function Explore() {
   return (
@@ -10,6 +11,11 @@ function Explore() {
           <source src="gulmarg.mp4" type="video/mp4" />
         </video>
         <div className={styles.overlay}></div>
+        <Box className={styles.cardbox} display={"flex"} gap={"8rem"}>
+          <Explorecard />
+          <Explorecard />
+          <Explorecard />
+        </Box>
       </div>
     </Container>
   );

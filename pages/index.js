@@ -4,7 +4,6 @@ import Hero from "../components/Hero";
 import Input from "../components/Input";
 import Cards from "../components/Cards";
 import Tourcategories from "../components/Tourcategories";
-import Video from "../components/Video";
 import Subscribe from "../components/Subscribe";
 import Testimonials from "../components/Testimonials";
 import Contact from "../components/Contact";
@@ -23,7 +22,7 @@ export default function Home() {
       <Cards />
       <Tourcategories />
       <Explore />
-      <Video />
+
       <Subscribe />
       <Testimonials />
       <Contact />
