@@ -7,16 +7,17 @@ function Explorecard() {
     <Box
       width={"250px"}
       height={"300px"}
-      bgGradient="linear(to-r, #43cea2, #185a9d,)"
+      background={"#06283d"}
       p={"5"}
       display={"flex"}
       justifyContent={"center"}
       alignItems={"center"}
       flexDir={"column"}
       gap={"5"}
+      color={"#fff"}
     >
       <GiValley fontSize={"3rem"} />
-      <Heading>Explore the valley</Heading>
+      <Heading fontSize={"2xl"}>Explore the valley</Heading>
       <Text>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,
         libero?

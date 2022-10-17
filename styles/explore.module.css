@@ -1,22 +1,25 @@
 .videodiv {
   width: 100vw;
-  height: 80vh !important;
+  height: 100vh !important;
   position: relative;
   z-index: 1;
+  overflow-x: hidden;
 }
 .video {
-  width: 100%;
+  width: 100vw;
+  overflow: hidden;
   object-fit: cover;
   height: 100vh !important;
 }
 .overlay {
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
   height: 100vh;
-  height: 100vh;
-  width: 100%;
+
+  width: 100vw;
 }
 .cardbox {
   z-index: 1000;
