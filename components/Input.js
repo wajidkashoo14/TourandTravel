@@ -11,7 +11,7 @@ function Input() {
       flexDir={"column"}
       justifyContent={"center"}
       alignItems={"center"}
-      opacity={".8"}
+      // opacity={".8"}
     >
       <Box
         zIndex={"10000"}
@@ -36,15 +36,13 @@ function Input() {
         justifyContent={"center"}
         alignItems={"center"}
         gap={"5"}
-        opacity={"1"}
-        zIndex={"10000"}
         w={"60vw"}
         borderRadius={"5"}
-        // mx={"auto"}
         height={"5rem"}
         py={"3.5rem"}
         px={"2rem"}
-        backgroundColor={"#fff"}
+        backgroundColor={"rgba(255,255,255,0.6)"}
+        position={"relative"}
       >
         <Select
           placeholder="Where are you going"
@@ -74,7 +72,7 @@ function Input() {
           variant="solid"
           _hover={{ bg: "blue.500", color: " white" }}
           style={{ padding: "1rem 2rem" }}
-          zIndex={"10000"}
+          // zIndex={"10000"}
         >
           Search
         </Button>

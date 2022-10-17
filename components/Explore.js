@@ -5,7 +5,13 @@ import Explorecard from "./Explorecard";
 
 function Explore() {
   return (
-    <Container maxW={"100%"} height={"80vh"} bg={"#fff"} textAlign={"center"}>
+    <Box
+      maxW={"100%"}
+      height={"100vh"}
+      bg={"#fff"}
+      textAlign={"center"}
+      overflow={"hidden"}
+    >
       <div className={styles.videodiv}>
         <video src="gulmarg.mp4" muted loop autoPlay className={styles.video}>
           <source src="gulmarg.mp4" type="video/mp4" />
@@ -17,7 +23,7 @@ function Explore() {
           <Explorecard />
         </Box>
       </div>
-    </Container>
+    </Box>
   );
 }
 
