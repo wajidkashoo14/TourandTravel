@@ -4,7 +4,12 @@ import Categories from "./Categories";
 
 function Tourcategories() {
   return (
-    <Container maxW={"100%"} height={"100vh"} bg={"#fff"}>
+    <Container
+      maxW={"100%"}
+      height={"100vh"}
+      backgroundColor={"#F7F7F7"}
+      py={"10"}
+    >
       <Heading textAlign={"center"} my={"8"}>
         Tour categories
       </Heading>

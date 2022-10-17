@@ -4,8 +4,15 @@ import Tourcard from "./Tourcard";
 
 function Cards() {
   return (
-    <Container maxW={"80vw"} height={"100vh"} bg={"#fff"}>
-      <Heading my={"5"}>Best rated Tours</Heading>
+    <Container
+      maxW={"100%"}
+      minHeight={"100vh"}
+      backgroundColor={"#F7F7F7"}
+      py={"10"}
+    >
+      <Heading textAlign={"center"} py={"6rem"}>
+        Best rated Tours
+      </Heading>
 
       <Box
         display={"flex"}

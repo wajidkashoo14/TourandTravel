@@ -23,6 +23,7 @@ function Tourcard() {
       border={"1px solid #D7C7CC"}
       boxShadow={"md"}
       position={"relative"}
+      cursor={"pointer"}
     >
       <Box position={"relative"} zIndex={"10"}>
         <Image src="parimahal.jpg" objectFit={"cover"} h={"300px"} w={"100%"} />
@@ -104,7 +105,7 @@ function Tourcard() {
         <Box>
           <Link> 3D 2N Tour</Link>
         </Box>
-        <Box display={"flex"} gap={"1"} alignItems={"center"} mt={"3"}>
+        <Box display={"flex"} gap={"2"} alignItems={"center"} mt={"3"}>
           <AiTwotoneStar color={"#FFDC00"} />
           <AiTwotoneStar color={"#FFDC00"} />
           <AiTwotoneStar color={"#FFDC00"} />

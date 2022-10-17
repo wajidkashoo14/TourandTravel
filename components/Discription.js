@@ -7,7 +7,6 @@ function Discription() {
   return (
     <Container
       maxW={"100vw"}
-      // height={"100vh"}
       bg={"#fff"}
       mt={"20vh"}
       backgroundColor={"#F7F7F7"}
