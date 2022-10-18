@@ -1,14 +1,27 @@
 import { Container, Heading, Box } from "@chakra-ui/react";
 import React from "react";
 import Testimonialcard from "./Testimonialcard";
+import { BsArrowRightCircleFill } from "react-icons/bs";
+import { BsArrowLeftCircleFill } from "react-icons/bs";
 
 function Testimonials() {
   return (
-    <Container maxW={"80%"} height={"80vh"} bg={"#fff"}>
-      <Heading my={"10"}>Testimonials</Heading>
-      <Box display={"flex"} gap={"5"}>
-        <Testimonialcard />
-        <Testimonialcard />
+    <Container
+      maxW={"100%"}
+      height={"100vh"}
+      bg={"#fff"}
+      display={"grid"}
+      placeItems={"center"}
+      position={"relative"}
+    >
+      <Box position={"absolute"} right={"10%"}>
+        <BsArrowRightCircleFill fontSize={"1.8rem"} />
+      </Box>
+      <Box position={"absolute"} left={"10%"} fontSize={"1.8rem"}>
+        <BsArrowLeftCircleFill />
+      </Box>
+      <Heading>Testimonials</Heading>
+      <Box display={"flex"} mt={"-3rem"}>
         <Testimonialcard />
       </Box>
     </Container>
