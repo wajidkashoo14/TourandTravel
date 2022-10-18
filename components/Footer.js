@@ -1,5 +1,14 @@
-import { Container, Flex, Heading, Link, Text, Box } from "@chakra-ui/react";
+import {
+  Container,
+  Flex,
+  Heading,
+  Link,
+  Text,
+  Box,
+  StylesProvider,
+} from "@chakra-ui/react";
 import React from "react";
+import styles from "../styles/footer.module.css";
 import { GrFacebook } from "react-icons/gr";
 import { SiInstagram } from "react-icons/si";
 import { BsYoutube } from "react-icons/bs";
@@ -39,14 +48,19 @@ function Footer() {
             About us
           </Heading>
           <Box>
-            <Text fontSize={".9rem"} fontWeight={"300"} textAlign={"left"}>
+            <Text
+              fontSize={".9rem"}
+              fontWeight={"300"}
+              textAlign={"left"}
+              color={"#BECFD6"}
+            >
               We understand that different travelers come with different
               expectations and tastes, & we are forthright in acknowledging
               that. Therefore, our Tour Advisors encourage brief conversations
               with our customers before booking with us so that we may help
               travelers Handcraft Tour Packages that are just “right for them”.
             </Text>
-            <Text fontSize={".9rem"}>
+            <Text fontSize={".9rem"} color={"#BECFD6"}>
               <Link color={"#2378C0"}>Read more</Link> to know what makes Multi
               Destinations so Unique.
             </Text>
@@ -68,19 +82,19 @@ function Footer() {
           >
             quick links
           </Heading>
-          <Flex gap={"4"} flexDir={"column"}>
-            <Link>Tours</Link>
-            <Link>Hotels</Link>
-            <Link>Transport</Link>
-            <Link>Activities</Link>
-            <Link>Blogs</Link>
+          <Flex gap={"4"} flexDir={"column"} color={"#BECFD6"}>
+            <Link className={styles.link}>Tours</Link>
+            <Link className={styles.link}>Hotels</Link>
+            <Link className={styles.link}>Transport</Link>
+            <Link className={styles.link}>Activities</Link>
+            <Link className={styles.link}>Blogs</Link>
           </Flex>
         </Flex>
-        <Flex flexDir={"column"}>
+        <Flex flexDir={"column"} mt={"10"}>
           <Heading
             textTransform={"uppercase"}
             fontSize={"1.2rem"}
-            py={"1.5rem"}
+            py={"1rem"}
             borderBottom={"2px solid #E5E5E5"}
             width={"100%"}
             mb={".8rem"}
@@ -89,25 +103,25 @@ function Footer() {
             Contact
           </Heading>
           <Flex flexDir={"column"} gap={"4"}>
-            <Box px={"4"}>
+            <Box px={"4"} color={"#BECFD6"} mt={"3"}>
               <Text>call us</Text>
               <Text color={"#5191FA"}>+91-9596103894</Text>
               <Text color={"#5191FA"}>+91-9596103894</Text>
             </Box>
-            <Box px={"5"}>
+            <Box px={"5"} color={"#BECFD6"}>
               <Text>Email us</Text>
               <Text color={"#5191FA"}>Wkashoo@gmail.com</Text>
             </Box>
-            <Box gap={"6"} px={"5"}>
+            <Box gap={"6"} px={"5"} color={"#BECFD6"}>
               <Text py={"2"}>Follow us</Text>
               <Box display={"flex"} gap={"6"} fontSize={"1.2rem"}>
-                <Link>
+                <Link className={styles.link}>
                   <GrFacebook />
                 </Link>
-                <Link>
+                <Link className={styles.link}>
                   <SiInstagram />
                 </Link>
-                <Link>
+                <Link className={styles.link}>
                   <BsYoutube />
                 </Link>
               </Box>
@@ -115,7 +129,7 @@ function Footer() {
           </Flex>
         </Flex>
       </Box>
-      <Text color={"#fff"} mt={"5"}>
+      <Text color={"#fff"} mt={"5"} color={"#80A1AE"}>
         Designed and developed by <Link>Wajid Kashoo</Link>
       </Text>
     </Container>

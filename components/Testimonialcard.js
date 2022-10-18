@@ -18,9 +18,9 @@ function Testimonialcard() {
           boxSize="150px"
           objectFit="cover"
           borderRadius={"50%"}
-          filter={"drop-shadow(0 0 0.55rem crimson)"}
+          filter={"drop-shadow(0 0 0.45rem crimson)"}
         />
-        <Text py={"4"} color={"#06283d"}>
+        <Text py={"4"} color={"#06283d"} fontWeight={"500"}>
           Wajid Kashoo
         </Text>
       </Box>
@@ -34,7 +34,7 @@ function Testimonialcard() {
         </Text>
       </Box>
       <Box>
-        <FaQuoteRight fontSize={"2rem"} />
+        <FaQuoteRight fontSize={"2rem"} color={"#06283d"} />
       </Box>
     </Box>
   );

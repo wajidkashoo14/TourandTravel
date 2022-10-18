@@ -1,6 +1,7 @@
 import { Box, Container, Heading } from "@chakra-ui/react";
 import React from "react";
 import Categories from "./Categories";
+import styles from "../styles/discription.module.css";
 
 function Tourcategories() {
   return (
@@ -10,7 +11,7 @@ function Tourcategories() {
       backgroundColor={"#F7F7F7"}
       py={"10"}
     >
-      <Heading textAlign={"center"} my={"8"}>
+      <Heading textAlign={"center"} my={"8"} className={styles.heading}>
         Tour categories
       </Heading>
       <Box

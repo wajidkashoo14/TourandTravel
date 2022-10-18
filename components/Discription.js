@@ -8,7 +8,7 @@ function Discription() {
     <Container
       maxW={"100vw"}
       bg={"#fff"}
-      mt={"20vh"}
+      mt={"40vh"}
       backgroundColor={"#F7F7F7"}
       py={"10"}
       px={"7rem"}

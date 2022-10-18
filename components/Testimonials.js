@@ -3,6 +3,7 @@ import React from "react";
 import Testimonialcard from "./Testimonialcard";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import { BsArrowLeftCircleFill } from "react-icons/bs";
+import styles from "../styles/discription.module.css";
 
 function Testimonials() {
   return (
@@ -14,13 +15,17 @@ function Testimonials() {
       placeItems={"center"}
       position={"relative"}
     >
-      <Box position={"absolute"} right={"10%"}>
-        <BsArrowRightCircleFill fontSize={"1.8rem"} />
+      <Box position={"absolute"} right={"10%"} color={"#06283d"}>
+        <BsArrowRightCircleFill
+          fontSize={"1.8rem"}
+          cursor={"pointer"}
+          color={"#06283d"}
+        />
       </Box>
       <Box position={"absolute"} left={"10%"} fontSize={"1.8rem"}>
-        <BsArrowLeftCircleFill />
+        <BsArrowLeftCircleFill cursor={"pointer"} color={"#06283d"} />
       </Box>
-      <Heading>Testimonials</Heading>
+      <Heading className={styles.heading}>Testimonials</Heading>
       <Box display={"flex"} mt={"-3rem"}>
         <Testimonialcard />
       </Box>

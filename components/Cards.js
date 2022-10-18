@@ -1,6 +1,7 @@
 import { Container, Heading, Box } from "@chakra-ui/react";
 import React from "react";
 import Tourcard from "./Tourcard";
+import styles from "../styles/discription.module.css";
 
 function Cards() {
   return (
@@ -10,7 +11,7 @@ function Cards() {
       backgroundColor={"#F7F7F7"}
       py={"10"}
     >
-      <Heading textAlign={"center"} py={"6rem"}>
+      <Heading textAlign={"center"} py={"6rem"} className={styles.heading}>
         Best rated Tours
       </Heading>
 
