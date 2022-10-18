@@ -8,20 +8,23 @@ function Footer() {
   return (
     <Container
       maxW={"100%"}
-      height={"80vh"}
       bg={"#06283d"}
       display={"flex"}
+      flexDir={"column"}
       alignItems={"center"}
       justifyContent={"center"}
-      // gap={"8rem"}
       color={"#fff"}
+      py={"6"}
     >
       <Box
         width={"80%"}
         display={"flex"}
-        justifyContent={"flex-start"}
+        justifyContent={"center"}
         alignItems={"center"}
-        gap={"5rem"}
+        gap={"10rem"}
+        py={"2rem"}
+        borderBottom={"1px solid #986D7B"}
+        height={"60vh"}
       >
         <Flex flexDir={"column"} maxW={"350px"}>
           <Heading
@@ -29,13 +32,14 @@ function Footer() {
             fontSize={"1.2rem"}
             py={"1.5rem"}
             borderBottom={"2px solid #E5E5E5"}
-            width={"150px"}
+            width={"100%"}
             mb={"1.5rem"}
+            textAlign={"center"}
           >
             About us
           </Heading>
-          <Box px={"5"}>
-            <Text fontSize={".9rem"} fontWeight={"300"} borderL>
+          <Box>
+            <Text fontSize={".9rem"} fontWeight={"300"} textAlign={"left"}>
               We understand that different travelers come with different
               expectations and tastes, & we are forthright in acknowledging
               that. Therefore, our Tour Advisors encourage brief conversations
@@ -49,18 +53,22 @@ function Footer() {
           </Box>
         </Flex>
 
-        <Flex flexDir={"column"} justifyContent={"flex-start"}>
+        <Flex
+          flexDir={"column"}
+          justifyContent={"center"}
+          alignItems={"center"}
+        >
           <Heading
             textTransform={"uppercase"}
             fontSize={"1.2rem"}
-            py={"2rem"}
+            py={"1.5rem"}
             borderBottom={"2px solid #E5E5E5"}
             width={"150px"}
             mb={"1.5rem"}
           >
             quick links
           </Heading>
-          <Flex gap={"7"}>
+          <Flex gap={"4"} flexDir={"column"}>
             <Link>Tours</Link>
             <Link>Hotels</Link>
             <Link>Transport</Link>
@@ -68,19 +76,20 @@ function Footer() {
             <Link>Blogs</Link>
           </Flex>
         </Flex>
-        <Flex flexDir={"column"} px={"5"}>
+        <Flex flexDir={"column"}>
           <Heading
             textTransform={"uppercase"}
             fontSize={"1.2rem"}
-            py={"2rem"}
+            py={"1.5rem"}
             borderBottom={"2px solid #E5E5E5"}
-            width={"150px"}
-            mb={"1.5rem"}
+            width={"100%"}
+            mb={".8rem"}
+            textAlign={"center"}
           >
-            need help ?
+            Contact
           </Heading>
-          <Flex flexDir={"column"} gap={"10"}>
-            <Box px={"5"}>
+          <Flex flexDir={"column"} gap={"4"}>
+            <Box px={"4"}>
               <Text>call us</Text>
               <Text color={"#5191FA"}>+91-9596103894</Text>
               <Text color={"#5191FA"}>+91-9596103894</Text>
@@ -106,6 +115,9 @@ function Footer() {
           </Flex>
         </Flex>
       </Box>
+      <Text color={"#fff"} mt={"5"}>
+        Designed and developed by <Link>Wajid Kashoo</Link>
+      </Text>
     </Container>
   );
 }
