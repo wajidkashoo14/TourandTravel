@@ -40,7 +40,7 @@ function Footer() {
             textTransform={"uppercase"}
             fontSize={"1.2rem"}
             py={"1.5rem"}
-            borderBottom={"2px solid #E5E5E5"}
+            borderBottom={"2px solid #80A1AE"}
             width={"100%"}
             mb={"1.5rem"}
             textAlign={"center"}
@@ -76,7 +76,7 @@ function Footer() {
             textTransform={"uppercase"}
             fontSize={"1.2rem"}
             py={"1.5rem"}
-            borderBottom={"2px solid #E5E5E5"}
+            borderBottom={"2px solid #80A1AE"}
             width={"150px"}
             mb={"1.5rem"}
           >
@@ -95,7 +95,7 @@ function Footer() {
             textTransform={"uppercase"}
             fontSize={"1.2rem"}
             py={"1rem"}
-            borderBottom={"2px solid #E5E5E5"}
+            borderBottom={"2px solid #80A1AE"}
             width={"100%"}
             mb={".8rem"}
             textAlign={"center"}
