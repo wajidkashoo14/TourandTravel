@@ -129,7 +129,7 @@ function Footer() {
           </Flex>
         </Flex>
       </Box>
-      <Text color={"#fff"} mt={"5"} color={"#80A1AE"}>
+      <Text mt={"5"} color={"#80A1AE"}>
         Designed and developed by <Link>Wajid Kashoo</Link>
       </Text>
     </Container>
