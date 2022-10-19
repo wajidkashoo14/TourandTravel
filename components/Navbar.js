@@ -13,12 +13,15 @@ function Navbar() {
       alignItems={"center"}
       display={"flex"}
       px={"10"}
+      position={"fixed"}
+      mt={"3rem"}
+      zIndex={"2000000"}
     >
       <Box zIndex={"10000"}>
         <Link
           fontSize={"1.4rem"}
           _hover={{ textDecoration: "none" }}
-          href="#"
+          href="/"
           fontWeight={"600"}
         >
           Redoq Top Floor
@@ -29,7 +32,7 @@ function Navbar() {
           <Button fontSize={"1.2rem"} backgroundColor={"transparent"}>
             <Link
               _hover={{ textDecoration: "none" }}
-              href="#"
+              href="/"
               fontWeight={"400"}
             >
               Home

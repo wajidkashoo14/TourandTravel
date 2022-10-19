@@ -1,15 +1,16 @@
 import {
-  Container,
-  Image,
   Box,
-  Heading,
-  Input,
+  Image,
+  Container,
   Button,
+  Heading,
+  Text,
+  Link,
 } from "@chakra-ui/react";
 import React from "react";
 import styles from "../styles/signup.module.css";
 
-function signup() {
+function verify() {
   return (
     <Container
       minHeight={"100vh"}
@@ -23,7 +24,7 @@ function signup() {
     >
       <Box position={"relative"}>
         <Image
-          src="signup.jpg"
+          src="login.jpg"
           minWidth={"80vw"}
           height={"75vh"}
           objectFit={"cover"}
@@ -34,11 +35,14 @@ function signup() {
           position={"absolute"}
           bg={"rgba(255,255,255,0.8)"}
           top={"0"}
+          left={"0"}
           right={"0"}
+          textAlign={"center"}
           width={"800px"}
           height={"100%"}
           zIndex={"1000"}
-          clipPath={"polygon(0 0, 100% 0, 100% 100%, 31% 100%)"}
+          mx={"auto"}
+          clipPath={"polygon(1% 0, 100% 0, 88% 100%, 12% 100%)"}
           display={"flex"}
           justifyContent={"center"}
           alignItems={"center"}
@@ -60,29 +64,20 @@ function signup() {
               fontWeight={"600"}
               className={styles.heading}
             >
-              Create an account
+              OTP Verification
             </Heading>
-            <input
-              size="lg"
-              bg={"#fff"}
-              type={"email"}
-              placeholder={"Email"}
-              className={styles.input}
-            />
+            <Text color={"#06283d"}>Enter the OTP sent to 9596103894</Text>
             <input
               size="lg"
               bg={"#fff"}
               type={"number"}
-              placeholder={"Mobile"}
               className={styles.input}
             />
-            <input
-              size="lg"
-              bg={"#fff"}
-              type={"password"}
-              placeholder={"Password"}
-              className={styles.input}
-            />
+
+            <Text color={"#06283d"}>
+              Don't recieve OTP ? <Link color={"#F15457"}> Resend OTP</Link>
+            </Text>
+
             <Button
               size={"lg"}
               width={"100%"}
@@ -92,7 +87,7 @@ function signup() {
               _hover={{ bg: "blue.500", color: " white" }}
               fontSize={"1.3rem"}
             >
-              Next{" "}
+              Verify
             </Button>
           </Box>
         </Box>
@@ -101,4 +96,4 @@ function signup() {
   );
 }
 
-export default signup;
+export default verify;

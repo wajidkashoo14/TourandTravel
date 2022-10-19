@@ -3,7 +3,9 @@ import { Box, Button, Container, Flex } from "@chakra-ui/react";
 import { TbBrandFacebook } from "react-icons/tb";
 import { FiInstagram } from "react-icons/fi";
 import { BsTwitter } from "react-icons/bs";
+import { useRouter } from "next/router";
 function Conatactstrip() {
+  const router = useRouter();
   return (
     <Container
       maxW={"100%"}
@@ -17,6 +19,7 @@ function Conatactstrip() {
       px="3rem"
       py="3"
       zIndex={"10000"}
+      position={"fixed"}
     >
       <Flex maxW="100%" alignItems={"center"} zIndex={"10000"}>
         <Flex gap={"10"} justifyContent="center" alignItems="center">
@@ -49,12 +52,21 @@ function Conatactstrip() {
                 color="white"
                 style={{ backgroundColor: "transparent" }}
                 variant="link"
+                onClick={(e) => {
+                  router.push("/login");
+                }}
               >
                 Signin
               </Button>
             </Box>
             <Box>
-              <Button color="white" variant="link">
+              <Button
+                color="white"
+                variant="link"
+                onClick={(e) => {
+                  router.push("/signup");
+                }}
+              >
                 Signup
               </Button>
             </Box>

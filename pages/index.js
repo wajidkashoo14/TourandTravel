@@ -14,19 +14,15 @@ import Explore from "../components/Explore";
 export default function Home() {
   return (
     <>
-      <Conatactstrip />
-      <Navbar />
       <Hero />
       <Input />
       <Discription />
       <Cards />
       <Tourcategories />
       <Explore />
-
       <Subscribe />
       <Testimonials />
       <Contact />
-      <Footer />
     </>
   );
 }
