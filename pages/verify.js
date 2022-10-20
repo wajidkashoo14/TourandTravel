@@ -75,7 +75,7 @@ function verify() {
             />
 
             <Text color={"#06283d"}>
-              Don't recieve OTP ? <Link color={"#F15457"}> Resend OTP</Link>
+              {`Don't recieve OTP ?`} <Link color={"#F15457"}> Resend OTP</Link>
             </Text>
 
             <Button
