@@ -1,7 +1,8 @@
 import { Box, Heading, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import { FaQuoteRight } from "react-icons/fa";
-function Testimonialcard() {
+
+function Testimonialcard({ name, img, text }) {
   return (
     <Box
       width={"50rem"}
@@ -14,27 +15,30 @@ function Testimonialcard() {
     >
       <Box display={"grid"} placeItems={"center"}>
         <Image
-          src="me.jpeg"
+          src={img}
           boxSize="150px"
           objectFit="cover"
           borderRadius={"50%"}
           filter={"drop-shadow(0 0 0.45rem crimson)"}
         />
         <Text py={"4"} color={"#06283d"} fontWeight={"500"}>
-          Wajid Kashoo
+          {name}
         </Text>
       </Box>
 
       <Box>
         <Text py={"10"} fontWeight={"300"}>
-          I had an amazing trip - all thanks to the travel agency. No hurdles at
-          all. Everything was managed very smoothly, they had planned it very
-          well. They go out of their way to help us out and take utmost care of
-          their customers. Best travel agency! I highly recommend them.
+          {text}
         </Text>
       </Box>
       <Box>
-        <FaQuoteRight fontSize={"2rem"} color={"#06283d"} />
+        <FaQuoteRight
+          fontSize={"2rem"}
+          color={"#06283d"}
+          onClick={(e) => {
+            setIndex(index + 1);
+          }}
+        />
       </Box>
     </Box>
   );
