@@ -1,5 +1,5 @@
 import Conatactstrip from "../components/Conatactstrip";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/ComponentDidMount";
 import Hero from "../components/Hero";
 import Input from "../components/Input";
 import Cards from "../components/Cards";

@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsWhatsapp } from "react-icons/bs";
-
+import styles from "../styles/Home.module.css";
 import { Box, Button, Container, Flex, Link } from "@chakra-ui/react";
 
 function Navbar() {
+  const [navbar, setNavbar] = useState(false);
+
+  // window.addEventListener("scroll", changeBackgroud);
+  const changeBackgroud = () => {
+    if (window.scrollY > 50) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
   return (
     <Container
       maxW="100%"
@@ -16,6 +27,7 @@ function Navbar() {
       position={"fixed"}
       mt={"3rem"}
       zIndex={"2000000"}
+      className={`styles.navbar ? navbar : null`}
     >
       <Box zIndex={"10000"}>
         <Link
