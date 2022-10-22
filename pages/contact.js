@@ -7,8 +7,10 @@ import {
   Input,
   Textarea,
   Button,
+  AspectRatio,
 } from "@chakra-ui/react";
 import React from "react";
+import styles from "../styles/contact.module.css";
 
 function contact() {
   return (
@@ -18,7 +20,7 @@ function contact() {
       py={"10rem"}
       display={"grid"}
       placeItems={"center"}
-      paddingBottom={"10rem"}
+      paddingBottom={"6rem"}
     >
       <Flex
         bg={"#EDEDEB"}
@@ -27,6 +29,7 @@ function contact() {
         justifyContent={"center"}
         alignItems={"center"}
         p={"10"}
+        boxShadow={"lg"}
       >
         <Box>
           <Image
@@ -39,10 +42,10 @@ function contact() {
           />
         </Box>
         <Box
-          w={"500rem"}
+          w={"600rem"}
           bg={"#fff"}
-          height={"75vh"}
-          ml={"-5rem"}
+          height={"85vh"}
+          ml={"-15rem"}
           zIndex={"1000"}
           display={"flex"}
           justifyContent={"center"}
@@ -55,20 +58,59 @@ function contact() {
             alignItems={"center"}
             gap={"10"}
             flexDir={"column"}
-            width={"80%"}
+            width={"90%"}
             border={"1px solid black"}
-            p={"5rem 6rem"}
+            p={"3rem 6rem"}
           >
-            <Heading>Contact us</Heading>
+            <Heading className={styles.heading}>Contact us</Heading>
             <Flex gap={"5"}>
-              <Input placeholder="Your Name" type="text" width={"40%"} />
-              <Input placeholder="Email" type="email" width={"40%"} />
+              <input
+                className={styles.input}
+                placeholder="Your Name"
+                type="text"
+                width={"50%"}
+              />
+              <input
+                className={styles.input}
+                placeholder="Email"
+                type="email"
+                width={"50%"}
+              />
             </Flex>
-            <Textarea />
-            <Button width={"100%"}> Send Message</Button>
+            <textarea
+              className={styles.textarea}
+              placeholder="Type a Message"
+              h={"30vh"}
+            />
+            <Button
+              width={"100%"}
+              size="lg"
+              bg="#5191FA"
+              color={"#fff"}
+              variant="solid"
+              _hover={{ bg: "blue.500", color: " white" }}
+            >
+              Send Message
+            </Button>
           </Box>
         </Box>
       </Flex>
+      <Box
+        mt={"10rem"}
+        zIndex={"100"}
+        width={"100%"}
+        display={"flex"}
+        justifyContent={"center"}
+        alignItems={"center"}
+      >
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13217.550807480318!2d74.78689678412671!3d34.08520713954979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e18ff699d0988d%3A0x872b77bb52a66cfd!2sKaran%20Nagar%2C%20Srinagar!5e0!3m2!1sen!2sin!4v1666418211597!5m2!1sen!2sin"
+          className={styles.map}
+          //   allowfullscreen="yes"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </Box>
     </Container>
   );
 }
