@@ -97,22 +97,33 @@ function Navbar() {
           </Button>
         </Flex>
       </Box>
-      <Box
-        zIndex={"10000"}
-        backgroundColor={"#25D366"}
-        display={"flex"}
-        justifyContent={"center"}
-        alignItems={"center"}
-        gap={"2"}
-        px={"5"}
-        py={"3"}
-        cursor={"pointer"}
-        borderRadius={5}
-      >
-        <BsWhatsapp fontSize={"1.3rem"} marginLeft={"-1rem"} />
-        <Link backgroundColor={"#25D366"} textDecoration={"none"}>
-          WhatsApp
-        </Link>
+      <Box display={"flex"} gap={"5"}>
+        <Button
+          size="lg"
+          bg="#5191FA"
+          color={"#fff"}
+          variant="solid"
+          _hover={{ bg: "blue.500", color: " white" }}
+        >
+          Book now
+        </Button>
+        <Box
+          zIndex={"10000"}
+          backgroundColor={"#25D366"}
+          display={"flex"}
+          justifyContent={"center"}
+          alignItems={"center"}
+          gap={"2"}
+          px={"5"}
+          py={"3"}
+          cursor={"pointer"}
+          borderRadius={5}
+        >
+          <BsWhatsapp fontSize={"1.3rem"} marginLeft={"-1rem"} />
+          <Link backgroundColor={"#25D366"} textDecoration={"none"}>
+            WhatsApp
+          </Link>
+        </Box>
       </Box>
     </Container>
   );
