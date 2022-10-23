@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 function Input() {
   return (
     <Container
-      marginTop={{ base: "-20rem", md: "-30rem", lg: "-40rem" }}
+      marginTop={{ base: "-20rem", md: "-30rem", lg: "-25rem" }}
       gap={"8rem"}
       display={"flex"}
       flexDir={"column"}
@@ -13,7 +13,7 @@ function Input() {
       alignItems={"center"}
       // opacity={".8"}
     >
-      <Box
+      {/* <Box
         zIndex={"10000"}
         display={"flex"}
         justifyContent={"center"}
@@ -30,7 +30,7 @@ function Input() {
         >
           Explore the paradise
         </Heading>
-      </Box>
+      </Box> */}
       <Box
         display={"flex"}
         justifyContent={"center"}
