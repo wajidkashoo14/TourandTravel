@@ -13,24 +13,6 @@ function Input() {
       alignItems={"center"}
       // opacity={".8"}
     >
-      {/* <Box
-        zIndex={"10000"}
-        display={"flex"}
-        justifyContent={"center"}
-        alignItems={"center"}
-      >
-        <Heading
-          color={"#06283D"}
-          zIndex={"10000"}
-          fontSize={"6xl"}
-          className={styles.heading}
-          display={"flex"}
-          justifyContent={"center"}
-          alignItems={"center"}
-        >
-          Explore the paradise
-        </Heading>
-      </Box> */}
       <Box
         display={"flex"}
         justifyContent={"center"}
@@ -77,6 +59,16 @@ function Input() {
           Search
         </Button>
       </Box>
+      <Button
+        size="lg"
+        bg="#5191FA"
+        color={"#fff"}
+        variant="solid"
+        _hover={{ bg: "blue.500", color: " white" }}
+        mt={"-5rem"}
+      >
+        Make an enquiry
+      </Button>
     </Container>
   );
 }

@@ -1,0 +1,8 @@
+.container {
+  width: 100vw;
+  height: 80vh;
+  position: fixed;
+  top: 70%;
+  background-color: rgba(200, 200, 200);
+  z-index: 10000;
+}

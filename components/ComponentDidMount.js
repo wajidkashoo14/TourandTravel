@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import styles from "../styles/Home.module.css";
 import { Box, Button, Container, Flex, Link } from "@chakra-ui/react";
+import Modal from "./Modal";
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
 
-  // window.addEventListener("scroll", changeBackgroud);
+  useEffect(() => {
+    window.addEventListener("scroll", changeBackgroud);
+  }, []);
+
   const changeBackgroud = () => {
     if (window.scrollY > 50) {
       setNavbar(true);
@@ -104,9 +109,11 @@ function Navbar() {
           color={"#fff"}
           variant="solid"
           _hover={{ bg: "blue.500", color: " white" }}
+          onClick={() => setOpenModal(true)}
         >
           Book now
         </Button>
+        {openModal && <Modal modalStatus={setOpenModal} />}
         <Box
           zIndex={"10000"}
           backgroundColor={"#25D366"}
