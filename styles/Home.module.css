@@ -1,16 +1,42 @@
+/* .container {
+  max-width: "100%";
+  background-color: transparent;
+  height: 5rem;
+  display: "flex";
+  justify-content: "space-between";
+  align-items: "center";
+  padding: 1rem;
+  position: "fixed";
+  margin-top: "5rem";
+  z-index: "20000";
+} */
+
+/* .navbar {
+  background-color: #fff;
+} */
+
 .heading {
   white-space: nowrap;
   overflow: hidden;
   animation: typewriter 6s steps(19) 1s infinite both,
     blinkCursor 500ms steps(19) infinite;
 }
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 800px;
-  }
+
+.link {
+  padding: 0 2rem;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.whatsapp {
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+  border-radius: 0.3rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 @keyframes blinkCursor {
@@ -20,8 +46,4 @@
   to {
     border-right-color: transparent;
   }
-}
-
-.navbar {
-  background-color: #fff;
 }

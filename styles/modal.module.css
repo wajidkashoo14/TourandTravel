@@ -1,8 +1,7 @@
-.container {
-  width: 100vw;
-  height: 80vh;
-  position: fixed;
-  top: 70%;
-  background-color: rgba(200, 200, 200);
-  z-index: 10000;
+.heading {
+  background-image: linear-gradient(to right, #0f659a, #06283d);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.2rem;
+  transition: all 0.2s;
 }

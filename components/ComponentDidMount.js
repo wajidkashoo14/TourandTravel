@@ -6,7 +6,6 @@ import Modal from "./Modal";
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
-  const [openModal, setOpenModal] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", changeBackgroud);
@@ -23,7 +22,7 @@ function Navbar() {
   return (
     <Container
       maxW="100%"
-      backgroundColor={"transparent"}
+      backgroundColor={styles.navbar ? "navbar" : "transparent"}
       height="5rem"
       justifyContent="space-between"
       alignItems={"center"}
@@ -31,8 +30,9 @@ function Navbar() {
       px={"10"}
       position={"fixed"}
       mt={"3rem"}
-      zIndex={"2000000"}
-      className={`styles.navbar ? navbar : null`}
+      zIndex={"20000"}
+      bg={"#69E1B1"}
+      scrollBehavior={"smooth"}
     >
       <Box zIndex={"10000"}>
         <Link
@@ -103,19 +103,20 @@ function Navbar() {
         </Flex>
       </Box>
       <Box display={"flex"} gap={"5"}>
-        <Button
+        <Link
+          className={styles.link}
           size="lg"
           bg="#5191FA"
           color={"#fff"}
           variant="solid"
           _hover={{ bg: "blue.500", color: " white" }}
-          onClick={() => setOpenModal(true)}
+          href={"#contact"}
         >
           Book now
-        </Button>
-        {openModal && <Modal modalStatus={setOpenModal} />}
+        </Link>
+
         <Box
-          zIndex={"10000"}
+          zIndex={"1000"}
           backgroundColor={"#25D366"}
           display={"flex"}
           justifyContent={"center"}
@@ -127,7 +128,7 @@ function Navbar() {
           borderRadius={5}
         >
           <BsWhatsapp fontSize={"1.3rem"} marginLeft={"-1rem"} />
-          <Link backgroundColor={"#25D366"} textDecoration={"none"}>
+          <Link className={styles.whatsapp} href={"https://wa.me/919906191921"}>
             WhatsApp
           </Link>
         </Box>

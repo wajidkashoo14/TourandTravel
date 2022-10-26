@@ -4,7 +4,7 @@ import styles from "../styles/discription.module.css";
 
 function Contact() {
   return (
-    <Container maxW={"80%"} height={"80vh"} bg={"#fff"}>
+    <Container maxW={"80%"} height={"80vh"} bg={"#fff"} id={"contact"}>
       <Box py={"6"} borderBottom={"2px solid #E5E5E5"}>
         <Heading className={styles.heading}>{` Get in Touch!`}</Heading>
         <Text>Get Assistance From Expert Tour Advisors!</Text>

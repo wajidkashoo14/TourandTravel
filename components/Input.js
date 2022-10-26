@@ -1,8 +1,10 @@
 import { Button, Container, Box, Select, Heading } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
+import Modal from "./Modal";
 import styles from "../styles/Home.module.css";
 
 function Input() {
+  const [openModal, setOpenModal] = useState(false);
   return (
     <Container
       marginTop={{ base: "-20rem", md: "-30rem", lg: "-25rem" }}
@@ -13,6 +15,7 @@ function Input() {
       alignItems={"center"}
       // opacity={".8"}
     >
+      {openModal && <Modal closeModal={setOpenModal} />}
       <Box
         display={"flex"}
         justifyContent={"center"}
@@ -66,6 +69,7 @@ function Input() {
         variant="solid"
         _hover={{ bg: "blue.500", color: " white" }}
         mt={"-5rem"}
+        onClick={() => setOpenModal(true)}
       >
         Make an enquiry
       </Button>
