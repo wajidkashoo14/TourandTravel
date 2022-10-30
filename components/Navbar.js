@@ -127,8 +127,12 @@ function Navbar() {
           cursor={"pointer"}
           borderRadius={5}
         >
-          <BsWhatsapp fontSize={"1.3rem"} marginLeft={"-1rem"} />
-          <Link className={styles.whatsapp} href={"https://wa.me/919906191921"}>
+          <BsWhatsapp fontSize={"1.3rem"} marginLeft={"-1rem"} color={"#fff"} />
+          <Link
+            className={styles.whatsapp}
+            href={"https://wa.me/919906191921"}
+            color={"#fff"}
+          >
             WhatsApp
           </Link>
         </Box>

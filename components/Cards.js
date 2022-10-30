@@ -1,9 +1,11 @@
 import { Container, Heading, Box } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 import Tourcard from "./Tourcard";
 import styles from "../styles/discription.module.css";
-
+import cards from "./TourData";
 function Cards() {
+  const [tourCards, setTourCards] = useState(cards);
+  const [index, setIndex] = useState();
   return (
     <Container
       maxW={"100%"}
@@ -21,9 +23,10 @@ function Cards() {
         alignItems={"center"}
         gap={"5"}
       >
+        <Tourcard cards={tourCards} />
+        {/* <Tourcard />
         <Tourcard />
-        <Tourcard />
-        <Tourcard />
+        <Tourcard /> */}
         {/* <Tourcard /> */}
       </Box>
     </Container>
