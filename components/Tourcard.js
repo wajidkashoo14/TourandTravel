@@ -8,7 +8,7 @@ import {
   Flex,
   Button,
 } from "@chakra-ui/react";
-import { GoLocation } from "react-icons/go";
+
 import { AiTwotoneStar } from "react-icons/ai";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import styles from "../styles/card.module.css";
@@ -66,7 +66,6 @@ function Tourcard({ cards }) {
                 width={"400px"}
               >
                 <Heading
-                  opacity={"1"}
                   zIndex={"10000"}
                   color={"#06283d"}
                   position={"absolute"}
