@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import styles from "../styles/Home.module.css";
 import { Box, Button, Container, Flex, Link } from "@chakra-ui/react";
-import Modal from "./Modal";
+import { useRouter } from "next/router";
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -18,6 +18,7 @@ function Navbar() {
       setNavbar(false);
     }
   };
+  const router = useRouter();
 
   return (
     <Container
@@ -38,6 +39,9 @@ function Navbar() {
         <Link
           fontSize={"1.4rem"}
           _hover={{ textDecoration: "none" }}
+          onClick={() => {
+            router.push("/");
+          }}
           href="/"
           fontWeight={"600"}
         >
@@ -85,8 +89,10 @@ function Navbar() {
           <Button fontSize={"1.2rem"} backgroundColor={"transparent"}>
             <Link
               _hover={{ textDecoration: "none" }}
-              href="#"
               fontWeight={"400"}
+              onClick={() => {
+                router.push("/aboutus");
+              }}
             >
               About Us
             </Link>
@@ -94,8 +100,10 @@ function Navbar() {
           <Button fontSize={"1.2rem"} backgroundColor={"transparent"}>
             <Link
               _hover={{ textDecoration: "none" }}
-              href="#"
               fontWeight={"400"}
+              onClick={() => {
+                router.push("/contact");
+              }}
             >
               Contact Us
             </Link>

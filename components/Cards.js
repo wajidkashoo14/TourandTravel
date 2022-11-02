@@ -24,10 +24,6 @@ function Cards() {
         gap={"5"}
       >
         <Tourcard cards={tourCards} />
-        {/* <Tourcard />
-        <Tourcard />
-        <Tourcard /> */}
-        {/* <Tourcard /> */}
       </Box>
     </Container>
   );
