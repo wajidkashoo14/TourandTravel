@@ -2,9 +2,9 @@ import {
   Box,
   Container,
   Image,
-  Link,
   Text,
   Heading,
+  Link,
   Flex,
   Button,
 } from "@chakra-ui/react";
@@ -13,7 +13,6 @@ import { AiTwotoneStar } from "react-icons/ai";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import styles from "../styles/card.module.css";
 import { useRouter } from "next/router";
-
 import React from "react";
 
 function Tourcard({ cards }) {
@@ -22,8 +21,10 @@ function Tourcard({ cards }) {
     <Box display={"flex"} gap={"10"}>
       {cards.map((cardItem) => {
         const { id, heading, headingtertiary } = cardItem;
+
         return (
           <Box
+            key={id}
             display={"flex"}
             onClick={() => router.push(`./tourdetails/${id}`)}
           >
@@ -34,7 +35,6 @@ function Tourcard({ cards }) {
               boxShadow={"md"}
               position={"relative"}
               cursor={"pointer"}
-              key={id}
             >
               <Box zIndex={"10"}>
                 <Image
@@ -59,7 +59,6 @@ function Tourcard({ cards }) {
               </Box>
               <Box
                 px={"3"}
-                // mt={"2rem"}
                 zIndex={"1000"}
                 height={"4rem"}
                 className={styles.fade}
@@ -103,7 +102,6 @@ function Tourcard({ cards }) {
                 </Link>
               </Box>
             </Box>
-            ;
           </Box>
         );
       })}

@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 const theme = extendTheme({
   fonts: {
     heading: `Montserrat`,
+    text: `Montserrat`,
     body: `'Source Sans Pro', sans-serif`,
   },
 });

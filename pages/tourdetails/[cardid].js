@@ -1,0 +1,474 @@
+import {
+  Box,
+  Heading,
+  Image,
+  Text,
+  FormControl,
+  Input,
+  Button,
+  Textarea,
+  List,
+  Flex,
+  ListItem,
+  ListIcon,
+  Accordion,
+  AccordionButton,
+  AccordionItem,
+  AccordionIcon,
+  AccordionPanel,
+  UnorderedList,
+} from "@chakra-ui/react";
+import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import { AiTwotoneStar } from "react-icons/ai";
+import { AiOutlineClockCircle } from "react-icons/ai";
+import { FaPlaneArrival } from "react-icons/fa";
+import { IoIosPeople } from "react-icons/io";
+import { FaPlaneDeparture } from "react-icons/fa";
+import { BsPersonFill } from "react-icons/bs";
+import styles from "../../styles/id.module.css";
+import { MdCheckCircle } from "react-icons/md";
+import data from "../../components/TourData";
+import { VscCircleLargeOutline } from "react-icons/vsc";
+import { FcApproval, FcDisapprove } from "react-icons/fc";
+
+function Tourdetails() {
+  const [Tour, setTour] = useState(null);
+  const router = useRouter();
+  const cardid = router.query.cardid;
+  console.log(cardid);
+
+  useEffect(() => {
+    let tour = data.find((tour) => tour.id == cardid);
+    setTour(tour);
+  }, []);
+  console.log(Tour);
+  if (!Tour) return <Heading as="p">Loading..!</Heading>;
+  return (
+    <Box
+      maxW={"100vw"}
+      pt={"8rem"}
+      minH={"80vh"}
+      overflowX={"hidden"}
+      fontFamily={("Montserrat", "sans-serif")}
+      fontWeight={"300"}
+    >
+      <Box maxW={"100vw"} h={"80vh"} position={"relative"}>
+        <Image
+          src={Tour.img}
+          width={"100%"}
+          height={"80vh"}
+          objectFit={"cover"}
+          overflowX={"hidden"}
+        />
+        <Box
+          display={"flex"}
+          mt={"-3rem"}
+          flexDir={"column"}
+          gap={"3"}
+          px={"10"}
+        >
+          <Box>
+            <Heading
+              fontSize={"3xl"}
+              textTransform={"capitalize"}
+              position={"absolute"}
+              color={"#fff"}
+              mt={"-2rem"}
+            >
+              {Tour.heading}
+            </Heading>
+          </Box>
+          <Box display={"flex"} gap={"1"}>
+            <AiTwotoneStar color={"#FFDC00"} />
+            <AiTwotoneStar color={"#FFDC00"} />
+            <AiTwotoneStar color={"#FFDC00"} />
+            <AiTwotoneStar color={"#FFDC00"} />
+            <AiTwotoneStar color={"#Fff"} />
+          </Box>
+        </Box>
+      </Box>
+      <Box
+        width={"100vw"}
+        height={"35vh"}
+        bg={"#F5F5F5"}
+        display={"flex"}
+        justifyContent={"flex-start"}
+        py={"5rem"}
+        gap={"15rem"}
+        px={"10rem"}
+        fontSize={"1.2rem"}
+      >
+        <Box
+          display={"flex"}
+          flexDir={"column"}
+          gap={"5"}
+          alignItems={"flex-start"}
+        >
+          <Box
+            display={"flex"}
+            justifyContent={"center"}
+            alignContent={"center"}
+            gap={"5"}
+          >
+            <AiOutlineClockCircle color="#ff5216" />
+            <Text>{Tour.heading}</Text>
+          </Box>
+          <Box
+            display={"flex"}
+            justifyContent={"center"}
+            alignContent={"center"}
+            gap={"5"}
+          >
+            <FaPlaneArrival color="#ff5216" />
+            <Text>Kashmir Srinagar</Text>
+          </Box>
+          <Box
+            display={"flex"}
+            justifyContent={"center"}
+            alignContent={"center"}
+            gap={"5"}
+          >
+            <IoIosPeople color="#ff5216" />
+            <Text>Max people:50</Text>
+          </Box>
+        </Box>
+        <Box
+          display={"flex"}
+          justifyContent={"flex-start"}
+          alignItems={"flex-start"}
+          flexDir={"column"}
+          gap={"5"}
+        >
+          <Box
+            display={"flex"}
+            justifyContent={"center"}
+            alignContent={"center"}
+            gap={"5"}
+          >
+            <FaPlaneDeparture color="#ff5216" />
+            <Text>Native Place</Text>
+          </Box>
+          <Box
+            display={"flex"}
+            justifyContent={"center"}
+            alignContent={"center"}
+            gap={"5"}
+          >
+            <BsPersonFill color="#ff5216" />
+            <Text>Mi age: Any</Text>
+          </Box>
+        </Box>
+      </Box>
+      <Box
+        width={"100vw"}
+        minH={"90vh"}
+        bg={"#fff"}
+        p={"10"}
+        display={"flex"}
+        position={"relative"}
+      >
+        <Box width={"55%"}>
+          <Heading
+            fontWeight={"500"}
+            textTransform={"uppercase"}
+            py={"5"}
+            className={styles.heading}
+          >
+            overview
+          </Heading>
+          <Text
+            fontSize={"md"}
+            fontWeight={"300"}
+            color={"#333"}
+            fontFamily={("Montserrat", "sans-serif")}
+          >
+            {Tour.overview}
+          </Text>
+        </Box>
+        <Box
+          height={"90vh"}
+          width={"400px"}
+          bg={"#fff"}
+          p={"10"}
+          top={"-20%"}
+          boxShadow={"lg"}
+          position={"absolute"}
+          right={"8%"}
+          borderRadius={"10px"}
+        >
+          <Heading fontSize={"2xl"} py={"5"} className={styles.heading}>
+            Enquiry Form
+          </Heading>
+          <FormControl display={"flex"} flexDir={"column"} gap={"5"}>
+            <Input type="text" placeholder={"Name"} size="lg" />
+            <Input type="number" placeholder={"Mobile Number"} size="lg" />
+            <Input type="number" placeholder={"Number of persons"} size="lg" />
+            <Input type="number" placeholder={"Number of days"} size="lg" />
+            <Input type="email" placeholder={"Email"} size="lg" />
+            <Textarea type="text" placeholder={"Your Enquiry"} size="lg" />
+          </FormControl>
+          <Button
+            size="lg"
+            bg="#5191FA"
+            color={"#fff"}
+            variant="solid"
+            _hover={{ bg: "blue.500", color: " white" }}
+            mt={"10"}
+          >
+            Submit Enquiry
+          </Button>
+        </Box>
+      </Box>
+      <Box
+        m={"10"}
+        display={"flex"}
+        flexDir={"column"}
+        gap={"10"}
+        minH={"50vh"}
+        borderBottom={"2px solid #c4c7c0"}
+        width={"80%"}
+      >
+        <Heading fontWeight={"600"} className={styles.heading}>
+          Highlights
+        </Heading>
+        <List fontSize={"lg"} fontWeight={"400"} color={"#333"}>
+          <ListItem>
+            <ListIcon as={MdCheckCircle} color="#B4E976" />
+            {`${Tour.nightstaysatsrinagar} Night stay at Hotel/Houseboat in
+            Srinagar`}
+          </ListItem>
+          <ListItem>
+            <ListIcon as={MdCheckCircle} color="#B4E976" />
+            {`${Tour.nightstaysatpahalgamorgulmarg} Night stay at Hotel in
+            Pahalgam/Sonmarg/Gulmarg (as per preference).`}
+          </ListItem>
+          <ListItem>
+            <ListIcon as={MdCheckCircle} color="#B4E976" />1 Hour Shikara Ride.
+          </ListItem>
+          <ListItem>
+            <ListIcon as={MdCheckCircle} color="#B4E976" />
+            All Transfers from pick up till drop.
+          </ListItem>
+          <ListItem>
+            <ListIcon as={MdCheckCircle} color="#B4E976" />
+            Sightseeing transfers in Srinagar City only (Mughal Gardens, Dal
+            Lake, Nigeen Lake, Cultural/Spiritual Tour or others as per
+            preferences).
+          </ListItem>
+          <ListItem>
+            <ListIcon as={MdCheckCircle} color="#B4E976" />
+            Sightseeing Transfers in Pahalgam, Sonmarg, and Gulmarg are bound to
+            be Hired separately as per J&K Tourism Advisory.
+          </ListItem>
+          <ListItem>
+            <ListIcon as={MdCheckCircle} color="#B4E976" />
+            24x7 Tour Assistance.
+          </ListItem>
+          <ListItem>
+            <ListIcon as={MdCheckCircle} color="#B4E976" />
+            Dinner & Breakfast at all Hotels/Houseboats.
+          </ListItem>
+          <ListItem>
+            <ListIcon as={MdCheckCircle} color="#B4E976" />
+            Complimentary Cake for Special Occasions Tour (birthday,
+            anniversary, honeymoon, or others)
+          </ListItem>
+        </List>
+      </Box>
+
+      <Box
+        minHeight={"50vh"}
+        m={"7"}
+        borderBottom={"2px solid #c4c7c0"}
+        width={"60%"}
+      >
+        {Tour.daysinfo.map((day) => {
+          return (
+            <Accordion width={"100%"} height={"5rem"} allowToggle>
+              <AccordionItem
+                my={"5"}
+                bg="#5191FA"
+                color={"#fff"}
+                variant="solid"
+                _hover={{ bg: "blue.500", color: " white" }}
+                height={"5rem"}
+              >
+                <Heading>
+                  <AccordionButton>
+                    <Box flex="1" textAlign="left">
+                      <Heading fontSize={"1.rem"} fontWeight={"600"}>
+                        {day.heading}
+                      </Heading>
+                    </Box>
+                    <AccordionIcon />
+                  </AccordionButton>
+                </Heading>
+                <AccordionPanel
+                  pb={4}
+                  bg={"#fff"}
+                  color={"#06283d"}
+                  border={"1px solid #c4c7c0"}
+                >
+                  <UnorderedList>
+                    <ListItem>
+                      <ListIcon as={VscCircleLargeOutline} color="green.500" />
+
+                      {day.visits}
+                    </ListItem>
+                  </UnorderedList>
+                </AccordionPanel>
+              </AccordionItem>
+            </Accordion>
+          );
+        })}
+      </Box>
+      <Box
+        width={"60%"}
+        minH={"60vh"}
+        m={"10"}
+        borderBottom={"2px solid #c4c7c0"}
+      >
+        <Heading fontSize={"2xl"} py={"5"} fontWeight={"600"}>
+          Included/Excluded
+        </Heading>
+        <Flex gap={"5rem"}>
+          <Flex gap={"4"} flexDir={"column"}>
+            <Flex gap={"2"} alignItems={"center"}>
+              <FcApproval />
+              <Text>02 Nights in Hotels/Houseboat as per Itinerary</Text>
+            </Flex>
+            <Flex gap={"2"} alignItems={"center"}>
+              <FcApproval color="green.500" />
+              <Text>Breakfast & Dinner</Text>
+            </Flex>
+            <Flex gap={"2"} alignItems={"center"}>
+              <FcApproval color="green.500" />
+              <Text>1 Hour Shikara Ride</Text>
+            </Flex>
+            <Flex gap={"2"} alignItems={"center"}>
+              <FcApproval color="green.500" />
+              <Text>All Transfers</Text>
+            </Flex>
+            <Flex gap={"2"} alignItems={"center"}>
+              <FcApproval color="green.500" />
+              <Text>Sightseeing in Srinagar</Text>
+            </Flex>
+            <Flex gap={"2"} alignItems={"center"}>
+              <FcApproval color="green.500" />
+              <Text>Toll Taxes</Text>
+            </Flex>
+            <Flex gap={"2"} alignItems={"center"}>
+              <FcApproval />
+              <Text>Parking Charges</Text>
+            </Flex>
+          </Flex>
+          <Flex gap={"4"} flexDir={"column"}>
+            <Flex gap={"2"} alignItems={"center"}>
+              <FcDisapprove />
+              <Text>Airfare & Train</Text>
+            </Flex>
+            <Flex gap={"2"} alignItems={"center"}>
+              <FcDisapprove />
+              <Text>Lunch</Text>
+            </Flex>
+            <Flex gap={"2"} alignItems={"center"}>
+              <FcDisapprove />
+              <Text>Pony Ride</Text>
+            </Flex>
+            <Flex gap={"2"} alignItems={"center"}>
+              <FcDisapprove />
+              <Text>Gandola Ride</Text>
+            </Flex>
+            <Flex gap={"2"} alignItems={"center"}>
+              <FcDisapprove />
+              <Text>Pahalgam Sightseeing</Text>
+            </Flex>
+            <Flex gap={"2"} alignItems={"center"}>
+              <FcDisapprove />
+              <Text>Entrance Tickets</Text>
+            </Flex>
+            <Flex gap={"2"} alignItems={"center"}>
+              <FcDisapprove />
+              <Text>Tour Guide</Text>
+            </Flex>
+            <Flex gap={"2"} alignItems={"center"}>
+              <FcDisapprove />
+              <Text>Activities</Text>
+            </Flex>
+            <Flex gap={"2"} alignItems={"center"}>
+              <FcDisapprove />
+              <Text>Snow Jeep in Gulmarg</Text>
+            </Flex>
+          </Flex>
+        </Flex>
+      </Box>
+      <Box m={"10"} width={"60%"}>
+        <Heading py={"2"}>FAQs</Heading>
+        <Accordion defaultIndex={[0]} allowMultiple>
+          <AccordionItem>
+            <h2>
+              <AccordionButton>
+                <Box flex="1" textAlign="left">
+                  TERMS & CONDITIONS
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel pb={4}>
+              <UnorderedList>
+                <ListItem>
+                  From your first contact till your Tour ends, our Tour Advisors
+                  are available for your assistance 24x7.
+                </ListItem>
+                <ListItem>
+                  Customers are requested to pay 30% of the total booking amount
+                  in advance & 70% upon arrival.
+                </ListItem>
+                <ListItem>
+                  In case of a government-imposed lockdown, your booking amount
+                  is safe with us and can be used in the future.
+                </ListItem>
+                <ListItem>
+                  Multi Destinations will not charge you as Tour operators for
+                  cancellations, but the Hotel Booking cancellations are subject
+                  to the Hotel Policies mentioned below:
+                </ListItem>
+                <ListItem>
+                  Cancellation within 15 days of arrival is retained @ 100% with
+                  0% refund.
+                </ListItem>
+                <ListItem>
+                  Cancellation within 15-30 days of arrival is retained @ 50%
+                  with 50% refund.
+                </ListItem>
+                <ListItem>
+                  Cancellation within 30-60 days of arrival is retained @ 25%
+                  with 75% refund.
+                </ListItem>
+                <ListItem>
+                  Kindly make the Advance Payments soon after finalizing your
+                  desired Itinerary. This helps us to ensure that the
+                  Hotels/Houseboats are not Sold Out.
+                </ListItem>
+                <ListItem>
+                  All Visitors are bound to Hire Local Taxis for Sightseeing
+                  within the vicinities of Sonmarg, Pahalgam, Gulmarg & other
+                  destinations in Kashmir except Srinagar as per Kashmir Tourism
+                  Advisory.
+                </ListItem>
+                <ListItem>
+                  Your Prepaid Sim cards will not work on your Trip to Kashmir &
+                  Ladakh, kindly arrange a Postpaid/Pre-on-Postpaid Sim on your
+                  own beforehand.
+                </ListItem>
+              </UnorderedList>
+            </AccordionPanel>
+          </AccordionItem>
+        </Accordion>
+      </Box>
+    </Box>
+  );
+}
+
+export default Tourdetails;
