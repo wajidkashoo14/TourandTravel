@@ -16,7 +16,6 @@ function Cards() {
       backgroundColor={"#F7F7F7"}
       py={"10"}
       position={"relative"}
-      overflowX={"scroll"}
     >
       <Heading textAlign={"center"} py={"6rem"} className={styles.heading}>
         Best rated Tours

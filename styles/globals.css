@@ -15,6 +15,12 @@ a {
   box-sizing: border-box;
 }
 
+.heading {
+  background-image: linear-gradient(to right, #0f659a, #06283d);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

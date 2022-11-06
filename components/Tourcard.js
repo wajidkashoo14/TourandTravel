@@ -13,16 +13,15 @@ import { AiTwotoneStar } from "react-icons/ai";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import styles from "../styles/card.module.css";
 import { useRouter } from "next/router";
-
 import React, { useState } from "react";
 
 function Tourcard({ cards }) {
   const router = useRouter();
 
   return (
-    <Box display={"flex"} gap={"10"}>
+    <Box display={"flex"} gap={"10"} flexWrap={"wrap"}>
       {cards.map((cardItem) => {
-        const { id, heading, headingtertiary } = cardItem;
+        const { id, heading, headingsecondary, img } = cardItem;
 
         return (
           <Box
@@ -31,26 +30,22 @@ function Tourcard({ cards }) {
             onClick={() => router.push(`./tourdetails/${id}`)}
           >
             <Box
-              w={"350px"}
-              minH={"450px"}
-              border={"1px solid #D7C7CC"}
+              w={"300px"}
+              h={"430px"}
               boxShadow={"md"}
+              display={"flex"}
+              flexDir={"column"}
               position={"relative"}
               cursor={"pointer"}
             >
               <Box zIndex={"10"}>
-                <Image
-                  src="parimahal.jpg"
-                  objectFit={"cover"}
-                  h={"250px"}
-                  w={"100%"}
-                />
+                <Image src={img} objectFit={"cover"} h={"250px"} w={"100%"} />
                 <Text
                   background={"#ED0925"}
                   color={"#fff"}
                   position={"absolute"}
-                  top={"50%"}
-                  left={"5%"}
+                  top={"15%"}
+                  left={"0%"}
                   px={"2"}
                   py={"1"}
                   borderBottomRightRadius={"3px"}
@@ -59,21 +54,12 @@ function Tourcard({ cards }) {
                   Festive offer
                 </Text>
               </Box>
-              <Box
-                px={"3"}
-                zIndex={"1000"}
-                height={"4rem"}
-                className={styles.fade}
-                width={"400px"}
-              >
+              <Box px={"3"} zIndex={"1000"} py={"5"} width={"400px"}>
                 <Heading
                   zIndex={"10000"}
                   color={"#06283d"}
-                  position={"absolute"}
-                  top={"30%"}
-                  fontSize={"2xl"}
-                  fontWeight={"700"}
-                  letterSpacing={".1rem"}
+                  fontSize={"xl"}
+                  fontWeight={"600"}
                 >
                   {heading}
                 </Heading>
@@ -82,7 +68,7 @@ function Tourcard({ cards }) {
               <Box px={"3"}>
                 <Box display={"flex"} alignItems={"center"} gap={"3"}>
                   <AiOutlineClockCircle />
-                  <Link> {headingtertiary}</Link>
+                  <Link> {headingsecondary}</Link>
                 </Box>
                 <Box display={"flex"} gap={"2"} alignItems={"center"} mt={"3"}>
                   <AiTwotoneStar color={"#FFDC00"} />
@@ -98,10 +84,6 @@ function Tourcard({ cards }) {
                   alignItems={"center"}
                   mt={"3"}
                 ></Box>
-
-                <Link textDecoration={"none"} className={styles.button}>
-                  More info
-                </Link>
               </Box>
             </Box>
           </Box>

@@ -2,9 +2,10 @@ const cards = [
   {
     id: 1,
     heading: "Kashmir 3D 2N Tour",
+    headingsecondary: "3 days and 2 nights",
     nightstaysatsrinagar: 1,
     nightstaysatpahalgamorgulmarg: 1,
-    img: "/home.jpg",
+    img: "/tourone.jpg",
     daysinfo: [
       {
         heading: " Day 1 = Srinagar Arrival (Airport Pick)",
@@ -41,7 +42,8 @@ const cards = [
   {
     id: 2,
     heading: "Kashmir 4D 3N Tour",
-    img: "/home.jpg",
+    headingsecondary: "4 days and 3 nights",
+    img: "/tourtwo.jpg",
     nightstaysatsrinagar: 2,
     nightstaysatpahalgamorgulmarg: 1,
 
@@ -92,7 +94,8 @@ const cards = [
   {
     id: 3,
     heading: "Kashmir 5D 4N Tour",
-    img: "/home.jpg",
+    headingsecondary: "5 days and 4 nights",
+    img: "/tourthree.jpg",
     nightstaysatsrinagar: 2,
     nightstaysatpahalgamorgulmarg: 2,
 
@@ -152,7 +155,8 @@ const cards = [
   {
     id: 4,
     heading: "Kashmir 6D 5N Tour",
-    img: "/home.jpg",
+    headingsecondary: "6 days and 5 nights",
+    img: "/tourfour.jpg",
     nightstaysatsrinagar: 3,
     nightstaysatpahalgamorgulmarg: 2,
 
@@ -220,7 +224,8 @@ const cards = [
   {
     id: 5,
     heading: "Kashmir 6D 5N Tour",
-    img: "/home.jpg",
+    headingsecondary: "6 days and 5 nights",
+    img: "/tourfive.jpg",
     nightstaysatsrinagar: "06 Nights in Hotels/Houseboat ",
     nightstaysatpahalgamorgulmarg:
       "06 Night stay at Hotel in Pahalgam/Sonmarg/Gulmarg (as per preference).",
@@ -296,7 +301,8 @@ const cards = [
   {
     id: 6,
     heading: "Kashmir 7D 6N Tour",
-    img: "/home.jpg",
+    headingsecondary: "7 days and 6 nights",
+    img: "/toursix.jpg",
     nightstaysatsrinagar: 3,
     nightstaysatpahalgamorgulmarg: 3,
 
@@ -371,7 +377,8 @@ const cards = [
   {
     id: 7,
     heading: "Kashmir Best Seller Tour",
-    img: "/home.jpg",
+    headingsecondary: "6 days and 5 nights",
+    img: "/tourseven.jpg",
     nightstaysatsrinagar: 3,
     nightstaysatpahalgamorgulmarg: 2,
 
@@ -439,7 +446,8 @@ const cards = [
   {
     id: 8,
     heading: "Kashmir 8D 7N Tour",
-    img: "/home.jpg",
+    headingsecondary: "8 days and 7 nights",
+    img: "/toureight.jpg",
     nightstaysatsrinagar: 4,
     nightstaysatpahalgamorgulmarg: 3,
 
@@ -516,7 +524,8 @@ const cards = [
   {
     id: 9,
     heading: "Kashmir Great Lakes Trek",
-    img: "/home.jpg",
+    headingsecondary: "8 days and 7 nights",
+    img: "/trek.jpg",
     nightstaysatsrinagar: 4,
     nightstaysatpahalgamorgulmarg: 3,
 

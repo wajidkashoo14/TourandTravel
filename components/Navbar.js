@@ -64,15 +64,21 @@ function Navbar() {
               _hover={{ textDecoration: "none" }}
               href="#"
               fontWeight={"400"}
+              onClick={() => {
+                router.push("/tours");
+              }}
             >
               Tours
             </Link>
           </Button>
-          <Button fontSize={"1.2rem"} backgroundColor={"transparent"}>
+          <Button backgroundColor={"transparent"}>
             <Link
               _hover={{ textDecoration: "none" }}
               href="#"
               fontWeight={"400"}
+              onClick={() => {
+                router.push("/hotels");
+              }}
             >
               Hotels
             </Link>

@@ -3,7 +3,7 @@ import React from "react";
 import { GoLocation } from "react-icons/go";
 import { AiOutlineHeart } from "react-icons/ai";
 
-function Categories() {
+function Categories({ type }) {
   return (
     <Box
       position={"relative"}
@@ -11,7 +11,7 @@ function Categories() {
       cursor={"pointer"}
       overflow={"hidden"}
       transition={"all 0.2s"}
-      minH={"350px"}
+      h={"300px"}
       width={"380px"}
     >
       <Image
@@ -23,11 +23,11 @@ function Categories() {
         position={"absolute"}
         top={"10%"}
         left={"5%"}
-        fontSize={"xl"}
+        fontSize={"1rem"}
         color={"#fff"}
         fontWeight={"500"}
       >
-        Kashmir Tour Packages
+        {type}
       </Heading>
       <Box position={"absolute"} top={"10%"} right={"5%"}>
         <AiOutlineHeart fontSize={"1.5rem"} color={"#fff"} />

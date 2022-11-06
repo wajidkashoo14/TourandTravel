@@ -33,14 +33,14 @@ import { BsRecordCircle } from "react-icons/bs";
 import { FcApproval, FcDisapprove } from "react-icons/fc";
 
 function Tourdetails() {
-  const [Tour, setTour] = useState(null);
+  const [hotel, setHotel] = useState(null);
   const router = useRouter();
-  const cardid = router.query.cardid;
+  const id = router.query.id;
   console.log(cardid);
 
   useEffect(() => {
-    let tour = data.find((tour) => tour.id == cardid);
-    setTour(tour);
+    let tour = data.find((hotel) => hotel.id == id);
+    setHotel(hotel);
   }, []);
   console.log(Tour);
   if (!Tour)
@@ -287,12 +287,12 @@ function Tourdetails() {
           <ListItem>
             <ListIcon as={MdCheckCircle} color="#B4E976" />
             {`${Tour.nightstaysatsrinagar} Night stay at Hotel/Houseboat in
-            Srinagar`}
+              Srinagar`}
           </ListItem>
           <ListItem>
             <ListIcon as={MdCheckCircle} color="#B4E976" />
             {`${Tour.nightstaysatpahalgamorgulmarg} Night stay at Hotel in
-            Pahalgam/Sonmarg/Gulmarg (as per preference).`}
+              Pahalgam/Sonmarg/Gulmarg (as per preference).`}
           </ListItem>
           <ListItem>
             <ListIcon as={MdCheckCircle} color="#B4E976" />1 Hour Shikara Ride.
