@@ -26,7 +26,7 @@ function Tourcard({ cards }) {
           <Box
             key={id}
             display={"flex"}
-            onClick={() => router.push(`./tourdetails/${id}`)}
+            onClick={() => router.push(`./hotels/${id}`)}
           >
             <Box
               w={"300px"}

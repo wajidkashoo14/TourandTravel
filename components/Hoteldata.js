@@ -1,5 +1,6 @@
 const data = [
   {
+    id: 1,
     heading: "The Khyber Himalayan Resort & Spa",
     address:
       "Hotel Khyber Rd, Forest Block, Jammu and Kashmir 193403 View on map",

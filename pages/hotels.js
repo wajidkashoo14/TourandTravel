@@ -13,12 +13,11 @@ import {
   UnorderedList,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
+import styles from "../styles/aboutus.module.css";
+import cards from "../components/Hoteldata";
+import Hotelcard from "../components/Hotelcard";
 
-import styles from "../../styles/aboutus.module.css";
-import cards from "../../components/Hoteldata";
-import Hotelcard from "../../components/Hotelcard";
-
-function index() {
+function hotels() {
   const [hotelCards, sethotelCards] = useState(cards);
   return (
     <Box
@@ -104,4 +103,4 @@ function index() {
   );
 }
 
-export default index;
+export default hotels;
