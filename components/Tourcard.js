@@ -13,10 +13,12 @@ import { AiTwotoneStar } from "react-icons/ai";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import styles from "../styles/card.module.css";
 import { useRouter } from "next/router";
-import React from "react";
+
+import React, { useState } from "react";
 
 function Tourcard({ cards }) {
   const router = useRouter();
+
   return (
     <Box display={"flex"} gap={"10"}>
       {cards.map((cardItem) => {

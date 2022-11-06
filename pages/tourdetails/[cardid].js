@@ -29,7 +29,7 @@ import { BsPersonFill } from "react-icons/bs";
 import styles from "../../styles/id.module.css";
 import { MdCheckCircle } from "react-icons/md";
 import data from "../../components/TourData";
-import { VscCircleLargeOutline } from "react-icons/vsc";
+import { VscCircleFilled } from "react-icons/vsc";
 import { FcApproval, FcDisapprove } from "react-icons/fc";
 
 function Tourdetails() {
@@ -162,26 +162,28 @@ function Tourdetails() {
       </Box>
       <Box
         width={"100vw"}
-        minH={"90vh"}
+        minH={"50vh"}
         bg={"#fff"}
-        p={"10"}
+        mx={"5rem"}
         display={"flex"}
         position={"relative"}
       >
-        <Box width={"55%"}>
+        <Box width={"55%"} py={"3rem"}>
           <Heading
             fontWeight={"500"}
             textTransform={"uppercase"}
             py={"5"}
             className={styles.heading}
+            mt={"5"}
           >
             overview
           </Heading>
           <Text
             fontSize={"md"}
             fontWeight={"300"}
-            color={"#333"}
+            color={"#50595c"}
             fontFamily={("Montserrat", "sans-serif")}
+            lineHeight={"6"}
           >
             {Tour.overview}
           </Text>
@@ -221,18 +223,26 @@ function Tourdetails() {
         </Box>
       </Box>
       <Box
-        m={"10"}
         display={"flex"}
         flexDir={"column"}
-        gap={"10"}
+        gap={"5"}
         minH={"50vh"}
         borderBottom={"2px solid #c4c7c0"}
         width={"80%"}
+        mx={"5rem"}
+        py={"3rem"}
       >
         <Heading fontWeight={"600"} className={styles.heading}>
           Highlights
         </Heading>
-        <List fontSize={"lg"} fontWeight={"400"} color={"#333"}>
+        <List
+          fontSize={"lg"}
+          fontWeight={"400"}
+          color={"#50595c"}
+          display={"flex"}
+          flexDir={"column"}
+          gap={"2"}
+        >
           <ListItem>
             <ListIcon as={MdCheckCircle} color="#B4E976" />
             {`${Tour.nightstaysatsrinagar} Night stay at Hotel/Houseboat in
@@ -282,17 +292,19 @@ function Tourdetails() {
         m={"7"}
         borderBottom={"2px solid #c4c7c0"}
         width={"60%"}
+        mx={"5rem"}
+        py={"3rem"}
       >
         {Tour.daysinfo.map((day) => {
           return (
-            <Accordion width={"100%"} height={"5rem"} allowToggle>
+            <Accordion width={"100%"} minHeight={"6.5rem"} allowToggle>
               <AccordionItem
-                my={"5"}
-                bg="#5191FA"
-                color={"#fff"}
-                variant="solid"
-                _hover={{ bg: "blue.500", color: " white" }}
-                height={"5rem"}
+                // bg="#5191FA"
+                // color={"#fff"}
+                // variant="solid"
+                // _hover={{ bg: "blue.500", color: " white" }}
+                minHeight={"5rem"}
+                alignItems={"center"}
               >
                 <Heading>
                   <AccordionButton>
@@ -305,18 +317,21 @@ function Tourdetails() {
                   </AccordionButton>
                 </Heading>
                 <AccordionPanel
-                  pb={4}
                   bg={"#fff"}
                   color={"#06283d"}
                   border={"1px solid #c4c7c0"}
                 >
-                  <UnorderedList>
-                    <ListItem>
-                      <ListIcon as={VscCircleLargeOutline} color="green.500" />
-
-                      {day.visits}
-                    </ListItem>
-                  </UnorderedList>
+                  <List>
+                    {day.visits.map((item) => {
+                      console.log("kaaz", day);
+                      return (
+                        <ListItem color={"#50595c"}>
+                          <ListIcon as={VscCircleFilled} color="#52B6F2" />
+                          {item}
+                        </ListItem>
+                      );
+                    })}
+                  </List>
                 </AccordionPanel>
               </AccordionItem>
             </Accordion>
@@ -326,13 +341,14 @@ function Tourdetails() {
       <Box
         width={"60%"}
         minH={"60vh"}
-        m={"10"}
+        mx={"5rem"}
+        py={"3rem"}
         borderBottom={"2px solid #c4c7c0"}
       >
         <Heading fontSize={"2xl"} py={"5"} fontWeight={"600"}>
           Included/Excluded
         </Heading>
-        <Flex gap={"5rem"}>
+        <Flex gap={"5rem"} color={"#50595c"}>
           <Flex gap={"4"} flexDir={"column"}>
             <Flex gap={"2"} alignItems={"center"}>
               <FcApproval />
@@ -403,7 +419,7 @@ function Tourdetails() {
           </Flex>
         </Flex>
       </Box>
-      <Box m={"10"} width={"60%"}>
+      <Box mx={"5rem"} py={"3rem"} width={"60%"} x>
         <Heading py={"2"}>FAQs</Heading>
         <Accordion defaultIndex={[0]} allowMultiple>
           <AccordionItem>
@@ -415,7 +431,7 @@ function Tourdetails() {
                 <AccordionIcon />
               </AccordionButton>
             </h2>
-            <AccordionPanel pb={4}>
+            <AccordionPanel pb={4} color={"#50595c"}>
               <UnorderedList>
                 <ListItem>
                   From your first contact till your Tour ends, our Tour Advisors
