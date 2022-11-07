@@ -466,7 +466,7 @@ function Tourdetails() {
           </Flex>
         </Flex>
       </Box>
-      <Box mx={"5rem"} py={"3rem"} width={"60%"} x>
+      <Box mx={"5rem"} py={"3rem"} width={"60%"}>
         <Heading py={"2"}>FAQs</Heading>
         <Accordion defaultIndex={[0]} allowMultiple>
           <AccordionItem>
@@ -526,6 +526,56 @@ function Tourdetails() {
                   own beforehand.
                 </ListItem>
               </UnorderedList>
+            </AccordionPanel>
+          </AccordionItem>
+        </Accordion>
+      </Box>
+      <Box mx={"5rem"} py={"3rem"} width={"45rem"}>
+        <Accordion defaultIndex={[0]} allowMultiple>
+          <AccordionItem>
+            <h2>
+              <AccordionButton>
+                <Box flex="1" textAlign="left">
+                  <Heading
+                    className={styles.heading}
+                    fontWeight={"500"}
+                    textTransform={"uppercase"}
+                    fontSize={"xl"}
+                  >
+                    Write a review
+                  </Heading>
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel pb={4}>
+              <FormControl>
+                <Flex gap={"5"} mb={"10"}>
+                  <Input
+                    type="text"
+                    placeholder="Name"
+                    size={"lg"}
+                    variant="flushed"
+                  />
+                  <Input
+                    type="email"
+                    placeholder="Email"
+                    size={"lg"}
+                    variant="flushed"
+                  />
+                </Flex>
+                <Textarea type="email" rows={"8"} />
+              </FormControl>
+              <Button
+                size="lg"
+                bg="#5191FA"
+                color={"#fff"}
+                variant="solid"
+                _hover={{ bg: "blue.500", color: " white" }}
+                mt={"6"}
+              >
+                Post Comment
+              </Button>
             </AccordionPanel>
           </AccordionItem>
         </Accordion>
