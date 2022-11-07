@@ -344,6 +344,7 @@ function Tourdetails() {
                 // color={"#fff"}
                 // variant="solid"
                 // _hover={{ bg: "blue.500", color: " white" }}
+                key={Tour.id}
                 minHeight={"5rem"}
                 alignItems={"center"}
               >
@@ -366,7 +367,7 @@ function Tourdetails() {
                     {day.visits.map((item) => {
                       console.log("kaaz", day);
                       return (
-                        <ListItem color={"#50595c"}>
+                        <ListItem color={"#50595c"} key={Tour.id}>
                           <ListIcon as={BsRecordCircle} color="#52B6F2" />
                           {item}
                         </ListItem>

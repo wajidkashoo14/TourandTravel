@@ -134,7 +134,7 @@ export default function Hoteldetails() {
             {Hotel.description}
           </Text>
         </Box>
-        <Box>
+        <Box borderBottom={"1px solid #d2c5ca"} py={"10"}>
           <Heading
             fontWeight={"500"}
             textTransform={"uppercase"}
@@ -148,7 +148,17 @@ export default function Hoteldetails() {
             console.log(Hotel)
             {Hotel.hotelfacilities.map((facility) => {
               return (
-                <Flex gap={"2"}>
+                <Flex
+                  gap={"2"}
+                  p={"3"}
+                  my={"1"}
+                  key={Hotel.id}
+                  // border={"1px solid #cbbbc1"}
+                  boxShadow={"lg"}
+                  _hover={{ boxShadow: "xl" }}
+                  width={"15rem"}
+                  cursor={"pointer"}
+                >
                   <FaAffiliatetheme color={"#5191FA"} />
 
                   <ListItem>{facility}</ListItem>
@@ -163,14 +173,25 @@ export default function Hoteldetails() {
             fontWeight={"500"}
             textTransform={"uppercase"}
             py={"5"}
-            mt={"5"}
+            mt={"3"}
           >
             Hotel Theme
           </Heading>
-          <Flex gap={"10"}>
+          <Flex gap={"10"} borderBottom={"1px solid #d2c5ca"} py={"8  "}>
             {Hotel.hoteltheme.map((theme) => {
               return (
-                <Box display={"flex"} alignItems={"center"} gap={"2"}>
+                <Box
+                  display={"flex"}
+                  alignItems={"center"}
+                  gap={"2"}
+                  p={"3"}
+                  my={"1"}
+                  boxShadow={"lg"}
+                  _hover={{ boxShadow: "xl" }}
+                  width={"15rem"}
+                  cursor={"pointer"}
+                  key={Hotel.id}
+                >
                   <MdOutlineSettingsSuggest
                     fontSize={"1.2rem"}
                     color={"#5191FA"}
@@ -179,6 +200,34 @@ export default function Hoteldetails() {
                 </Box>
               );
             })}
+          </Flex>
+        </Box>
+        <Box width={"25rem"}>
+          <Heading
+            className={styles.heading}
+            fontWeight={"500"}
+            textTransform={"uppercase"}
+            py={"5"}
+            mt={"5"}
+          >
+            Rules
+          </Heading>
+          <Flex
+            justifyContent={"space-between"}
+            py={"10"}
+            borderBottom={"1px solid #d2c5ca"}
+          >
+            <Text>Check In</Text>
+            <Text>{Hotel.rules[0]}</Text>
+          </Flex>
+          <Flex
+            gap={"10"}
+            justifyContent={"space-between"}
+            py={"10"}
+            borderBottom={"1px solid #d2c5ca"}
+          >
+            <Text>Check Out</Text>
+            <Text>{Hotel.rules[1]}</Text>
           </Flex>
         </Box>
       </Box>
