@@ -18,6 +18,7 @@ function Categories({ type, img }) {
         src={img}
         objectFit={"cover"}
         h={{ base: "100%", md: "350px", lg: "350px" }}
+        loading={"lazy"}
       />
       <Heading
         position={"absolute"}
