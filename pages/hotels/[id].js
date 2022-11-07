@@ -230,6 +230,47 @@ export default function Hoteldetails() {
             <Text>{Hotel.rules[1]}</Text>
           </Flex>
         </Box>
+        <Accordion defaultIndex={[0]} allowMultiple width={"45rem"} mt={"10"}>
+          <AccordionItem>
+            <h2>
+              <AccordionButton>
+                <Box flex="1" textAlign="left">
+                  Write a review
+                </Box>
+                <AccordionIcon />
+              </AccordionButton>
+            </h2>
+            <AccordionPanel pb={4}>
+              <FormControl>
+                <Flex gap={"5"} mb={"10"}>
+                  <Input
+                    type="text"
+                    placeholder="Name"
+                    size={"lg"}
+                    variant="flushed"
+                  />
+                  <Input
+                    type="email"
+                    placeholder="Email"
+                    size={"lg"}
+                    variant="flushed"
+                  />
+                </Flex>
+                <Textarea type="email" rows={"8"} />
+              </FormControl>
+              <Button
+                size="lg"
+                bg="#5191FA"
+                color={"#fff"}
+                variant="solid"
+                _hover={{ bg: "blue.500", color: " white" }}
+                mt={"6"}
+              >
+                Post Comment
+              </Button>
+            </AccordionPanel>
+          </AccordionItem>
+        </Accordion>
       </Box>
     </Box>
   );

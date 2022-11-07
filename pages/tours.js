@@ -18,7 +18,7 @@ import Tourcard from "../components/Tourcard";
 import styles from "../styles/aboutus.module.css";
 import cards from "../components/TourData";
 
-function tours() {
+function Tours() {
   const [tourCards, setTourCards] = useState(cards);
   return (
     <Box
@@ -107,4 +107,4 @@ function tours() {
   );
 }
 
-export default tours;
+export default Tours;

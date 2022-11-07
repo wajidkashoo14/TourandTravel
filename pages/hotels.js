@@ -17,7 +17,7 @@ import styles from "../styles/aboutus.module.css";
 import cards from "../components/Hoteldata";
 import Hotelcard from "../components/Hotelcard";
 
-function hotels() {
+function Hotels() {
   const [hotelCards, sethotelCards] = useState(cards);
   return (
     <Box
@@ -103,4 +103,4 @@ function hotels() {
   );
 }
 
-export default hotels;
+export default Hotels;
