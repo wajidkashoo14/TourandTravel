@@ -338,7 +338,12 @@ function Tourdetails() {
       >
         {Tour.daysinfo.map((day) => {
           return (
-            <Accordion width={"100%"} minHeight={"6.5rem"} allowToggle>
+            <Accordion
+              width={"100%"}
+              minHeight={"6.5rem"}
+              allowToggle
+              key={Tour.id}
+            >
               <AccordionItem
                 // bg="#5191FA"
                 // color={"#fff"}

@@ -98,7 +98,7 @@ function Tours() {
             mb={"5"}
             className={styles.heading}
           >
-            {`${tourCards.length} tours found`}
+            {`${tourCards.length} Tours found`}
           </Text>
           <Tourcard cards={tourCards} display={"flex"} flexWrap={"wrap"} />
         </Flex>

@@ -235,7 +235,14 @@ export default function Hoteldetails() {
             <h2>
               <AccordionButton>
                 <Box flex="1" textAlign="left">
-                  Write a review
+                  <Heading
+                    className={styles.heading}
+                    fontWeight={"500"}
+                    textTransform={"uppercase"}
+                    fontSize={"xl"}
+                  >
+                    Write a review
+                  </Heading>
                 </Box>
                 <AccordionIcon />
               </AccordionButton>

@@ -94,7 +94,7 @@ function Hotels() {
         </Flex>
         <Flex maxWidth={"70vw"} flexWrap={"wrap"}>
           <Text fontSize={"3xl"} fontWeight={"500"} mb={"5"}>
-            {`${hotelCards.length} tours found`}
+            {`${hotelCards.length} Hotels found`}
           </Text>
           <Hotelcard cards={hotelCards} display={"flex"} flexWrap={"wrap"} />
         </Flex>
