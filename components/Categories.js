@@ -3,7 +3,7 @@ import React from "react";
 import { GoLocation } from "react-icons/go";
 import { AiOutlineHeart } from "react-icons/ai";
 
-function Categories({ type }) {
+function Categories({ type, img }) {
   return (
     <Box
       position={"relative"}
@@ -15,7 +15,7 @@ function Categories({ type }) {
       width={"380px"}
     >
       <Image
-        src="valley.jpg"
+        src={img}
         objectFit={"cover"}
         h={{ base: "100%", md: "350px", lg: "350px" }}
       />

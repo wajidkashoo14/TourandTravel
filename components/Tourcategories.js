@@ -18,12 +18,15 @@ function Tourcategories() {
         alignItems={"center"}
         mt={"5rem"}
       >
-        <Categories type={"Kashmir tour pakages"} />
-        <Categories type={"Ladakh tour pakages"} />
-        <Categories type={"Couple tour pakages"} />
-        <Categories type={"Adventure tour pakages"} />
-        <Categories type={"Spiritual tour pakages"} />
-        <Categories type={"Skiing/Snowboarding tour pakages"} />
+        <Categories type={"Kashmir tour pakages"} img={"/tourone.jpg"} />
+        <Categories type={"Ladakh tour pakages"} img={"/tourtwo.jpg"} />
+        <Categories type={"Couple tour pakages"} img={"/tourthree.jpg"} />
+        <Categories type={"Adventure tour pakages"} img={"/tourfour.jpg"} />
+        <Categories type={"Spiritual tour pakages"} img={"/tourseven.jpg"} />
+        <Categories
+          type={"Skiing/Snowboarding tour pakages"}
+          img={"/toureight.jpg"}
+        />
       </Box>
     </Container>
   );
