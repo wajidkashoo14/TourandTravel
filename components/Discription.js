@@ -70,11 +70,11 @@ function Discription() {
           justifyContent={"center"}
         >
           <Box display={"flex"} gap={"8"}>
-            <img src="/dallake.jpg" className={styles.imageone} />
-            <img src="/gulmarg.jpg" className={styles.imagetwo} />
+            <img src="/tourone.jpg" className={styles.imageone} />
+            <img src="/tourtwo.jpg" className={styles.imagetwo} />
           </Box>
           <Box display={"flex"} justifyContent={"center"}>
-            <img src="/pahalgam.jpg" className={styles.imagethree} />
+            <img src="/tourthree.jpg" className={styles.imagethree} />
           </Box>
         </Box>
       </Flex>
