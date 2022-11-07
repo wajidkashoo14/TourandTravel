@@ -39,7 +39,13 @@ function Tourcard({ cards }) {
               cursor={"pointer"}
             >
               <Box zIndex={"10"}>
-                <Image src={img} objectFit={"cover"} h={"250px"} w={"100%"} />
+                <Image
+                  src={img}
+                  objectFit={"cover"}
+                  h={"250px"}
+                  w={"100%"}
+                  loading={"lazy"}
+                />
                 <Text
                   background={"#ED0925"}
                   color={"#fff"}

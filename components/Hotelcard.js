@@ -45,6 +45,7 @@ function Tourcard({ cards }) {
                   objectFit={"cover"}
                   h={"250px"}
                   w={"100%"}
+                  loading={"lazy"}
                 />
               </Box>
               <Box px={"3"} zIndex={"1000"} width={"400px"}>
