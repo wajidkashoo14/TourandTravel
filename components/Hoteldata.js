@@ -77,15 +77,7 @@ const data = [
       "Internet – Wifi",
       "Pool",
     ],
-    hoteltheme: [
-      "Green",
-      "Luxury",
-      "Mid-range",
-      "Romantic",
-      "Standard",
-      "",
-      "",
-    ],
+    hoteltheme: ["Green", "Luxury", "Mid-range", "Romantic", "Standard"],
     rules: ["12:00 pm", "	12:00 pm"],
   },
   {

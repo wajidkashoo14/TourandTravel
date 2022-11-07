@@ -3,6 +3,7 @@ import {
   Heading,
   Image,
   Text,
+  Item,
   FormControl,
   Input,
   Button,
@@ -29,22 +30,22 @@ import { BsPersonFill } from "react-icons/bs";
 import styles from "../../styles/id.module.css";
 import { MdCheckCircle } from "react-icons/md";
 import data from "../../components/Hoteldata";
+import { MdOutlineSettingsSuggest } from "react-icons/md";
 import { BsArrowRightCircleFill, BsPeople } from "react-icons/bs";
 import { BsArrowLeftCircleFill } from "react-icons/bs";
 import { GoLocation } from "react-icons/go";
+import { FaAffiliatetheme } from "react-icons/fa";
 
 export default function Hoteldetails() {
   const [Hotel, setHotel] = useState(null);
   const [img, setImg] = useState(0);
   const router = useRouter();
   const id = router.query.id;
-  console.log(id);
 
   useEffect(() => {
     let hotel = data.find((hotel) => hotel.id == id);
     setHotel(hotel);
   }, []);
-  console.log(Hotel);
   if (!Hotel)
     return (
       <Box
@@ -61,7 +62,7 @@ export default function Hoteldetails() {
   return (
     <Box
       maxW={"100vw"}
-      pt={"8rem"}
+      py={"8rem"}
       minH={"80vh"}
       overflowX={"hidden"}
       fontFamily={("Montserrat", "sans-serif")}
@@ -81,20 +82,26 @@ export default function Hoteldetails() {
         position={"relative"}
         alignItems={"center"}
         justifyContent={"center"}
+        mx={"auto"}
       >
-        <Box position={"absolute"} left={"5%"} top={"50%"} cursor={"pointer"}>
+        <Box position={"absolute"} left={"2%"} top={"50%"} cursor={"pointer"}>
           <BsArrowLeftCircleFill color="#fff" fontSize={"1.7rem"} />
         </Box>
         <Box
           position={"absolute"}
-          right={"5%"}
+          right={"2%"}
           top={"50%"}
           cursor={"pointer"}
           onClick={() => {
             setImg(img + 1);
           }}
         >
-          <BsArrowRightCircleFill color="#fff" fontSize={"1.7rem"} />
+          <BsArrowRightCircleFill
+            left={"2%"}
+            top={"50%"}
+            color="#fff"
+            fontSize={"1.7rem"}
+          />
         </Box>
         <Image
           src={Hotel.img[0]}
@@ -137,6 +144,42 @@ export default function Hoteldetails() {
           >
             Hotel Facilities
           </Heading>
+          <List>
+            console.log(Hotel)
+            {Hotel.hotelfacilities.map((facility) => {
+              return (
+                <Flex gap={"2"}>
+                  <FaAffiliatetheme color={"#5191FA"} />
+
+                  <ListItem>{facility}</ListItem>
+                </Flex>
+              );
+            })}
+          </List>
+        </Box>
+        <Box>
+          <Heading
+            className={styles.heading}
+            fontWeight={"500"}
+            textTransform={"uppercase"}
+            py={"5"}
+            mt={"5"}
+          >
+            Hotel Theme
+          </Heading>
+          <Flex gap={"10"}>
+            {Hotel.hoteltheme.map((theme) => {
+              return (
+                <Box display={"flex"} alignItems={"center"} gap={"2"}>
+                  <MdOutlineSettingsSuggest
+                    fontSize={"1.2rem"}
+                    color={"#5191FA"}
+                  />
+                  {theme}
+                </Box>
+              );
+            })}
+          </Flex>
         </Box>
       </Box>
     </Box>
