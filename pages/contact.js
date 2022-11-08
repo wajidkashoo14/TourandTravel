@@ -8,9 +8,13 @@ import {
   Textarea,
   Button,
   AspectRatio,
+  ListItem,
 } from "@chakra-ui/react";
 import React from "react";
 import styles from "../styles/contact.module.css";
+import { AiOutlineMobile } from "react-icons/ai";
+import { AiOutlineMail } from "react-icons/ai";
+import { GoLocation } from "react-icons/go";
 
 function contact() {
   return (
@@ -94,6 +98,46 @@ function contact() {
             </Button>
           </Box>
         </Box>
+      </Flex>
+      <Flex
+        h={"10rem "}
+        width={"80vw"}
+        bg={"#FFFFFF"}
+        justifyContent={"space-around"}
+        alignItems={"center"}
+        mt={"10rem"}
+        p={"10"}
+      >
+        <Flex
+          display={"flex"}
+          gap={"5"}
+          alignItems={"center"}
+          fontSize={"1.3rem"}
+          textTransform={"uppercase"}
+        >
+          <AiOutlineMobile color={"#5191FA"} />
+          9596103894
+        </Flex>
+        <Flex
+          display={"flex"}
+          gap={"5"}
+          alignItems={"center"}
+          fontSize={"1.3rem"}
+          textTransform={"uppercase"}
+        >
+          <AiOutlineMail color={"#5191FA"} />
+          Wkashoo@gmail.com
+        </Flex>
+        <Flex
+          display={"flex"}
+          gap={"5"}
+          alignItems={"center"}
+          fontSize={"1.3rem"}
+          textTransform={"uppercase"}
+        >
+          <GoLocation color={"#5191FA"} />
+          karan nagar srinagar j& k
+        </Flex>
       </Flex>
       <Box
         mt={"10rem"}

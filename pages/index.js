@@ -14,8 +14,8 @@ export default function Home() {
     <>
       <Hero />
       <Input />
-      <Discription />
       <Cards />
+      <Discription />
       <Tourcategories />
       <Explore />
       <Subscribe />

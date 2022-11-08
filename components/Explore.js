@@ -18,9 +18,20 @@ function Explore() {
         </video>
         <div className={styles.overlay}></div>
         <Box className={styles.cardbox} display={"flex"} gap={"8rem"}>
-          <Explorecard />
-          <Explorecard />
-          <Explorecard />
+          <Explorecard
+            heading={"EXPLORE "}
+            text={
+              "The beauty of Kashmir can’t be compared by the whole world. "
+            }
+          />
+          <Explorecard
+            heading={"MEET NATURE"}
+            text={"If you want to see Heaven on Earth, then you must Kashmir. "}
+          />
+          <Explorecard
+            heading={"FIND YOUR WAY "}
+            text={"Words are not enough to describe the beauty of Kashmir. "}
+          />
         </Box>
       </div>
     </Box>

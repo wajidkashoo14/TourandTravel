@@ -247,7 +247,7 @@ export default function Hoteldetails() {
                 <AccordionIcon />
               </AccordionButton>
             </h2>
-            <AccordionPanel pb={4}>
+            <AccordionPanel pb={4} color={"#F9F9F9"}>
               <FormControl>
                 <Flex gap={"5"} mb={"10"}>
                   <Input

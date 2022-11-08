@@ -7,7 +7,7 @@ function Input() {
   const [openModal, setOpenModal] = useState(false);
   return (
     <Container
-      marginTop={{ base: "-20rem", md: "-30rem", lg: "-25rem" }}
+      marginTop={{ base: "-20rem", md: "-30rem", lg: "-30rem" }}
       gap={"8rem"}
       display={"flex"}
       flexDir={"column"}
@@ -63,7 +63,7 @@ function Input() {
         </Button>
       </Box>
       <Button
-        size="lg"
+        size="md"
         bg="#5191FA"
         color={"#fff"}
         variant="solid"

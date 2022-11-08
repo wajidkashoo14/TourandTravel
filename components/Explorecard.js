@@ -2,7 +2,7 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import { GiValley } from "react-icons/gi";
 
-function Explorecard() {
+function Explorecard({ heading, text }) {
   return (
     <Box
       width={"250px"}
@@ -17,11 +17,8 @@ function Explorecard() {
       color={"#fff"}
     >
       <GiValley fontSize={"3rem"} />
-      <Heading fontSize={"2xl"}>Explore the valley</Heading>
-      <Text>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,
-        libero?
-      </Text>
+      <Heading fontSize={"xl"}>{heading}</Heading>
+      <Text>{text}</Text>
     </Box>
   );
 }

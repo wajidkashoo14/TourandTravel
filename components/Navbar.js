@@ -23,7 +23,6 @@ function Navbar() {
   return (
     <Container
       maxW="100%"
-      backgroundColor={styles.navbar ? "navbar" : "transparent"}
       height="5rem"
       justifyContent="space-between"
       alignItems={"center"}
@@ -32,7 +31,7 @@ function Navbar() {
       position={"fixed"}
       mt={"3rem"}
       zIndex={"20000"}
-      bg={"#69E1B1"}
+      bg={"rgba(255,255,255,0.2)"}
       scrollBehavior={"smooth"}
     >
       <Box zIndex={"10000"}>
@@ -49,7 +48,7 @@ function Navbar() {
         </Link>
       </Box>
       <Box zIndex={"10000"}>
-        <Flex gap={"5"} fontWeight={"400"}>
+        <Flex gap={"3"} fontWeight={"400"}>
           <Button fontSize={"1.2rem"} backgroundColor={"transparent"}>
             <Link
               _hover={{ textDecoration: "none" }}
@@ -74,7 +73,6 @@ function Navbar() {
           <Button backgroundColor={"transparent"}>
             <Link
               _hover={{ textDecoration: "none" }}
-              href="#"
               fontWeight={"400"}
               onClick={() => {
                 router.push("/hotels");
@@ -101,6 +99,17 @@ function Navbar() {
               }}
             >
               About Us
+            </Link>
+          </Button>
+          <Button fontSize={"1.2rem"} backgroundColor={"transparent"}>
+            <Link
+              _hover={{ textDecoration: "none" }}
+              fontWeight={"400"}
+              onClick={() => {
+                router.push("/contact");
+              }}
+            >
+              Transport
             </Link>
           </Button>
           <Button fontSize={"1.2rem"} backgroundColor={"transparent"}>
