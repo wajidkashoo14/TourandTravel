@@ -1,6 +1,9 @@
 import React from "react";
-
+import { useRouter } from "next/router";
+import { Box, Image, Heading, Text } from "@chakra-ui/react";
+import { GoLocation } from "react-icons/go";
 function Activitiescard({ cards }) {
+  const router = useRouter();
   return (
     <Box display={"flex"} gap={"10"} flexWrap={"wrap"}>
       {cards.map((cardItem) => {
@@ -10,7 +13,7 @@ function Activitiescard({ cards }) {
           <Box
             key={id}
             display={"flex"}
-            onClick={() => router.push(`./hotels/${id}`)}
+            onClick={() => router.push(`./activities/${id}`)}
           >
             <Box
               w={"300px"}
@@ -25,7 +28,7 @@ function Activitiescard({ cards }) {
             >
               <Box zIndex={"10"}>
                 <Image
-                  src={img[0]}
+                  src={img}
                   objectFit={"cover"}
                   h={"250px"}
                   w={"100%"}

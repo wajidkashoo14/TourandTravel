@@ -25,18 +25,14 @@ const data = [
       "Cab Transfers (Hotel - Destination)",
     ],
     excluded: ["Airfare", "Lunch", "Pony Ride", "Guide", "Entrance Tickets"],
-    questions: {
-      question: "What if I don't know how to Ski and don't own any Ski Gear?",
-      question: "Is Skiing in Gulmarg safe?",
-    },
+    questions: [
+      "What if I don't know how to Ski and don't own any Ski Gear?",
+      "Is Skiing in Gulmarg safe?",
+    ],
 
-    answer: [
-      {
-        answer:
-          "Ski Instructors in Gulmarg hand walk you through different steps of training while ensuring your safety at every point. Also, Ski Gear of different sizes and preferences is readily available for renting and purchasing.",
-        answer:
-          "Skiing in Gulmarg is Safe as Heavens with our Ski Patrol officers taking extra measures round the clock for Skiers safety.",
-      },
+    answers: [
+      "Ski Instructors in Gulmarg hand walk you through different steps of training while ensuring your safety at every point. Also, Ski Gear of different sizes and preferences is readily available for renting and purchasing.",
+      "Skiing in Gulmarg is Safe as Heavens with our Ski Patrol officers taking extra measures round the clock for Skiers safety.",
     ],
   },
 
@@ -62,15 +58,10 @@ const data = [
     ],
     included: ["Safety Gear", "Instructor"],
     excluded: ["Go-Pro & Drone Footage (book separately)"],
-    questions: {
-      question: "Is river rafting in kashmir safe??",
-    },
+    questions: ["Is river rafting in kashmir safe??"],
 
-    answer: [
-      {
-        answer:
-          "Kashmir Tourism has posted experienced patrol officers along the route to ensure safety of tourists and each ride is accompanied by a rafting expert who is the captain of your adventure boat that twists and turns in whirlpools of the river.",
-      },
+    answers: [
+      "Kashmir Tourism has posted experienced patrol officers along the route to ensure safety of tourists and each ride is accompanied by a rafting expert who is the captain of your adventure boat that twists and turns in whirlpools of the river.",
     ],
   },
 
@@ -107,15 +98,13 @@ const data = [
       "fishing rods",
       "towels and personal hygiene essentials",
     ],
-    questions: {},
-
-    answer: [{}],
   },
 
   {
     id: 4,
     heading: "Motor Cycle Diaries",
     address: "Jammu & kashmir, India",
+    img: "https://assets.traveltriangle.com/blog/wp-content/uploads/2016/03/IMG_20151222_170332-11.jpg",
     overview:
       "Bike Riding in Ladakh has gained popularity among bike fanatics around the globe and we help you experience that. Let us know that you wish you conquer the great Himalayan terrains on a motorcycle and document it while on the run. Multi Destinations is at your service to help you rent Motorcycles (Muscle or Sports). You can also rent image and video recording devices like Go Pro and Drones. Handcraft a Motor Cycle voyage that makes you a complete rider. For every rider who wants to challenge their own limits, none but Ladakh appeals them. Also called the ‘Land of High Passes’, because this part of the country is bestowed with towering mountains, fascinating peaks, extremely rugged terrains, barren meadows, and lot more. Owing to all these, Bike Riding in Ladakh proves to be a paradise for those who craves for throttle, dreams for the maximum torque and yearns for a tryst with the exhilarating riding trails. Bikers will find everything that inspires them to ride unitedly. A hand-picked biking expedition. The biking tour passes through some of the most enthralling passes, scenic lakes, magnificent valleys, and remote areas. Bikers will definitely feel the difference between riding through usual terrains and the enchanting locales of Kashmir & Ladakh! Check our Go Pro Video in muddy offroad tracks in Ladakh",
     list: [],
@@ -133,114 +122,52 @@ const data = [
       "Food & Water",
       "Fuel Supplies",
     ],
-    questions: {},
-
-    answer: [{}],
   },
 
   {
     id: 5,
-    heading: "SShikara Ride",
+    heading: "Shikara Ride",
     address: "Srinagar, Jammu & Kashmir, India",
+    img: "https://www.tourmyindia.com/states/jammu-kashmir/image/shikara-ride-jk1.jpg",
     overview:
       "GA dreamland for everyone who has been lusting for some relaxing moments amidst the breathtaking panorama of nature, Kashmir undeniably comes out on top. And Srinagar is the perfect place to start your trip. Dotted with numerous beautiful sights, the city looks amazing in a canopy of landscaped flowering gardens, crystal clear lakes, magnificent structures and bustling market. Amidst this colourful world lies something sensuous and swift. Shikara, the small wooden carved boat, usually seen at Dal Lake and Nagin Lake of Srinagar, is one of the mesmerizing attractions of the city. Regaining the old world charm, the swift movement of a Shikara provides a unique way to experience the eternal beauty of Kashmir. Considered as a cultural symbol of the region along with houseboats, Shikara rides in Kashmir are one of the most captivating aspects of Jammu and Kashmir tourism. A relaxing ride while enjoying the surrounding views around Dal Lake and Nagin Lake is truly a worthful pleasure. Shikara boat rides are also used for sightseeing attractions that are located close to Dal Lake like Nishat Garden, Shalimar Garden",
-    list: [],
-    included: [],
-    excluded: [],
-    questions: {},
-
-    answer: [{}],
   },
 
   {
     id: 6,
     heading: "Horse Riding",
     address: "Kashmir, India",
+    img: "https://www.treebo.com/blog/wp-content/uploads/2018/02/Horse-Riding-Kashmir.jpg",
     overview:
       "Kashmir, the dazzling beauty of India, is known world-wide for its breathtaking blend of emerald allure (meadows) and soothing white (snow-capped peaks). Casting a spell of magic over this blend are the crystal clear lakes that has propelled Kashmir tourism to new heights. Sightseeing in Kashmir is a major activity that travellers usually prefer to do in the region, but other adventurous and recreational activities offered by the region are also on rise with numerous options available like skiing, trekking, water skiing, fishing, angling, golfing and horse riding. Among all the activities, horse riding in Kashmir is something that is enjoyed by almost all travellers. Exploring the beautiful mountain passes and eye-catching countryside on a horse back is a popular activity in the region. Kashmir region of Jammu and Kashmir State is blessed with various pristine destinations like Pahalgam, Srinagar, Gulmarg, Yusmarg, Kokernag and Lolab Valley where tourists can enjoy horse rides.",
-    list: [],
-    included: [],
-    excluded: ["Airfare", "Lunch", "Pony Ride", "Guide", "Entrance Tickets"],
-    questions: {},
 
-    answer: [{}],
+    excluded: ["Airfare", "Lunch", "Pony Ride", "Guide", "Entrance Tickets"],
   },
 
   {
     id: 7,
     heading: "Jeep Safari",
     address: "Jammu & Kashmir, India",
+    img: "https://www.tourmyindia.com/states/jammu-kashmir/image/jeep-safari-jk3.jpg",
     overview:
       "To best explore and get a step closer to nature, Jeep Safari in Kashmir is an apt method. It lets one to explore the wilds and trudge to remote yet beautiful places in the valley. In fact it proffers a good opportunity to explore the vast topography and get to the dense forests regions. Kashmir Jeep Safari tour offers adventure seekers a better way to discover the mysteries of the Himalayan region, ranging from the small temples perched upon hill tops to distinct wildlife in dense lush green forests. Where trekking is confined to physically fit people, Jeep Safari enables everyone to enjoy their share of adventure expedition. Jeep Safari holidays solicitadventure and knowledge. Sonmarg, Srinagar Gulmarg, Pahalgam and Yusmarg are the primary destinations that can be covered through Jeep Safari.",
-    list: [],
-    included: [],
-    excluded: ["Airfare", "Lunch", "Pony Ride", "Guide", "Entrance Tickets"],
-    questions: {},
 
-    answer: [{}],
+    excluded: ["Airfare", "Lunch", "Pony Ride", "Guide", "Entrance Tickets"],
   },
 
   {
     id: 8,
     heading: "Paragliding",
     address: "Srinagar, Jammu & Kashmir, India",
+    img: "https://www.kashmirhills.com/wp-content/uploads/2015/02/Adventure-sports_paragliding-1024x768.jpg",
     overview:
       "Paragliding in Kashmir Aero sports activities really are a rage among these going to the Kashmir valley. Among the many aero sports activities, paragliding is probably the most common in Kashmir. Also, it’s 1 of your newest journey sports activities which are choosing up quick within the Kashmir valley. Paragliding normally requires you on the tour of your green valleys and majestic mountains of Kashmir. Searching from over, you’ll locate the sight of your valley virtually breathtaking. You can find several journey clubs in Jammu, Sanasar and Batote that provide paraglidingamenities. paragliding in Kashmir is a popular adventure sport that attracts tourists to Kashmir .At Jammu and Sanasar, correct instruction camps for each paraglidingalso as parasailing are organized. Paragliding equipments are simply offered on the tourist workplace in Jammu as well as the regional companies in Jammu and Sanasar. The very best time forparagliding, specifically in Sanasar, will be the interval of May-June and September-October. Aero sports are a rage amongst those visiting the Kashmir valley. Amongst the numerous aero sports, paragliding is the most popular in Kashmir. Also, it is one of the latest adventure sports that are picking up fast in the Kashmir valley. Paragliding takes you on a tour of the green valleys and majestic mountains of Kashmir. Looking from above, you will find the sight of the valley almost breathtaking. There are a number of adventure clubs in Jammu, Sanasar and Batote that offer paragliding facilities. At Jammu and Sanasar, proper training camps for both paragliding as well as parasailing are organized. Paragliding equipments are easily available at the tourist office in Jammu and the local agencies in Jammu and Sanasar. The best time for paragliding, especially in Sanasar, is the period of May-June and September-October.Paragliding is the latest among the long line of adventure sports facilities to be made available in Kashmir.We offer various kashmir tour package and kashmir budget tours to enjoy paragliding.",
-    list: [],
     included: [
       "Instructor",
       "Safety Equipment",
       "Safety measures briefing before paragliding",
     ],
     excluded: ["Go-Pro & Drone footage"],
-    questions: {},
-
-    answer: [{}],
-  },
-
-  {
-    id: 9,
-    heading: "Scuba Diving in Andaman Islands",
-    address: "Andaman and Nicobar Islands, India",
-    overview:
-      "Scuba diving is the greatest action on the Andaman & Nicobar Isles other than relaxing around and tasting the delicacy of seafood. The best year for diving in Andaman & Nicobar Isles is from Nov to April. However, one can indulge in a diving experience all throughout the year. This is one activity in Andaman, that is operational throughout the year. One can see the amazing sea life among the world of awesome water bodies, vibrant fish, and awesome corals. The Indian government takes a serious approach to defend its sea resources. There are many experienced and PADI-certified instructors who can help the divers in exploring various dive sites in the Andaman archipelago. Most of the diving happens in North Bay Island, Port Blair, and Havelock Island. Neil island has started picking up slowly. You also have an option to dive near Barren island, the only active volcano in India. For Advanced diving experience, you need to be open water certified. We have covered various open water courses later in this article. The superior Indian ocean native shorelines promise wonderful scuba diving and scuba diving locations that will leave you completely captivated. The sport of scuba diving can be easily put with actions like marine digital cameras and fish recognition. We do not recommend scuba diving to people with high or low hypertension, pregnant women, heart patient, and others who are under regular doctors advice. You may check with your doctor before availing of Scuba Diving. In India, the experience is a serious business with certification of various levels for the scuba divers. Moving on the steps with route and dedication you can increase from being a beginner scuba diver to a master. Andaman is absolutely wonderful in terms of its diving experience, and we will educate you where to get indulge in your diving experience during your period of stay in the islands. Beginners Diving Experience For Scuba Diving is listed below Now, those who are looking into becoming a professional diver have to go through various certification courses before becoming a professional diver. To start with firstly you will have to certify yourself with an open watercourse. This could be from either of the schools such as PADI/SSI. Both the certifications are valid all throughout the globe with PADI having more precedence over SSI. Once you have completed the Open water course, you can successfully dive at most parts of the globe with the diving card you get after you have cleared the certification. Those who are looking for more advanced experience can indulge in the Advanced Open water course in the Andamans which gives you a certificate to dive freely up to a depth of 30 Metres. You can continue this course further indulge in Emergency First Responder and Later do a Padi Rescue Diver course before you become a Dive Master. A Dive Master is certified to assist any new diver when they dive into open water or when they are doing shore diving.",
-    list: [],
-    included: [
-      "Instructor",
-      "Safety Equipment",
-      "Safety measures briefing before scuba diving",
-    ],
-    excluded: [],
-    questions: {},
-
-    answer: [{}],
-  },
-
-  {
-    id: 10,
-    heading: "Parasailing in Andaman Islands",
-    address: "Andaman and Nicobar Islands, India",
-    overview:
-      "Parasailing is one of the most thrilling and awaited activities in Andamans. Parasailing in the Andaman Islands first started its operations at Corbyn’s Cove Beach, Port Blair, and also at North Bay Island. This activity gives you a chance to look at the beautiful island from an excellent perspective. All the safety measures to keep you safe and sound during the trip are looked into carefully by the experts. During Parasailing in Andaman, you first get on a boat either at Carbyns or at North Bay. The boat starts its journey and your gear up on the boat with the necessary safety harness. Next, you are slowly let on the sail and in no time you are up in the air witnessing magnificent views on the islands. Parasailing is worth it and you will surely love your experience. Parasailing can also be done at Havelock Island as well. The equipment used during parasailing are well maintained and tested for you to have a smooth time while you are gliding in the air. Once you get up high in the air you get an opportunity to witness the stunning shoreline of the beach and all the attractions that surround you! It is an amazing adrenaline rush activity that you would surely love if you are an adventure buff. Parasailing is safe and all safety aspects are seen before the trip begins. The trip lasts for approximately 30 minutes. Note: This activity is subject to availability and can change based upon weather conditions. This activity is currently operational in Port Blair and Havelock Island.",
-    list: [],
-    included: [
-      "Instructor",
-      "Safety Equipment",
-      "Safety measures briefing before parasailing",
-    ],
-    excluded: [],
-    questions: {},
-
-    answer: [{}],
-  },
-
-  {
-    id: 11,
-    heading: "Skiing & Snowboarding in Gulmarg",
-    address: "Andaman and Nicobar Islands, India",
-    overview:
-      "Uncover the beauty of the underwater kingdom lying beneath the Andaman Sea, without getting your toes wet. Andaman Dolphin glass-bottom boat ride provides a luxurious window into the mesmerizing world of corals and marine life of Port Blair, from within the comfort  & safety of an international quality speedboat. The Andaman Dolphin glass boat ride experience is very different where you glide with us over the Andaman Sea, explore, and get enchanted by the exotic corals and the rich life underwater. These trips are for those people who do not want to indulge in adventure watersports such as Scuba Diving and Sea Walking. From the Andaman Dolphin boat, you can sit and easily enjoy the beauty of the underwater corals. This trip begins after you arrive at the Andaman water sports complex where you board this high-speed Glass bottom boat to experience the thrilling journey of the Andaman Islands. Board the glass boat and enjoy the ride for 60 minutes before returning to the Andaman water sports complex. Explore the underwater reef without getting wet. This trip can also be done after you reach North Bay Island. We recommend you book this trip in advance as many travelers who don’t wish to do Scuba Diving and Snorkeling are interested in this tour. The activity of Andaman Dolphin is recommended for children and elders.",
-
-    included: ["Guide", "Equipment"],
   },
 ];
+export default data;

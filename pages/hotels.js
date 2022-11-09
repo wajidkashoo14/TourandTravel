@@ -1,16 +1,12 @@
 import {
   Box,
-  Container,
   Image,
   Flex,
   Heading,
   Text,
-  ListItem,
   Button,
   FormControl,
   Input,
-  List,
-  UnorderedList,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 import styles from "../styles/aboutus.module.css";
@@ -30,7 +26,7 @@ function Hotels() {
       <Flex width={"100%"} flexDir={"column"}>
         <Box maxWidth={"100vw"} height={"40vh"}>
           <Image
-            src="./home.jpg"
+            src="./vivanta.jfif"
             width={"100%"}
             height={"35vh"}
             objectFit={"cover"}

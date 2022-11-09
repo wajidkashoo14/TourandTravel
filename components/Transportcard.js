@@ -1,9 +1,11 @@
 import { Button, Container, Box, Image, Heading, Link } from "@chakra-ui/react";
-import React from "react";
-
+import React, { useState } from "react";
+import Modal from "./Modal";
 function Transportcard({ name, img }) {
+  const [openModal, setOpenModal] = useState(false);
   return (
     <Box display={"flex"}>
+      {openModal && <Modal closeModal={setOpenModal} />}
       <Box
         maxW={"300px"}
         h={"400px"}
@@ -51,7 +53,9 @@ function Transportcard({ name, img }) {
             variant="solid"
             _hover={{ bg: "blue.500", color: " white" }}
           >
-            <Link fontSize={"1.2rem"}>Enquire </Link>
+            <Link fontSize={"1.2rem"} onClick={() => setOpenModal(true)}>
+              Enquire{" "}
+            </Link>
           </Button>
         </Box>
       </Box>

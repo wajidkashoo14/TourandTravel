@@ -9,7 +9,6 @@ import {
   Button,
 } from "@chakra-ui/react";
 
-import styles from "../styles/card.module.css";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { GoLocation } from "react-icons/go";
@@ -27,6 +26,7 @@ function Tourcard({ cards }) {
             key={id}
             display={"flex"}
             onClick={() => router.push(`./hotels/${id}`)}
+            _hover={{ transform: "translateY(-1.5rem scale(1.03)" }}
           >
             <Box
               w={"300px"}

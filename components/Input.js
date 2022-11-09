@@ -38,6 +38,14 @@ function Input() {
           <option value="option1">Gulmarg</option>
           <option value="option2">Pahalgam</option>
           <option value="option3">Sonmarg</option>
+          <option value="option3">Doodhpathri</option>
+          <option value="option3">Sinthan top</option>
+          <option value="option3">Srinagar</option>
+          <option value="option3">Kargil</option>
+          <option value="option3">Leh</option>
+          <option value="option3">Nubra Valley</option>
+          <option value="option3">Pangong Tso</option>
+          <option value="option3">Tso Moriri</option>
         </Select>
         <Select
           placeholder="Tour type"
@@ -48,6 +56,14 @@ function Input() {
           <option value="">Adventure Tour</option>
           <option value="option2">City Tour</option>
           <option value="option3">Group Tour</option>
+          <option value="option3">Best Sellers</option>
+          <option value="option3">City trips</option>
+          <option value="option3">Ecotourism</option>
+          <option value="option3">Escorted Tour</option>
+          <option value="option3">Honeymoon & Couples</option>
+          <option value="option3">Mountain Adventures</option>
+          <option value="option3">Skiing Trips</option>
+          <option value="option3">Spiritual Tour</option>
         </Select>
 
         <Button

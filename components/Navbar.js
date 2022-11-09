@@ -86,6 +86,9 @@ function Navbar() {
               _hover={{ textDecoration: "none" }}
               href="#"
               fontWeight={"400"}
+              onClick={() => {
+                router.push("/activities");
+              }}
             >
               Activities
             </Link>
@@ -106,7 +109,7 @@ function Navbar() {
               _hover={{ textDecoration: "none" }}
               fontWeight={"400"}
               onClick={() => {
-                router.push("/contact");
+                router.push("/transport");
               }}
             >
               Transport

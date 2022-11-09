@@ -549,7 +549,7 @@ function Tourdetails() {
               </AccordionButton>
             </h2>
             <AccordionPanel pb={4}>
-              <FormControl>
+              <FormControl bg={"#F9F9F9"} p={"5"} borderRadius={"5"}>
                 <Flex gap={"5"} mb={"10"}>
                   <Input
                     type="text"

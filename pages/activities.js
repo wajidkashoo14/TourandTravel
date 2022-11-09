@@ -1,9 +1,34 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import data from "../components/Activitiesdata";
 import Activitiescard from "../components/Activitiescard";
+import {
+  Box,
+  Container,
+  Image,
+  Flex,
+  Heading,
+  Text,
+  FormControl,
+  Input,
+  Button,
+} from "@chakra-ui/react";
 
 function Activities() {
   const [Activity, setActivity] = useState(data);
+
+  if (!Activity)
+    return (
+      <Box
+        display={"flex"}
+        justifyContent={"center"}
+        alignItems={"center"}
+        height={"100vh"}
+        width={"100vw"}
+        py={"8rem"}
+      >
+        <div className={styles.spinner}></div>
+      </Box>
+    );
 
   return (
     <Box
@@ -46,12 +71,8 @@ function Activities() {
             p={"5"}
             border={"1px solid #cacfd0"}
           >
-            <Heading
-              className={styles.heading}
-              fontSize={"lg"}
-              textAlign={"center"}
-            >
-              Search Hotels
+            <Heading fontSize={"lg"} textAlign={"center"}>
+              Search Activities
             </Heading>
             <Input
               type="text"
@@ -80,7 +101,7 @@ function Activities() {
         </Flex>
         <Flex maxWidth={"70vw"} flexWrap={"wrap"}>
           <Text fontSize={"3xl"} fontWeight={"500"} mb={"5"}>
-            {`${hotelCards.length} Hotels found`}
+            {`${Activity.length} Activities found`}
           </Text>
           <Activitiescard cards={Activity} display={"flex"} flexWrap={"wrap"} />
         </Flex>
