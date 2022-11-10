@@ -128,7 +128,7 @@ function Activitiesid() {
           >
             {Activity.included.map((item) => {
               return (
-                <Box display={"flex"} flexDir={"column"}>
+                <Box display={"flex"} flexDir={"column"} key={Activity.id}>
                   <Flex gap={"2"} alignItems={"center"}>
                     <FcApproval />
                     <Text>{item}</Text>
