@@ -7,13 +7,13 @@ function Discription() {
   return (
     <Container
       maxW={"100vw"}
-      bg={"#fff"}
       mt={"40vh"}
       backgroundColor={"#F7F7F7"}
-      py={"10"}
+      py={"8rem"}
       px={"7rem"}
     >
       <Heading
+        maxW={"100%"}
         className={styles.heading}
         textAlign={"center"}
         fontSize={"2.2rem"}
@@ -24,13 +24,21 @@ function Discription() {
       <Flex mt={"5rem"} gap={"5rem"} position={"relative"}>
         <Box>
           <Heading
+            maxW={"100%"}
             fontSize={"1.2rem"}
             my={"4"}
             className={styles.heading__secondary}
+            textAlign={"center"}
           >
             {`YOU'RE GOING TO FALL IN LOVE WITH NATURE`}
           </Heading>
-          <Text maxW={"35rem"} textAlign={"left"} fontWeight={"350"}>
+          <Text
+            maxW={"100%"}
+            textAlign={"center"}
+            fontWeight={"400"}
+            mx={"6rem"}
+            lineHeight={"1.6rem"}
+          >
             {` The Union Territory of Jammu and Kashmir is a great tourist
             destination. Picturesque and enchanting, Kashmir is cradled high in
             the lofty green Himalayas and hailed all over the world for its
@@ -46,10 +54,17 @@ function Discription() {
             className={styles.heading__secondary}
             fontSize={"1.2rem"}
             my={"7"}
+            textAlign={"center"}
           >
             LIVE ADVENTURES LIKE YOU NEVER HAVE BEFORE
           </Heading>
-          <Text fontWeight={"350"} maxW={"35rem"}>
+          <Text
+            fontWeight={"400"}
+            maxW={"100%"}
+            mx={"20rem"}
+            textAlign={"center"}
+            lineHeight={"1.6rem"}
+          >
             {` In winter, Kashmir takes on a white glow, covered in soft snow and
             skiers making a beeline for its famous slopes. And in summer, as the
             snow melts, and the flowers in the meadows bloom, it resembles an
@@ -61,33 +76,6 @@ function Discription() {
               Learn more <AiOutlineArrowRight />
             </Flex>
           </button>
-        </Box>
-        <Box
-          position={"relative"}
-          display={"flex"}
-          flexDir={"column"}
-          gap={"10"}
-          justifyContent={"center"}
-        >
-          <Box display={"flex"} gap={"8"}>
-            <img
-              src="/tourone.jpg"
-              loading="lazy"
-              className={styles.imageone}
-            />
-            <img
-              src="/tourtwo.jpg"
-              loading="lazy"
-              className={styles.imagetwo}
-            />
-          </Box>
-          <Box display={"flex"} justifyContent={"center"}>
-            <img
-              src="/tourthree.jpg"
-              loading="lazy"
-              className={styles.imagethree}
-            />
-          </Box>
         </Box>
       </Flex>
     </Container>

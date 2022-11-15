@@ -3,13 +3,8 @@
   -webkit-background-clip: text;
   color: transparent;
   letter-spacing: 0.2rem;
-  transition: all 0.2s;
 }
 
-.heading:hover {
-  transform: skewY(2deg) skewX(15deg) scale(1.1);
-  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
-}
 .heading__secondary {
   background-image: linear-gradient(to right, #0f659a, #06283d);
   -webkit-background-clip: text;
@@ -25,6 +20,10 @@
   margin-top: 1rem;
   transition: all 0.3s;
   font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
 }
 
 .button:hover {
@@ -32,48 +31,4 @@
   color: #fff;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
-}
-
-.imageone {
-  /* position: absolute; */
-  left: 0;
-  top: -2rem;
-  width: 280px;
-  height: 180px;
-  cursor: pointer;
-  z-index: 10;
-  border-radius: 0.3rem;
-  transition: all 0.2s;
-  outline-offset: 1rem;
-}
-.imagetwo {
-  left: 20%;
-
-  width: 280px;
-  height: 180px;
-  cursor: pointer;
-  z-index: 10;
-  border-radius: 0.3rem;
-  transition: all 0.2s;
-  outline-offset: 1rem;
-}
-.imagethree {
-  left: 40%;
-  top: 40rem;
-  width: 280px;
-  height: 180px;
-  cursor: pointer;
-  margin-top: -8rem;
-  z-index: 10;
-  border-radius: 0.3rem;
-  transition: all 0.2s;
-  outline-offset: 1rem;
-}
-.imageone:hover,
-.imagetwo:hover,
-.imagethree:hover {
-  outline: 1rem solid #55c57a;
-  transform: scale(1.05) translateY(-0.5rem);
-  box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
-  z-index: 20;
 }

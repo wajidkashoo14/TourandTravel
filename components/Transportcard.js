@@ -33,7 +33,7 @@ function Transportcard({ name, img }) {
           <Heading
             zIndex={"10000"}
             color={"#06283d"}
-            fontSize={"1rem"}
+            fontSize={"1.2rem"}
             maxWidth={"300px"}
             wordBreak={"break-word"}
             fontWeight={"600"}

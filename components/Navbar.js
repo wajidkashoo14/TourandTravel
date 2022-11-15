@@ -52,15 +52,6 @@ function Navbar() {
           <Button fontSize={"1.2rem"} backgroundColor={"transparent"}>
             <Link
               _hover={{ textDecoration: "none" }}
-              href="/"
-              fontWeight={"400"}
-            >
-              Home
-            </Link>
-          </Button>
-          <Button fontSize={"1.2rem"} backgroundColor={"transparent"}>
-            <Link
-              _hover={{ textDecoration: "none" }}
               href="#"
               fontWeight={"400"}
               onClick={() => {
@@ -70,7 +61,7 @@ function Navbar() {
               Tours
             </Link>
           </Button>
-          <Button backgroundColor={"transparent"}>
+          <Button fontSize={"1.2rem"} backgroundColor={"transparent"}>
             <Link
               _hover={{ textDecoration: "none" }}
               fontWeight={"400"}
@@ -81,7 +72,7 @@ function Navbar() {
               Hotels
             </Link>
           </Button>
-          <Button fontSize={"1.2rem"} backgroundColor={"transparent"}>
+          <Button fontSize={"1rem"} backgroundColor={"transparent"}>
             <Link
               _hover={{ textDecoration: "none" }}
               href="#"
