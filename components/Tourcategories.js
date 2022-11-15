@@ -274,7 +274,7 @@ function Tourcategories() {
               gap={"3"}
             >
               <Text color={"#fff"} fontSize={"1.3rem"}>
-                if there is a heaven on earth It's here!
+                {` if there is a heaven on earth It's here!`}
               </Text>
             </Box>
           </Box>
