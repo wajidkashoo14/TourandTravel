@@ -44,27 +44,26 @@ function Tourcategories() {
             />
             <Heading
               position={"absolute"}
-              top={"70%"}
+              top={"75%"}
               left={"5%"}
-              fontSize={"2xl"}
+              fontSize={"3xl"}
               color={"#fff"}
               fontWeight={"700"}
             >
-              Kashmir
+              Save 15% On 2023 Adventures
             </Heading>
             <Box position={"absolute"} top={"10%"} right={"5%"}>
               <AiOutlineHeart fontSize={"1.5rem"} color={"#fff"} />
             </Box>
             <Box
               position={"absolute"}
-              bottom={"15%"}
+              bottom={"8%"}
               left={"5%"}
               display={"flex"}
               gap={"3"}
             >
-              <GoLocation fontSize={"1.5rem"} color={"#fff"} />
-              <Text color={"#fff"} fontSize={"1.3rem"}>
-                Kashmir
+              <Text color={"#fff"} fontSize={"1.1rem"}>
+                Book your 2023 gateway today and save
               </Text>
             </Box>
           </Box>
@@ -86,27 +85,27 @@ function Tourcategories() {
             />
             <Heading
               position={"absolute"}
-              top={"70%"}
+              top={"75%"}
               left={"5%"}
-              fontSize={"2xl"}
+              fontSize={"3xl"}
               color={"#fff"}
               fontWeight={"700"}
             >
-              Kashmir
+              Your Guide to Cycling Adventures
             </Heading>
             <Box position={"absolute"} top={"10%"} right={"5%"}>
               <AiOutlineHeart fontSize={"1.5rem"} color={"#fff"} />
             </Box>
             <Box
               position={"absolute"}
-              bottom={"15%"}
+              bottom={"8%"}
               left={"5%"}
               display={"flex"}
               gap={"3"}
             >
-              <GoLocation fontSize={"1.5rem"} color={"#fff"} />
-              <Text color={"#fff"} fontSize={"1.3rem"}>
-                Kashmir
+              <Text color={"#fff"} fontSize={"1.1rem"}>
+                Book our collection of relaxing,flat rides and challenging
+                hairpin climbs
               </Text>
             </Box>
           </Box>
@@ -130,27 +129,27 @@ function Tourcategories() {
           />
           <Heading
             position={"absolute"}
-            top={"70%"}
-            left={"5%"}
-            fontSize={"2xl"}
+            top={"80%"}
+            left={"2%"}
+            fontSize={"3xl"}
             color={"#fff"}
             fontWeight={"700"}
           >
-            Kashmir
+            Your Guide to Cultural Adventures
           </Heading>
           <Box position={"absolute"} top={"10%"} right={"5%"}>
             <AiOutlineHeart fontSize={"1.5rem"} color={"#fff"} />
           </Box>
           <Box
             position={"absolute"}
-            bottom={"15%"}
-            left={"5%"}
+            bottom={"5%"}
+            left={"2%"}
             display={"flex"}
             gap={"3"}
           >
-            <GoLocation fontSize={"1.5rem"} color={"#fff"} />
-            <Text color={"#fff"} fontSize={"1.3rem"}>
-              Kashmir
+            <Text color={"#fff"} fontSize={"1.1rem"}>
+              Discover ancient ruins,town squares and local delicacies with the
+              experts
             </Text>
           </Box>
         </Box>
@@ -173,27 +172,26 @@ function Tourcategories() {
             />
             <Heading
               position={"absolute"}
-              top={"70%"}
+              top={"75%"}
               left={"5%"}
-              fontSize={"2xl"}
+              fontSize={"3xl"}
               color={"#fff"}
               fontWeight={"700"}
             >
-              Kashmir
+              Win a LifeOfAdventure
             </Heading>
             <Box position={"absolute"} top={"10%"} right={"5%"}>
               <AiOutlineHeart fontSize={"1.5rem"} color={"#fff"} />
             </Box>
             <Box
               position={"absolute"}
-              bottom={"15%"}
+              bottom={"10%"}
               left={"5%"}
               display={"flex"}
               gap={"3"}
             >
-              <GoLocation fontSize={"1.5rem"} color={"#fff"} />
-              <Text color={"#fff"} fontSize={"1.3rem"}>
-                Kashmir
+              <Text color={"#fff"} fontSize={"1.1rem"}>
+                Win 1 trip.EveryYear.ForLife.EnterNow
               </Text>
             </Box>
           </Box>
@@ -215,27 +213,26 @@ function Tourcategories() {
             />
             <Heading
               position={"absolute"}
-              top={"70%"}
+              top={"75%"}
               left={"5%"}
-              fontSize={"2xl"}
+              fontSize={"3xl"}
               color={"#fff"}
               fontWeight={"700"}
             >
-              Kashmir
+              Last Minute Vacations
             </Heading>
             <Box position={"absolute"} top={"10%"} right={"5%"}>
               <AiOutlineHeart fontSize={"1.5rem"} color={"#fff"} />
             </Box>
             <Box
               position={"absolute"}
-              bottom={"15%"}
+              bottom={"10%"}
               left={"5%"}
               display={"flex"}
               gap={"3"}
             >
-              <GoLocation fontSize={"1.5rem"} color={"#fff"} />
-              <Text color={"#fff"} fontSize={"1.3rem"}>
-                Kashmir
+              <Text color={"#fff"} fontSize={"1.1rem"}>
+                Spontaneous adventures at your fingertips
               </Text>
             </Box>
           </Box>
@@ -257,27 +254,27 @@ function Tourcategories() {
             />
             <Heading
               position={"absolute"}
-              top={"70%"}
+              top={"75%"}
               left={"5%"}
-              fontSize={"2xl"}
+              fontSize={"3xl"}
               color={"#fff"}
               fontWeight={"700"}
+              letterSpacing={".1rem"}
             >
-              Kashmir
+              Kashmir Holidays
             </Heading>
             <Box position={"absolute"} top={"10%"} right={"5%"}>
               <AiOutlineHeart fontSize={"1.5rem"} color={"#fff"} />
             </Box>
             <Box
               position={"absolute"}
-              bottom={"15%"}
+              bottom={"10%"}
               left={"5%"}
               display={"flex"}
               gap={"3"}
             >
-              <GoLocation fontSize={"1.5rem"} color={"#fff"} />
               <Text color={"#fff"} fontSize={"1.3rem"}>
-                Kashmir
+                if there is a heaven on earth It's here!
               </Text>
             </Box>
           </Box>
