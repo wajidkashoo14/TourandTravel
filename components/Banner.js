@@ -13,8 +13,14 @@ function Banner() {
       justifyContent={"center"}
       alignItems={"center"}
     >
-      <Box width={"70rem"} height={"20rem"} position={"relative"}>
-        <Image src="/banner.jpg" width={"70rem"} height={"20rem"} />
+      <Box width={"77rem"} height={"20rem"} position={"relative"}>
+        <Image
+          src="/banner.jpg"
+          width={"77rem"}
+          height={"20rem"}
+          p={"5"}
+          border={"1px solid #fff"}
+        />
         <Box
           position={"absolute"}
           left={"50%"}

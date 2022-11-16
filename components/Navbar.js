@@ -34,7 +34,13 @@ function Navbar() {
       bg={"rgba(255,255,255,0.2)"}
       scrollBehavior={"smooth"}
     >
-      <Box zIndex={"10000"}>
+      <Box
+        zIndex={"10000"}
+        display={"flex"}
+        justifyContent={"center"}
+        alignItems={"center"}
+        gap={"10"}
+      >
         <Link
           fontSize={"1.4rem"}
           _hover={{ textDecoration: "none" }}
@@ -46,78 +52,78 @@ function Navbar() {
         >
           Redoq Top Floor
         </Link>
-      </Box>
-      <Box zIndex={"10000"}>
-        <Flex gap={"3"} fontWeight={"400"}>
-          <Button fontSize={"1.2rem"} backgroundColor={"transparent"}>
-            <Link
-              _hover={{ textDecoration: "none" }}
-              href="#"
-              fontWeight={"400"}
-              onClick={() => {
-                router.push("/tours");
-              }}
-            >
-              Tours
-            </Link>
-          </Button>
-          <Button fontSize={"1.2rem"} backgroundColor={"transparent"}>
-            <Link
-              _hover={{ textDecoration: "none" }}
-              fontWeight={"400"}
-              onClick={() => {
-                router.push("/hotels");
-              }}
-            >
-              Hotels
-            </Link>
-          </Button>
-          <Button fontSize={"1rem"} backgroundColor={"transparent"}>
-            <Link
-              _hover={{ textDecoration: "none" }}
-              href="#"
-              fontWeight={"400"}
-              onClick={() => {
-                router.push("/activities");
-              }}
-            >
-              Activities
-            </Link>
-          </Button>
-          <Button fontSize={"1.2rem"} backgroundColor={"transparent"}>
-            <Link
-              _hover={{ textDecoration: "none" }}
-              fontWeight={"400"}
-              onClick={() => {
-                router.push("/aboutus");
-              }}
-            >
-              About Us
-            </Link>
-          </Button>
-          <Button fontSize={"1.2rem"} backgroundColor={"transparent"}>
-            <Link
-              _hover={{ textDecoration: "none" }}
-              fontWeight={"400"}
-              onClick={() => {
-                router.push("/transport");
-              }}
-            >
-              Transport
-            </Link>
-          </Button>
-          <Button fontSize={"1.2rem"} backgroundColor={"transparent"}>
-            <Link
-              _hover={{ textDecoration: "none" }}
-              fontWeight={"400"}
-              onClick={() => {
-                router.push("/contact");
-              }}
-            >
-              Contact Us
-            </Link>
-          </Button>
-        </Flex>
+        <Box zIndex={"10000"}>
+          <Flex gap={"3"} fontWeight={"400"}>
+            <Button fontSize={"1.2rem"} backgroundColor={"transparent"}>
+              <Link
+                _hover={{ textDecoration: "none" }}
+                href="#"
+                fontWeight={"400"}
+                onClick={() => {
+                  router.push("/tours");
+                }}
+              >
+                Tours
+              </Link>
+            </Button>
+            <Button fontSize={"1.2rem"} backgroundColor={"transparent"}>
+              <Link
+                _hover={{ textDecoration: "none" }}
+                fontWeight={"400"}
+                onClick={() => {
+                  router.push("/hotels");
+                }}
+              >
+                Hotels
+              </Link>
+            </Button>
+            <Button fontSize={"1.1rem"} backgroundColor={"transparent"}>
+              <Link
+                _hover={{ textDecoration: "none" }}
+                href="#"
+                fontWeight={"400"}
+                onClick={() => {
+                  router.push("/activities");
+                }}
+              >
+                Activities
+              </Link>
+            </Button>
+            <Button fontSize={"1.1rem"} backgroundColor={"transparent"}>
+              <Link
+                _hover={{ textDecoration: "none" }}
+                fontWeight={"400"}
+                onClick={() => {
+                  router.push("/aboutus");
+                }}
+              >
+                About Us
+              </Link>
+            </Button>
+            <Button fontSize={"1.1rem"} backgroundColor={"transparent"}>
+              <Link
+                _hover={{ textDecoration: "none" }}
+                fontWeight={"400"}
+                onClick={() => {
+                  router.push("/transport");
+                }}
+              >
+                Transport
+              </Link>
+            </Button>
+            <Button fontSize={"1.1rem"} backgroundColor={"transparent"}>
+              <Link
+                _hover={{ textDecoration: "none" }}
+                fontWeight={"400"}
+                onClick={() => {
+                  router.push("/contact");
+                }}
+              >
+                Contact Us
+              </Link>
+            </Button>
+          </Flex>
+        </Box>
       </Box>
       <Box display={"flex"} gap={"5"}>
         <Link
