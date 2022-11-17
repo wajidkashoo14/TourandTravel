@@ -121,7 +121,7 @@ function Tourcategories() {
           maxW={"1380px"}
         >
           <Image
-            src="./tourtwo.jpg"
+            src="https://www.peakadventuretour.com/blog/wp-content/uploads/2019/02/Dal-Lake-Srinagar.jpg"
             h={"400px"}
             w={"1240px"}
             loading={"lazy"}
@@ -205,7 +205,7 @@ function Tourcategories() {
             w={"390px"}
           >
             <Image
-              src="./tourfour.jpg"
+              src="./tourtwo.jpg"
               h={"400px"}
               w={"600px"}
               loading={"lazy"}

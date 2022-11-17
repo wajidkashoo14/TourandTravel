@@ -20,21 +20,20 @@ function Cards() {
       <Heading textAlign={"center"} py={"6rem"} className={styles.heading}>
         Best rated Tours
       </Heading>
-      <Box position={"absolute"} left={"3rem"}>
-        <AiOutlineArrowLeft />
-      </Box>
-      <Box position={"absolute"} right={"3rem"}>
-        <AiOutlineArrowRight />
-      </Box>
 
       <Box
+        right={"2%"}
+        position={"absolute"}
+        height={"100%"}
         display={"flex"}
         justifyContent={"center"}
         alignItems={"center"}
-        gap={"5"}
+        top={"0"}
+        cursor={"pointer"}
       >
-        <Tourcard cards={tourCards} />
+        <AiOutlineArrowRight fontSize={"1.5rem"} />
       </Box>
+      <Tourcard cards={tourCards} />
     </Container>
   );
 }

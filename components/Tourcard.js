@@ -14,12 +14,32 @@ import { AiOutlineClockCircle } from "react-icons/ai";
 import styles from "../styles/card.module.css";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import { AiOutlineArrowLeft } from "react-icons/ai";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 function Tourcard({ cards }) {
   const router = useRouter();
 
+  // let card = document.querySelector(".card");
+
+  // const nextBtn = () => {
+  //   let width = card.clientWidth;
+  //   card.scrollLeft = card.scrollLeft + width;
+  // };
+  // const prevBtn = () => {
+  //   let width = card.clientWidth;
+  //   card.scrollLeft = card.scrollLeft - width;
+  // };
+
   return (
-    <Box display={"flex"} gap={"10"} flexWrap={"wrap"}>
+    <Box
+      display={"flex"}
+      gap={"10"}
+      overflow={"hidden"}
+      mx={"5rem"}
+      py={"5rem"}
+      position={"relative"}
+    >
       {cards.map((cardItem) => {
         const { id, heading, headingsecondary, img } = cardItem;
 
@@ -28,6 +48,7 @@ function Tourcard({ cards }) {
             key={id}
             display={"flex"}
             onClick={() => router.push(`./tourdetails/${id}`)}
+            className="card"
           >
             <Box
               w={"300px"}
