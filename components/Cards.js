@@ -21,18 +21,6 @@ function Cards() {
         Best rated Tours
       </Heading>
 
-      <Box
-        right={"2%"}
-        position={"absolute"}
-        height={"100%"}
-        display={"flex"}
-        justifyContent={"center"}
-        alignItems={"center"}
-        top={"0"}
-        cursor={"pointer"}
-      >
-        <AiOutlineArrowRight fontSize={"1.5rem"} />
-      </Box>
       <Tourcard cards={tourCards} />
     </Container>
   );

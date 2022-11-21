@@ -13,24 +13,13 @@ import { AiTwotoneStar } from "react-icons/ai";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import styles from "../styles/card.module.css";
 import { useRouter } from "next/router";
-import React, { useState } from "react";
-import { AiOutlineArrowLeft } from "react-icons/ai";
-import { AiOutlineArrowRight } from "react-icons/ai";
+
+import React, { useRef, useState } from "react";
+import SwiperCore, { Virtual, Navigation, Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 function Tourcard({ cards }) {
   const router = useRouter();
-
-  // let card = document.querySelector(".card");
-
-  // const nextBtn = () => {
-  //   let width = card.clientWidth;
-  //   card.scrollLeft = card.scrollLeft + width;
-  // };
-  // const prevBtn = () => {
-  //   let width = card.clientWidth;
-  //   card.scrollLeft = card.scrollLeft - width;
-  // };
-
   return (
     <Box
       display={"flex"}
