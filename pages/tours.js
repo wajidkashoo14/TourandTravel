@@ -16,7 +16,7 @@ import {
 import React, { useState } from "react";
 import Tourcard from "../components/Tourcard";
 import styles from "../styles/aboutus.module.css";
-import cards from "../components/TourData";
+import cards from "../components/AllTourData";
 
 function Tours() {
   const [tourCards, setTourCards] = useState(cards);
