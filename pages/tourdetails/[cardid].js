@@ -28,7 +28,7 @@ import { FaPlaneDeparture } from "react-icons/fa";
 import { BsPersonFill } from "react-icons/bs";
 import styles from "../../styles/id.module.css";
 import { MdCheckCircle } from "react-icons/md";
-import data from "../../components/TourData";
+import data from "../../components/AllTourData";
 import { BsRecordCircle } from "react-icons/bs";
 import { FcApproval, FcDisapprove } from "react-icons/fc";
 

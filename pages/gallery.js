@@ -70,10 +70,18 @@ function Gallery() {
         </Text>
         <Text>Join us, and let Exodus be Your Guide to the World.</Text>
       </Box>
-      <Box width={"77rem"} height={"20rem"} position={"relative"} mx={"auto"}>
+      <Box
+        maxWidth={"93%"}
+        height={"20rem"}
+        position={"relative"}
+        mx={"5rem"}
+        display={"flex"}
+        justifyContent={"center"}
+        alignItems={"center"}
+      >
         <Image
           src="/banner.jpg"
-          width={"77rem"}
+          width={"94%"}
           height={"20rem"}
           p={"5"}
           border={"1px solid #fff"}

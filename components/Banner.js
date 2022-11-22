@@ -1,9 +1,10 @@
 import { Container, Image, Box, Text, Heading } from "@chakra-ui/react";
 import styles from "../styles/banner.module.css";
-
+import { useRouter } from "next/router";
 import React from "react";
 
 function Banner() {
+  const router = useRouter();
   return (
     <Container
       maxW={"100%"}
@@ -42,7 +43,15 @@ function Banner() {
           >
             the paradise
           </Heading>
-          <button className={styles.button}>Discover more</button>
+          <button
+            className={styles.button}
+            m
+            onClick={() => {
+              router.push("/gallery");
+            }}
+          >
+            Discover more
+          </button>
         </Box>
       </Box>
     </Container>

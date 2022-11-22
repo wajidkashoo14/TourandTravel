@@ -2,26 +2,21 @@ import { Container, Heading, Box } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import Tourcard from "./Tourcard";
 import styles from "../styles/discription.module.css";
-import cards from "./TourData";
-import { AiOutlineArrowLeft } from "react-icons/ai";
-import { AiOutlineArrowRight } from "react-icons/ai";
 function Cards() {
-  const [tourCards, setTourCards] = useState(cards);
-  const [index, setIndex] = useState(2);
-
   return (
     <Container
-      maxW={"100%"}
+      maxW="100vw"
       minHeight={"100vh"}
       backgroundColor={"#F7F7F7"}
-      py={"10"}
-      position={"relative"}
+      display={"flex"}
+      justifyContent={"center"}
+      flexDir="column"
     >
-      <Heading textAlign={"center"} py={"6rem"} className={styles.heading}>
+      <Heading textAlign={"center"} className={styles.heading}>
         Best rated Tours
       </Heading>
 
-      <Tourcard cards={tourCards} />
+      <Tourcard />
     </Container>
   );
 }
