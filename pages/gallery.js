@@ -104,7 +104,7 @@ function Gallery() {
             fontSize={"4xl"}
             fontWeight={"700"}
           >
-            Watch our Tour Leader's stories here
+            {`Watch our Tour Leader's stories here`}
           </Heading>
         </Box>
       </Box>
