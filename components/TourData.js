@@ -1,4 +1,4 @@
-const cards = [
+const Cards = [
   {
     id: 1,
     heading: "Kashmir 3D 2N Tour",
@@ -61,4 +61,4 @@ const cards = [
   },
 ];
 
-export default cards;
+export default Cards;

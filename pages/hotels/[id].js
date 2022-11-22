@@ -52,6 +52,7 @@ export default function Hoteldetails() {
         display={"flex"}
         justifyContent={"center"}
         alignItems={"center"}
+        flexWrap={"wrap"}
         height={"100vh"}
         width={"100vw"}
         py={"8rem"}

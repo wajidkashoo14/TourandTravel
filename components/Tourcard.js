@@ -11,9 +11,7 @@ import {
 
 import { AiTwotoneStar } from "react-icons/ai";
 import { AiOutlineClockCircle } from "react-icons/ai";
-import styles from "../styles/card.module.css";
 import { useRouter } from "next/router";
-import React, { useRef, useState } from "react";
 import SwiperCore, { Virtual, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import data from "./Tourdata";
