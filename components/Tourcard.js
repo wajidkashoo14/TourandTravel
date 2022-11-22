@@ -36,9 +36,8 @@ function Tourcard({}) {
       >
         {data.map((card) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={card.id}>
               <Box
-                key={card.id}
                 display={"flex"}
                 onClick={() => router.push(`./tourdetails/${card.id}`)}
                 className="card"
