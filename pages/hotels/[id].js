@@ -153,7 +153,6 @@ export default function Hoteldetails() {
                   p={"3"}
                   my={"1"}
                   key={Hotel.id}
-                  // border={"1px solid #cbbbc1"}
                   boxShadow={"lg"}
                   _hover={{ boxShadow: "xl" }}
                   width={"15rem"}

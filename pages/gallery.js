@@ -46,29 +46,29 @@ function Gallery() {
         gap={"5"}
       >
         <Text>
-          Join our expert guides on award-winning adventures, as we continue to
-          lead the way across the globe.
+          {` Join our expert guides on award-winning adventures, as we continue to
+          lead the way across the globe.`}
         </Text>
         <Text>
-          Whether you experience natural highs summitting the peaks of
+          {`Whether you experience natural highs summitting the peaks of
           Kilimanjaro; feel goosebumps watching whales across the Antarctica
           Peninsula or enjoy the great tastes of Portugal while savouring a
           glass of Vinho Verde rest assured our expert guides will take you on a
           journey filled with incredible experiences that you’ll cherish
-          forever.
+          forever.`}
         </Text>
         <Text>
-          Our adventures span all seven continents, with itineraries in 100
+          {` Our adventures span all seven continents, with itineraries in 100
           different countries and will immerse you in new and unique places that
           rouse the senses, activate the body, expand the mind, and nourish the
-          soul.
+          soul.`}
         </Text>
         <Text>
-          Our award-winning guides lead the way and take you beyond the
+          {`Our award-winning guides lead the way and take you beyond the
           guidebook with their exceptional local knowledge, enthusiasm and keen
-          expertise on every one of our adventures.
+          expertise on every one of our adventures.`}
         </Text>
-        <Text>Join us, and let Exodus be Your Guide to the World.</Text>
+        <Text>{`Join us, and let Exodus be Your Guide to the World.`}</Text>
       </Box>
       <Box
         maxWidth={"93%"}
