@@ -14,9 +14,9 @@ import {
   UnorderedList,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
-import Tourcard from "../components/Tourcard";
 import styles from "../styles/aboutus.module.css";
 import cards from "../components/AllTourData";
+import Alltourcard from "../components/Alltourcard";
 
 function Tours() {
   const [tourCards, setTourCards] = useState(cards);
@@ -26,6 +26,7 @@ function Tours() {
       maxWidth={"100vw"}
       minH={"100vh"}
       fontFamily={("Montserrat", "sans-serif")}
+      overflowX={"hidden"}
     >
       <Flex width={"100%"} flexDir={"column"}>
         <Box maxWidth={"100vw"} height={"40vh"}>
@@ -100,7 +101,7 @@ function Tours() {
           >
             {`${tourCards.length} Tours found`}
           </Text>
-          <Tourcard cards={tourCards} display={"flex"} flexWrap={"wrap"} />
+          <Alltourcard cards={tourCards} />
         </Flex>
       </Box>
     </Box>
