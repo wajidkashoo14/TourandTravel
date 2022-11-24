@@ -60,8 +60,9 @@ function Alltourcard({ cards }) {
                 <Heading
                   zIndex={"10000"}
                   color={"#06283d"}
-                  fontSize={"xl"}
+                  fontSize={"lg"}
                   fontWeight={"600"}
+                  width={"300px"}
                 >
                   {heading}
                 </Heading>

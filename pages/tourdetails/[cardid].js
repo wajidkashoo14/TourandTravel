@@ -61,17 +61,19 @@ function Tourdetails() {
       maxW={"100vw"}
       pt={"8rem"}
       minH={"80vh"}
-      overflowX={"hidden"}
       fontFamily={("Montserrat", "sans-serif")}
       fontWeight={"300"}
+      overflowY={"hidden"}
+      overflowX={"hidden"}
     >
       <Box maxW={"100vw"} h={"80vh"} position={"relative"}>
         <Image
           src={Tour.img}
           width={"100%"}
-          maxHeight={"80vh"}
+          h={"80vh"}
           objectFit={"cover"}
           overflowX={"hidden"}
+          overflowY={"hidden"}
         />
         <Box
           display={"flex"}
@@ -369,7 +371,7 @@ function Tourdetails() {
                   border={"1px solid #c4c7c0"}
                 >
                   <List>
-                    {day.visits.map((item) => {
+                    {day.visits?.map((item) => {
                       console.log("kaaz", day);
                       return (
                         <ListItem color={"#50595c"} key={Tour.id}>
@@ -565,17 +567,17 @@ function Tourdetails() {
                   />
                 </Flex>
                 <Textarea type="email" rows={"8"} />
+                <Button
+                  size="lg"
+                  bg="#5191FA"
+                  color={"#fff"}
+                  variant="solid"
+                  _hover={{ bg: "blue.500", color: " white" }}
+                  mt={"6"}
+                >
+                  Post Comment
+                </Button>
               </FormControl>
-              <Button
-                size="lg"
-                bg="#5191FA"
-                color={"#fff"}
-                variant="solid"
-                _hover={{ bg: "blue.500", color: " white" }}
-                mt={"6"}
-              >
-                Post Comment
-              </Button>
             </AccordionPanel>
           </AccordionItem>
         </Accordion>

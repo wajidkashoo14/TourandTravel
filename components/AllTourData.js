@@ -673,7 +673,7 @@ const cards = [
     id: 11,
     heading: "Ladakh Silk Route Delight",
     headingsecondary: "07 Days 06 Nights",
-    img: "256749.jpg",
+    img: "https://hindustantravelcorp.com/wp-content/uploads/2019/01/silder-for-ladakh-tours.jpg",
 
     daysinfo: [
       {
@@ -740,7 +740,7 @@ const cards = [
     id: 12,
     heading: "Amarnath Ji Yatra Tour",
     headingsecondary: "3 Days 2 Nights",
-    img: "1171264-amnthyd.jpg",
+    img: "http://ladakhtours.co.in/galleryimg/44781323-2.jpg",
 
     daysinfo: [
       {
@@ -775,7 +775,7 @@ const cards = [
     id: 13,
     heading: "Vaishnodevi Tour",
     headingsecondary: "3 Days 2 Nights",
-    img: "vaishnodevi-326.jpeg",
+    img: "https://resources.thomascook.in/images/holidays/sightSeeing/Vaishnodevii850.jpg",
 
     daysinfo: [
       {
@@ -810,7 +810,7 @@ const cards = [
     id: 14,
     heading: "Gangbal Lake Trek",
     headingsecondary: "5 days 4 nights",
-    img: "download.jpeg",
+    img: "https://images.prismic.io/indiahike/a9ba497e-7dd4-4702-9794-c50563ad8294_Kashmir+Great+Lakes-Suresh+Kerketta-+View+of+twin+Lakes+Nandkol+_+Gangbal.jpg?auto=compress,format",
 
     overview:
       "Gangbal lake trek lets you cut off from the city noise and get indulged in the mountains to refresh your soul in silence. Gangbal is an alpine lake situated in the Ganderbal district of Kashmir, at an altitude of 3000 mts above sea level. Under the foot hills of Mount Harmukh. The second highest peak of Kashmir, Gangbal is one of the most popular places to hike. The trail starts from Naranaag, a 45 kms drive from Srinagar. Naranaag features the ruins of ancient Shiva temple, surrounded by breath-taking peaks. Once we start hiking from Naranaag, all the way via the forest block to reach the lush green TrundKul valley, we get to see the first glimpse of previously obscured Harmukh Peak. The trail all the way is a heaven walk, at the end of which we find the pristine twin alpine lakes that is NundKul and Gangbal lakes. The two sister Lakes present a life time experience with the vibrant colours that contract the everlasting snows of the Harmukh peak in the backdrop. One of the best camping destinations in Kashmir, Gangbal lake trek is not only common for its beauty but also has the spiritual importance in Kashmir. You can choose from a wide range of Camping and Hiking essentials that make your Trek more comfortable and our guides help you carry luggage and setup camps and bonfires during your stay. Multi Destinations makes your Trek memorable and one of a kind by taking care of all the Trek logistics and itinerary while you can just lose yourself into the mountains.",
@@ -819,7 +819,7 @@ const cards = [
     id: 15,
     heading: "Tarsar Marsar Lakes",
     headingsecondary: "4 Days 3 Nights",
-    img: "06c4d5ee-c026-48a7-9258-ed41c1b6b051_Tarsar+Marsar_TM_Kishan+Harwalkar_Tarsar+lake.avif",
+    img: "https://images.prismic.io/indiahike/06c4d5ee-c026-48a7-9258-ed41c1b6b051_Tarsar+Marsar_TM_Kishan+Harwalkar_Tarsar+lake.jpg?auto=compress,format",
 
     overview:
       "Tarsar Marsar Lakes, commonly known as the twin sister lakes are the oligotrophic alpines lakes situated in the Anantnag district of Kashmir. The lakes can be approached via the different sides of Kashmir which include Srinagar via the dachigham national park, Ganderbal via the Surfraw village while crossing an high altitude pass which separates the Sundar Sar (Alpine lake) with the Tarsar Lakes, and finally the traditional route via the Aru Pahalgam. We at MULTI DESTINATIONS would follow the traditional route unless on a special request. The Tarsar Marsar Lakes are among the beautiful alpine lakes of Kashmir that would present an amazing hiking experience and are accessible only in summer time. The trail would start from the pastoral Aru valley and all the way via the lush green meadows the trail would take us to the Laderwath, a lush green meadow that is the best place for camping. Following the trail we can reach to the shekwas camp and from there to Tarsar. Therefrom an high altitude pass would take us to the marsar lake. We at MULTI DESTINATIONS offer you a 4 days hiking experience for the tarsar marsar lakes. You can choose from a wide range of Camping and Hiking essentials that make your Trek more comfortable and our guides help you carry luggage and setup camps and bonfires during your stay. Multi Destinations makes your Trek memorable and one of a kind by taking care of all the Trek logistics and itinerary while you can just lose yourself into the mountains.",
@@ -828,16 +828,16 @@ const cards = [
     id: 16,
     heading: "VishanSar KishanSar Hike",
     headingsecondary: "3 Days 2 Nights",
-    img: "download (1).jpeg",
+    img: "https://mews.in/wp-content/uploads/2022/06/top-5-trekking-places-in-india.jpg",
 
     overview:
       "Vishansar Kishansar are the high-altitude alpine lakes situated in the Ganderbal district of Kashmir. The lakes present an ultimate pleasure to the ones sight as you hike to the place via the valley of diverse flora and fauna. The lakes can be approached via the Sonmarg Kashmir 112 kms drive from Srinagar. The trail starts from Sonmarg initially at a gradient to cross the table top and reaching via the nichnai valley, where one can take the camping option. Starting again from the nichnai valley and to cross the high altitude nichnai pass(4100mts) we reach all the way to the vishansar and then the hours hike to the kishansar. What pleases travellers the most is the vibrant colors of the two lakes that contract each other, the flora and fauna of the place, the cattle in numbers and most important the lush green valleys. We at MULTI DESTINATIONS offer you a 3 days hiking experience to the vishansar kishansar lakes. You can choose from a wide range of Camping and Hiking essentials that make your Trek more comfortable and our guides help you carry luggage and setup camps and bonfires during your stay. Multi Destinations makes your Trek memorable and one of a kind by taking care of all the Trek logistics and itinerary while you can just lose yourself into the mountains",
   },
   {
     id: 17,
-    heading: "Kashmir Honeymoon Package",
+    heading: "Kashmir Honeymoon Package ",
     headingsecondary: "4 Days 3 Nights",
-    img: "download (2).jpeg",
+    img: "https://images.thrillophilia.com/image/upload/s--yku8mIoV--/c_fill,h_600,q_auto,w_975/f_auto,fl_strip_profile/v1/images/photos/000/320/226/original/1592638864_shutterstock_769202719.jpg.jpg?1592638864",
 
     daysinfo: [
       {
@@ -873,7 +873,7 @@ const cards = [
     id: 18,
     heading: "Honeymoon in Kashmir",
     headingsecondary: "6 Days 5 Nights",
-    img: "kashmir-to-leh-ladakh-honeymoon-package-16-nights-17-days-by-bus.jpg",
+    img: "https://res.cloudinary.com/thrillophilia/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_auto,h_600,q_auto,w_auto/v1/filestore/k6b9d0yei55skauetfudpxp5011i_60d2efa745cb7.jpg",
 
     daysinfo: [
       {
@@ -920,7 +920,7 @@ const cards = [
     id: 19,
     heading: "Enthralling River Rafting In Ladakh",
     headingsecondary: "8 Days 7 Nights",
-    img: "61905347b0addb8f45b54821e3b0991f.jpg",
+    img: "https://mysterioustrip.com/wp-content/uploads/2019/08/cropped-River-Rafting-in-Leh.jpg",
 
     daysinfo: [
       {
@@ -981,7 +981,7 @@ const cards = [
     id: 20,
     heading: "Kashmir with Sinthan Top Tour Package",
     headingsecondary: "4 Days 3 Nights",
-    img: "filename-image-429a-jpg.jpg",
+    img: "https://1.bp.blogspot.com/-i0Id322rO04/YLpR8vaduaI/AAAAAAAAAkQ/3DER1IZ4njY3wBfHZA7VskhpqWoUFFq5QCLcBGAsYHQ/s900/30_0059-01.jpeg",
 
     daysinfo: [
       {
@@ -1016,7 +1016,7 @@ const cards = [
     id: 21,
     heading: "Mesmerising Kashmir Tour Package",
     headingsecondary: "5 Days 4 Nights",
-    img: "6083aea0b716d_1619242656.jpeg",
+    img: "https://www.akshartours.com/wp-content/uploads/2020/09/Things-to-Do-in-Jammu-and-Kashmir.jpg",
 
     daysinfo: [
       {
@@ -1057,7 +1057,7 @@ const cards = [
     id: 22,
     heading: "Kashmir Delights with Yusmarg",
     headingsecondary: "5 Days 4 Nights",
-    img: "Yusmarg-Offbeat-Kashmir-1.jpg",
+    img: "https://assets-news.housing.com/news/wp-content/uploads/2022/08/21104741/Tourist-Places-in-Kashmir-feature-compressed.jpg",
 
     daysinfo: [
       {
@@ -1098,7 +1098,7 @@ const cards = [
     id: 23,
     heading: "Amazing Kashmir with Doodpathri Tour",
     headingsecondary: "5 Days 4 Nights",
-    img: "download (3).jpeg",
+    img: "https://wordsmithkaur.com/wp-content/uploads/2019/04/Doodhpathri-grazing-horses.jpg",
 
     daysinfo: [
       {
@@ -1139,7 +1139,7 @@ const cards = [
     id: 24,
     heading: "Leh Tour Package",
     headingsecondary: "6 Days 5 Nights",
-    img: "leh-ladakh-tour-packages-500x500.jpg",
+    img: "https://static.toiimg.com/photo/91796663.cms",
 
     daysinfo: [
       {
