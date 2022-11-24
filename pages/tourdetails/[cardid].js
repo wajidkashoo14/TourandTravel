@@ -69,7 +69,7 @@ function Tourdetails() {
         <Image
           src={Tour.img}
           width={"100%"}
-          height={"80vh"}
+          maxHeight={"80vh"}
           objectFit={"cover"}
           overflowX={"hidden"}
         />
@@ -329,14 +329,14 @@ function Tourdetails() {
       </Box>
 
       <Box
-        minHeight={"50vh"}
+        minHeight={"5vh"}
         m={"7"}
         borderBottom={"2px solid #c4c7c0"}
         width={"60%"}
         mx={"5rem"}
         py={"3rem"}
       >
-        {Tour.daysinfo.map((day) => {
+        {Tour.daysinfo?.map((day) => {
           return (
             <Accordion
               width={"100%"}

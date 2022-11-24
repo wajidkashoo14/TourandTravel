@@ -21,7 +21,7 @@ function Alltourcard({ cards }) {
             display={"flex"}
             onClick={() => router.push(`./tourdetails/${id}`)}
             className="card"
-            py={"5rem"}
+            py={"3rem"}
             // mx={"2rem"}
             key={id}
           >
