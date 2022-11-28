@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Box, Image, Text, Heading, Link } from "@chakra-ui/react";
+import { Box, Image, Text, Heading, Link, Flex } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { AiTwotoneStar } from "react-icons/ai";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import ReactPaginate from "react-paginate";
+import styles from "../styles/pagination.module.css";
 
 function Alltourcard({ cards }) {
   const router = useRouter();
@@ -92,6 +93,11 @@ function Alltourcard({ cards }) {
         </Box>
       );
     });
+
+  const pageCount = Math.ceil(users.length / usersPerPage);
+  const changePage = ({ selected }) => {
+    setPagenumber(selected);
+  };
   return (
     <Box
       display={"flex"}
@@ -101,6 +107,19 @@ function Alltourcard({ cards }) {
       flexWrap={"wrap"}
     >
       {displayCards}
+      <Flex>
+        <ReactPaginate
+          previousLabel={"Previous"}
+          nextLabel={"Next"}
+          pageCount={pageCount}
+          onPageChange={changePage}
+          containerClassName={styles.paginationBttns}
+          previousLinkClassName={"previousBttn"}
+          nextLinkClassName={"nextBttn"}
+          disabledClassName={"paginationDisabled"}
+          activeClassName={"paginationActive"}
+        />
+      </Flex>
     </Box>
   );
 }

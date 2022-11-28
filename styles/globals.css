@@ -21,6 +21,12 @@ a {
   color: transparent;
 }
 
+.paginationBttns {
+  width: 80%;
+  height: 40px;
+  list-style: none;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
