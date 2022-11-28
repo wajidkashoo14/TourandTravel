@@ -1181,7 +1181,7 @@ const cards = [
     id: 25,
     heading: "Kashmir Leh Kashmir Tour Package",
     headingsecondary: "12 Days 11 Nights",
-    img: "kashmir-to-leh-ladakh-tour-package-13-nights-14-days-by-car.jpg",
+    img: "http://vacationtriangle.com/wp-content/uploads/2019/07/leh-ladakh3.jpg",
 
     daysinfo: [
       {
@@ -1262,7 +1262,7 @@ const cards = [
     id: 26,
     heading: "Srinagar Leh Manali Tour",
     headingsecondary: "11 Days 10 Nights",
-    img: "10-Days-Leh-Ladakh-Bike-Expedition-Manali-Leh-Srinagar.jpg",
+    img: "https://hindustantravelcorp.com/wp-content/uploads/2019/01/4.web_.jpg",
 
     daysinfo: [
       {
@@ -1335,7 +1335,7 @@ const cards = [
     id: 27,
     heading: "Kashmir Summer Special Tour Package",
     headingsecondary: "7 Days 6 Nights",
-    img: "Srinagar09.webp",
+    img: "https://images.thrillophilia.com/image/upload/s--Jhfr9ey7--/c_fill,h_600,q_auto,w_975/f_auto,fl_strip_profile/v1/images/photos/000/286/526/original/1590648902_shutterstock_1011080833.jpg.jpg?1590648901",
 
     daysinfo: [
       {
@@ -1388,7 +1388,7 @@ const cards = [
     id: 28,
     heading: "Tulip Festival Tour",
     headingsecondary: "4 Days 3 Nights",
-    img: "tulip-garden-kashmir.jpg",
+    img: "https://hellovisit.in/uploads/0000/1/2022/03/10/tulip-garden-tour-srinagar.jpg",
 
     daysinfo: [
       {
@@ -1423,7 +1423,7 @@ const cards = [
     id: 29,
     heading: "Beginners Ski Tour",
     headingsecondary: "7 Days 6 Nights",
-    img: "Yusmarg-Offbeat-Kashmir-1.jpg",
+    img: "https://www.boegei.at/wp-content/uploads/outdoor-kurs-skitour-01.jpg",
 
     daysinfo: [
       {
@@ -1476,7 +1476,7 @@ const cards = [
     id: 30,
     heading: "Kashmir Family Holiday Package",
     headingsecondary: "8 days 7 Nights",
-    img: "8f6d765e4923a854eb2f63c065c62ace.jpg",
+    img: "https://media.npr.org/assets/img/2019/02/11/gulmarg-4-_wide-e4eb7356bf7195fbaf7b00ec03326f7f09c47862-s1400-c100.jpg",
 
     daysinfo: [
       {
@@ -1534,7 +1534,7 @@ const cards = [
   {
     id: 31,
     heading: "Ski Bum",
-    img: "skiing-1.jpg",
+    img: "https://s26162.pcdn.co/wp-content/uploads/2021/11/Best-Downhill-Skis-1.jpg",
 
     daysinfo: [
       {
@@ -1567,7 +1567,7 @@ const cards = [
   {
     id: 32,
     heading: "Economic Ski Tour",
-    img: "download (4).jpeg",
+    img: "https://www.worldtravelguide.net/wp-content/uploads/2012/02/skiing-beginners.jpg",
     daysinfo: [
       {
         heading: " Arrival Day",
@@ -1600,7 +1600,7 @@ const cards = [
   {
     id: 33,
     heading: "Comfort Ski Tour",
-    img: "ski-tours-nyc.jpg",
+    img: "https://cdn.shopify.com/s/files/1/0485/4271/1960/files/MicrosoftTeams-image_e1fd3969-cfb4-486c-8fdb-de490037c184_1400x.jpg?v=1662544521",
 
     daysinfo: [
       {
@@ -1634,7 +1634,7 @@ const cards = [
   {
     id: 34,
     heading: "Kashmir Heliski Tour",
-    img: "girdwood-heliskiing-6.jpg",
+    img: "https://media.skigebiete-test.de/images/ecu/content/c_blogarticle/heliskiing-in-austria-only-possible-at-ski-arlberg_n4796121-75030-2_l.jpg",
 
     daysinfo: [
       {
@@ -1674,7 +1674,7 @@ const cards = [
     id: 35,
     heading: "Vaishno Devi Patnitop Tour",
     headingsecondary: "4 Days 3 Nights",
-    img: "deals_201807061530895998-0.jpg",
+    img: "https://images.travelandleisureindia.in/wp-content/uploads/2022/08/22125224/Untitled-design-2022-08-22T124707.994.jpg?tr=w-1200,h-900",
 
     daysinfo: [
       {
@@ -1709,7 +1709,7 @@ const cards = [
     id: 36,
     heading: "Kashmir Package With Patnitop",
     headingsecondary: "9 Days 8 Nights",
-    img: "download (5).jpeg",
+    img: "https://www.holytreetravel.com/india/IMAGE/Himachal%20Pradesh1.jpg",
 
     daysinfo: [
       {
@@ -1776,7 +1776,7 @@ const cards = [
     id: 37,
     heading: "Kashmir 9D 8N Tour",
     headingsecondary: "9 Days 8 Nights",
-    img: "kashmir-big.jpg",
+    img: "https://www.tourmyindia.com/states/jammu-kashmir/image/best-of-kashmir-it.jpg",
 
     daysinfo: [
       {
