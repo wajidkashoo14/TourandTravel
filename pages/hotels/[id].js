@@ -188,7 +188,7 @@ export default function Hoteldetails() {
                   my={"1"}
                   boxShadow={"lg"}
                   _hover={{ boxShadow: "xl" }}
-                  width={"15rem"}
+                  width={"16rem"}
                   cursor={"pointer"}
                   key={Hotel.id}
                 >
