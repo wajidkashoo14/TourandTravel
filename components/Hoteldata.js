@@ -925,25 +925,468 @@ const data = [
   },
   {
     id: 38,
-    heading: "Hotel Shaolin Ladakh",
-    address: "Sankar Leh, Near Water Pump, ladakh, Jammu and Kashmir 194101",
-    description: `Located in Leh, 1.7 km from Shanti Stupa, Shaolin Ladakh provides accommodation with a restaurant, free private parking, a shared lounge and a garden. Among the facilities at this property are a 24-hour front desk and room service, along with free WiFi throughout the property.
-
-    Popular points of interest near Shaolin Ladakh include Main Bazaar, Namgyal Tsemo Gompa and Soma Gompa. The nearest airport is Kushok Bakula Rimpochee Airport, 11 km from the hotel.`,
+    heading: "Solomon Heights",
+    address:
+      "Guzarwaan Mohalla, Sonwar Bagh, Srinagar, Jammu and Kashmir 190004",
+    description: `Hotel Solomon Heights is situated at the prime location in the valley of kashmir suitable for the needs of  Leisure/Corporate hub makes us the ideal venue for a comfortable stay of yours. Situated just 1 km from famous Dal Lake and Lal Chowk just at the bank of Jhleum River.`,
     img: [
-      "http://grandmumtaz.com/wp-content/uploads/2019/03/grand-mumtaz-resort-gulmar-front-view-1.jpg",
-      "https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1563975840/Hotel/Pahalgam/00000845/grand-mumtaz-resorts-pahalgam-17_c3ggxT.jpg",
-      "https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1430735460/Domestic%20Hotels/Hotels_Pahalgam/Grand%20Mumtaz%20Resorts/IMG_9883.jpg",
+      "https://solomonheights.com/wp-content/uploads/2018/05/DSC_1574.jpg",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/8b/32/b1/getlstd-property-photo.jpg?w=700&h=-1&s=1",
+      "https://r1imghtlak.mmtcdn.com/4ff930d090ae11e88bea0a335107e578.jpg?&output-quality=75&downsize=910:612&crop=910:612;141,0&output-format=jpg",
     ],
     hotelfacilities: [
       "Air Conditioning",
       "Internet – Wifi",
-      "Smoking Room",
-      "Heater",
-      "Budget",
-      "Trendy",
+      "Airport Transport",
+      "Flat Tv",
+      "Restaurant",
+      "Parking",
     ],
-    hoteltheme: ["Business", "Standard"],
+    hoteltheme: ["Business", "Standard", "Mid-range"],
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 39,
+    heading: "Hotel Royal Arabia",
+    address: "Khayam Chowk, Dalgate, Srinagar, Jammu and Kashmir 190001",
+    description: `Hotel Royal Arabia is a Anopulent boutique property located at khayam in the heart of city, Royal Arabia takes in 54 rooms which include Deluxe Room, Superior Deluxe Rooms, Family Suite Room and Twin Bed rooms. Nestled within the foothills of the Shankaracharya Temple, Hotel Royal Arabia is conveniently within 500 metres from the famous Dal Lake.`,
+    img: [
+      "https://content.jdmagicbox.com/comp/srinagar/a4/9999px194.x194.200226145714.f3a4/catalogue/hotel-royal-arabia-srinagar-0gkq1qh1be.jpg",
+      "https://imgcld.yatra.com/ytimages/image/upload/t_seo_Hotel_w_930_h_550_c_fill_g_auto_q_40_f_jpg/v1471405170/Domestic%20Hotels/Hotels_Srinagar/Hotel%20Royal%20Arabia/Bedroom_2.jpg",
+      "https://hotelroyalarabia.com/wp-content/uploads/2014/03/HOTEL-ROYAL-ARABIA-SRINAGAR-KASHMIR-9.jpg",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Internet – Wifi",
+      "Flat Tv",
+      "Restaurant",
+    ],
+    hoteltheme: ["Budget", "Business", "Classic", "Party"],
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 40,
+    heading: "Hotel Snowland",
+    address:
+      "Gunt Tehsil, Kargil Road, Ganderbal, Sonmarg, Jammu and Kashmir 191203",
+    description: `Hotel Snowland is located at Sonmarg, 85 kms away from Srinagar, summer capital of Jammu and Kashmir State amongst beautiful mountains of Himalyan Range.Murmuring Sindh brook flows by its side.Thajwas,one of the famous glaciers of Kashmir is within the vicinity of the Hotel.Sonmarg is a major base camp for Shree Amarnathji Holy Cave Yatra. Varios trekking routes for Vishnosar, Gangabal, Naranag etc start from Sonmarg location of the hotel. The hotel offers finely furnished spacious super deluxe with all modern day amenities. It has a multi-cuisine restaurant serving delicious Indian, Kashmiri, Chinese and continental foods.`,
+    img: [
+      "https://r1imghtlak.mmtcdn.com/4449a342566111ec9e9a0a58a9feac02.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg",
+      "https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v0825469310/Hotel/00010884/Presidential_cottage_balconey_ROqeGx.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-m/1280/21/ca/79/14/thoughtfully-planned.jpg",
+    ],
+    hotelfacilities: ["Air Conditioning", "Heater", "Flat Tv", "Restaurant"],
+    hoteltheme: ["Budget", "Mid-range", "Green"],
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 41,
+    heading: "Hotel Mannat Resort",
+    address:
+      "Old, Zero Bridge, Jhelum Lane, Rajbagh, Srinagar, Jammu and Kashmir 190008 ",
+    description: `Guests at the Mannat Srinagar can enjoy views of the Jhelum and indulge in multiple cuisines including the famed Kashmiri Wazwan. Nestled in the midst of the beautiful city of Srinagar, Mannat Resort is situated on the banks of river Jhelum. Srinagar International Airport is just 7 km from the hotel while the SrinagarRailway station is 15 km. Tourist Reception Center is just 5 min away (2 km). The other tourist attractions that are easily accessible from the hotel are Dal lake (11 km) and Tulip Garden (7 km).`,
+    img: [
+      "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201510151438368263-5eec3e34e42111e5b54cdaf4768ad8d9.jpg",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/79/77/8b/mannat-resorts.jpg?w=700&h=-1&s=1",
+      "https://www.swantour.com/sites/default/files/mannat-resort-srinagar-2.jpg",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Internet – Wifi",
+      "Flat Tv",
+      "Restaurant",
+    ],
+    hoteltheme: ["Business", "Classic", "Luxury"],
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 42,
+    heading: "Nedou’s Hotel",
+    address: "Gulmarg, Srinagar, Jammu and Kashmir 190001 ",
+    description: `Nestled amidst 50 acres of sprawling greenery with majestic Pir Panjal range in the background, Nedous Hotel is an idyllic retreat to spend a relaxing vacation in the pristine surroundings of Gulmarg. Overlooking the Gulmarg Golf Course, this 4 star heritage boutique property is within 3 km of Gulmarg Bus Station, Childrens Park, Gulmarg Gondola and Gulmarg Wildlife Sanctuary. Further, travellers can reach here in about an hours drive from Srinagar Airport (55 km) and 5 hours from Udhampur Railway Station (250 km).Nedous Hotel isheritage property since from 1888. The only hotel with BAR offering domestic and international sprits.`,
+    img: [
+      "https://cf.bstatic.com/xdata/images/hotel/max1280x900/32872886.jpg?k=ff3955286fd21762c67458985b8566750d06ac468dc7e70d427aa073f8bd0748&o=&hp=1",
+      "https://pix10.agoda.net/hotelImages/300/300390/300390_15081212580034108921.jpg?ca=5&ce=1&s=1024x768",
+      "http://nedoushotels.com/wp-content/uploads/2017/04/Executive_Room_1920_X_1080.jpg",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Internet – Wifi",
+      "Flat Tv",
+      "Restaurant",
+      "Heater",
+      "Smoking Room",
+    ],
+    hoteltheme: ["Budget", "Classic", "Luxury", "Mid-range", "Standard"],
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 43,
+    heading: "Hotel Affarwat",
+    address: "Main Market Gulmarg, Jammu and Kashmir, 190403 ",
+    description: `Well-placed in the romance, family fun, sightseeing area of Gulmarg, Hotel Afarwat provides a most conducive spot for you to take a break from your busy days.The hotel offers spectacular views of the Hotel Affarwat and Golf course 18-rooms having attached bathrooms with tubs and hot and cold water Dining room serves traditional Kashmiri and Continental cuisine Recommended for no-frills group and individual travelers looking to explore Gulmarg. A selection of top-class facilities such as shops, room service, laundry service, family room can be enjoyed at the hotel.`,
+    img: [
+      "https://gos3.ibcdn.com/59b28c5448dc11e7ad440a9df65c8753.jfif",
+      "https://imgcld.yatra.com/ytimages/image/upload/t_seo_Hotel_w_930_h_550_c_fill_g_auto_q_40_f_jpg/v1520930476/Hotel/Gulmarg/00002530/1463303450605_2thuxX.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/0f/78/b4/83/hotel-affarwat.jpg",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Internet – Wifi",
+      "Flat Tv",
+      "Restaurant",
+      "Heater",
+    ],
+    hoteltheme: ["Budget", "Classic", "Mid-range", "Standard"],
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 44,
+    heading: "Hotel Samson",
+    address:
+      "Padora Enclave, Karlah, near Naag Temple, Patnitop, Jammu and Kashmir 182142 ",
+    description: `Located in the Lower Himalayas and close to the Pir Panjal range, Patnitop holds scenery for the artist and the layman, mountains for the mountaineer, flowers for the Botanist and tall cedar pine forests and emerald green meadows. And never for two days together is this glorious panorama exactly the same. One day, Patnitop is filled with a sea of rolling clouds through which gleams of sunshine light up the brilliant green of the meadows below. On another day there is no cloud in the sky and the whole scene will be bathed in a blue haze.
+
+    Discover your own trekking or walking trails in and around Patnitop or go for a lovely drive around the scenic, curving mountain roads, which go through Deodar forests and across streams. Enjoy a meal or a drink on our beautiful terrace with a bonfire and gaze at the unobstructed views that extend as far as the town of Kud or the Natha Top Hills.
+    
+    Hotel Samson extends over 2 acres and is dotted with apple trees, weeping willows, pine cedars and a variety of seasonal flowers and shrubs. With extensive lawns, mounds and park benches, guests can unwind and just lie down and read a book or absorb the scenic views around the hotel and come closest to nature.
+    
+    The hotel consists of three categories of rooms, namely Deluxe, Superior and Executive. All the rooms are equipped with modern amenities and offer a sublime and panoramic view of pristine surroundings, lush landscapes and snow-capped mountains which will leave you spellbound.
+    
+    The hotel also has a terrace bonfire to enjoy the evenings watching the scenic beauty around the property.`,
+    img: [
+      "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/flyfish/raw/NH7314961438024/QS1042/QS1042-Q1/1608698203052.jpeg",
+      "https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_627,q_auto,w_1200/itemimages/26/64/2664276_v1.jpeg",
+      "https://www.joonsquare.com/usermanage/image/business/hotel-samson-doda-19883/hotel-samson-doda-hotel-samson03.jpg",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Internet – Wifi",
+      "Flat Tv",
+      "Restaurant",
+      "Heater",
+      "Parking",
+    ],
+    hoteltheme: ["Budget", "Romantic", "Mid-range", "Standard", "Green"],
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 45,
+    heading: "Dewdrop Trinetar Resorts",
+    address:
+      "Padora Enclave, NH-1A, Near Naag Mandir Road, Patnitop, J&K 182142",
+    description: `Welcome to Dewdrop Trinetar Resorts An ultra-modern hotel has resting on the Shivalik Mountains, surrounded by virgin deodar forests, with towering snow-capped Mountains, overlooking lies Hotel Trinetar. It is situated at Padoura Enclave, just 1.5 km from National Highway and a few minutes distance from Nag Temple in Patnitop. It is an absolute luxury. It will be a pleasure to serve you with maximum facilities & comfort.`,
+    img: [
+      "https://media-cdn.tripadvisor.com/media/photo-s/24/8a/4d/c2/udaan-himalayan-suites.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/08/d6/fd/48/hotel-trinetar-resorts.jpg",
+      "https://vibrant.holiday/uploads/hotel/main/1647957775.jpg",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Internet – Wifi",
+      "Flat Tv",
+      "Restaurant",
+      "Heater",
+    ],
+    hoteltheme: ["Budget", "Romantic", "Mid-range", "Standard", "Green"],
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 46,
+    heading: "Hotel Patnitop Heights",
+    address: "Padora Enclave, Patnitop , Near Nag Temple, Patnitop, J&K 180001",
+    description: `Hotel Patnitop Heights offers the best services in Patnitop to its guests. Hotel Patnitop Heights is deemed to be the best service providing hotel in Patnitop.
+    Hotel Patnitop Heights provides Luxury Services which fit your pocket as well. Out of many Hotels in Patnitop.Hotel Patnitop Heights is Luxury Hotel that gives you the luxury that fits in your pocket as well
+    In olden times a pond existed in the meadows and the king’s princess often used to have her bath there. Part of the pond still exists near the youth hostel. The Britishers probably couldn’t get the name correctly in their revenue records, and over the years it changed from “Patan Da Talab” to PatniTop.
+    112 km from Jammu, this famous hill resort is perched on a beautiful plateau, at an altitude of 2024 meters across which the Jammu-Srinagar Highway passes. Enveloped by thickly wooded forests, PatniTop offers beautiful picnic spots, peaceful walks, and breathtaking views of the Chenab basin.`,
+    img: [
+      "https://media-cdn.tripadvisor.com/media/photo-s/24/8a/4d/c2/udaan-himalayan-suites.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/08/d6/fd/48/hotel-trinetar-resorts.jpg",
+      "https://vibrant.holiday/uploads/hotel/main/1647957775.jpg",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Internet – Wifi",
+      "Flat Tv",
+      "Restaurant",
+      "Heater",
+      "Parking",
+    ],
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 47,
+    heading: "Hotel Patnitop Heights",
+    address: "Padora Enclave, Patnitop , Near Nag Temple, Patnitop, J&K 180001",
+    description: `Hotel Patnitop Heights offers the best services in Patnitop to its guests. Hotel Patnitop Heights is deemed to be the best service providing hotel in Patnitop.
+    Hotel Patnitop Heights provides Luxury Services which fit your pocket as well. Out of many Hotels in Patnitop.Hotel Patnitop Heights is Luxury Hotel that gives you the luxury that fits in your pocket as well
+    In olden times a pond existed in the meadows and the king’s princess often used to have her bath there. Part of the pond still exists near the youth hostel. The Britishers probably couldn’t get the name correctly in their revenue records, and over the years it changed from “Patan Da Talab” to PatniTop.
+    112 km from Jammu, this famous hill resort is perched on a beautiful plateau, at an altitude of 2024 meters across which the Jammu-Srinagar Highway passes. Enveloped by thickly wooded forests, PatniTop offers beautiful picnic spots, peaceful walks, and breathtaking views of the Chenab basin.`,
+    img: [
+      "https://hotelpatnitopheights.com/images/slider/room1.jpg",
+      "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201301031541242571-f15089844fbb11e99d890242ac110003.jpg?&output-quality=75&downsize=910:612&crop=910:612;88,0&output-format=jpg",
+      "https://daahy6akrtcj2.cloudfront.net/hotelsinpatnitop.co.in/photos/563901507.jpg",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Internet – Wifi",
+      "Flat Tv",
+      "Restaurant",
+      "Heater",
+      "Parking",
+    ],
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 48,
+    heading: "Hotel Patnitop Heights",
+    address: "Padora Enclave, Patnitop , Near Nag Temple, Patnitop, J&K 180001",
+    description: `Hotel Patnitop Heights offers the best services in Patnitop to its guests. Hotel Patnitop Heights is deemed to be the best service providing hotel in Patnitop.
+    Hotel Patnitop Heights provides Luxury Services which fit your pocket as well. Out of many Hotels in Patnitop.Hotel Patnitop Heights is Luxury Hotel that gives you the luxury that fits in your pocket as well
+    In olden times a pond existed in the meadows and the king’s princess often used to have her bath there. Part of the pond still exists near the youth hostel. The Britishers probably couldn’t get the name correctly in their revenue records, and over the years it changed from “Patan Da Talab” to PatniTop.
+    112 km from Jammu, this famous hill resort is perched on a beautiful plateau, at an altitude of 2024 meters across which the Jammu-Srinagar Highway passes. Enveloped by thickly wooded forests, PatniTop offers beautiful picnic spots, peaceful walks, and breathtaking views of the Chenab basin.`,
+    img: [
+      "https://hotelpatnitopheights.com/images/slider/room1.jpg",
+      "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201301031541242571-f15089844fbb11e99d890242ac110003.jpg?&output-quality=75&downsize=910:612&crop=910:612;88,0&output-format=jpg",
+      "https://daahy6akrtcj2.cloudfront.net/hotelsinpatnitop.co.in/photos/563901507.jpg",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Internet – Wifi",
+      "Flat Tv",
+      "Restaurant",
+      "Heater",
+      "Parking",
+    ],
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 49,
+    heading: "Rah Bagh By Orchard- Luxury Boutique Hotel",
+    address: "Ahal, Danihama, Harwan, Srinagar, Jammu & Kashmir 190025",
+    description: `This idyllic new retreat on the outskirts of Srinagar evokes the beauty of the main Himalayan range and Vale of Kashmir. This 33 room, luxury boutique resort is the brainchild of the Rah family – Nazir, Katherine, and their two children, — an ode to the Kashmir they love.
+    Built from locally quarried granite, native cedarwood, and traditional Kashmiri brickwork, the resort is exquisite in its contradictions – modern yet traditional, simple yet intricate. It has a distinctive character with its chalet-style units with Alpine influences, set over 3 acres, within an apple orchard, framed by towering poplars. It pays homage to the Mughal gardens and historical buildings of the area, and the Kashmiri detailing is inescapable.
+    An open-air swimming pool with a hot tub; restaurants with ample outdoor seating and incredible views serve delightful meals: a gym and a snooker room. Added to this are sprawling gardens, picturesque views of the Dal and Nageen lakes, and the Zabarwan Mountains as the backdrop, make this resort an ideal getaway and a place that you might never want to leave. We will make you fall in love with Srinagar and of course our beloved Kashmir!`,
+    img: [
+      "https://pix10.agoda.net/hotelImages/288/28809666/28809666_211210135400109487709.jpg?s=1024x768",
+      "https://i0.wp.com/www.traveldiaryparnashree.com/wp-content/uploads/2021/09/Birds-eye-view-Rah-Bagh-Srinagar-1-scaled.jpg?ssl=1",
+      "https://pix8.agoda.net/hotelImages/288/28809666/28809666_211210123000109121604.jpg?s=1024x768",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Airport Transport",
+      "Internet – Wifi",
+      "Smoking Room",
+      "Restaurant",
+      "Pool",
+      "Parking",
+    ],
+    hoteltheme: ["Business", "Luxury", "Classic", "Green"],
+
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 50,
+    heading: "Hotel Royal Comfort Regency",
+    address: "Ghat No 14, Bouleverd Road, Srinagar, Jammu & Kashmir 190001",
+    description: `Royal Comfort Regency Srinagar, Kashmir is one of the famous and best hotels located on boulevard road, Srinagar, Jammu & Kashmir. It faces the world-famous dal lake and is 12 km from Srinagar International Airport. The Hotel provides the best industrial services and respects the privacy of its guests. We are committed to providing personalized, professional guest service and genuine hospitality. All the rooms are well furnished with modern facilities. The travel desk of the hotel provides sight information services to travelers. The hotel has a fine in-house multi-cuisine restaurant for the guests.`,
+    img: [
+      "https://r1imghtlak.mmtcdn.com/a2426590f09211ebb1170a58a9feac02.jpg?&output-quality=75&downsize=910:612&crop=910:612;0,94&output-format=jpg",
+      "https://content.jdmagicbox.com/comp/srinagar/y4/9999px194.x194.180309210010.l3y4/catalogue/royal-comfort-regency-nehru-park-srinagar-hotel-reservations-for-kashmir-rs-3001-to-rs-4000--dlgx6jouv1.jpg",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/86/cf/42/royal-comfort-regency.jpg?w=700&h=-1&s=1",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Airport Transport",
+      "Heater",
+      "Smoking Room",
+      "Restaurant",
+      "Parking",
+    ],
+    hoteltheme: [
+      "Budget",
+      "Party",
+      "Classic",
+      "Green",
+      "Romantic",
+      "Mid-range",
+    ],
+
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 51,
+    heading: "Hotel Palazzo Zafferano",
+    address: "Raj Bagh, Near-Modern Hospital Srinagar, J&K 190008",
+    description: `Hotel Palazzo Zafferano is your home away from home in Srinagar. An opulent boutique property located at Raj Bagh in the heart of the city, Palazzo Zaafferano takes in 40 rooms which include Deluxe Room,  and a Twin Bed room. Nestled within the foothills of the Shankaracharya Temple, Hotel Palazzo Zafferano is conveniently within 1 Km from the famous Dal Lake.`,
+    img: [
+      "https://r1imghtlak.mmtcdn.com/a6ac0fec041e11ec8ae80a58a9feac02.jpeg?&output-quality=75&downsize=910:612&crop=910:612;0,99&output-format=jpg",
+      "https://r1imghtlak.mmtcdn.com/b52d738a041e11ec86d00a58a9feac02.jpg?&output-quality=75&downsize=910:612&crop=910:612;0,99&output-format=jpg",
+      "https://imgcld.yatra.com/ytimages/image/upload/t_seo_Hotel_w_930_h_550_c_fill_g_auto_q_40_f_jpg/v4410115150/Hotel/Rishikesh/00186543/img_4630_img_4632_n1_u6Txtt.jpg",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Flat Tv",
+      "Heater",
+      "nternet – Wifi",
+      "Restaurant",
+      "Parking",
+    ],
+    hoteltheme: ["Budget", "Party", "Standard", "Romantic", "Mid-range"],
+
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 52,
+    heading: "Hotel Abshar",
+    address: "Chandanwari Road, Near Pahalgam Club, Pahalgam J&K",
+    description: `Located in a lush green and scenic area of Pahalgam offering ideal comforts for holidaymakers. Hotel Abshar is the ideal place to stay in.
+
+
+    It’s a pleasure to welcome you to Hotel Abshar. Our hotel combines charm and hospitality with every modern convenience at your fingertips. Exquisite details throughout, including chandeliers, wooden furnishings, woolen carpets, and exclusive marble floors.We look forward to making your stay both comfortable and memorable by providing personalized service exceeding the quality of our facilities. Whether you are traveling on business or pleasure, we have a variety of rooms which you can choose from. We strive to provide you a room that is luxurious and perfect, with friendly attentive service at a value-conscious price.
+    The professional and friendly staffs at Hotel Abshar are committed to making your stay both enjoyable and comfortable. We look forward to having you as our guest!`,
+    img: [
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/43684220.jpg?k=6461e4bd0a86180f103f135214ac039631860e388fe79580fd539daacc6c43cc&o=&hp=1",
+      "https://r1imghtlak.mmtcdn.com/dcd92c1896c611e79f76025f77df004f.jpg?&output-quality=75&downsize=910:612&crop=910:612;4,0&output-format=jpg",
+      "https://pix10.agoda.net/hotelImages/907903/12544764/0abbe59d79e6c844f876d33b3f69232f.jpg?ca=17&ce=1&s=1024x768",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Flat Tv",
+      "Heater",
+      "nternet – Wifi",
+      "Restaurant",
+      "Parking",
+    ],
+    hoteltheme: [
+      "Classic",
+      "Budget",
+      "Party",
+      "Standard",
+      "Romantic",
+      "Mid-range",
+    ],
+
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 53,
+    heading: "Hotel Palazzo Zafferano",
+    address: "Raj Bagh, Near-Modern Hospital Srinagar, J&K 190008",
+    description: `Hotel Palazzo Zafferano is your home away from home in Srinagar. An opulent boutique property located at Raj Bagh in the heart of the city, Palazzo Zaafferano takes in 40 rooms which include Deluxe Room,  and a Twin Bed room. Nestled within the foothills of the Shankaracharya Temple, Hotel Palazzo Zafferano is conveniently within 1 Km from the famous Dal Lake.`,
+    img: [
+      "https://media-cdn.tripadvisor.com/media/photo-s/22/79/a4/db/caption.jpg",
+      "https://lh3.googleusercontent.com/p/AF1QipOVOblBWdE71V841AoeqnPSUbBlb_Kfp39TbPyx=w1080-h608-p-no-v0",
+      "https://r1imghtlak.mmtcdn.com/52d5049827f811ec8f230a58a9feac02.jpg",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Flat Tv",
+      "Heater",
+      "nternet – Wifi",
+      "Restaurant",
+      "Parking",
+    ],
+    hoteltheme: ["Budget", "Party", "Standard", "Romantic", "Mid-range"],
+
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 54,
+    heading: "The Sultan Resort-Luxury Boutique Hotel",
+    address: "Raj Bagh, Near-Modern Hospital Srinagar, J&K 190008",
+    description: `Built in a Middle-Eastern, Arabic theme, The Sultan – offers world-class accommodation, services, and facilities. The rooms have been divided into Luxury, Premium, and Suite categories. Regardless of the category, every room has a personal balcony, overlooking picturesque views. This feature is accentuated in premium rooms, which provide an unhindered view of the breathtakingly beautiful mountain range from several angles – highly recommended for honeymooners! Full moon nights offer glimpses that cannot possibly be described in words!
+
+    While suites and rooms are spacious and luxurious, families and groups may also prefer staying in interconnected rooms.
+    
+    Irrespective of your choice of room, there’s something for everyone at The Sultan. Rafting & skiing (with ski instructors) for the adventurist, village safari for the culture enthusiast, hiking for those who seek solitude in mother nature’s lap, and plenty of other activities like fishing and mountain biking. We also plan to have an indoor heated swimming pool in the coming time. Kids can enjoy a variety of indoor and outdoor games – enough to keep them entertained all day.
+    
+    If you just want to spend a relaxing day in your hotel room, know that your room has an HD TV with all Sky channels, from entertainment to movies, news to sports! We also provide DVDs on request. And you can much on yummy snacks from your well-stocked minifridge. Goes without saying, tea/ coffee makers have been provided in the rooms.
+    
+    Foodies, the in-house restaurant serves delicious multi-cuisine dishes, including Indian, Continental, and Oriental cuisines. Also in the works is a pure vegetarian Indian restaurant, to pamper you with the choicest of vegetarian preparations. In addition to that, our 24-hour coffee shop helps satiate your midnight hunger pangs.`,
+    img: [
+      "https://media-cdn.tripadvisor.com/media/photo-s/22/79/a4/db/caption.jpg",
+      "https://lh3.googleusercontent.com/p/AF1QipOVOblBWdE71V841AoeqnPSUbBlb_Kfp39TbPyx=w1080-h608-p-no-v0",
+      "https://r1imghtlak.mmtcdn.com/52d5049827f811ec8f230a58a9feac02.jpg",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Flat Tv",
+      "nternet – Wifi",
+      "Restaurant",
+      "Parking",
+      "Pool",
+      "Smoking Room",
+    ],
+    hoteltheme: ["Business", "Classic", "Luxury", "Green", "Romantic"],
+
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 55,
+    heading: "Kolahoi Green Resort",
+    address: "KP Road, Langanbal, Pahalgam, J&K",
+    description: `Surrounded by Himalayan mountains and beautiful greenery, Kashmir’s newest upscale four-star resort when visiting the famous Pahalgam Bowl, The Kolahoi Green Resort offers 30 well-appointed, centrally heated, villas, suites, cottages and tents, multi-cuisine dining, excellent leisure options, and a very memorable vacation. With the large garden in the center, the layout of the cottages and the décor are in perfect harmony with our surroundings, ideal for the kind of holiday that leaves the world outside. From the resort, the Pahalgam market is 3.5 km.`,
+    img: [
+      "https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/101844665.jpg?k=eefabf98db6304b6579bc24ed32ec4a0174d542a92d36b8c0f3f092b42102834&o=",
+      "https://q-xx.bstatic.com/xdata/images/hotel/max500/102648233.jpg?k=67628b5a68b449691847d94636c81d9817081333b0beacb20569979e305b5438&o=",
+      "https://indiatravelite.com/uploads/Kolahoi%20Green%20Resort%20-%20Pahalgam%20(4).jpg",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Flat Tv",
+      "nternet – Wifi",
+      "Restaurant",
+      "Parking",
+      "Heater",
+      "Smoking Room",
+    ],
+    hoteltheme: ["Business", "Classic", "Luxury", "Green", "Romantic", "Party"],
+
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 56,
+    heading: "Hotel Vilasta by Heritage",
+    address: "Kursoo Raj Bagh, Near Ignou Centre, Srinagar J&K",
+    description: `A boutique hotel situated near the banks of the famous Jhelum river in Rajbagh & Overlooking the beautiful Shankracharya hill, the hotel stands tall with all elegance and style. A contemporary style with a modern feel, Hotel Vilasta Srinagar has kept itself well with the spirit of the beautiful and picturesque city. It is located in the heart of town, minutes away from key tourist attractions and major shopping areas. With its convenient location and fine service, the hotel has aptly gained the favor of all business and leisure travelers who throng the city throughout the year. The hotel welcomes you to a stunning beautifully done-up lobby. It is the spotlessly attired staff, ever ready to do the most to make you comfortable that makes the stay an experience of a lifetime.`,
+    img: [
+      "https://q-xx.bstatic.com/xdata/images/hotel/max1000/209084419.jpg?k=4bd373dfb87b167d07880383be9b71a75d8cd1f7a07fe082b35457c697d83788",
+      "https://www.ihdhotels.com/images/pfiles/PI-437-4423.jpg",
+      "https://www.ihdhotels.com/images/pfiles/PI-437-4419.jpg",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Flat Tv",
+      "nternet – Wifi",
+      "Restaurant",
+      "Parking",
+      "Smoking Room",
+    ],
+    hoteltheme: ["Budget", "Classic", "Mid-range", "Romantic", "Party"],
+
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 56,
+    heading: "Hotel The Pahalgam Pines",
+    address: "Betaab Valley Road, Pahalgam, Jammu & Kashmir",
+    description: `Since Pahalgam is nearly 90 kilometers away from the flurry of activity that defines Srinagar, it is the ideal destination to put your feet up, snuggle into a comfy couch, and sip cup after cup of Kehwa. While you are at it, watch the snow sketch a pattern on your window. Pahalgam is also a trekker’s delight, serving as a base for several treks that cut through the mountains and scamper alongside the river. For adrenaline junkies, river rafting is a viable option. For those looking to relax, golf at the Pahalgam Golf Course and fishing at the river will clinch the deal. Whatever your reason for visiting Pahalgam is, a stay at Pahalgam Pines will make sure you take back home memories to last a lifetime.`,
+    img: [
+      "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/flyfish/raw/NH72135206662224/QS1042/QS1042-Q1/IMG_0777.jpg",
+      "https://q-xx.bstatic.com/xdata/images/hotel/max500/305470820.jpg?k=f512fbde04a0594bc93e20781948f858725a14ad254e8c1e0976320a97841f35&o=",
+      "https://media-cdn.tripadvisor.com/media/photo-s/1c/dd/33/3c/the-pahalgam-pines.jpg",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Flat Tv",
+      "nternet – Wifi",
+      "Restaurant",
+      "Parking",
+      "Heater",
+    ],
+    hoteltheme: ["Budget", "Classic", "Romantic", "Party", "Green", "Quite"],
+
     rules: ["12:00 pm", "	12:00 pm"],
   },
 ];
