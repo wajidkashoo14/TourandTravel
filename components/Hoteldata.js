@@ -710,21 +710,240 @@ const data = [
   {
     id: 30,
     heading: "Hotel Mount View",
-    address: "2739, Circular Road, Gulmarg, Jammu and Kashmir 193403 ",
-    description: `A luxury hotel nestled in the Himalayas at an altitude of 2739 m The Vintage Gulmarg offers a perfect blend of luxurious rooms and suites with spectacular views of Apharwat mountain range and Gulmarg golf course redefining the traditional concepts of luxury. Stylish spaces, discreet luxury, magnificent view and immaculate service, render The Vintage Gulmarg a unique flavor for people looking for pleasure, exclusivity and relaxation. Lined with customized contemporary art throughout the public and private spaces, the hotel provides an elevated standard of style, design and décor. A selection of world class dining is available in the hotel’s three restaurants, each with its own distinctive character. The hotel also offers exclusive meeting and boardroom facilities, state-of-the-art business lounge and a Spa to energize and harmonize senses. All this coupled with the modern amenities and up-to-date technology for business and leisure combine to craft The Vintage Gulmarg as the most graceful, elegant and pulsating hotel in Gulmarg.`,
+    address: "KP Road, Main Market, Pahalgam, Jammu and Kashmir 192126 ",
+    description: `Exquisitely designed and contemporarily decorated, the hotel is situated on the magnificent banks of river Lidder and offers Breathtaking Views and World Class Hospitality to its guests. Surrounded by scenic splendour of Pine trees and Snow Capped peaks of glorious Pahalgam valley, Hotel Mountview offers the unique combination of style and glamour yet making sure each and every one of its guests receives the same personalised service that they deserve.
+
+    Equipped with all modern facilities and amenities Hotel Mountview, not only caters to its guests by providing best of service but being situated at the best possible location, the hotel also is easily accessible from all major locations and tourist spots. 96 Km away from main capital city Srinagar, the hotel also forms the base camp for Amarnath Yatra.
+    
+    From the best personalised service to superb views to multi cuisine restaurant serving the delicious food, Mountview Hotel is your ultimate destination for the luxurious and stay filled with love and warmth.`,
     img: [
-      "https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_627,q_auto,w_1200/itemimages/25/22/2522393_v1.jpeg",
-      "https://cdn.shortpixel.ai/spai/q_glossy+ret_img+to_webp/https://whateveryourdose.com/wp-content/uploads/2021/08/FBjySdFw-e1633642186671.jpg",
-      "https://d2xf5gjipzd8cd.cloudfront.net/available/569762350/569762350_WxH.jpg",
+      "https://r1imghtlak.mmtcdn.com/43266b60a54911e995d60242ac110003.jfif",
+      "https://pix10.agoda.net/hotelImages/111/111340/111340_17040400420052107276.jpg?ca=6&ce=1&s=1024x768",
+      "https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/flyfish/raw/NH7323094332570/QS1042/QS1042-Q1/IMG_20220124_074645.jpg",
     ],
     hotelfacilities: [
       "Air Conditioning",
       "Flat Tv",
       "Restaurant",
       "Heater",
+      "Internet – Wifi",
+    ],
+    hoteltheme: ["Business", "Classic", "Luxury", "Romantic", "Green"],
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 31,
+    heading: "Hotel Paradise Inn",
+    address: "Chandanwari Road, Pahalgam, Jammu and Kashmir 192126 ",
+    description: `Paradise Group of Hotels is well-known in the hotel industry of Kashmir. Paradise Group of Hotels offers the best lush green valley view enhancing your comfort and luxury. Here you will experience a homely feeling in our services. Set in an ambiance of lush green of foliage and green lawns, the Paradise Group of Hotels are built in the most eco friendly manner. Having about 46+ luxurious rooms categorized in Super Deluxe, Deluxe Rooms and Suit Rooms.`,
+    img: [
+      "https://cf.bstatic.com/xdata/images/hotel/max1280x900/70208129.jpg?k=3505f302b6633e442f0147d9d3cd8bf0685cb6ba56c68b6052903d71df9d5868&o=&hp=1",
+      "https://ihdhotels.com/images/pfiles/PI-37-2012.jpg",
+      "https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1560933109/Hotel/00016723/Deluxe_Room_8_ZpAKve.jpg",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Flat Tv",
+      "Restaurant",
+      "Smoking Room",
+      "Internet – Wifi",
+    ],
+    hoteltheme: [
+      "Business",
+      "Classic",
+      "Luxury",
+      "Mid-range",
+      "Green",
+      "Party",
+    ],
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 32,
+    heading: "Hotel Baisaran",
+    address: "Pahalgam, Opp-Poshwan Park, Jammu and Kashmir 192126 ",
+    description: `Hotel Baisaran is situated in one of the most mesmerizing and beautiful place pahalgam. It is a perfect blend of luxury and facilities. The nearest airport is the Srinagar International Airport and the closest rail-head is the Udhampur Railway Station. Room Amenities: Hotel has well furnished and fully equipped rooms with amenities like television and telephone. Every room has attached bathroom with running hot and cold water for a comfortable stay.`,
+    img: [
+      "https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1548000220/Hotel/00003668/DSC_4841_sQ8LPM.jpg",
+      "https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1548000767/Hotel/00003668/DSC_4990_qrqr5R.jpg",
+      "https://i1.wp.com/hotelbaisaranpahalgam.com/wp-content/uploads/2018/08/Lobby-2-1.jpg",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Flat Tv",
+      "Restaurant",
+      "Smoking Room",
+      "Internet – Wifi",
+    ],
+    hoteltheme: [
+      "Business",
+      "Classic",
+      "Luxury",
+      "Mid-range",
+      "Green",
+      "Party",
+    ],
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 33,
+    heading: "The Villagio",
+    address: "Amarnath Yatra Camp Site, Pahalgam, Jammu and Kashmir 192126 ",
+    description: `To Make you feel like a king and feel at home we invite you to a mesmerizing stay at our painstakingly hand crafted boutique hotel located at undoubtedly the best tourist resort of Kashmir i.e. PAHALGAM.
+
+    With hospitality that will make you feel special we invite you to unwind and relax while experiencing the unparalleled view of this little paradise on earth.
+    
+    At 7500 feet above sea level simply fall in love with the enchanting Lidder river down below, thick green pine woods in front of you, uninterrupted 360 degree views of Kolohoi peaks all around enclosing you with the clear blue sky above you. What else could you dream of……..?`,
+    img: [
+      "https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_627,q_auto,w_1200/itemimages/46/56/4656342_v2.jpeg",
+      "https://pix10.agoda.net/hotelImages/4593016/-1/02510a3bd7ea0d7dc08c84c8eea940f3.jpg?ca=10&ce=1&s=1024x768",
+      "https://imgcld.yatra.com/ytimages/image/upload/t_seo_Hotel_w_930_h_550_c_fill_g_auto_q_40_f_jpg/v1520399004/Hotel/Pahalgam/00037172/VIEW_FROM_HOTEL_1_jw5AND.jpg",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Flat Tv",
+      "Restaurant",
+      "Internet – Wifi",
+    ],
+    hoteltheme: [
+      "Business",
+      "Classic",
+      "Luxury",
+      "Mid-range",
+      "Green",
+      "Party",
+    ],
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 34,
+    heading: "Grand Mumtaz Resort",
+    address:
+      "Adjoining Main Golf Course, KP Rd, Pahalgam, Jammu and Kashmir 192126 ",
+    description: `“Pahalgam” The shepherd’s village” famous for its astounding eighteen hole international Golf course, Lidder River, Kolohoi Glaciers and Trout Fishing, surrounded by hills from all side is the crowning glory of the hill station and amidst its Luxuriant surroundings stands the brand new property of Grand Mumtaz Resorts.
+
+    We take opportunity and pride in inviting you to the exclusive world of royalty & luxury. Your stay with us would be energizing & refreshing as each precise detail of your pleasure is carefully & gently arranged. The One Hundred twenty-two beautiful, spacious & well-appointed rooms are exclusive, splendidly & lavishly designed with a beautiful painting hanging along the color scopes of the wall, the drapery, mini-bar, centrally air-conditioned with direct-daily telephone service, cable TV, Secretarial services, ba business newspaper ,& Wi-Fi connectivity throughout the premises`,
+    img: [
+      "http://grandmumtaz.com/wp-content/uploads/2019/03/grand-mumtaz-resort-gulmar-front-view-1.jpg",
+      "https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1563975840/Hotel/Pahalgam/00000845/grand-mumtaz-resorts-pahalgam-17_c3ggxT.jpg",
+      "https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1430735460/Domestic%20Hotels/Hotels_Pahalgam/Grand%20Mumtaz%20Resorts/IMG_9883.jpg",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Flat Tv",
+      "Restaurant",
+      "Internet – Wifi",
+      "Smoking Room",
+      "Parking",
+    ],
+    hoteltheme: [
+      "Business",
+      "Classic",
+      "Luxury",
+      "Mid-range",
+      "Green",
+      "Party",
+    ],
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 35,
+    heading: "Hotel Lal Kothi",
+    address: "Baisaran Rd, Pahalgam, Jammu and Kashmir 192126 ",
+    description: `Hotel LAL KOTHI PAHALGAM is located in the heart of the valley of shepherds the resort provides you the right ambience for a memorable holiday in Pahalgam. The hotel offers elegantly-appointed, comfortable rooms with stunning views of either lofty deodars or the deep-green, clear waters of the River Lidder Our hotel offers a rich and unique provenance, embodying the distinctive culture of the world’s finest cities.
+
+    Contemporary style and state-of-the-art facilities enrich the original charm and heritage of lal kothi pahalgam , ensuring a consistently exceptional and memorable experience, to meet or dine in the refined surroundings, to experience the epitome of taste and glamour. The Lal kothi pahalgam name remains an assurance to guests of a special sense of welcome and belonging, in hotels remarkable for their unique character, attention to detail and quality of service..The Lal kothi pahalgam is a seamless blend of international style and sophistication with local art and culture creating luxurious comfort in pahalgam. With cuisine from India,China and continental. Providing unique entertainment concepts and the provisions for you to take back bits of culture in the form of experience as well as artifacts .Lal kothi pahalgam Promises a vibrant, enriching and intimate experience to the global traveller. We promise you an experience unlike any other. Indulgently luxurious and with flawless service tailor-made for each occupant.
+    New beautifully furnished 19 spacious rooms are equipped with all utra modern conveniences.
+    
+    The strategic location of the hotel ensures that the guests can enjoy the best of what the Valley of shepherds has to offer`,
+    img: [
+      "https://hotellalkothi.com/wp-content/uploads/2021/12/Front-01.jpg",
+      "https://hotellalkothi.com/wp-content/uploads/2020/05/Room-3-1170x680.jpg",
+      "https://pix8.agoda.net/hotelImages/13590221/0/2021b3987bee0f23ca444fb0f837f341.jpg",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Flat Tv",
+      "Restaurant",
+      "Internet – Wifi",
       "Smoking Room",
     ],
-    hoteltheme: ["Business", "Party", "Classic", "Luxury", "Romantic"],
+    hoteltheme: ["Budget", "Standard", "Luxury", "Green", "Party"],
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 36,
+    heading: "Grand Mumtaz Resorts",
+    address: "Gulmarg, near Gondola, Jammu and Kashmir 193403 ",
+    description: `Grand Mumtaz Hotel Gulmarg A Resort On a Piece of land brought from Heaven on Earth, 9200ft above Sea level adjacent to, Gandola Cable Car, No match to Nature’s beauty here in Gulmarg all over the Word. Surrounded by lush green deodar trees and snowbound mountains, World famous for Winter Sport and Skiing With a Close Vicinity of 50 Kms from Srinagar City and 55 Kms International Airport.`,
+    img: [
+      "http://grandmumtaz.com/wp-content/uploads/2019/03/grand-mumtaz-resort-gulmar-front-view-1.jpg",
+      "https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1563975840/Hotel/Pahalgam/00000845/grand-mumtaz-resorts-pahalgam-17_c3ggxT.jpg",
+      "https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1430735460/Domestic%20Hotels/Hotels_Pahalgam/Grand%20Mumtaz%20Resorts/IMG_9883.jpg",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Flat Tv",
+      "Restaurant",
+      "Internet – Wifi",
+      "Smoking Room",
+      "Parking",
+    ],
+    hoteltheme: [
+      "Business",
+      "Standard",
+      "Mid-range",
+      "Luxury",
+      "Green",
+      "Party",
+      "Romantic",
+    ],
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 37,
+    heading: "Hotel Shaolin Ladakh",
+    address: "Sankar Leh, Near Water Pump, ladakh, Jammu and Kashmir 194101",
+    description: `Located in Leh, 1.7 km from Shanti Stupa, Shaolin Ladakh provides accommodation with a restaurant, free private parking, a shared lounge and a garden. Among the facilities at this property are a 24-hour front desk and room service, along with free WiFi throughout the property.
+
+    Popular points of interest near Shaolin Ladakh include Main Bazaar, Namgyal Tsemo Gompa and Soma Gompa. The nearest airport is Kushok Bakula Rimpochee Airport, 11 km from the hotel.`,
+    img: [
+      "http://grandmumtaz.com/wp-content/uploads/2019/03/grand-mumtaz-resort-gulmar-front-view-1.jpg",
+      "https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1563975840/Hotel/Pahalgam/00000845/grand-mumtaz-resorts-pahalgam-17_c3ggxT.jpg",
+      "https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1430735460/Domestic%20Hotels/Hotels_Pahalgam/Grand%20Mumtaz%20Resorts/IMG_9883.jpg",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Internet – Wifi",
+      "Smoking Room",
+      "Heater",
+      "Budget",
+      "Trendy",
+    ],
+    hoteltheme: ["Business", "Standard"],
+    rules: ["12:00 pm", "	12:00 pm"],
+  },
+  {
+    id: 38,
+    heading: "Hotel Shaolin Ladakh",
+    address: "Sankar Leh, Near Water Pump, ladakh, Jammu and Kashmir 194101",
+    description: `Located in Leh, 1.7 km from Shanti Stupa, Shaolin Ladakh provides accommodation with a restaurant, free private parking, a shared lounge and a garden. Among the facilities at this property are a 24-hour front desk and room service, along with free WiFi throughout the property.
+
+    Popular points of interest near Shaolin Ladakh include Main Bazaar, Namgyal Tsemo Gompa and Soma Gompa. The nearest airport is Kushok Bakula Rimpochee Airport, 11 km from the hotel.`,
+    img: [
+      "http://grandmumtaz.com/wp-content/uploads/2019/03/grand-mumtaz-resort-gulmar-front-view-1.jpg",
+      "https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1563975840/Hotel/Pahalgam/00000845/grand-mumtaz-resorts-pahalgam-17_c3ggxT.jpg",
+      "https://imgcld.yatra.com/ytimages/image/upload/t_hotel_yatra_details_desktop/v1430735460/Domestic%20Hotels/Hotels_Pahalgam/Grand%20Mumtaz%20Resorts/IMG_9883.jpg",
+    ],
+    hotelfacilities: [
+      "Air Conditioning",
+      "Internet – Wifi",
+      "Smoking Room",
+      "Heater",
+      "Budget",
+      "Trendy",
+    ],
+    hoteltheme: ["Business", "Standard"],
     rules: ["12:00 pm", "	12:00 pm"],
   },
 ];
