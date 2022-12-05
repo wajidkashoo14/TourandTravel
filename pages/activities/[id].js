@@ -99,7 +99,7 @@ function Activitiesid() {
         </Box>
         <Box borderBottom={"1px solid #d2c5ca"}>
           <UnorderedList>
-            {Activity.list.map((item) => {
+            {Activity.list?.map((item) => {
               return (
                 <Flex
                   gap={"2"}
@@ -126,7 +126,7 @@ function Activitiesid() {
             cursor={"pointer"}
             key={Activity.id}
           >
-            {Activity.included.map((item) => {
+            {Activity.included?.map((item) => {
               return (
                 <Box display={"flex"} flexDir={"column"} key={Activity.id}>
                   <Flex gap={"2"} alignItems={"center"}>
@@ -150,7 +150,7 @@ function Activitiesid() {
           <Accordion defaultIndex={[0]} allowMultiple width={"45rem"} mt={"10"}>
             <AccordionItem>
               <h2>
-                {Activity.questions.map((question) => {
+                {Activity.questions?.map((question) => {
                   return (
                     <AccordionButton key={Activity.id}>
                       <Box flex="1" textAlign="left">
@@ -169,7 +169,7 @@ function Activitiesid() {
                 })}
               </h2>
 
-              {Activity.answers.map((answer) => {
+              {Activity.answers?.map((answer) => {
                 return (
                   <AccordionPanel pb={4} color={"#F9F9F9"} key={Activity.id}>
                     {answer}

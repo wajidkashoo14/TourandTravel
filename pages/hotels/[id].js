@@ -66,7 +66,7 @@ export default function Hoteldetails() {
       py={"8rem"}
       minH={"80vh"}
       overflowX={"hidden"}
-      fontFamily={("Montserrat", "sans-serif")}
+      fontFamily={"Montserrat"}
       fontWeight={"300"}
       mx={"10"}
     >
@@ -113,22 +113,23 @@ export default function Hoteldetails() {
         />
       </Box>
 
-      <Box minH={"50vh"} bg={"#fff"} mx={"5rem"} width={"75%"}>
-        <Box py={"3rem"}>
+      <Box minH={"30vh"} bg={"#fff"} mx={"5rem"} width={"75%"}>
+        <Box>
           <Heading
             fontWeight={"500"}
             textTransform={"uppercase"}
             py={"5"}
             className={styles.heading}
             mt={"5"}
+            fontSize={"3xl"}
           >
             overview
           </Heading>
           <Text
             fontSize={"md"}
-            fontWeight={"300"}
+            fontWeight={"400"}
             color={"#50595c"}
-            fontFamily={("Montserrat", "sans-serif")}
+            fontFamily={"Montserrat"}
             lineHeight={"6"}
             textAlign={"left"}
           >
@@ -142,6 +143,7 @@ export default function Hoteldetails() {
             py={"5"}
             className={styles.heading}
             mt={"5"}
+            fontSize={"3xl"}
           >
             Hotel Facilities
           </Heading>
@@ -158,6 +160,7 @@ export default function Hoteldetails() {
                   _hover={{ boxShadow: "xl" }}
                   width={"15rem"}
                   cursor={"pointer"}
+                  fontWeight={"400"}
                 >
                   <FaAffiliatetheme color={"#5191FA"} />
 
@@ -174,6 +177,7 @@ export default function Hoteldetails() {
             textTransform={"uppercase"}
             py={"5"}
             mt={"3"}
+            fontSize={"3xl"}
           >
             Hotel Theme
           </Heading>
@@ -191,6 +195,7 @@ export default function Hoteldetails() {
                   width={"16rem"}
                   cursor={"pointer"}
                   key={Hotel.id}
+                  fontWeight={"400"}
                 >
                   <MdOutlineSettingsSuggest
                     fontSize={"1.2rem"}
@@ -209,6 +214,7 @@ export default function Hoteldetails() {
             textTransform={"uppercase"}
             py={"5"}
             mt={"5"}
+            fontSize={"3xl"}
           >
             Rules
           </Heading>
@@ -216,6 +222,7 @@ export default function Hoteldetails() {
             justifyContent={"space-between"}
             py={"10"}
             borderBottom={"1px solid #d2c5ca"}
+            fontWeight={"400"}
           >
             <Text>Check In</Text>
             <Text>{Hotel.rules[0]}</Text>
@@ -225,6 +232,7 @@ export default function Hoteldetails() {
             justifyContent={"space-between"}
             py={"10"}
             borderBottom={"1px solid #d2c5ca"}
+            fontWeight={"400"}
           >
             <Text>Check Out</Text>
             <Text>{Hotel.rules[1]}</Text>
@@ -239,7 +247,7 @@ export default function Hoteldetails() {
                     className={styles.heading}
                     fontWeight={"500"}
                     textTransform={"uppercase"}
-                    fontSize={"xl"}
+                    fontSize={"3xl"}
                   >
                     Write a review
                   </Heading>

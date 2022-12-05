@@ -12,16 +12,22 @@ import {
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { GoLocation } from "react-icons/go";
+import ReactPaginate from "react-paginate";
+import styles from "../styles/pagination.module.css";
 
 function Tourcard({ cards }) {
   const router = useRouter();
+  const [users, setUsers] = useState(cards);
+  const [pageNumber, setPagenumber] = useState(0);
 
-  return (
-    <Box display={"flex"} gap={"10"} flexWrap={"wrap"}>
-      {cards.map((cardItem) => {
-        const { id, img, heading, address } = cardItem;
-
-        return (
+  const usersPerPage = 9;
+  const pagesVisited = pageNumber * usersPerPage;
+  const displayCards = cards
+    .slice(pagesVisited, pagesVisited + usersPerPage)
+    .map((card) => {
+      const { id, img, heading, address } = card;
+      return (
+        <Box display={"flex"} gap={"10"} flexWrap={"wrap"}>
           <Box
             key={id}
             display={"flex"}
@@ -48,7 +54,7 @@ function Tourcard({ cards }) {
                   loading={"lazy"}
                 />
               </Box>
-              <Box px={"3"} zIndex={"1000"} width={"400px"}>
+              <Box px={"3"} zIndex={"1000"} width={"300px"}>
                 <Heading
                   zIndex={"10000"}
                   color={"#06283d"}
@@ -64,13 +70,44 @@ function Tourcard({ cards }) {
               <Box px={"3"}>
                 <Box display={"flex"} gap={"3"}>
                   <GoLocation fontSize={"1.2rem"} />
-                  <Text fontSize={".9rem"}> {address}</Text>
+                  <Text fontSize={".9rem"} color={"#5e5e5e"}>
+                    {" "}
+                    {address}
+                  </Text>
                 </Box>
               </Box>
             </Box>
           </Box>
-        );
-      })}
+        </Box>
+      );
+    });
+
+  const pageCount = Math.ceil(users.length / usersPerPage);
+  const changePage = ({ selected }) => {
+    setPagenumber(selected);
+  };
+  return (
+    <Box
+      display={"flex"}
+      justifyContent={"center"}
+      alignItems={"center"}
+      gap={"10"}
+      flexWrap={"wrap"}
+    >
+      {displayCards}
+      <Flex>
+        <ReactPaginate
+          previousLabel={"Previous"}
+          nextLabel={"Next"}
+          pageCount={pageCount}
+          onPageChange={changePage}
+          containerClassName={styles.paginationBttns}
+          previousLinkClassName={"previousBttn"}
+          nextLinkClassName={"nextBttn"}
+          disabledClassName={"paginationDisabled"}
+          activeClassName={styles.paginationActive}
+        />
+      </Flex>
     </Box>
   );
 }

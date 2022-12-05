@@ -61,10 +61,10 @@ function Tourdetails() {
       maxW={"100vw"}
       pt={"8rem"}
       minH={"80vh"}
-      fontFamily={("Montserrat", "sans-serif")}
-      fontWeight={"300"}
+      fontWeight={"400"}
       overflowY={"hidden"}
       overflowX={"hidden"}
+      fontFamily={"Montserrat"}
     >
       <Box maxW={"100vw"} h={"80vh"} position={"relative"}>
         <Image
@@ -189,15 +189,16 @@ function Tourdetails() {
             py={"5"}
             className={styles.heading}
             mt={"5"}
+            fontSize={"3xl"}
           >
             overview
           </Heading>
           <Text
             fontSize={"md"}
-            fontWeight={"300"}
             color={"#50595c"}
-            fontFamily={("Montserrat", "sans-serif")}
+            fontFamily={"Montserrat"}
             lineHeight={"6"}
+            fontWeight={"400"}
           >
             {Tour.overview}
           </Text>
@@ -275,11 +276,11 @@ function Tourdetails() {
         mx={"5rem"}
         py={"3rem"}
       >
-        <Heading fontWeight={"600"} className={styles.heading}>
+        <Heading fontWeight={"500"} className={styles.heading} fontSize={"3xl"}>
           Highlights
         </Heading>
         <List
-          fontSize={"lg"}
+          fontSize={"md"}
           fontWeight={"400"}
           color={"#50595c"}
           display={"flex"}
@@ -347,10 +348,6 @@ function Tourdetails() {
               key={Tour.id}
             >
               <AccordionItem
-                // bg="#5191FA"
-                // color={"#fff"}
-                // variant="solid"
-                // _hover={{ bg: "blue.500", color: " white" }}
                 key={Tour.id}
                 minHeight={"5rem"}
                 alignItems={"center"}
@@ -394,7 +391,12 @@ function Tourdetails() {
         py={"3rem"}
         borderBottom={"2px solid #c4c7c0"}
       >
-        <Heading fontSize={"2xl"} py={"5"} fontWeight={"600"}>
+        <Heading
+          fontSize={"3xl"}
+          py={"5"}
+          fontWeight={"500"}
+          className={styles.heading}
+        >
           Included/Excluded
         </Heading>
         <Flex gap={"5rem"} color={"#50595c"}>
@@ -469,12 +471,24 @@ function Tourdetails() {
         </Flex>
       </Box>
       <Box mx={"5rem"} py={"3rem"} width={"60%"}>
-        <Heading py={"2"}>FAQs</Heading>
+        <Heading
+          py={"2"}
+          className={styles.heading}
+          fontSize={"3xl"}
+          fontWeight={"500"}
+        >
+          FAQs
+        </Heading>
         <Accordion defaultIndex={[0]} allowMultiple>
           <AccordionItem>
             <h2>
               <AccordionButton>
-                <Box flex="1" textAlign="left">
+                <Box
+                  flex="1"
+                  textAlign="left"
+                  className={styles.heading}
+                  fontWeight={"500"}
+                >
                   TERMS & CONDITIONS
                 </Box>
                 <AccordionIcon />
