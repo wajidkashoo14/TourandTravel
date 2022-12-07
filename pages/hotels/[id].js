@@ -31,7 +31,7 @@ import { FaAffiliatetheme } from "react-icons/fa";
 
 export default function Hoteldetails() {
   const [Hotel, setHotel] = useState(null);
-  const [img, setImg] = useState(data[img]);
+  const [img, setImg] = useState();
   const router = useRouter();
   const id = router.query.id;
 
@@ -78,12 +78,12 @@ export default function Hoteldetails() {
         justifyContent={"center"}
         mx={"auto"}
       >
-        <Box position={"absolute"} left={"2%"} top={"50%"} cursor={"pointer"}>
+        <Box position={"absolute"} left={"5%"} top={"50%"} cursor={"pointer"}>
           <BsArrowLeftCircleFill color="#5191FA" fontSize={"2rem"} />
         </Box>
         <Box
           position={"absolute"}
-          right={"2%"}
+          right={"5%"}
           top={"50%"}
           cursor={"pointer"}
           onClick={() => {
@@ -91,7 +91,7 @@ export default function Hoteldetails() {
           }}
         >
           <BsArrowRightCircleFill
-            left={"2%"}
+            left={"5%"}
             top={"50%"}
             color="#5191FA"
             fontSize={"2rem"}
