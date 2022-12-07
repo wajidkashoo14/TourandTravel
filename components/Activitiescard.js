@@ -14,6 +14,7 @@ function Activitiescard({ cards }) {
             key={id}
             display={"flex"}
             onClick={() => router.push(`./activities/${id}`)}
+            fontFamily={"Montserrat"}
           >
             <Box
               w={"300px"}
@@ -35,7 +36,7 @@ function Activitiescard({ cards }) {
                   loading={"lazy"}
                 />
               </Box>
-              <Box px={"3"} zIndex={"1000"} width={"400px"}>
+              <Box px={"3"} zIndex={"1000"} width={"300px"}>
                 <Heading
                   zIndex={"10000"}
                   color={"#06283d"}

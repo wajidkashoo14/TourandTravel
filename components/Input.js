@@ -13,6 +13,7 @@ function Input() {
       flexDir={"column"}
       justifyContent={"center"}
       alignItems={"center"}
+      fontFamily={"Montserrat"}
       // opacity={".8"}
     >
       {openModal && <Modal closeModal={setOpenModal} />}
@@ -34,6 +35,8 @@ function Input() {
           size="lg"
           variant="filled"
           zIndex={"10000"}
+          fontSize={"1rem"}
+          fontWeight={"400"}
         >
           <option value="option1">Gulmarg</option>
           <option value="option2">Pahalgam</option>
@@ -52,6 +55,7 @@ function Input() {
           size="lg"
           variant="filled"
           zIndex={"10000"}
+          fontSize={"1rem"}
         >
           <option value="">Adventure Tour</option>
           <option value="option2">City Tour</option>
@@ -68,6 +72,7 @@ function Input() {
 
         <Button
           size="lg"
+          fontSize={"1rem"}
           bg="#5191FA"
           color={"#fff"}
           variant="solid"

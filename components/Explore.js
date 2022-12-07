@@ -11,6 +11,7 @@ function Explore() {
       bg={"#fff"}
       textAlign={"center"}
       overflow={"hidden"}
+      fontFamily={"Montserrat"}
     >
       <div className={styles.videodiv}>
         <video src="gulmarg.mp4" muted loop autoPlay className={styles.video}>

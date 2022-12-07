@@ -7,7 +7,6 @@ function Transport() {
     <Container
       minH={"100vh"}
       maxW={"100vw"}
-      //   mx={"5rem"}
       justifyContent={"center"}
       alignItems={"center"}
       display={"flex"}

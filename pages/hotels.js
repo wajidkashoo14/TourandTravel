@@ -20,27 +20,28 @@ function Hotels() {
       pt={"8rem"}
       maxWidth={"100vw"}
       minH={"100vh"}
-      fontFamily={("Montserrat", "sans-serif")}
+      fontFamily={"Montserrat"}
       pb={"8rem"}
     >
       <Flex width={"100%"} flexDir={"column"}>
         <Box maxWidth={"100vw"} height={"40vh"}>
           <Image
-            src="./vivanta.jfif"
+            src="https://www.greavesindia.com/wp-content/uploads/2016/11/pir_panjal_range_1920x1080.jpg"
             width={"100%"}
             height={"35vh"}
             objectFit={"cover"}
             backgroundPosition={"center"}
+            loading={"lazy"}
           />
         </Box>
       </Flex>
 
       <Box
-        mx={"10"}
+        // mx={"10"}
         display={"flex"}
+        justifyContent={"center"}
         flexWrap={"wrap"}
         minH={"100vh"}
-        gap={"10"}
         maxW={"100vw"}
       >
         <Flex
@@ -55,6 +56,7 @@ function Hotels() {
             gap={"5"}
             p={"5"}
             border={"1px solid #cacfd0"}
+            fontFamily={"Montserrat"}
           >
             <Heading
               className={styles.heading}
@@ -89,10 +91,16 @@ function Hotels() {
           </FormControl>
         </Flex>
         <Flex maxWidth={"70vw"} flexWrap={"wrap"}>
-          <Text fontSize={"3xl"} fontWeight={"500"} mb={"5"}>
+          <Text
+            fontSize={"3xl"}
+            fontWeight={"500"}
+            mb={"8"}
+            className={styles.heading}
+            ml={"10"}
+          >
             {`${hotelCards.length} Hotels found`}
           </Text>
-          <Hotelcard cards={hotelCards} display={"flex"} flexWrap={"wrap"} />
+          <Hotelcard cards={hotelCards} />
         </Flex>
       </Box>
     </Box>

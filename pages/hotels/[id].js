@@ -21,14 +21,7 @@ import {
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { AiTwotoneStar } from "react-icons/ai";
-import { AiOutlineClockCircle } from "react-icons/ai";
-import { FaPlaneArrival } from "react-icons/fa";
-import { IoIosPeople } from "react-icons/io";
-import { FaPlaneDeparture } from "react-icons/fa";
-import { BsPersonFill } from "react-icons/bs";
 import styles from "../../styles/id.module.css";
-import { MdCheckCircle } from "react-icons/md";
 import data from "../../components/Hoteldata";
 import { MdOutlineSettingsSuggest } from "react-icons/md";
 import { BsArrowRightCircleFill, BsPeople } from "react-icons/bs";
@@ -38,7 +31,7 @@ import { FaAffiliatetheme } from "react-icons/fa";
 
 export default function Hoteldetails() {
   const [Hotel, setHotel] = useState(null);
-  const [img, setImg] = useState(0);
+  const [img, setImg] = useState(data[img]);
   const router = useRouter();
   const id = router.query.id;
 
@@ -86,7 +79,7 @@ export default function Hoteldetails() {
         mx={"auto"}
       >
         <Box position={"absolute"} left={"2%"} top={"50%"} cursor={"pointer"}>
-          <BsArrowLeftCircleFill color="#fff" fontSize={"1.7rem"} />
+          <BsArrowLeftCircleFill color="#5191FA" fontSize={"2rem"} />
         </Box>
         <Box
           position={"absolute"}
@@ -100,17 +93,19 @@ export default function Hoteldetails() {
           <BsArrowRightCircleFill
             left={"2%"}
             top={"50%"}
-            color="#fff"
-            fontSize={"1.7rem"}
+            color="#5191FA"
+            fontSize={"2rem"}
           />
         </Box>
-        <Image
-          src={Hotel.img[0]}
-          width={"100%"}
-          height={"60vh"}
-          objectFit={"cover"}
-          overflowX={"hidden"}
-        />
+        <Box display={"grid"} placeItems={"center"}>
+          <Image
+            src={Hotel.img[0]}
+            width={"70%"}
+            height={"60vh"}
+            objectFit={"cover"}
+            overflowX={"hidden"}
+          />
+        </Box>
       </Box>
 
       <Box minH={"30vh"} bg={"#fff"} mx={"5rem"} width={"75%"}>

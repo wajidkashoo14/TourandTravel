@@ -182,7 +182,7 @@ function Tourdetails() {
         display={"flex"}
         position={"relative"}
       >
-        <Box width={"55%"} py={"3rem"}>
+        <Box width={"55%"} py={"2rem"}>
           <Heading
             fontWeight={"500"}
             textTransform={"uppercase"}
@@ -199,6 +199,7 @@ function Tourdetails() {
             fontFamily={"Montserrat"}
             lineHeight={"6"}
             fontWeight={"400"}
+            minH={"20vh"}
           >
             {Tour.overview}
           </Text>
@@ -274,7 +275,6 @@ function Tourdetails() {
         borderBottom={"2px solid #c4c7c0"}
         width={"80%"}
         mx={"5rem"}
-        py={"3rem"}
       >
         <Heading fontWeight={"500"} className={styles.heading} fontSize={"3xl"}>
           Highlights

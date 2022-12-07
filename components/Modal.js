@@ -23,6 +23,7 @@ function Modal({ closeModal }) {
       zIndex={"500000"}
       top={"0"}
       left={"0"}
+      fontFamily={"Montserrat"}
     >
       <Flex
         width={"40rem"}

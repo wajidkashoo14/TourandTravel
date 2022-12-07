@@ -16,6 +16,7 @@ function Transportcard({ name, img }) {
         flexDir={"column"}
         gap={"5"}
         borderRadius={"8px"}
+        fontFamily={"Montserrat"}
       >
         <Box zIndex={"10"}>
           <Image

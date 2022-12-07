@@ -31,11 +31,12 @@ function Tours() {
       <Flex width={"100%"} flexDir={"column"}>
         <Box maxWidth={"100vw"} height={"40vh"}>
           <Image
-            src="./home.jpg"
+            src="./tourscover.jpg"
             width={"100%"}
             height={"35vh"}
             objectFit={"cover"}
             backgroundPosition={"center"}
+            loading={"lazy"}
           />
         </Box>
       </Flex>
@@ -43,9 +44,10 @@ function Tours() {
       <Box
         mx={"10"}
         display={"flex"}
+        justifyContent={"center"}
         flexWrap={"wrap"}
         minH={"100vh"}
-        gap={"10"}
+        // gap={"10"}
         maxW={"100vw"}
       >
         <Flex
@@ -60,6 +62,7 @@ function Tours() {
             gap={"5"}
             p={"5"}
             border={"1px solid #cacfd0"}
+            fontFamily={"Montserrat"}
           >
             <Heading
               className={styles.heading}
@@ -96,7 +99,8 @@ function Tours() {
           <Text
             fontSize={"3xl"}
             fontWeight={"500"}
-            mb={"5"}
+            mb={"8"}
+            ml={"10"}
             className={styles.heading}
           >
             {`${tourCards.length} Tours found`}

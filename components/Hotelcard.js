@@ -7,6 +7,7 @@ import {
   Link,
   Flex,
   Button,
+  transition,
 } from "@chakra-ui/react";
 
 import { useRouter } from "next/router";
@@ -32,7 +33,10 @@ function Tourcard({ cards }) {
             key={id}
             display={"flex"}
             onClick={() => router.push(`./hotels/${id}`)}
-            _hover={{ transform: "translateY(-1.5rem scale(1.03)" }}
+            _hover={{
+              boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+              transition: "all 0.3s",
+            }}
           >
             <Box
               w={"300px"}

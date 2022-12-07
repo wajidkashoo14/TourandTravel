@@ -25,6 +25,7 @@ function contact() {
       display={"grid"}
       placeItems={"center"}
       paddingBottom={"6rem"}
+      fontFamily={"Montserrat"}
     >
       <Flex
         bg={"#EDEDEB"}

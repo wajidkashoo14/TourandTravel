@@ -12,6 +12,7 @@ import {
   Input,
   Button,
 } from "@chakra-ui/react";
+import styles from "../styles/activities.module.css";
 
 function Activities() {
   const [Activity, setActivity] = useState(data);
@@ -37,15 +38,17 @@ function Activities() {
       minH={"100vh"}
       fontFamily={("Montserrat", "sans-serif")}
       pb={"8rem"}
+      fontFamily={"Montserrat"}
     >
       <Flex width={"100%"} flexDir={"column"}>
         <Box maxWidth={"100vw"} height={"40vh"}>
           <Image
-            src="./home.jpg"
+            src="./activitiescover.jpg"
             width={"100%"}
             height={"35vh"}
             objectFit={"cover"}
-            backgroundPosition={"center"}
+            backgroundPosition={"top"}
+            loading={"lazy"}
           />
         </Box>
       </Flex>
@@ -71,7 +74,11 @@ function Activities() {
             p={"5"}
             border={"1px solid #cacfd0"}
           >
-            <Heading fontSize={"lg"} textAlign={"center"}>
+            <Heading
+              fontSize={"lg"}
+              textAlign={"center"}
+              className={styles.heading}
+            >
               Search Activities
             </Heading>
             <Input
@@ -100,7 +107,12 @@ function Activities() {
           </FormControl>
         </Flex>
         <Flex maxWidth={"70vw"} flexWrap={"wrap"}>
-          <Text fontSize={"3xl"} fontWeight={"500"} mb={"5"}>
+          <Text
+            fontSize={"3xl"}
+            fontWeight={"500"}
+            mb={"5"}
+            className={styles.heading}
+          >
             {`${Activity.length} Activities found`}
           </Text>
           <Activitiescard cards={Activity} display={"flex"} flexWrap={"wrap"} />

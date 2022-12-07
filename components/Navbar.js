@@ -33,6 +33,7 @@ function Navbar() {
       zIndex={"20000"}
       bg={"rgba(255,255,255,0.2)"}
       scrollBehavior={"smooth"}
+      fontFamily={"Montserrat"}
     >
       <Box
         zIndex={"10000"}
@@ -54,11 +55,11 @@ function Navbar() {
         </Link>
         <Box zIndex={"10000"}>
           <Flex gap={"3"} fontWeight={"400"}>
-            <Button fontSize={"1.2rem"} backgroundColor={"transparent"}>
+            <Button fontSize={"1rem"} backgroundColor={"transparent"}>
               <Link
                 _hover={{ textDecoration: "none" }}
                 href="#"
-                fontWeight={"400"}
+                fontWeight={"00"}
                 onClick={() => {
                   router.push("/tours");
                 }}
@@ -66,10 +67,10 @@ function Navbar() {
                 Tours
               </Link>
             </Button>
-            <Button fontSize={"1.2rem"} backgroundColor={"transparent"}>
+            <Button fontSize={"1rem"} backgroundColor={"transparent"}>
               <Link
                 _hover={{ textDecoration: "none" }}
-                fontWeight={"400"}
+                fontWeight={"00"}
                 onClick={() => {
                   router.push("/hotels");
                 }}
@@ -77,11 +78,11 @@ function Navbar() {
                 Hotels
               </Link>
             </Button>
-            <Button fontSize={"1.1rem"} backgroundColor={"transparent"}>
+            <Button fontSize={"1rem"} backgroundColor={"transparent"}>
               <Link
                 _hover={{ textDecoration: "none" }}
                 href="#"
-                fontWeight={"400"}
+                fontWeight={"00"}
                 onClick={() => {
                   router.push("/activities");
                 }}
@@ -89,10 +90,10 @@ function Navbar() {
                 Activities
               </Link>
             </Button>
-            <Button fontSize={"1.1rem"} backgroundColor={"transparent"}>
+            <Button fontSize={"1rem"} backgroundColor={"transparent"}>
               <Link
                 _hover={{ textDecoration: "none" }}
-                fontWeight={"400"}
+                fontWeight={"00"}
                 onClick={() => {
                   router.push("/aboutus");
                 }}
@@ -100,10 +101,10 @@ function Navbar() {
                 About Us
               </Link>
             </Button>
-            <Button fontSize={"1.1rem"} backgroundColor={"transparent"}>
+            <Button fontSize={"1rem"} backgroundColor={"transparent"}>
               <Link
                 _hover={{ textDecoration: "none" }}
-                fontWeight={"400"}
+                fontWeight={"00"}
                 onClick={() => {
                   router.push("/transport");
                 }}
@@ -111,10 +112,10 @@ function Navbar() {
                 Transport
               </Link>
             </Button>
-            <Button fontSize={"1.1rem"} backgroundColor={"transparent"}>
+            <Button fontSize={"1rem"} backgroundColor={"transparent"}>
               <Link
                 _hover={{ textDecoration: "none" }}
-                fontWeight={"400"}
+                fontWeight={"00"}
                 onClick={() => {
                   router.push("/contact");
                 }}

@@ -41,6 +41,7 @@ function Tourcard({}) {
                 className="card"
                 py={"5rem"}
                 mx={"2rem"}
+                fontFamily={"Montserrat"}
               >
                 <Box
                   w={"300px"}

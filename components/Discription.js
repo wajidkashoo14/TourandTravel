@@ -7,21 +7,22 @@ function Discription() {
   return (
     <Container
       maxW={"100vw"}
-      mt={"40vh"}
+      mt={"35vh"}
       backgroundColor={"#F7F7F7"}
       py={"8rem"}
       px={"7rem"}
+      fontFamily={"Montserrat"}
     >
       <Heading
         maxW={"100%"}
         className={styles.heading}
         textAlign={"center"}
         fontSize={"2.2rem"}
-        my={"6rem"}
+        mb={"1rem"}
       >
         EXCITING TOURS FOR ADVENTUROUS PEOPLE
       </Heading>
-      <Flex mt={"5rem"} gap={"5rem"} position={"relative"}>
+      <Flex mt={"3rem"} gap={"5rem"} position={"relative"}>
         <Box>
           <Heading
             maxW={"100%"}
@@ -53,7 +54,8 @@ function Discription() {
           <Heading
             className={styles.heading__secondary}
             fontSize={"1.2rem"}
-            my={"7"}
+            mt={"10"}
+            mb={"5"}
             textAlign={"center"}
           >
             LIVE ADVENTURES LIKE YOU NEVER HAVE BEFORE

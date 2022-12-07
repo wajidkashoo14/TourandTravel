@@ -7,15 +7,14 @@ function Subscribe() {
     <Container
       maxW={"80%"}
       minH={"25vh"}
-      // background-image: linear-gradient(to right, #0f659a, #06283d);
       bgGradient="linear(to-r, #0f659a, #06283d)"
-      // mt={"5rem"}
       display={"flex"}
       justifyContent={"space-around"}
       alignItems={"center"}
       mx={"10rem"}
       borderRadius={"1rem"}
       my={"6rem"}
+      fontFamily={"Montserrat"}
     >
       <Box
         display={"flex"}

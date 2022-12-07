@@ -13,13 +13,14 @@ function signup() {
   return (
     <Container
       minHeight={"100vh"}
-      minW={"100vw"}
+      maxW={"100vw"}
       display={"flex"}
       justifyContent={"center"}
       alignItems={"center"}
       bg={"#E8EEF0"}
       zIndex={"-10"}
       pt={"8rem"}
+      fontFamily={"Montserrat"}
     >
       <Box position={"relative"}>
         <Image
@@ -32,7 +33,7 @@ function signup() {
         />
         <Box
           position={"absolute"}
-          bg={"rgba(255,255,255,0.8)"}
+          bg={"rgba(255,255,255,0.6)"}
           top={"0"}
           right={"0"}
           width={"800px"}

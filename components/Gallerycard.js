@@ -10,6 +10,7 @@ function Gallerycard({ heading, text, img }) {
       transition={"all 0.2s"}
       h={"230px"}
       w={"600px"}
+      fontFamily={"Montserrat"}
     >
       <Image
         src={img}

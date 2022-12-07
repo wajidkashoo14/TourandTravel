@@ -21,6 +21,7 @@ function verify() {
       bg={"#E8EEF0"}
       zIndex={"-10"}
       pt={"8rem"}
+      fontFamily={"Montserrat"}
     >
       <Box position={"relative"}>
         <Image

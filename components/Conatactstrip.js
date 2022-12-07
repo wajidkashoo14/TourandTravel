@@ -20,6 +20,8 @@ function Conatactstrip() {
       py="3"
       zIndex={"10000"}
       position={"fixed"}
+      fontFamily={"Montserrat"}
+      fontWeight={"400"}
     >
       <Flex maxW="100%" alignItems={"center"} zIndex={"10000"}>
         <Flex gap={"10"} justifyContent="center" alignItems="center">
@@ -41,9 +43,14 @@ function Conatactstrip() {
 
       <Flex>
         <Flex>
-          <Flex gap={"5"} justifyContent="center" alignItems="center">
+          <Flex
+            gap={"5"}
+            justifyContent="center"
+            alignItems="center"
+            fontWeight={"400"}
+          >
             <Box>
-              <Button color="white" variant="link">
+              <Button color="white" variant="link" fontWeight={"500"}>
                 9696103894
               </Button>
             </Box>
@@ -52,6 +59,7 @@ function Conatactstrip() {
                 color="white"
                 style={{ backgroundColor: "transparent" }}
                 variant="link"
+                fontWeight={"500"}
                 onClick={(e) => {
                   router.push("/login");
                 }}
@@ -63,6 +71,7 @@ function Conatactstrip() {
               <Button
                 color="white"
                 variant="link"
+                fontWeight={"500"}
                 onClick={(e) => {
                   router.push("/signup");
                 }}

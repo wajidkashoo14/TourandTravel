@@ -21,10 +21,8 @@ function Alltourcard({ cards }) {
         <Box
           display={"flex"}
           onClick={() => router.push(`./tourdetails/${id}`)}
-          className="card"
-          py={"3rem"}
-          // mx={"2rem"}
           key={id}
+          fontFamily={"Montserrat"}
         >
           <Box
             w={"300px"}
@@ -34,6 +32,11 @@ function Alltourcard({ cards }) {
             flexDir={"column"}
             position={"relative"}
             cursor={"pointer"}
+            _hover={{
+              boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+              transition: "all 0.3s",
+            }}
+            fontFamily={"Montserrat"}
           >
             <Box zIndex={"10"}>
               <Image

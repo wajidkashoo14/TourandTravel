@@ -12,8 +12,10 @@ import styles from "../styles/footer.module.css";
 import { GrFacebook } from "react-icons/gr";
 import { SiInstagram } from "react-icons/si";
 import { BsYoutube } from "react-icons/bs";
+import { useRouter } from "next/router";
 
 function Footer() {
+  const router = useRouter();
   return (
     <Container
       maxW={"100%"}
@@ -24,6 +26,7 @@ function Footer() {
       justifyContent={"center"}
       color={"#fff"}
       py={"6"}
+      fontFamily={"Montserrat"}
     >
       <Box
         width={"80%"}
@@ -83,11 +86,46 @@ function Footer() {
             quick links
           </Heading>
           <Flex gap={"4"} flexDir={"column"} color={"#BECFD6"}>
-            <Link className={styles.link}>Tours</Link>
-            <Link className={styles.link}>Hotels</Link>
-            <Link className={styles.link}>Transport</Link>
-            <Link className={styles.link}>Activities</Link>
-            <Link className={styles.link}>Blogs</Link>
+            <Link
+              className={styles.link}
+              onClick={() => {
+                router.push("/tours");
+              }}
+            >
+              Tours
+            </Link>
+            <Link
+              className={styles.link}
+              onClick={() => {
+                router.push("/tours");
+              }}
+            >
+              Hotels
+            </Link>
+            <Link
+              className={styles.link}
+              onClick={() => {
+                router.push("/transport");
+              }}
+            >
+              Transport
+            </Link>
+            <Link
+              className={styles.link}
+              onClick={() => {
+                router.push("/activities");
+              }}
+            >
+              Activities
+            </Link>
+            <Link
+              className={styles.link}
+              onClick={() => {
+                router.push("/blogs");
+              }}
+            >
+              Blogs
+            </Link>
           </Flex>
         </Flex>
         <Flex flexDir={"column"} mt={"10"}>
@@ -121,7 +159,7 @@ function Footer() {
                 <Link className={styles.link}>
                   <SiInstagram />
                 </Link>
-                <Link className={styles.link}>
+                <Link className={styles.link} onClick>
                   <BsYoutube />
                 </Link>
               </Box>

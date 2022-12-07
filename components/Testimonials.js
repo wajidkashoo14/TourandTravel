@@ -40,6 +40,7 @@ function Testimonials() {
       display={"grid"}
       placeItems={"center"}
       position={"relative"}
+      fontFamily={"Montserrat"}
     >
       <Box position={"absolute"} right={"10%"} color={"#06283d"}>
         <BsArrowRightCircleFill
