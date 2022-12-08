@@ -29,8 +29,8 @@ function Tourcard({}) {
         spaceBetween={1}
         slidesPerView={4}
         pagination={{ clickable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
+        // onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log("slide change")}
       >
         {data.map((card) => {
           return (

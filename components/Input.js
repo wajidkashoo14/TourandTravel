@@ -1,10 +1,38 @@
 import { Button, Container, Box, Select, Heading } from "@chakra-ui/react";
 import React, { useState } from "react";
 import Modal from "./Modal";
-import styles from "../styles/Home.module.css";
+import cards from "../components/AllTourData";
 
 function Input() {
   const [openModal, setOpenModal] = useState(false);
+  const [selectedDestination, setSelectedDestination] = useState("");
+  const [selectedTourType, setSelectedTourType] = useState("");
+  const [filteredData, setFiliteredData] = useState([]);
+  const [data, setData] = useState(cards);
+
+  const handleDestinationDropdownChange = (e) => {
+    setSelectedDestination(e.target.value);
+  };
+
+  const handleTourTypeDropdownChange = (e) => {
+    setSelectedTourType(e.target.value);
+  };
+
+  const handleSearchClick = () => {
+    let newFilteredData = data;
+
+    if (selectedDestination && selectedTourType) {
+      newFilteredData = newFilteredData.filter(
+        (item) =>
+          item.title === selectedDestination &&
+          item.tourType === selectedTourType
+      );
+      return setFiliteredData(newFilteredData);
+    }
+  };
+
+  console.log(filteredData);
+
   return (
     <Container
       marginTop={{ base: "-20rem", md: "-30rem", lg: "-30rem" }}
@@ -37,6 +65,7 @@ function Input() {
           zIndex={"10000"}
           fontSize={"1rem"}
           fontWeight={"400"}
+          onChange={handleDestinationDropdownChange}
         >
           <option value="option1">Gulmarg</option>
           <option value="option2">Pahalgam</option>
@@ -56,6 +85,7 @@ function Input() {
           variant="filled"
           zIndex={"10000"}
           fontSize={"1rem"}
+          onChange={handleTourTypeDropdownChange}
         >
           <option value="">Adventure Tour</option>
           <option value="option2">City Tour</option>
@@ -78,7 +108,7 @@ function Input() {
           variant="solid"
           _hover={{ bg: "blue.500", color: " white" }}
           style={{ padding: "1rem 2rem" }}
-          // zIndex={"10000"}
+          onClick={handleSearchClick}
         >
           Search
         </Button>

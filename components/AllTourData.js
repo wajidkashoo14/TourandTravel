@@ -1,6 +1,8 @@
 const cards = [
   {
     id: 1,
+    title: "Gulmarg",
+    tourType: "City Tour",
     heading: "Kashmir 3D 2N Tour",
     headingsecondary: "3 days and 2 nights",
     nightstaysatsrinagar: 1,
@@ -42,6 +44,8 @@ const cards = [
   {
     id: 2,
     heading: "Kashmir 4D 3N Tour",
+    title: "Gulmarg",
+    tourType: "City Tour",
     headingsecondary: "4 days and 3 nights",
     img: "/tourtwo.jpg",
     nightstaysatsrinagar: 2,
