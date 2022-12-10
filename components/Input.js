@@ -2,8 +2,10 @@ import { Button, Container, Box, Select, Heading } from "@chakra-ui/react";
 import React, { useState } from "react";
 import Modal from "./Modal";
 import cards from "../components/AllTourData";
+import { useRouter } from "next/router";
 
 function Input() {
+  const router = useRouter();
   const [openModal, setOpenModal] = useState(false);
   const [selectedDestination, setSelectedDestination] = useState("");
   const [selectedTourType, setSelectedTourType] = useState("");
@@ -67,17 +69,17 @@ function Input() {
           fontWeight={"400"}
           onChange={handleDestinationDropdownChange}
         >
-          <option value="option1">Gulmarg</option>
-          <option value="option2">Pahalgam</option>
-          <option value="option3">Sonmarg</option>
-          <option value="option3">Doodhpathri</option>
-          <option value="option3">Sinthan top</option>
-          <option value="option3">Srinagar</option>
-          <option value="option3">Kargil</option>
-          <option value="option3">Leh</option>
-          <option value="option3">Nubra Valley</option>
-          <option value="option3">Pangong Tso</option>
-          <option value="option3">Tso Moriri</option>
+          <option value="Gulmarg">Gulmarg</option>
+          <option value="Pahalgam">Pahalgam</option>
+          <option value="Sonmarg">Sonmarg</option>
+          <option value="Doodhpathri">Doodhpathri</option>
+          <option value="Sinthan top">Sinthan top</option>
+          <option value="Srinagar">Srinagar</option>
+          <option value="Kargil">Kargil</option>
+          <option value="Leh">Leh</option>
+          <option value="Nubra Valley">Nubra Valley</option>
+          <option value="Pangong Tso">Pangong Tso</option>
+          <option value="Tso Moriri">Tso Moriri</option>
         </Select>
         <Select
           placeholder="Tour type"
@@ -87,17 +89,17 @@ function Input() {
           fontSize={"1rem"}
           onChange={handleTourTypeDropdownChange}
         >
-          <option value="">Adventure Tour</option>
-          <option value="option2">City Tour</option>
-          <option value="option3">Group Tour</option>
-          <option value="option3">Best Sellers</option>
-          <option value="option3">City trips</option>
-          <option value="option3">Ecotourism</option>
-          <option value="option3">Escorted Tour</option>
-          <option value="option3">Honeymoon & Couples</option>
-          <option value="option3">Mountain Adventures</option>
-          <option value="option3">Skiing Trips</option>
-          <option value="option3">Spiritual Tour</option>
+          <option value="Adventure Tour">Adventure Tour</option>
+          <option value="City Tour">City Tour</option>
+          <option value="Group Tour">Group Tour</option>
+          <option value="Best Sellers">Best Sellers</option>
+          <option value="City trips">City trips</option>
+          <option value="Ecotourism<3">Ecotourism</option>
+          <option value="Escorted Tour">Escorted Tour</option>
+          <option value="Honeymoon & Couples">Honeymoon & Couples</option>
+          <option value="Mountain Adventures">Mountain Adventures</option>
+          <option value="Skiing Trips">Skiing Trips</option>
+          <option value="Spiritual Tour">Spiritual Tour</option>
         </Select>
 
         <Button
