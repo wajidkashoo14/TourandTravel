@@ -18,9 +18,10 @@ function Footer() {
   const router = useRouter();
   return (
     <Container
+      minH={"100vh"}
       maxW={"100%"}
       bg={"#06283d"}
-      display={"flex"}
+      display={{ base: "block", md: "block", lg: "flex" }}
       flexDir={"column"}
       alignItems={"center"}
       justifyContent={"center"}
@@ -29,16 +30,19 @@ function Footer() {
       fontFamily={"Montserrat"}
     >
       <Box
-        width={"80%"}
-        display={"flex"}
+        width={{ base: "100%", md: "100%", lg: "80%" }}
+        display={{ base: "block", md: "block", lg: "flex" }}
         justifyContent={"center"}
         alignItems={"center"}
         gap={"10rem"}
         py={"2rem"}
         borderBottom={"1px solid #986D7B"}
-        height={"60vh"}
+        minHeight={"60vh"}
       >
-        <Flex flexDir={"column"} maxW={"350px"}>
+        <Flex
+          flexDir={"column"}
+          maxW={{ base: "100%", md: "100%", lg: "350px" }}
+        >
           <Heading
             textTransform={"uppercase"}
             fontSize={"1.2rem"}
@@ -74,6 +78,8 @@ function Footer() {
           flexDir={"column"}
           justifyContent={"center"}
           alignItems={"center"}
+          mt={{ base: "3rem", md: "3rem", lg: "0" }}
+          bg={"#06283d"}
         >
           <Heading
             textTransform={"uppercase"}

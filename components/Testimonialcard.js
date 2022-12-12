@@ -5,13 +5,14 @@ import { FaQuoteRight } from "react-icons/fa";
 function Testimonialcard({ name, img, text }) {
   return (
     <Box
-      width={"50rem"}
+      width={{ base: "100%", md: "100%", lg: "50rem" }}
       p={"8"}
       position={"relative"}
       display={"flex"}
       flexDir={"column"}
       justifyContent={"center"}
       alignItems={"center"}
+      // mt={{ base: "4rem", md: "3rem", lg: "0" }}
     >
       <Box display={"grid"} placeItems={"center"}>
         <Image

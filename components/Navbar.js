@@ -34,6 +34,7 @@ function Navbar() {
       bg={"rgba(255,255,255,0.2)"}
       scrollBehavior={"smooth"}
       fontFamily={"Montserrat"}
+      display={"none"}
     >
       <Box
         zIndex={"10000"}
@@ -51,7 +52,7 @@ function Navbar() {
           href="/"
           fontWeight={"600"}
         >
-          Redoq Top Floor
+          Redoq
         </Link>
         <Box zIndex={"10000"}>
           <Flex gap={"3"} fontWeight={"400"}>

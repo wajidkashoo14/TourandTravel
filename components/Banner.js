@@ -8,18 +8,23 @@ function Banner() {
   return (
     <Container
       maxW={"100%"}
-      minHeight={"60vh"}
+      minHeight={{ base: "80vh", md: "80vh", lg: "60vh" }}
       backgroundColor={"#F7F7F7"}
       display={"flex"}
       justifyContent={"center"}
       alignItems={"center"}
+      fontFamily={"Montserrat"}
     >
-      <Box width={"77rem"} height={"20rem"} position={"relative"}>
+      <Box
+        width={{ base: "100%", md: "100%", lg: "77rem" }}
+        height={"20rem"}
+        position={"relative"}
+      >
         <Image
           src="/banner.jpg"
-          width={"77rem"}
+          width={{ base: "100%", md: "100%", lg: "77rem" }}
           height={"20rem"}
-          p={"5"}
+          p={{ base: "1", md: "1", lg: "5" }}
           border={"1px solid #fff"}
         />
         <Box
@@ -34,10 +39,15 @@ function Banner() {
           gap={"5"}
           color={"#FFF"}
         >
-          <Text fontSize={"1.6rem"}>your guide to</Text>
+          <Text
+            fontSize={{ base: "1.3rem", md: "1.3rem", lg: "1.6rem" }}
+            mr={{ base: "auto", md: "auto", lg: "0" }}
+          >
+            your guide to
+          </Text>
           <Heading
             textTransform={"uppercase"}
-            fontSize={"5xl"}
+            fontSize={{ base: "3xl", md: "3xl", lg: "5xl" }}
             fontWeight={"700"}
             letterSpacing={".2rem"}
           >

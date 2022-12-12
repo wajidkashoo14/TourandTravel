@@ -7,6 +7,7 @@ import {
   Link,
   Flex,
   Button,
+  Slider,
 } from "@chakra-ui/react";
 
 import { AiTwotoneStar } from "react-icons/ai";
@@ -19,18 +20,34 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import styles from "../styles/swipper.module.css";
 
 function Tourcard({}) {
   const router = useRouter();
   return (
-    <Box p={"10"}>
+    <Box
+      p={{ base: "0", md: "4", lg: "10" }}
+      // overflowX={{ base: "scroll" }}
+      display={"flex"}
+    >
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={1}
         slidesPerView={4}
         pagination={{ clickable: true }}
-        // onSwiper={(swiper) => console.log(swiper)}
-        // onSlideChange={() => console.log("slide change")}
+        breakpoints={{
+          // when window width is >= 640px
+          320: {
+            width: 320,
+            slidesPerView: 1,
+          },
+          // when window width is >= 768px
+          768: {
+            width: 768,
+            slidesPerView: 2,
+          },
+        }}
+        className={styles.swipper}
       >
         {data.map((card) => {
           return (
@@ -40,8 +57,9 @@ function Tourcard({}) {
                 onClick={() => router.push(`./tourdetails/${card.id}`)}
                 className="card"
                 py={"5rem"}
-                mx={"2rem"}
+                mx={{ base: "0rem", md: "1rem", lg: "2rem" }}
                 fontFamily={"Montserrat"}
+                // overflowX={{ base: "scroll" }}
               >
                 <Box
                   w={"300px"}

@@ -5,15 +5,20 @@ import styles from "../styles/discription.module.css";
 function Contact() {
   return (
     <Container
-      maxW={"80%"}
+      maxW={{ base: "100%", md: "100%", lg: "80%" }}
       height={"80vh"}
       bg={"#fff"}
       id={"contact"}
       fontFamily={"Montserrat"}
     >
       <Box py={"6"} borderBottom={"2px solid #E5E5E5"}>
-        <Heading className={styles.heading}>{` Get in Touch!`}</Heading>
-        <Text>Get Assistance From Expert Tour Advisors!</Text>
+        <Heading
+          className={styles.heading}
+          fontSize={{ base: "2xl", md: "2xl", lg: "5xl" }}
+        >{` Get in Touch!`}</Heading>
+        <Text fontSize={{ base: ".8rem", md: ".8rem", lg: "1rem" }}>
+          Get Assistance From Expert Tour Advisors!
+        </Text>
       </Box>
       <Box display={"flex"} flexDir={"column"} gap={"5"} py={"10"}>
         <Input placeholder="Name" />
@@ -29,7 +34,7 @@ function Contact() {
         _hover={{ bg: "blue.500", color: " white" }}
         fontSize={".8rem"}
         fontWeight={"400"}
-        padding={"1rem 2rem "}
+        padding={{ base: "1rem 1rem", md: "1rem 1rem", lg: "1rem 2rem " }}
         borderRadius={"3px"}
       >
         Request Itineraries with quotes

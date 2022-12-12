@@ -7,26 +7,26 @@ function Discription() {
   return (
     <Container
       maxW={"100vw"}
-      mt={"35vh"}
+      mt={{ base: "35vh", md: "25vh", lg: "35vh" }}
       backgroundColor={"#F7F7F7"}
-      py={"8rem"}
-      px={"7rem"}
+      py={{ base: "3rem", md: "4rem", lg: "8rem" }}
+      px={{ base: "1rem", md: "3rem", lg: "7rem" }}
       fontFamily={"Montserrat"}
     >
       <Heading
         maxW={"100%"}
         className={styles.heading}
         textAlign={"center"}
-        fontSize={"2.2rem"}
+        fontSize={{ base: "1rem", md: "1.2rem", lg: "2.2rem" }}
         mb={"1rem"}
       >
         EXCITING TOURS FOR ADVENTUROUS PEOPLE
       </Heading>
-      <Flex mt={"3rem"} gap={"5rem"} position={"relative"}>
-        <Box>
+      <Flex mt={{ base: "1rem", md: "2rem", lg: "3rem" }} gap={"5rem"}>
+        <Box width={"100%"}>
           <Heading
             maxW={"100%"}
-            fontSize={"1.2rem"}
+            fontSize={{ base: ".9rem", md: "1rem", lg: "1.2rem" }}
             my={"4"}
             className={styles.heading__secondary}
             textAlign={"center"}
@@ -35,10 +35,11 @@ function Discription() {
           </Heading>
           <Text
             maxW={"100%"}
-            textAlign={"center"}
+            textAlign={{ base: "justify", md: "justify", lg: "center" }}
             fontWeight={"400"}
-            mx={"6rem"}
-            lineHeight={"1.6rem"}
+            fontSize={{ base: "0.8rem", md: "1rem", lg: "1rem" }}
+            mx={{ base: ".5rem", md: "1.2rem", lg: "6rem" }}
+            lineHeight={{ base: "1.1rem", md: "1.2rem", lg: "1.6rem" }}
           >
             {` The Union Territory of Jammu and Kashmir is a great tourist
             destination. Picturesque and enchanting, Kashmir is cradled high in
@@ -53,7 +54,7 @@ function Discription() {
           </Text>
           <Heading
             className={styles.heading__secondary}
-            fontSize={"1.2rem"}
+            fontSize={{ base: ".9rem", md: "1rem", lg: "1.2rem" }}
             mt={"10"}
             mb={"5"}
             textAlign={"center"}
@@ -61,11 +62,12 @@ function Discription() {
             LIVE ADVENTURES LIKE YOU NEVER HAVE BEFORE
           </Heading>
           <Text
-            fontWeight={"400"}
             maxW={"100%"}
-            mx={"20rem"}
-            textAlign={"center"}
-            lineHeight={"1.6rem"}
+            textAlign={{ base: "justify", md: "justify", lg: "center" }}
+            fontWeight={"400"}
+            fontSize={{ base: "0.8rem", md: "1rem", lg: "1rem" }}
+            mx={{ base: ".5rem", md: "1.2rem", lg: "6rem" }}
+            lineHeight={{ base: "1.1rem", md: "1.2rem", lg: "1.6rem" }}
           >
             {` In winter, Kashmir takes on a white glow, covered in soft snow and
             skiers making a beeline for its famous slopes. And in summer, as the

@@ -37,9 +37,9 @@ function Input() {
 
   return (
     <Container
-      marginTop={{ base: "-20rem", md: "-30rem", lg: "-30rem" }}
+      marginTop={{ base: "-30rem", md: "-30rem", lg: "-30rem" }}
       gap={"8rem"}
-      display={"flex"}
+      display={{ base: "block", md: "block", lg: "flex" }}
       flexDir={"column"}
       justifyContent={"center"}
       alignItems={"center"}
@@ -48,15 +48,15 @@ function Input() {
     >
       {openModal && <Modal closeModal={setOpenModal} />}
       <Box
-        display={"flex"}
+        display={{ base: "block", md: "block", lg: "flex" }}
         justifyContent={"center"}
         alignItems={"center"}
-        gap={"5"}
-        w={"60vw"}
+        gap={{ base: "2", md: "5", lg: "5" }}
+        w={{ base: "90vw", md: "90vw", lg: "60vw" }}
         borderRadius={"5"}
         height={"5rem"}
         py={"3.5rem"}
-        px={"2rem"}
+        px={{ base: "1rem", md: "1rem", lg: "2rem" }}
         backgroundColor={"rgba(255,255,255,0.6)"}
         position={"relative"}
       >
@@ -68,6 +68,7 @@ function Input() {
           fontSize={"1rem"}
           fontWeight={"400"}
           onChange={handleDestinationDropdownChange}
+          my={{ base: "3", md: "1", lg: "0" }}
         >
           <option value="Gulmarg">Gulmarg</option>
           <option value="Pahalgam">Pahalgam</option>
@@ -87,6 +88,7 @@ function Input() {
           variant="filled"
           zIndex={"10000"}
           fontSize={"1rem"}
+          my={{ base: "3", md: "1", lg: "0" }}
           onChange={handleTourTypeDropdownChange}
         >
           <option value="Adventure Tour">Adventure Tour</option>
@@ -103,8 +105,9 @@ function Input() {
         </Select>
 
         <Button
+          width={{ base: "100%", md: "100%", lg: "50%" }}
           size="lg"
-          fontSize={"1rem"}
+          fontSize={{ sm: "8rem", md: "1rem", lg: "1rem" }}
           bg="#5191FA"
           color={"#fff"}
           variant="solid"
@@ -116,12 +119,12 @@ function Input() {
         </Button>
       </Box>
       <Button
-        size="md"
+        size={{ base: "sm", md: "sm", lg: "md" }}
         bg="#5191FA"
         color={"#fff"}
         variant="solid"
         _hover={{ bg: "blue.500", color: " white" }}
-        mt={"-5rem"}
+        mt={{ base: "10rem", md: "10rem", lg: "-5rem" }}
         onClick={() => setOpenModal(true)}
       >
         Make an enquiry

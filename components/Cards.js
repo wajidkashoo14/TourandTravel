@@ -10,9 +10,14 @@ function Cards() {
       backgroundColor={"#F7F7F7"}
       display={"flex"}
       justifyContent={"center"}
+      overflowX={{ base: "scroll" }}
       flexDir="column"
     >
-      <Heading textAlign={"center"} className={styles.heading}>
+      <Heading
+        textAlign={"center"}
+        fontSize={{ base: "1.2rem", md: "1.2rem", lg: "2.2rem" }}
+        className={styles.heading}
+      >
         Best rated Tours
       </Heading>
 

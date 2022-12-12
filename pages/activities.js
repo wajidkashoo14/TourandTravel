@@ -36,7 +36,6 @@ function Activities() {
       pt={"8rem"}
       maxWidth={"100vw"}
       minH={"100vh"}
-      fontFamily={("Montserrat", "sans-serif")}
       pb={"8rem"}
       fontFamily={"Montserrat"}
     >

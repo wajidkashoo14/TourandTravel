@@ -28,7 +28,7 @@ function Tourcard({ cards }) {
     .map((card) => {
       const { id, img, heading, address } = card;
       return (
-        <Box display={"flex"} gap={"10"} flexWrap={"wrap"}>
+        <Box display={"flex"} gap={"10"} flexWrap={"wrap"} key={id}>
           <Box
             key={id}
             display={"flex"}

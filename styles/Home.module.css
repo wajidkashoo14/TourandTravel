@@ -1,27 +1,11 @@
-/* .container {
-  max-width: "100%";
-  background-color: transparent;
-  height: 5rem;
-  display: "flex";
-  justify-content: "space-between";
-  align-items: "center";
-  padding: 1rem;
-  position: "fixed";
-  margin-top: "5rem";
-  z-index: "20000";
-} */
-
-/* .navbar {
-  background-color: #fff;
-} */
-
-.heading {
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typewriter 6s steps(19) 1s infinite both,
-    blinkCursor 500ms steps(19) infinite;
+/* .hero {
+  max-width: 100vw;
+  min-height: 100vh;
 }
-
+.video {
+  width: 100vw;
+  min-height: 100vh;
+} */
 .link {
   padding: 0 2rem;
   display: grid;
@@ -47,3 +31,27 @@
     border-right-color: transparent;
   }
 }
+/* @media only screen and (max-width: 320px) {
+  .hero {
+    max-width: 100vw;
+    height: 100vh;
+  }
+  .video {
+    width: 100vw;
+    height: 100vh;
+  }
+} */
+/* @media (min-aspect-ratio: 32/9) {
+  .video {
+    width: 100%;
+    height: 100vh;
+  }
+}
+@media (max-aspect-ratio: 32/9) {
+  .video {
+    width: 100%;
+    height: 100vh;
+
+    padding: 0;
+  }
+} */

@@ -42,20 +42,27 @@ function Testimonials() {
       position={"relative"}
       fontFamily={"Montserrat"}
     >
-      <Box position={"absolute"} right={"10%"} color={"#06283d"}>
+      <Box
+        position={"absolute"}
+        right={"10%"}
+        color={"#06283d"}
+        top={{ base: "40%", md: "40%", lg: "45%" }}
+        onClick={next}
+      >
         <BsArrowRightCircleFill
-          fontSize={"1.8rem"}
+          fontSize={"1.5rem"}
           cursor={"pointer"}
           color={"#06283d"}
-          onClick={next}
         />
       </Box>
-      <Box position={"absolute"} left={"10%"} fontSize={"1.8rem"}>
-        <BsArrowLeftCircleFill
-          cursor={"pointer"}
-          color={"#06283d"}
-          onClick={prev}
-        />
+      <Box
+        position={"absolute"}
+        left={"10%"}
+        fontSize={"1.5rem"}
+        top={{ base: "40%", md: "40%", lg: "45%" }}
+        onClick={prev}
+      >
+        <BsArrowLeftCircleFill cursor={"pointer"} color={"#06283d"} />
       </Box>
       <Heading className={styles.heading}>Testimonials</Heading>
       <Box display={"flex"} mt={"-3rem"}>

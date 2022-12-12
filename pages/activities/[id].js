@@ -126,7 +126,7 @@ function Activitiesid() {
           <Box>
             {Activity.included?.map((item) => {
               return (
-                <Box gap={"10"} display={"flex"} my={"5"}>
+                <Box gap={"10"} display={"flex"} my={"5"} key={Activity.id}>
                   <FcApproval />
                   <Text>{item}</Text>
                 </Box>

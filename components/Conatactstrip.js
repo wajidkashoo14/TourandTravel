@@ -9,14 +9,14 @@ function Conatactstrip() {
   return (
     <Container
       maxW={"100%"}
-      p={"2 10"}
+      p={{ base: "1 1", md: "1 1", lg: "2 10" }}
       height="3rem"
       backgroundColor={"#1A2B48"}
       color="#fff"
       display={"flex"}
       alignItems={"center"}
       justifyContent="space-between"
-      px="3rem"
+      px={{ base: "1rem", md: "1rem", lg: "3rem" }}
       py="3"
       zIndex={"10000"}
       position={"fixed"}
@@ -35,7 +35,7 @@ function Conatactstrip() {
             <FiInstagram />
             <BsTwitter />
           </Flex>
-          <Box>
+          <Box display={{ base: "none", md: "none", lg: "block" }}>
             <p>wajidkashoo@gmail.com</p>
           </Box>
         </Flex>
@@ -54,7 +54,7 @@ function Conatactstrip() {
                 9696103894
               </Button>
             </Box>
-            <Box>
+            <Box display={{ base: "none", md: "none", lg: "block" }}>
               <Button
                 color="white"
                 style={{ backgroundColor: "transparent" }}
@@ -67,7 +67,7 @@ function Conatactstrip() {
                 Signin
               </Button>
             </Box>
-            <Box>
+            <Box display={{ base: "none", md: "none", lg: "block" }}>
               <Button
                 color="white"
                 variant="link"
