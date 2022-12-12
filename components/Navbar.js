@@ -34,7 +34,6 @@ function Navbar() {
       bg={"rgba(255,255,255,0.2)"}
       scrollBehavior={"smooth"}
       fontFamily={"Montserrat"}
-      display={"none"}
     >
       <Box
         zIndex={"10000"}
