@@ -16,7 +16,7 @@ function Tourcategories() {
     >
       <Heading
         textAlign={"center"}
-        py={{ base: "5", md: "5", lg: "8" }}
+        py={{ base: "0", md: "5", lg: "8" }}
         className={styles.heading}
       >
         Tour categories

@@ -53,7 +53,7 @@ function Tourcard({}) {
                 display={"flex"}
                 onClick={() => router.push(`./tourdetails/${card.id}`)}
                 className="card"
-                py={"5rem"}
+                py={{ base: "3rem", md: "2rem", lg: "5rem" }}
                 mx={{ base: "0rem", md: "1rem", lg: "2rem" }}
                 fontFamily={"Montserrat"}
                 // overflowX={{ base: "scroll" }}

@@ -66,21 +66,25 @@ function Tourdetails() {
       overflowX={"hidden"}
       fontFamily={"Montserrat"}
     >
-      <Box maxW={"100vw"} h={"80vh"} position={"relative"}>
+      <Box
+        maxW={"100vw"}
+        h={{ base: "60vh", md: "60vh", lg: "80vh" }}
+        position={"relative"}
+      >
         <Image
           src={Tour.img}
           width={"100%"}
-          h={"80vh"}
+          h={{ base: "60vh", md: "60vh", lg: "80vh" }}
           objectFit={"cover"}
           overflowX={"hidden"}
           overflowY={"hidden"}
         />
         <Box
-          display={"flex"}
-          mt={"-3rem"}
+          display={{ base: "block", md: "block", lg: "flex" }}
+          mt={{ base: "-1.8rem", md: "-1.8rem", lg: "-3rem" }}
           flexDir={"column"}
           gap={"3"}
-          px={"10"}
+          px={{ base: "2", md: "2", lg: "10" }}
         >
           <Box>
             <Heading
@@ -88,7 +92,7 @@ function Tourdetails() {
               textTransform={"capitalize"}
               position={"absolute"}
               color={"#fff"}
-              mt={"-2rem"}
+              mt={"-2.2rem"}
             >
               {Tour.heading}
             </Heading>
@@ -110,7 +114,7 @@ function Tourdetails() {
         justifyContent={"flex-start"}
         py={"5rem"}
         gap={"15rem"}
-        px={"10rem"}
+        px={{ base: "1rem", md: "1rem", lg: "10rem" }}
         fontSize={"1.2rem"}
       >
         <Box
@@ -178,11 +182,14 @@ function Tourdetails() {
         width={"100vw"}
         minH={"50vh"}
         bg={"#fff"}
-        mx={"5rem"}
+        mx={{ base: "1rem", md: "1rem", lg: "5rem" }}
         display={"flex"}
         position={"relative"}
       >
-        <Box width={"55%"} py={"2rem"}>
+        <Box
+          width={{ base: "100%", md: "100%", lg: "55%" }}
+          py={{ base: "20rem", md: "1rem", lg: "2rem" }}
+        >
           <Heading
             fontWeight={"500"}
             textTransform={"uppercase"}
@@ -194,69 +201,74 @@ function Tourdetails() {
             overview
           </Heading>
           <Text
-            fontSize={"md"}
+            fontSize={{ base: "md", md: "sm", lg: "md" }}
             color={"#50595c"}
             fontFamily={"Montserrat"}
-            lineHeight={"6"}
+            lineHeight={{ base: "5", md: "5", lg: "6" }}
             fontWeight={"400"}
             minH={"20vh"}
+            textAlign={{ base: "left" }}
           >
             {Tour.overview}
           </Text>
         </Box>
         <Box
-          height={"80vh"}
-          width={"400px"}
+          height={{ base: "60vh", md: "60vh", lg: "80vh" }}
+          width={{ base: "100%", md: "100%", lg: "400px" }}
           bg={"#fff"}
-          p={"10"}
+          p={{ base: "3", md: "2", lg: "10" }}
           top={"-20%"}
           boxShadow={"lg"}
           position={"absolute"}
-          right={"8%"}
+          right={{ base: "0", md: "0", lg: "8%" }}
           borderRadius={"10px"}
         >
-          <Heading fontSize={"2xl"} py={"5"} className={styles.heading}>
+          <Heading
+            fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
+            py={"5"}
+            className={styles.heading}
+          >
             Enquiry Form
           </Heading>
           <FormControl display={"flex"} flexDir={"column"} gap={"5"}>
             <Input
               type="text"
               placeholder={"Name"}
-              size="lg"
+              size={{ base: "sm", md: "sm", lg: "lg" }}
               variant="flushed"
               fontSize={"1rem"}
             />
             <Input
               type="number"
               placeholder={"Mobile Number"}
-              size="lg"
+              size={{ base: "sm", md: "sm", lg: "lg" }}
               variant="flushed"
               fontSize={"1rem"}
             />
             <Input
               type="number"
               placeholder={"Number of persons"}
-              size="lg"
+              size={{ base: "sm", md: "sm", lg: "lg" }}
               variant="flushed"
               fontSize={"1rem"}
             />
             <Input
               type="number"
               placeholder={"Number of days"}
-              size="lg"
+              size={{ base: "sm", md: "sm", lg: "lg" }}
               variant="flushed"
               fontSize={"1rem"}
             />
             <Textarea
               type="text"
               placeholder={"Your Enquiry"}
-              size="lg"
+              size={{ base: "sm", md: "sm", lg: "lg" }}
               variant="flushed"
               fontSize={"1rem"}
             />
           </FormControl>
           <Button
-            size="lg"
+            size={{ base: "sm", md: "md", lg: "lg" }}
             bg="#5191FA"
             color={"#fff"}
             variant="solid"
@@ -268,13 +280,13 @@ function Tourdetails() {
         </Box>
       </Box>
       <Box
-        display={"flex"}
+        display={{ base: "block", md: "block", lg: "flex" }}
         flexDir={"column"}
         gap={"5"}
         minH={"50vh"}
         borderBottom={"2px solid #c4c7c0"}
-        width={"80%"}
-        mx={"5rem"}
+        width={{ base: "100%", md: "100%", lg: "80%" }}
+        mx={{ base: "2rem", md: "2rem", lg: "5rem" }}
       >
         <Heading fontWeight={"500"} className={styles.heading} fontSize={"3xl"}>
           Highlights
@@ -335,8 +347,8 @@ function Tourdetails() {
         minHeight={"5vh"}
         m={"7"}
         borderBottom={"2px solid #c4c7c0"}
-        width={"60%"}
-        mx={"5rem"}
+        width={{ base: "100%", md: "100%", lg: "60%" }}
+        mx={{ base: "2rem", md: "2rem", lg: "5rem" }}
         py={"3rem"}
       >
         {Tour.daysinfo?.map((day) => {
@@ -385,21 +397,25 @@ function Tourdetails() {
         })}
       </Box>
       <Box
-        width={"60%"}
+        width={{ base: "100%", md: "100%", lg: "60%" }}
         minH={"60vh"}
-        mx={"5rem"}
+        mx={{ base: "2rem", md: "2rem", lg: "5rem" }}
         py={"3rem"}
         borderBottom={"2px solid #c4c7c0"}
       >
         <Heading
-          fontSize={"3xl"}
+          fontSize={{ base: "xl", md: "xl", lg: "3xl" }}
           py={"5"}
           fontWeight={"500"}
           className={styles.heading}
         >
           Included/Excluded
         </Heading>
-        <Flex gap={"5rem"} color={"#50595c"}>
+        <Flex
+          gap={"5rem"}
+          color={"#50595c"}
+          display={{ base: "block", md: "block", lg: "flex" }}
+        >
           <Flex gap={"4"} flexDir={"column"}>
             <Flex gap={"2"} alignItems={"center"}>
               <FcApproval />
@@ -470,7 +486,11 @@ function Tourdetails() {
           </Flex>
         </Flex>
       </Box>
-      <Box mx={"5rem"} py={"3rem"} width={"60%"}>
+      <Box
+        mx={{ base: "2rem", md: "2rem", lg: "5rem" }}
+        py={"3rem"}
+        width={{ base: "100%", md: "100%", lg: "60%" }}
+      >
         <Heading
           py={"2"}
           className={styles.heading}
@@ -546,7 +566,11 @@ function Tourdetails() {
           </AccordionItem>
         </Accordion>
       </Box>
-      <Box mx={"5rem"} py={"3rem"} width={"45rem"}>
+      <Box
+        mx={{ base: "2rem", md: "2rem", lg: "5rem" }}
+        py={"3rem"}
+        width={{ base: "100%", md: "100%", lg: "45rem" }}
+      >
         <Accordion defaultIndex={[0]} allowMultiple>
           <AccordionItem>
             <h2>
@@ -565,7 +589,11 @@ function Tourdetails() {
               </AccordionButton>
             </h2>
             <AccordionPanel pb={4}>
-              <FormControl bg={"#F9F9F9"} p={"5"} borderRadius={"5"}>
+              <FormControl
+                bg={"#F9F9F9"}
+                p={{ base: "2", md: "2", lg: "5" }}
+                borderRadius={"5"}
+              >
                 <Flex gap={"5"} mb={"10"}>
                   <Input
                     type="text"
