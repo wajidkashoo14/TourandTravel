@@ -9,7 +9,7 @@ function Discription() {
       maxW={"100vw"}
       mt={{ base: "35vh", md: "25vh", lg: "35vh" }}
       backgroundColor={"#F7F7F7"}
-      py={{ base: "3rem", md: "4rem", lg: "8rem" }}
+      py={{ base: "1rem", md: "4rem", lg: "8rem" }}
       px={{ base: "1rem", md: "3rem", lg: "7rem" }}
       fontFamily={"Montserrat"}
     >
@@ -37,9 +37,9 @@ function Discription() {
             maxW={"100%"}
             textAlign={{ base: "justify", md: "justify", lg: "center" }}
             fontWeight={"400"}
-            fontSize={{ base: "0.9rem", md: "1rem", lg: "1rem" }}
+            fontSize={{ base: "1rem", md: "1rem", lg: "1rem" }}
             mx={{ base: ".5rem", md: "1.2rem", lg: "6rem" }}
-            lineHeight={{ base: "1.1rem", md: "1.2rem", lg: "1.6rem" }}
+            lineHeight={{ base: "1.3rem", md: "1.2rem", lg: "1.6rem" }}
           >
             {` The Union Territory of Jammu and Kashmir is a great tourist
             destination. Picturesque and enchanting, Kashmir is cradled high in
@@ -65,9 +65,9 @@ function Discription() {
             maxW={"100%"}
             textAlign={{ base: "justify", md: "justify", lg: "center" }}
             fontWeight={"400"}
-            fontSize={{ base: "0.9rem", md: "1rem", lg: "1rem" }}
+            fontSize={{ base: "1rem", md: "1rem", lg: "1rem" }}
             mx={{ base: ".5rem", md: "1.2rem", lg: "6rem" }}
-            lineHeight={{ base: "1.1rem", md: "1.2rem", lg: "1.6rem" }}
+            lineHeight={{ base: "1.3rem", md: "1.2rem", lg: "1.6rem" }}
           >
             {` In winter, Kashmir takes on a white glow, covered in soft snow and
             skiers making a beeline for its famous slopes. And in summer, as the

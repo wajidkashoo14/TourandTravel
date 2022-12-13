@@ -14,7 +14,7 @@ function Cards() {
     >
       <Heading
         textAlign={"center"}
-        fontSize={{ base: "1.4rem", md: "1.2rem", lg: "2.2rem" }}
+        fontSize={{ base: "1.2rem", md: "1.2rem", lg: "2.2rem" }}
         className={styles.heading}
       >
         Best rated Tours

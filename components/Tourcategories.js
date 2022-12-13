@@ -193,7 +193,7 @@ function Tourcategories() {
             />
             <Heading
               position={"absolute"}
-              top={{ base: "65%", md: "60%", lg: "75%" }}
+              top={{ base: "77%", md: "60%", lg: "75%" }}
               left={"5%"}
               fontSize={"3xl"}
               color={"#fff"}
@@ -238,7 +238,7 @@ function Tourcategories() {
             />
             <Heading
               position={"absolute"}
-              top={{ base: "60%", md: "60%", lg: "75%" }}
+              top={{ base: "77%", md: "60%", lg: "75%" }}
               left={"5%"}
               fontSize={"3xl"}
               color={"#fff"}

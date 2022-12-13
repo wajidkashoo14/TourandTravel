@@ -46,11 +46,11 @@ function Testimonials() {
         position={"absolute"}
         right={"10%"}
         color={"#06283d"}
-        top={{ base: "35%", md: "40%", lg: "45%" }}
+        top={{ base: "45%", md: "40%", lg: "45%" }}
         onClick={next}
       >
         <BsArrowRightCircleFill
-          fontSize={"1.5rem"}
+          fontSize={"2rem"}
           cursor={"pointer"}
           color={"#06283d"}
         />
@@ -59,10 +59,14 @@ function Testimonials() {
         position={"absolute"}
         left={"10%"}
         fontSize={"1.5rem"}
-        top={{ base: "35%", md: "40%", lg: "45%" }}
+        top={{ base: "45%", md: "40%", lg: "45%" }}
         onClick={prev}
       >
-        <BsArrowLeftCircleFill cursor={"pointer"} color={"#06283d"} />
+        <BsArrowLeftCircleFill
+          cursor={"pointer"}
+          color={"#06283d"}
+          fontSize={"2rem"}
+        />
       </Box>
       <Heading className={styles.heading}>Testimonials</Heading>
       <Box display={"flex"} mt={"-3rem"}>

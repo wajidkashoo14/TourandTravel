@@ -143,10 +143,7 @@ function Footer() {
             </Link>
           </Flex>
         </Flex>
-        <Flex
-          flexDir={"column"}
-          alignItems={{ base: "flex-start", md: "center" }}
-        >
+        <Flex flexDir={"column"}>
           <Heading
             textTransform={"uppercase"}
             fontSize={"1.2rem"}
@@ -161,16 +158,24 @@ function Footer() {
             Contact
           </Heading>
           <Flex flexDir={"column"} gap={"4"}>
-            <Box px={"4"} color={"#BECFD6"} mt={"3"}>
+            <Box
+              px={{ base: "2", md: "2", lg: "4" }}
+              color={"#BECFD6"}
+              mt={"3"}
+            >
               <Text>call us</Text>
               <Text color={"#5191FA"}>+91-9596103894</Text>
               <Text color={"#5191FA"}>+91-9596103894</Text>
             </Box>
-            <Box px={"5"} color={"#BECFD6"}>
+            <Box px={{ base: "2", md: "2", lg: "5" }} color={"#BECFD6"}>
               <Text>Email us</Text>
               <Text color={"#5191FA"}>Wkashoo@gmail.com</Text>
             </Box>
-            <Box gap={"6"} px={"5"} color={"#BECFD6"}>
+            <Box
+              gap={"6"}
+              px={{ base: "2", md: "2", lg: "5" }}
+              color={"#BECFD6"}
+            >
               <Text py={"2"}>Follow us</Text>
               <Box display={"flex"} gap={"6"} fontSize={"1.2rem"}>
                 <Link className={styles.link}>
