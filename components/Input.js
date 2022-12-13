@@ -37,7 +37,7 @@ function Input() {
 
   return (
     <Container
-      marginTop={{ base: "-25rem", md: "-30rem", lg: "-20rem" }}
+      marginTop={{ base: "-30rem", md: "-30rem", lg: "-20rem" }}
       gap={"8rem"}
       display={{ base: "block", md: "block", lg: "flex" }}
       flexDir={"column"}
