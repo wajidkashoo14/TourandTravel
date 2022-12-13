@@ -6,14 +6,14 @@ function Subscribe() {
   return (
     <Container
       maxW={{ base: "90%", md: "100%", lg: "80%" }}
-      minH={{ base: "60vh", md: "60vh", lg: "25vh" }}
+      minH={{ base: "50vh", md: "60vh", lg: "25vh" }}
       bgGradient="linear(to-r, #0f659a, #06283d)"
       display={{ base: "block", md: "block", lg: "flex" }}
       justifyContent={"space-around"}
       alignItems={"center"}
-      mx={{ base: ".8rem", md: "1rem", lg: "10rem" }}
+      mx={{ base: "auto", md: "1rem", lg: "10rem" }}
       borderRadius={"1rem"}
-      my={"6rem"}
+      my={{ base: "4rem", md: "3rem", lg: "6rem" }}
       fontFamily={"Montserrat"}
       py={{ base: "1", md: "1", lg: "0" }}
     >

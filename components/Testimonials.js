@@ -35,7 +35,7 @@ function Testimonials() {
   return (
     <Container
       maxW={"100%"}
-      height={"100vh"}
+      minHeight={{ base: "80vh", md: "80vh", lg: "100vh" }}
       bg={"#fff"}
       display={"grid"}
       placeItems={"center"}
@@ -46,7 +46,7 @@ function Testimonials() {
         position={"absolute"}
         right={"10%"}
         color={"#06283d"}
-        top={{ base: "40%", md: "40%", lg: "45%" }}
+        top={{ base: "35%", md: "40%", lg: "45%" }}
         onClick={next}
       >
         <BsArrowRightCircleFill
@@ -59,7 +59,7 @@ function Testimonials() {
         position={"absolute"}
         left={"10%"}
         fontSize={"1.5rem"}
-        top={{ base: "40%", md: "40%", lg: "45%" }}
+        top={{ base: "35%", md: "40%", lg: "45%" }}
         onClick={prev}
       >
         <BsArrowLeftCircleFill cursor={"pointer"} color={"#06283d"} />

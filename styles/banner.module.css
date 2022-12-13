@@ -13,3 +13,9 @@
     font-size: 1rem;
   }
 }
+@media only screen and (max-width: 450px) {
+  .button {
+    padding: 0.5rem 0.7rem;
+    font-size: 1rem;
+  }
+}

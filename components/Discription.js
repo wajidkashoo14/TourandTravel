@@ -17,7 +17,7 @@ function Discription() {
         maxW={"100%"}
         className={styles.heading}
         textAlign={"center"}
-        fontSize={{ base: "1rem", md: "1.2rem", lg: "2.2rem" }}
+        fontSize={{ base: "1.2rem", md: "1.2rem", lg: "2.2rem" }}
         mb={"1rem"}
       >
         EXCITING TOURS FOR ADVENTUROUS PEOPLE
@@ -26,7 +26,7 @@ function Discription() {
         <Box width={"100%"}>
           <Heading
             maxW={"100%"}
-            fontSize={{ base: ".9rem", md: "1rem", lg: "1.2rem" }}
+            fontSize={{ base: "1rem", md: "1rem", lg: "1.2rem" }}
             my={"4"}
             className={styles.heading__secondary}
             textAlign={"center"}
@@ -37,7 +37,7 @@ function Discription() {
             maxW={"100%"}
             textAlign={{ base: "justify", md: "justify", lg: "center" }}
             fontWeight={"400"}
-            fontSize={{ base: "0.8rem", md: "1rem", lg: "1rem" }}
+            fontSize={{ base: "0.9rem", md: "1rem", lg: "1rem" }}
             mx={{ base: ".5rem", md: "1.2rem", lg: "6rem" }}
             lineHeight={{ base: "1.1rem", md: "1.2rem", lg: "1.6rem" }}
           >
@@ -54,7 +54,7 @@ function Discription() {
           </Text>
           <Heading
             className={styles.heading__secondary}
-            fontSize={{ base: ".9rem", md: "1rem", lg: "1.2rem" }}
+            fontSize={{ base: "1rem", md: "1rem", lg: "1.2rem" }}
             mt={"10"}
             mb={"5"}
             textAlign={"center"}
@@ -65,7 +65,7 @@ function Discription() {
             maxW={"100%"}
             textAlign={{ base: "justify", md: "justify", lg: "center" }}
             fontWeight={"400"}
-            fontSize={{ base: "0.8rem", md: "1rem", lg: "1rem" }}
+            fontSize={{ base: "0.9rem", md: "1rem", lg: "1rem" }}
             mx={{ base: ".5rem", md: "1.2rem", lg: "6rem" }}
             lineHeight={{ base: "1.1rem", md: "1.2rem", lg: "1.6rem" }}
           >

@@ -11,12 +11,12 @@ function Tourcategories() {
       maxW={"100%"}
       backgroundColor={"#F7F7F7"}
       px={{ base: "1rem", md: "1rem", lg: "5rem" }}
-      py={{ base: "2rem", md: "3rem", lg: "8rem" }}
+      py={{ base: "0", md: "3rem", lg: "8rem" }}
       fontFamily={"Montserrat"}
     >
       <Heading
         textAlign={"center"}
-        my={{ base: "5", md: "5", lg: "8" }}
+        py={{ base: "5", md: "5", lg: "8" }}
         className={styles.heading}
       >
         Tour categories
@@ -54,7 +54,7 @@ function Tourcategories() {
             />
             <Heading
               position={"absolute"}
-              top={{ base: "57%", md: "65%", lg: "75%" }}
+              top={{ base: "65%", md: "65%", lg: "75%" }}
               left={"5%"}
               fontSize={{ base: "2xl", md: "2xl", lg: "3xl" }}
               color={"#fff"}
@@ -99,7 +99,7 @@ function Tourcategories() {
             />
             <Heading
               position={"absolute"}
-              top={{ base: "50%", md: "65%", lg: "75%" }}
+              top={{ base: "60%", md: "65%", lg: "75%" }}
               left={"4%"}
               fontSize={{ base: "2xl", md: "2xl", lg: "3xl" }}
               color={"#fff"}
@@ -146,7 +146,7 @@ function Tourcategories() {
           />
           <Heading
             position={"absolute"}
-            top={{ base: "50%", md: "65%", lg: "75%" }}
+            top={{ base: "57%", md: "65%", lg: "75%" }}
             left={{ base: "5%", md: "5%", lg: "2%" }}
             fontSize={{ base: "2xl", md: "2xl", lg: "3xl" }}
             color={"#fff"}
@@ -193,7 +193,7 @@ function Tourcategories() {
             />
             <Heading
               position={"absolute"}
-              top={{ base: "60%", md: "60%", lg: "75%" }}
+              top={{ base: "65%", md: "60%", lg: "75%" }}
               left={"5%"}
               fontSize={"3xl"}
               color={"#fff"}
@@ -283,7 +283,7 @@ function Tourcategories() {
             />
             <Heading
               position={"absolute"}
-              top={{ base: "70%", md: "60%", lg: "75%" }}
+              top={{ base: "77%", md: "60%", lg: "75%" }}
               left={{ base: "4%", md: "4%", lg: "5%" }}
               fontSize={"3xl"}
               color={"#fff"}
