@@ -37,13 +37,15 @@ function Input() {
 
   return (
     <Container
-      marginTop={{ base: "-30rem", md: "-30rem", lg: "-30rem" }}
+      marginTop={{ base: "-25rem", md: "-30rem", lg: "-20rem" }}
       gap={"8rem"}
       display={{ base: "block", md: "block", lg: "flex" }}
       flexDir={"column"}
       justifyContent={"center"}
       alignItems={"center"}
       fontFamily={"Montserrat"}
+      zIndex={"100000"}
+      textAlign={"center"}
       // opacity={".8"}
     >
       {openModal && <Modal closeModal={setOpenModal} />}
@@ -54,11 +56,12 @@ function Input() {
         gap={{ base: "2", md: "5", lg: "5" }}
         w={{ base: "90vw", md: "90vw", lg: "60vw" }}
         borderRadius={"5"}
-        height={"5rem"}
-        py={"3.5rem"}
+        height={{ base: "14rem", md: "14rem", lg: "5rem" }}
+        py={{ base: "1rem", md: "1rem", lg: "3.5rem" }}
         px={{ base: "1rem", md: "1rem", lg: "2rem" }}
-        backgroundColor={"rgba(255,255,255,0.6)"}
+        backgroundColor={"rgba(255,255,255,0.5)"}
         position={"relative"}
+        zIndex={"100000"}
       >
         <Select
           placeholder="Where are you going"
@@ -114,18 +117,22 @@ function Input() {
           _hover={{ bg: "blue.500", color: " white" }}
           style={{ padding: "1rem 2rem" }}
           onClick={handleSearchClick}
+          zIndex={"1000"}
         >
           Search
         </Button>
       </Box>
       <Button
-        size={{ base: "sm", md: "sm", lg: "md" }}
+        size={{ base: "md", md: "sm", lg: "md" }}
         bg="#5191FA"
         color={"#fff"}
         variant="solid"
         _hover={{ bg: "blue.500", color: " white" }}
-        mt={{ base: "10rem", md: "10rem", lg: "-5rem" }}
+        // mt={{ base: "5rem", md: "10rem", lg: "-10rem" }}
         onClick={() => setOpenModal(true)}
+        zIndex={"1000"}
+        mb={{ base: "-5rem", md: "0", lg: "10rem" }}
+        textAlign={"center"}
       >
         Make an enquiry
       </Button>

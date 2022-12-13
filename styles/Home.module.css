@@ -1,11 +1,16 @@
-/* .hero {
-  max-width: 100vw;
-  min-height: 100vh;
+.hero {
+  width: 100vw;
+  height: 100vh !important;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
 }
 .video {
   width: 100vw;
-  min-height: 100vh;
-} */
+  overflow-x: hidden;
+  object-fit: cover;
+  height: 100vh !important;
+}
 .link {
   padding: 0 2rem;
   display: grid;
