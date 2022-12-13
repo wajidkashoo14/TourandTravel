@@ -46,7 +46,7 @@ function Testimonials() {
         position={"absolute"}
         right={"10%"}
         color={"#06283d"}
-        top={{ base: "45%", md: "40%", lg: "45%" }}
+        top={{ base: "40%", md: "40%", lg: "45%" }}
         onClick={next}
       >
         <BsArrowRightCircleFill
@@ -59,7 +59,7 @@ function Testimonials() {
         position={"absolute"}
         left={"10%"}
         fontSize={"1.5rem"}
-        top={{ base: "45%", md: "40%", lg: "45%" }}
+        top={{ base: "40%", md: "40%", lg: "45%" }}
         onClick={prev}
       >
         <BsArrowLeftCircleFill
