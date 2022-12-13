@@ -15,21 +15,18 @@ import { AiOutlineClockCircle } from "react-icons/ai";
 import { useRouter } from "next/router";
 import SwiperCore, { Virtual, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import data from "./Tourdata";
+// import +data from "./Tourdata";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import styles from "../styles/swipper.module.css";
+import Cards from "../Tourdata";
 
 function Tourcard({}) {
   const router = useRouter();
   return (
-    <Box
-      p={{ base: "0", md: "4", lg: "10" }}
-      // overflowX={{ base: "scroll" }}
-      display={"flex"}
-    >
+    <Box p={{ base: "0", md: "4", lg: "10" }} display={"flex"}>
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={1}
@@ -49,7 +46,7 @@ function Tourcard({}) {
         }}
         className={styles.swipper}
       >
-        {data.map((card) => {
+        {Cards.map((card) => {
           return (
             <SwiperSlide key={card.id}>
               <Box
