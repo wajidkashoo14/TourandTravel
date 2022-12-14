@@ -9,13 +9,14 @@ function Gallerycard({ heading, text, img }) {
       overflow={"hidden"}
       transition={"all 0.2s"}
       h={"230px"}
-      w={"600px"}
+      w={{ base: "100%", md: "100%", lg: "600px" }}
       fontFamily={"Montserrat"}
+      mb={{ base: "2", md: "2", lg: "0" }}
     >
       <Image
         src={img}
         h={"230px"}
-        w={"600px"}
+        w={{ base: "100%", md: "100%", lg: "600px" }}
         loading={"lazy"}
         objectFit={"cover"}
         backgroundPosition={"center"}

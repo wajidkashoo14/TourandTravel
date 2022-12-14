@@ -11,36 +11,42 @@ import Gallerycard from "../components/Gallerycard";
 
 function Gallery() {
   return (
-    <Box pt={"8rem"} minH={"100vh"} maxW={"100vw"} margin={"0"}>
+    <Box
+      pt={"8rem"}
+      minH={"100vh"}
+      maxW={"100vw"}
+      margin={"0"}
+      fontFamily={"Montserrat"}
+    >
       <Box position={"relative"} maxW={"100vw"}>
         <Image
           src="./gallerybanner.jpg"
           w={"100vw"}
-          h={"70vh"}
+          h={{ base: "55vh", md: "55vh", lg: "70vh" }}
           objectFit={"cover"}
         />
         <Heading
           position={"absolute"}
           left={"50%"}
-          top={"50%"}
+          top={{ base: "10%", md: "20%", lg: "50%" }}
           transform={"translate(-50%,180%)"}
-          mt={"-10rem"}
+          mt={{ base: "0", md: "-10rem", lg: "-10rem" }}
           textAlign={"center"}
           color={"#fff"}
-          fontSize={"5xl"}
+          fontSize={{ base: "3xl", md: "xl", lg: "5xl" }}
           textTransform={"uppercase"}
           textShadow="-1px -1px 0px #4680d7,
               3px 3px 0px #4680d7,
               6px 6px 0px #4680d7"
         >
-          Your Guide to kashmir
+          Your Guide to Kashmir
         </Heading>
       </Box>
       <Box
         textAlign={"center"}
-        px={"10rem"}
+        px={{ base: "1rem", md: "1rem", lg: "10rem" }}
         py={"3rem"}
-        fontSize={"1.2rem"}
+        fontSize={{ base: "1rem", md: "1rem", lg: "1.2rem" }}
         display={"flex"}
         flexDirection={"column"}
         gap={"5"}
@@ -71,24 +77,24 @@ function Gallery() {
         <Text>{`Join us, and let Exodus be Your Guide to the World.`}</Text>
       </Box>
       <Box
-        maxWidth={"93%"}
-        height={"20rem"}
+        maxWidth={{ base: "100%", md: "100%", lg: "93%" }}
+        height={{ base: "15rem", md: "15rem", lg: "20rem" }}
         position={"relative"}
-        mx={"5rem"}
-        display={"flex"}
+        mx={{ base: "1rem", md: "1rem", lg: "5rem" }}
+        display={{ base: "block", md: "block", lg: "flex" }}
         justifyContent={"center"}
         alignItems={"center"}
       >
         <Image
           src="/banner.jpg"
-          width={"94%"}
-          height={"20rem"}
-          p={"5"}
+          width={{ base: "100%", md: "100%", lg: "94%" }}
+          height={{ base: "15rem", md: "15rem", lg: "20rem" }}
+          p={{ base: "2", md: "2", lg: "5" }}
           border={"1px solid #fff"}
         />
         <Box
           position={"absolute"}
-          left={"50%"}
+          left={{ base: "55%", md: "10%", lg: "50%" }}
           top={"50%"}
           transform={"translate(-50%,-50%)"}
           display={"flex"}
@@ -101,7 +107,7 @@ function Gallery() {
         >
           <Heading
             textTransform={"uppercase"}
-            fontSize={"4xl"}
+            fontSize={{ base: "xl", md: "2xl", lg: "4xl" }}
             fontWeight={"700"}
           >
             {`Watch our Tour Leader's stories here`}
@@ -109,13 +115,13 @@ function Gallery() {
         </Box>
       </Box>
       <Box
-        display={"flex"}
+        display={{ base: "block", md: "block", lg: "flex" }}
         justifyContent={"center"}
         alignItems={"center"}
         gap={"10"}
-        width={"100vw"}
+        width={{ base: "100%", md: "100%", lg: "100vw" }}
         minH={"100vh"}
-        px={"5rem"}
+        px={{ base: ".2rem", md: "1rem", lg: "5rem" }}
         py={"3rem"}
         flexWrap={"wrap"}
       >
