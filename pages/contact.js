@@ -49,7 +49,7 @@ function contact() {
         <Box
           w={"600rem"}
           bg={"#fff"}
-          height={"85vh"}
+          height={"100vh"}
           ml={"-15rem"}
           zIndex={"1000"}
           display={"flex"}
@@ -61,6 +61,7 @@ function contact() {
             display={"flex"}
             justifyContent={"center"}
             alignItems={"center"}
+            flexWrap={"nowrap"}
             gap={"10"}
             flexDir={"column"}
             width={"90%"}
@@ -69,23 +70,34 @@ function contact() {
           >
             <Heading className={styles.heading}>Contact us</Heading>
             <Flex gap={"5"}>
-              <input
-                className={styles.input}
+              <Input
                 placeholder="Your Name"
                 type="text"
                 width={"50%"}
+                size={"lg"}
+                fontSize={"1rem"}
               />
-              <input
-                className={styles.input}
+              <Input
                 placeholder="Email"
                 type="email"
                 width={"50%"}
+                size={"lg"}
+                fontSize={"1rem"}
               />
             </Flex>
-            <textarea
+
+            <Input
+              placeholder="Mobile Number"
+              type="number"
+              size={"lg"}
+              fontSize={"1rem"}
+            />
+
+            <Textarea
               className={styles.textarea}
               placeholder="Type a Message"
               h={"30vh"}
+              fontSize={"1rem"}
             />
             <Button
               width={"100%"}
