@@ -1,11 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import styles from "../styles/Home.module.css";
-import { Box, Button, Container, Flex, Link } from "@chakra-ui/react";
+import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import {
+  Box,
+  Button,
+  Container,
+  Flex,
+  Link,
+  IconButton,
+} from "@chakra-ui/react";
 import { useRouter } from "next/router";
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
+  const [display, setDisplay] = useState("none");
 
   useEffect(() => {
     window.addEventListener("scroll", changeBackgroud);
@@ -27,7 +36,7 @@ function Navbar() {
       justifyContent="space-between"
       alignItems={"center"}
       display={"flex"}
-      px={"10"}
+      px={["2", "2", "10", "10"]}
       position={"fixed"}
       mt={"3rem"}
       zIndex={"20000"}
@@ -35,9 +44,20 @@ function Navbar() {
       scrollBehavior={"smooth"}
       fontFamily={"Montserrat"}
     >
+      <Link
+        fontSize={"1.4rem"}
+        _hover={{ textDecoration: "none" }}
+        onClick={() => {
+          router.push("/");
+        }}
+        href="/"
+        fontWeight={"600"}
+      >
+        Redoq
+      </Link>
       <Box
         zIndex={"10000"}
-        display={"flex"}
+        display={["none", "none", "flex", "flex"]}
         justifyContent={"center"}
         alignItems={"center"}
         gap={"10"}
@@ -126,7 +146,7 @@ function Navbar() {
           </Flex>
         </Box>
       </Box>
-      <Box display={"flex"} gap={"5"}>
+      <Box display={["none", "none", "flex", "flex"]} gap={"5"}>
         <Link
           className={styles.link}
           size="lg"
@@ -161,6 +181,146 @@ function Navbar() {
           </Link>
         </Box>
       </Box>
+      <IconButton
+        aria-label="Open Menu"
+        size={"lg"}
+        mr={"2"}
+        icon={<HamburgerIcon />}
+        display={["flex", "flex", "none", "none"]}
+        onClick={() => {
+          setDisplay("flex");
+        }}
+      />
+      <Flex
+        w={"100vw"}
+        h={"100vh"}
+        position={"fixed"}
+        top={"0"}
+        left={"0"}
+        overflow={"auto"}
+        backgroundColor={"#06283d"}
+        zIndex={"100000000"}
+        justifyContent={"space-between"}
+        display={display}
+        px={"2"}
+        py={"5"}
+        color={"white"}
+      >
+        <Link
+          fontSize={"1.4rem"}
+          _hover={{ textDecoration: "none" }}
+          onClick={() => {
+            router.push("/");
+          }}
+          href="/"
+          fontWeight={"600"}
+        >
+          Redoq
+        </Link>
+        <Box
+          zIndex={"10000000"}
+          display={["flex", "flex", "flex", "flex"]}
+          flexDir={"column"}
+          justifyContent={"center"}
+          alignItems={"center"}
+          gap={"10"}
+          color={"white"}
+        >
+          <Box zIndex={"10000000"}>
+            <Flex
+              gap={"3"}
+              fontWeight={"400"}
+              flexDir={"column"}
+              zIndex={"10000000"}
+            >
+              <Button
+                fontSize={"1rem"}
+                backgroundColor={"transparent"}
+                color={"white"}
+              >
+                <Link
+                  _hover={{ textDecoration: "none" }}
+                  href="#"
+                  fontWeight={"00"}
+                  color={"#fff"}
+                  onClick={() => {
+                    router.push("/tours");
+                  }}
+                >
+                  Tours
+                </Link>
+              </Button>
+              <Button fontSize={"1rem"} backgroundColor={"transparent"}>
+                <Link
+                  _hover={{ textDecoration: "none" }}
+                  fontWeight={"00"}
+                  onClick={() => {
+                    router.push("/hotels");
+                  }}
+                >
+                  Hotels
+                </Link>
+              </Button>
+              <Button fontSize={"1rem"} backgroundColor={"transparent"}>
+                <Link
+                  _hover={{ textDecoration: "none" }}
+                  href="#"
+                  fontWeight={"00"}
+                  onClick={() => {
+                    router.push("/activities");
+                  }}
+                >
+                  Activities
+                </Link>
+              </Button>
+              <Button fontSize={"1rem"} backgroundColor={"transparent"}>
+                <Link
+                  _hover={{ textDecoration: "none" }}
+                  fontWeight={"00"}
+                  onClick={() => {
+                    router.push("/aboutus");
+                  }}
+                >
+                  About Us
+                </Link>
+              </Button>
+              <Button fontSize={"1rem"} backgroundColor={"transparent"}>
+                <Link
+                  _hover={{ textDecoration: "none" }}
+                  fontWeight={"00"}
+                  onClick={() => {
+                    router.push("/transport");
+                  }}
+                >
+                  Transport
+                </Link>
+              </Button>
+              <Button fontSize={"1rem"} backgroundColor={"transparent"}>
+                <Link
+                  _hover={{ textDecoration: "none" }}
+                  fontWeight={"00"}
+                  onClick={() => {
+                    router.push("/contact");
+                  }}
+                >
+                  Contact Us
+                </Link>
+              </Button>
+            </Flex>
+          </Box>
+        </Box>
+        <IconButton
+          aria-label="Open Menu"
+          size={"md"}
+          color={"#06283d"}
+          mr={"2"}
+          icon={<CloseIcon />}
+          display={["flex", "flex", "none", "none"]}
+          onClick={() => {
+            setDisplay("none");
+          }}
+        />
+      </Flex>
     </Container>
   );
 }

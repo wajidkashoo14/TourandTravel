@@ -44,7 +44,7 @@ function Input() {
       justifyContent={"center"}
       alignItems={"center"}
       fontFamily={"Montserrat"}
-      zIndex={"100000"}
+      zIndex={["10", "10", "100000", "10000"]}
       textAlign={"center"}
       // opacity={".8"}
     >
@@ -61,13 +61,13 @@ function Input() {
         px={{ base: "1rem", md: "1rem", lg: "2rem" }}
         backgroundColor={"rgba(255,255,255,0.5)"}
         position={"relative"}
-        zIndex={"100000"}
+        zIndex={["10", "10", "100000", "100000"]}
       >
         <Select
           placeholder="Where are you going"
           size="lg"
           variant="filled"
-          zIndex={"10000"}
+          zIndex={["10", "10", "10000", "10000"]}
           fontSize={"1rem"}
           fontWeight={"400"}
           onChange={handleDestinationDropdownChange}
