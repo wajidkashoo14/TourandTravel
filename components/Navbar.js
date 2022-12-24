@@ -225,7 +225,7 @@ function Navbar() {
           display={["flex", "flex", "flex", "flex"]}
           flexDir={"column"}
           justifyContent={"center"}
-          alignItems={"center"}
+          alignItems={"flex-start"}
           gap={"10"}
           color={"white"}
         >
