@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { BsWhatsapp } from "react-icons/bs";
 import styles from "../styles/Home.module.css";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { TbBrandFacebook } from "react-icons/tb";
+import { FiInstagram } from "react-icons/fi";
+import { BsTwitter } from "react-icons/bs";
 import {
   Box,
   Button,
@@ -36,7 +39,7 @@ function Navbar() {
       justifyContent="space-between"
       alignItems={"center"}
       display={"flex"}
-      px={["2", "2", "10", "10"]}
+      px={["3", "3", "10", "10"]}
       position={"fixed"}
       mt={"3rem"}
       zIndex={"20000"}
@@ -203,7 +206,7 @@ function Navbar() {
         justifyContent={"space-between"}
         display={display}
         px={"2"}
-        py={"5"}
+        py={"8"}
         color={"white"}
       >
         <Link
@@ -320,6 +323,21 @@ function Navbar() {
             setDisplay("none");
           }}
         />
+        <Box gap={"10"} position={"absolute"} bottom={"10%"}>
+          <Flex
+            alignItems="center"
+            gap={"5"}
+            borderRight="1px solid #fff"
+            paddingRight={"3"}
+          >
+            <TbBrandFacebook fontSize={"1.5rem"} />
+            <FiInstagram fontSize={"1.5rem"} />
+            <BsTwitter fontSize={"1.5rem"} />
+          </Flex>
+          <Box display={{ base: "none", md: "none", lg: "block" }}>
+            <p>wajidkashoo@gmail.com</p>
+          </Box>
+        </Box>
       </Flex>
     </Container>
   );
