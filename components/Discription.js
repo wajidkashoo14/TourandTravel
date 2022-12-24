@@ -9,7 +9,7 @@ function Discription() {
       maxW={"100vw"}
       mt={{ base: "35vh", md: "25vh", lg: "0" }}
       backgroundColor={"#F7F7F7"}
-      py={{ base: "1rem", md: "4rem", lg: "9rem" }}
+      py={{ base: "3rem", md: "4rem", lg: "9rem" }}
       px={{ base: "1rem", md: "3rem", lg: "7rem" }}
       fontFamily={"Montserrat"}
     >
