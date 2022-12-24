@@ -323,7 +323,7 @@ function Navbar() {
             setDisplay("none");
           }}
         />
-        <Box gap={"10"} position={"absolute"} bottom={"20%"}>
+        <Box gap={"10"} position={"absolute"} bottom={"10%"}>
           <Flex
             alignItems="center"
             gap={"5"}
