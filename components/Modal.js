@@ -27,7 +27,7 @@ function Modal({ closeModal }) {
     >
       <Flex
         width={{ base: "90%", md: "90%", lg: "40rem" }}
-        height={"80vh"}
+        height={["70vh", "70vh", "80vh"]}
         flexDir={"column"}
         position={"relative"}
         background={"#fff"}
