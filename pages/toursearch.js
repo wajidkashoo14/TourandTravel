@@ -22,7 +22,7 @@ function toursearch() {
       backgroundColor={"#F7F7F7"}
       overflowX={"hidden"}
     >
-      {
+      {/* {
         <Box
           display={["block", "block", "flex"]}
           onClick={() => router.push(`./tourdetails/${id}`)}
@@ -101,7 +101,7 @@ function toursearch() {
             </Box>
           </Box>
         </Box>
-      }
+      } */}
     </Container>
   );
 }
