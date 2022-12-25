@@ -1,17 +1,13 @@
 import {
   Box,
-  Container,
   Image,
   Flex,
   Heading,
   Text,
-  ListItem,
   Button,
   FormControl,
   Input,
-  List,
   Select,
-  UnorderedList,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
 import styles from "../styles/aboutus.module.css";

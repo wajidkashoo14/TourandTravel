@@ -407,12 +407,11 @@ function Tourdetails() {
         })}
       </Box>
       <Box
-        width={{ base: "100%", md: "100%", lg: "60%" }}
+        width={{ base: "95%", md: "100%", lg: "60%" }}
         minH={"60vh"}
         mx={{ base: "1rem", md: "2rem", lg: "5rem" }}
         py={"3rem"}
         borderBottom={"2px solid #c4c7c0"}
-        width={["95%", "auto"]}
       >
         <Heading
           fontSize={{ base: "xl", md: "xl", lg: "3xl" }}
