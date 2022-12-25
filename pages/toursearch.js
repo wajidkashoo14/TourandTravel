@@ -5,11 +5,11 @@ import { AiTwotoneStar } from "react-icons/ai";
 import { AiOutlineClockCircle } from "react-icons/ai";
 
 function toursearch() {
-  const router = useRouter();
-  const data = router.query;
-  // const {filteredData} = data
+  // const router = useRouter();
+  // const data = router.query;
+  // // const {filteredData} = data
 
-  console.log(data);
+  // console.log(data);
 
   return (
     <Container
