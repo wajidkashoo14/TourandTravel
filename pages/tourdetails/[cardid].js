@@ -108,12 +108,12 @@ function Tourdetails() {
       </Box>
       <Box
         width={"100vw"}
-        height={"35vh"}
+        min-height={"35vh"}
         bg={"#F5F5F5"}
         display={"flex"}
-        justifyContent={"flex-start"}
+        justifyContent={["center", "center", "flex-start", "flex-start"]}
         py={"5rem"}
-        gap={"15rem"}
+        gap={["3rem", "3rem", "15rem"]}
         px={{ base: "1rem", md: "1rem", lg: "10rem" }}
         fontSize={"1.2rem"}
       >
@@ -179,16 +179,18 @@ function Tourdetails() {
         </Box>
       </Box>
       <Box
-        width={"100vw"}
+        width={["100%", "100%", "100vw"]}
         minH={"50vh"}
         bg={"#fff"}
-        mx={{ base: "1rem", md: "1rem", lg: "5rem" }}
-        display={"flex"}
+        mx={{ base: "10px", md: "1rem", lg: "5rem" }}
+        display={["block", "block", "flex"]}
         position={"relative"}
+        textAlign={["left", "left", "left"]}
       >
         <Box
           width={{ base: "100%", md: "100%", lg: "55%" }}
-          py={{ base: "20rem", md: "1rem", lg: "2rem" }}
+          py={{ base: "0", md: "1rem", lg: "2rem" }}
+          px={["2", "1", "0"]}
         >
           <Heading
             fontWeight={"500"}
@@ -207,7 +209,8 @@ function Tourdetails() {
             lineHeight={{ base: "5", md: "5", lg: "6" }}
             fontWeight={"400"}
             minH={"20vh"}
-            textAlign={{ base: "left" }}
+            textAlign={{ base: "justify" }}
+            width={["95%", "auto"]}
           >
             {Tour.overview}
           </Text>
@@ -216,12 +219,13 @@ function Tourdetails() {
           height={{ base: "60vh", md: "60vh", lg: "80vh" }}
           width={{ base: "100%", md: "100%", lg: "400px" }}
           bg={"#fff"}
-          p={{ base: "3", md: "2", lg: "10" }}
+          p={{ base: "0", md: "2", lg: "10" }}
           top={"-20%"}
           boxShadow={"lg"}
           position={"absolute"}
           right={{ base: "0", md: "0", lg: "8%" }}
           borderRadius={"10px"}
+          display={["none", "none", "block"]}
         >
           <Heading
             fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
@@ -286,18 +290,24 @@ function Tourdetails() {
         minH={"50vh"}
         borderBottom={"2px solid #c4c7c0"}
         width={{ base: "100%", md: "100%", lg: "80%" }}
-        mx={{ base: "2rem", md: "2rem", lg: "5rem" }}
+        mx={{ base: "16px", md: "2rem", lg: "5rem" }}
       >
-        <Heading fontWeight={"500"} className={styles.heading} fontSize={"3xl"}>
+        <Heading
+          fontWeight={"500"}
+          className={styles.heading}
+          fontSize={"3xl"}
+          py={["2rem", "2rem", "0"]}
+        >
           Highlights
         </Heading>
         <List
           fontSize={"md"}
           fontWeight={"400"}
           color={"#50595c"}
-          display={"flex"}
+          display={["block", "block", "flex"]}
           flexDir={"column"}
-          gap={"2"}
+          gap={["1", "1", "2"]}
+          width={["90%", "auto"]}
         >
           <ListItem>
             <ListIcon as={MdCheckCircle} color="#B4E976" />
@@ -345,10 +355,10 @@ function Tourdetails() {
 
       <Box
         minHeight={"5vh"}
-        m={"7"}
+        m={["2", "2", "7"]}
         borderBottom={"2px solid #c4c7c0"}
         width={{ base: "100%", md: "100%", lg: "60%" }}
-        mx={{ base: "2rem", md: "2rem", lg: "5rem" }}
+        mx={{ base: "5px", md: "1rem", lg: "5rem" }}
         py={"3rem"}
       >
         {Tour.daysinfo?.map((day) => {
@@ -399,9 +409,10 @@ function Tourdetails() {
       <Box
         width={{ base: "100%", md: "100%", lg: "60%" }}
         minH={"60vh"}
-        mx={{ base: "2rem", md: "2rem", lg: "5rem" }}
+        mx={{ base: "1rem", md: "2rem", lg: "5rem" }}
         py={"3rem"}
         borderBottom={"2px solid #c4c7c0"}
+        width={["95%", "auto"]}
       >
         <Heading
           fontSize={{ base: "xl", md: "xl", lg: "3xl" }}
@@ -487,7 +498,7 @@ function Tourdetails() {
         </Flex>
       </Box>
       <Box
-        mx={{ base: "2rem", md: "2rem", lg: "5rem" }}
+        mx={{ base: "5px", md: "2rem", lg: "5rem" }}
         py={"3rem"}
         width={{ base: "100%", md: "100%", lg: "60%" }}
       >
@@ -496,6 +507,7 @@ function Tourdetails() {
           className={styles.heading}
           fontSize={"3xl"}
           fontWeight={"500"}
+          mx={{ base: "1rem", md: "1rem", lg: "0" }}
         >
           FAQs
         </Heading>
@@ -567,11 +579,16 @@ function Tourdetails() {
         </Accordion>
       </Box>
       <Box
-        mx={{ base: "2rem", md: "2rem", lg: "5rem" }}
+        mx={{ base: "0rem", md: "2rem", lg: "5rem" }}
         py={"3rem"}
         width={{ base: "100%", md: "100%", lg: "45rem" }}
       >
-        <Accordion defaultIndex={[0]} allowMultiple>
+        <Accordion
+          defaultIndex={[0]}
+          allowMultiple
+          y={"3rem"}
+          width={{ base: "100%", md: "100%", lg: "45rem" }}
+        >
           <AccordionItem>
             <h2>
               <AccordionButton>
@@ -594,7 +611,12 @@ function Tourdetails() {
                 p={{ base: "2", md: "2", lg: "5" }}
                 borderRadius={"5"}
               >
-                <Flex gap={"5"} mb={"10"}>
+                <Flex
+                  gap={"5"}
+                  mb={"10"}
+                  display={["block", "block", "flex"]}
+                  width={{ base: "100%", md: "100%", lg: "45rem" }}
+                >
                   <Input
                     type="text"
                     placeholder="Name"

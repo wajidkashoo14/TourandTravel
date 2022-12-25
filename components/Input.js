@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Modal from "./Modal";
 import cards from "../components/AllTourData";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 function Input() {
   const router = useRouter();
@@ -21,6 +22,11 @@ function Input() {
   };
 
   const handleSearchClick = () => {
+    // router.push({
+    //   pathname: "/toursearch",
+    //   query: { filteredData },
+    // });
+
     let newFilteredData = data;
 
     if (selectedDestination && selectedTourType) {
@@ -33,8 +39,6 @@ function Input() {
     }
   };
 
-  console.log(filteredData);
-
   return (
     <Container
       marginTop={{ base: "-30rem", md: "-30rem", lg: "-20rem" }}
@@ -46,7 +50,6 @@ function Input() {
       fontFamily={"Montserrat"}
       zIndex={["10", "10", "100000", "10000"]}
       textAlign={"center"}
-      // opacity={".8"}
     >
       {openModal && <Modal closeModal={setOpenModal} />}
       <Box
@@ -106,21 +109,27 @@ function Input() {
           <option value="Skiing Trips">Skiing Trips</option>
           <option value="Spiritual Tour">Spiritual Tour</option>
         </Select>
-
-        <Button
-          width={{ base: "100%", md: "100%", lg: "50%" }}
-          size="lg"
-          fontSize={{ sm: "8rem", md: "1rem", lg: "1rem" }}
-          bg="#5191FA"
-          color={"#fff"}
-          variant="solid"
-          _hover={{ bg: "blue.500", color: " white" }}
-          style={{ padding: "1rem 2rem" }}
-          onClick={handleSearchClick}
-          zIndex={"1000"}
+        <Link
+          href={{
+            pathname: "/toursearch",
+            query: filteredData,
+          }}
         >
-          Search
-        </Button>
+          <Button
+            width={{ base: "100%", md: "100%", lg: "50%" }}
+            size="lg"
+            fontSize={{ sm: "8rem", md: "1rem", lg: "1rem" }}
+            bg="#5191FA"
+            color={"#fff"}
+            variant="solid"
+            _hover={{ bg: "blue.500", color: " white" }}
+            style={{ padding: "1rem 2rem" }}
+            onClick={handleSearchClick}
+            zIndex={"1000"}
+          >
+            Search
+          </Button>
+        </Link>
       </Box>
       <Button
         size={{ base: "md", md: "sm", lg: "md" }}
