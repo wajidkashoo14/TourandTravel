@@ -5,14 +5,8 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { TbBrandFacebook } from "react-icons/tb";
 import { FiInstagram } from "react-icons/fi";
 import { BsTwitter } from "react-icons/bs";
-import {
-  Box,
-  Button,
-  Container,
-  Flex,
-  Link,
-  IconButton,
-} from "@chakra-ui/react";
+import { Box, Button, Container, Flex, IconButton } from "@chakra-ui/react";
+import Link from "next/link";
 import { useRouter } from "next/router";
 
 function Navbar() {
@@ -48,13 +42,11 @@ function Navbar() {
       fontFamily={"Montserrat"}
     >
       <Link
-        fontSize={"1.4rem"}
-        _hover={{ textDecoration: "none" }}
         onClick={() => {
           router.push("/");
         }}
         href="/"
-        fontWeight={"600"}
+        className={styles.link}
       >
         Redoq
       </Link>
@@ -65,23 +57,12 @@ function Navbar() {
         alignItems={"center"}
         gap={"10"}
       >
-        <Link
-          fontSize={"1.4rem"}
-          _hover={{ textDecoration: "none" }}
-          onClick={() => {
-            router.push("/");
-          }}
-          href="/"
-          fontWeight={"600"}
-        >
-          Redoq
-        </Link>
         <Box zIndex={"10000"}>
           <Flex gap={"3"} fontWeight={"400"}>
             <Button fontSize={"1rem"} backgroundColor={"transparent"}>
               <Link
                 _hover={{ textDecoration: "none" }}
-                href="#"
+                href="tours"
                 fontWeight={"00"}
                 onClick={() => {
                   router.push("/tours");
@@ -94,8 +75,9 @@ function Navbar() {
               <Link
                 _hover={{ textDecoration: "none" }}
                 fontWeight={"00"}
+                href="/hotels"
                 onClick={() => {
-                  router.push("/hotels");
+                  router.push("hotels");
                 }}
               >
                 Hotels
@@ -104,10 +86,10 @@ function Navbar() {
             <Button fontSize={"1rem"} backgroundColor={"transparent"}>
               <Link
                 _hover={{ textDecoration: "none" }}
-                href="#"
+                href="/activities"
                 fontWeight={"00"}
                 onClick={() => {
-                  router.push("/activities");
+                  router.push("activities");
                 }}
               >
                 Activities
@@ -116,9 +98,10 @@ function Navbar() {
             <Button fontSize={"1rem"} backgroundColor={"transparent"}>
               <Link
                 _hover={{ textDecoration: "none" }}
+                href="/aboutus"
                 fontWeight={"00"}
                 onClick={() => {
-                  router.push("/aboutus");
+                  router.push("aboutus");
                 }}
               >
                 About Us
@@ -127,9 +110,10 @@ function Navbar() {
             <Button fontSize={"1rem"} backgroundColor={"transparent"}>
               <Link
                 _hover={{ textDecoration: "none" }}
+                href="/transport"
                 fontWeight={"00"}
                 onClick={() => {
-                  router.push("/transport");
+                  router.push("transport");
                 }}
               >
                 Transport
@@ -138,9 +122,10 @@ function Navbar() {
             <Button fontSize={"1rem"} backgroundColor={"transparent"}>
               <Link
                 _hover={{ textDecoration: "none" }}
+                href="/contact"
                 fontWeight={"00"}
                 onClick={() => {
-                  router.push("/contact");
+                  router.push("contact");
                 }}
               >
                 Contact Us
@@ -215,7 +200,7 @@ function Navbar() {
           onClick={() => {
             router.push("/");
           }}
-          href="/"
+          href="index"
           fontWeight={"600"}
         >
           Redoq
@@ -243,7 +228,7 @@ function Navbar() {
               >
                 <Link
                   _hover={{ textDecoration: "none" }}
-                  href="#"
+                  href="tours"
                   fontWeight={"00"}
                   color={"#fff"}
                   onClick={() => {
@@ -257,6 +242,7 @@ function Navbar() {
                 <Link
                   _hover={{ textDecoration: "none" }}
                   fontWeight={"00"}
+                  href="hotels"
                   onClick={() => {
                     router.push("/hotels");
                   }}
@@ -267,7 +253,7 @@ function Navbar() {
               <Button fontSize={"1rem"} backgroundColor={"transparent"}>
                 <Link
                   _hover={{ textDecoration: "none" }}
-                  href="#"
+                  href="activities"
                   fontWeight={"00"}
                   onClick={() => {
                     router.push("/activities");
@@ -280,6 +266,7 @@ function Navbar() {
                 <Link
                   _hover={{ textDecoration: "none" }}
                   fontWeight={"00"}
+                  href="aboutus"
                   onClick={() => {
                     router.push("/aboutus");
                   }}
@@ -291,6 +278,7 @@ function Navbar() {
                 <Link
                   _hover={{ textDecoration: "none" }}
                   fontWeight={"00"}
+                  href="transport"
                   onClick={() => {
                     router.push("/transport");
                   }}
@@ -302,6 +290,7 @@ function Navbar() {
                 <Link
                   _hover={{ textDecoration: "none" }}
                   fontWeight={"00"}
+                  href="contactus"
                   onClick={() => {
                     router.push("/contact");
                   }}

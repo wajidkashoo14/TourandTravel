@@ -5,6 +5,9 @@
   z-index: 1;
   overflow-x: hidden;
 }
+.link {
+  font-weight: bold;
+}
 .video {
   width: 100vw;
   overflow-x: hidden;
@@ -36,27 +39,3 @@
     border-right-color: transparent;
   }
 }
-/* @media only screen and (max-width: 320px) {
-  .hero {
-    max-width: 100vw;
-    height: 100vh;
-  }
-  .video {
-    width: 100vw;
-    height: 100vh;
-  }
-} */
-/* @media (min-aspect-ratio: 32/9) {
-  .video {
-    width: 100%;
-    height: 100vh;
-  }
-}
-@media (max-aspect-ratio: 32/9) {
-  .video {
-    width: 100%;
-    height: 100vh;
-
-    padding: 0;
-  }
-} */

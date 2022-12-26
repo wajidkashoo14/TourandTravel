@@ -8,10 +8,21 @@ import Contact from "../components/Contact";
 import Discription from "../components/Discription";
 import Explore from "../components/Explore";
 import Banner from "../components/Banner";
+import {
+  Box,
+  Container,
+  Image,
+  Flex,
+  Heading,
+  Text,
+  ListItem,
+  List,
+  UnorderedList,
+} from "@chakra-ui/react";
 
 export default function Home() {
   return (
-    <>
+    <Box scrollBehavior={"smooth"}>
       <Hero />
       <Input />
       <Discription />
@@ -22,6 +33,6 @@ export default function Home() {
       <Subscribe />
       <Testimonials />
       <Contact />
-    </>
+    </Box>
   );
 }
