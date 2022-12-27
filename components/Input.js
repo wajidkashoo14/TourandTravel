@@ -39,6 +39,8 @@ function Input() {
     }
   };
 
+  console.log("filteredData");
+
   return (
     <Container
       marginTop={{ base: "-30rem", md: "-30rem", lg: "-20rem" }}
@@ -109,12 +111,7 @@ function Input() {
           <option value="Skiing Trips">Skiing Trips</option>
           <option value="Spiritual Tour">Spiritual Tour</option>
         </Select>
-        <Link
-          href={{
-            pathname: "/toursearch",
-            query: filteredData,
-          }}
-        >
+        <Link href="toursearch">
           <Button
             width={{ base: "100%", md: "100%", lg: "50%" }}
             size="lg"

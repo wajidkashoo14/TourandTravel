@@ -41,6 +41,10 @@ function Navbar() {
       scrollBehavior={"smooth"}
       fontFamily={"Montserrat"}
     >
+      <Link href="/">
+        <button className={styles.link}>Syed Travels</button>
+      </Link>
+
       <Box
         zIndex={"10000"}
         display={["none", "none", "flex", "flex"]}
@@ -50,16 +54,6 @@ function Navbar() {
       >
         <Box zIndex={"10000"}>
           <Flex gap={"3"} fontWeight={"400"}>
-            <button className={styles.link}>
-              <Link
-                onClick={() => {
-                  router.push("/");
-                }}
-                href="/"
-              >
-                Syed Travels
-              </Link>
-            </button>
             <Button fontSize={"1rem"} backgroundColor={"transparent"}>
               <Link
                 _hover={{ textDecoration: "none" }}
@@ -160,7 +154,7 @@ function Navbar() {
           cursor={"pointer"}
           borderRadius={5}
         >
-          <BsWhatsapp fontSize={"1.3rem"} marginLeft={"-1rem"} color={"#fff"} />
+          <BsWhatsapp fontSize={"1.3rem"} color={"#fff"} />
           <Link
             className={styles.whatsapp}
             href={"https://wa.me/919906191921"}
@@ -233,7 +227,7 @@ function Navbar() {
                   fontWeight={"00"}
                   color={"#fff"}
                   onClick={() => {
-                    router.push("/tours");
+                    router.push("tours");
                   }}
                 >
                   Tours
@@ -257,7 +251,7 @@ function Navbar() {
                   href="activities"
                   fontWeight={"00"}
                   onClick={() => {
-                    router.push("/activities");
+                    router.push("activities");
                   }}
                 >
                   Activities
@@ -269,7 +263,7 @@ function Navbar() {
                   fontWeight={"00"}
                   href="aboutus"
                   onClick={() => {
-                    router.push("/aboutus");
+                    router.push("aboutus");
                   }}
                 >
                   About Us
@@ -281,7 +275,7 @@ function Navbar() {
                   fontWeight={"00"}
                   href="transport"
                   onClick={() => {
-                    router.push("/transport");
+                    router.push("transport");
                   }}
                 >
                   Transport
@@ -293,7 +287,7 @@ function Navbar() {
                   fontWeight={"00"}
                   href="contactus"
                   onClick={() => {
-                    router.push("/contact");
+                    router.push("contact");
                   }}
                 >
                   Contact Us
