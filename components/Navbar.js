@@ -41,15 +41,6 @@ function Navbar() {
       scrollBehavior={"smooth"}
       fontFamily={"Montserrat"}
     >
-      <Link
-        onClick={() => {
-          router.push("/");
-        }}
-        href="/"
-        className={styles.link}
-      >
-        Redoq
-      </Link>
       <Box
         zIndex={"10000"}
         display={["none", "none", "flex", "flex"]}
@@ -59,6 +50,16 @@ function Navbar() {
       >
         <Box zIndex={"10000"}>
           <Flex gap={"3"} fontWeight={"400"}>
+            <button className={styles.link}>
+              <Link
+                onClick={() => {
+                  router.push("/");
+                }}
+                href="/"
+              >
+                Syed Travels
+              </Link>
+            </button>
             <Button fontSize={"1rem"} backgroundColor={"transparent"}>
               <Link
                 _hover={{ textDecoration: "none" }}
@@ -135,17 +136,17 @@ function Navbar() {
         </Box>
       </Box>
       <Box display={["none", "none", "flex", "flex"]} gap={"5"}>
-        <Link
-          className={styles.link}
+        <Button
           size="lg"
           bg="#5191FA"
           color={"#fff"}
           variant="solid"
           _hover={{ bg: "blue.500", color: " white" }}
-          href={"#contact"}
         >
-          Book now
-        </Link>
+          <Link className={styles.link} href={"#contact"}>
+            Book now
+          </Link>
+        </Button>
 
         <Box
           zIndex={"1000"}
