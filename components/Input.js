@@ -1,16 +1,17 @@
 import { Button, Container, Box, Select, Heading } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Modal from "./Modal";
 import cards from "../components/AllTourData";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { SearchContext } from "./SearchContext/SearchContext";
 
 function Input() {
+  const { filteredData, setFiliteredData } = useContext(SearchContext);
   const router = useRouter();
   const [openModal, setOpenModal] = useState(false);
   const [selectedDestination, setSelectedDestination] = useState("");
   const [selectedTourType, setSelectedTourType] = useState("");
-  const [filteredData, setFiliteredData] = useState([]);
   const [data, setData] = useState(cards);
 
   const handleDestinationDropdownChange = (e) => {
@@ -22,10 +23,7 @@ function Input() {
   };
 
   const handleSearchClick = () => {
-    // router.push({
-    //   pathname: "/toursearch",
-    //   query: { filteredData },
-    // });
+    router.push("/toursearch");
 
     let newFilteredData = data;
 

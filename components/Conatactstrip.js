@@ -3,7 +3,9 @@ import { Box, Button, Container, Flex } from "@chakra-ui/react";
 import { TbBrandFacebook } from "react-icons/tb";
 import { FiInstagram } from "react-icons/fi";
 import { BsTwitter } from "react-icons/bs";
+import styles from "../styles/contactstrip.module.css";
 import { useRouter } from "next/router";
+import Link from "next/link";
 function Conatactstrip() {
   const router = useRouter();
   return (
@@ -30,10 +32,28 @@ function Conatactstrip() {
             gap={"5"}
             borderRight="1px solid #fff"
             paddingRight={"3"}
+            cursor={"pointer"}
           >
-            <TbBrandFacebook />
-            <FiInstagram />
-            <BsTwitter />
+            <Link
+              href={"https://wajidtravelapp.netlify.app/"}
+              className={styles.social}
+            >
+              <TbBrandFacebook />
+            </Link>
+
+            <Link
+              href={"https://wajidtravelapp.netlify.app/"}
+              className={styles.social}
+            >
+              <FiInstagram />
+            </Link>
+
+            <Link
+              href={"https://wajidtravelapp.netlify.app/"}
+              className={styles.social}
+            >
+              <BsTwitter />
+            </Link>
           </Flex>
           <Box display={{ base: "none", md: "none", lg: "block" }}>
             <p>wajidkashoo@gmail.com</p>

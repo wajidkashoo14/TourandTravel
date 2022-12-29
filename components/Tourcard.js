@@ -15,7 +15,6 @@ import { AiOutlineClockCircle } from "react-icons/ai";
 import { useRouter } from "next/router";
 import SwiperCore, { Virtual, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import +data from "./Tourdata";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";

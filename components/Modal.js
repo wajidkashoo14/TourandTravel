@@ -41,8 +41,8 @@ function Modal({ closeModal }) {
           right={"5%"}
           onClick={() => closeModal(false)}
           zIndex={"1000000"}
-          fontSize={{ base: ".7rem", md: ".8rem", lg: "1rem" }}
-          size={{ base: "sm", md: "sm", lg: "lg" }}
+          fontSize={{ base: ".7rem", md: ".8rem", lg: "1.5rem" }}
+          size={{ base: "sm", md: "sm", lg: "md" }}
         >
           X
         </Button>

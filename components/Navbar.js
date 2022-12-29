@@ -153,6 +153,7 @@ function Navbar() {
           py={"3"}
           cursor={"pointer"}
           borderRadius={5}
+          color={"#fff"}
         >
           <BsWhatsapp fontSize={"1.3rem"} color={"#fff"} />
           <Link
