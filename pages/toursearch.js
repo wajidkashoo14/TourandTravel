@@ -18,7 +18,7 @@ import { AiOutlineClockCircle } from "react-icons/ai";
 import { SearchContext } from "../components/SearchContext/SearchContext";
 import styles from "../styles/aboutus.module.css";
 
-function toursearch() {
+function Toursearch() {
   const { filteredData, setFiliteredData } = useContext(SearchContext);
   const router = useRouter();
 
@@ -194,4 +194,4 @@ function toursearch() {
   );
 }
 
-export default toursearch;
+export default Toursearch;
