@@ -2,7 +2,6 @@ import {
   Container,
   Flex,
   Heading,
-  Link,
   Text,
   Box,
   StylesProvider,
@@ -13,6 +12,7 @@ import { GrFacebook } from "react-icons/gr";
 import { SiInstagram } from "react-icons/si";
 import { BsYoutube } from "react-icons/bs";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 function Footer() {
   const router = useRouter();
@@ -112,7 +112,7 @@ function Footer() {
             <Link
               className={styles.link}
               onClick={() => {
-                router.push("/tours");
+                router.push("/hotels");
               }}
             >
               Hotels

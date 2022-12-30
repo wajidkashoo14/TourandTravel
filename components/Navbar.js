@@ -239,9 +239,6 @@ function Navbar() {
                   _hover={{ textDecoration: "none" }}
                   fontWeight={"00"}
                   href="hotels"
-                  onClick={() => {
-                    router.push("/hotels");
-                  }}
                 >
                   Hotels
                 </Link>
@@ -251,9 +248,6 @@ function Navbar() {
                   _hover={{ textDecoration: "none" }}
                   href="activities"
                   fontWeight={"00"}
-                  onClick={() => {
-                    router.push("activities");
-                  }}
                 >
                   Activities
                 </Link>
@@ -263,9 +257,6 @@ function Navbar() {
                   _hover={{ textDecoration: "none" }}
                   fontWeight={"00"}
                   href="aboutus"
-                  onClick={() => {
-                    router.push("aboutus");
-                  }}
                 >
                   About Us
                 </Link>
@@ -275,9 +266,6 @@ function Navbar() {
                   _hover={{ textDecoration: "none" }}
                   fontWeight={"00"}
                   href="transport"
-                  onClick={() => {
-                    router.push("transport");
-                  }}
                 >
                   Transport
                 </Link>
@@ -287,9 +275,6 @@ function Navbar() {
                   _hover={{ textDecoration: "none" }}
                   fontWeight={"00"}
                   href="contactus"
-                  onClick={() => {
-                    router.push("contact");
-                  }}
                 >
                   Contact Us
                 </Link>
