@@ -190,16 +190,8 @@ function Navbar() {
         py={"8"}
         color={"white"}
       >
-        <Link
-          fontSize={"1.4rem"}
-          _hover={{ textDecoration: "none" }}
-          onClick={() => {
-            router.push("/");
-          }}
-          href="index"
-          fontWeight={"600"}
-        >
-          Redoq
+        <Link href="/">
+          <button className={styles.link}>Syed Travels</button>
         </Link>
         <Box
           zIndex={"10000000"}
