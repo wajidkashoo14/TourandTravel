@@ -1,11 +1,4 @@
-import {
-  Container,
-  Flex,
-  Heading,
-  Text,
-  Box,
-  StylesProvider,
-} from "@chakra-ui/react";
+import { Container, Flex, Heading, Text, Box, Button } from "@chakra-ui/react";
 import React from "react";
 import styles from "../styles/footer.module.css";
 import { GrFacebook } from "react-icons/gr";
@@ -75,8 +68,10 @@ function Footer() {
               color={"#BECFD6"}
               p={{ base: "3", md: "3", lg: "0" }}
             >
-              <Link color={"#2378C0"}>Read more</Link> to know what makes Multi
-              Destinations so Unique.
+              <Link color={"#2378C0"} href="/aboutus">
+                Read more
+              </Link>
+              to know what makes Multi Destinations so Unique.
             </Text>
           </Box>
         </Flex>
@@ -101,46 +96,25 @@ function Footer() {
             quick links
           </Heading>
           <Flex gap={"4"} flexDir={"column"} color={"#BECFD6"}>
-            <Link
-              className={styles.link}
-              onClick={() => {
-                router.push("/tours");
-              }}
-            >
-              Tours
+            <Link className={styles.link} href="tours">
+              <Button>Tours</Button>
             </Link>
-            <Link
-              className={styles.link}
-              onClick={() => {
-                router.push("/hotels");
-              }}
-            >
-              Hotels
+            <Link className={styles.link} href="hotels">
+              <Button>Hotels</Button>
             </Link>
-            <Link
-              className={styles.link}
-              onClick={() => {
-                router.push("/transport");
-              }}
-            >
-              Transport
+            <Link className={styles.link} href="/transport">
+              <Button>Transport</Button>
             </Link>
-            <Link
-              className={styles.link}
-              onClick={() => {
-                router.push("/activities");
-              }}
-            >
-              Activities
-            </Link>
-            <Link
-              className={styles.link}
-              onClick={() => {
-                router.push("/blogs");
-              }}
-            >
-              Blogs
-            </Link>
+            <Button>
+              <Link className={styles.link} href="/activities">
+                Activities
+              </Link>
+            </Button>
+            <Button>
+              <Link className={styles.link} href="/blogs">
+                <a>Blogs</a>
+              </Link>
+            </Button>
           </Flex>
         </Flex>
         <Flex flexDir={"column"}>
@@ -178,13 +152,22 @@ function Footer() {
             >
               <Text py={"2"}>Follow us</Text>
               <Box display={"flex"} gap={"6"} fontSize={"1.2rem"}>
-                <Link className={styles.link}>
+                <Link
+                  className={styles.link}
+                  href="https://wajidtravelapp.netlify.app/"
+                >
                   <GrFacebook />
                 </Link>
-                <Link className={styles.link}>
+                <Link
+                  className={styles.link}
+                  href="https://wajidtravelapp.netlify.app/"
+                >
                   <SiInstagram />
                 </Link>
-                <Link className={styles.link} onClick>
+                <Link
+                  className={styles.link}
+                  href="https://wajidtravelapp.netlify.app/"
+                >
                   <BsYoutube />
                 </Link>
               </Box>
@@ -193,7 +176,7 @@ function Footer() {
         </Flex>
       </Box>
       <Text mt={"5"} color={"#80A1AE"}>
-        Designed and developed by <Link>Wajid Kashoo</Link>
+        Designed and developed by <Link href="#">Wajid Kashoo</Link>
       </Text>
     </Container>
   );

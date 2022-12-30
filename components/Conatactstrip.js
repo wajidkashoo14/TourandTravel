@@ -35,21 +35,21 @@ function Conatactstrip() {
             cursor={"pointer"}
           >
             <Link
-              href={"https://wajidtravelapp.netlify.app/"}
+              href="https://wajidtravelapp.netlify.app/"
               className={styles.social}
             >
               <TbBrandFacebook />
             </Link>
 
             <Link
-              href={"https://wajidtravelapp.netlify.app/"}
+              href="https://wajidtravelapp.netlify.app/"
               className={styles.social}
             >
               <FiInstagram />
             </Link>
 
             <Link
-              href={"https://wajidtravelapp.netlify.app/"}
+              href="https://wajidtravelapp.netlify.app/"
               className={styles.social}
             >
               <BsTwitter />

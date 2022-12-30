@@ -109,7 +109,7 @@ function Input() {
           <option value="Skiing Trips">Skiing Trips</option>
           <option value="Spiritual Tour">Spiritual Tour</option>
         </Select>
-        <Link href="toursearch">
+        <Link href="/toursearch">
           <Button
             width={{ base: "100%", md: "100%", lg: "50%" }}
             size="lg"

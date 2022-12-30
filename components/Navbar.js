@@ -8,15 +8,12 @@ import { BsTwitter } from "react-icons/bs";
 import { Box, Button, Container, Flex, IconButton } from "@chakra-ui/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
   const [display, setDisplay] = useState("none");
-
   useEffect(() => {
     window.addEventListener("scroll", changeBackgroud);
   }, []);
-
   const changeBackgroud = () => {
     if (window.scrollY > 50) {
       setNavbar(true);
@@ -25,7 +22,6 @@ function Navbar() {
     }
   };
   const router = useRouter();
-
   return (
     <Container
       maxW="100%"
@@ -42,9 +38,8 @@ function Navbar() {
       fontFamily={"Montserrat"}
     >
       <Link href="/">
-        <button className={styles.link}>Syed Travels</button>
+        <a className={styles.link}>Syed Travels</a>
       </Link>
-
       <Box
         zIndex={"10000"}
         display={["none", "none", "flex", "flex"]}
@@ -57,13 +52,10 @@ function Navbar() {
             <Button fontSize={"1rem"} backgroundColor={"transparent"}>
               <Link
                 _hover={{ textDecoration: "none" }}
-                href="tours"
+                href="/tours"
                 fontWeight={"00"}
-                onClick={() => {
-                  router.push("/tours");
-                }}
               >
-                Tours
+                <a>Tours</a>
               </Link>
             </Button>
             <Button fontSize={"1rem"} backgroundColor={"transparent"}>
@@ -71,11 +63,8 @@ function Navbar() {
                 _hover={{ textDecoration: "none" }}
                 fontWeight={"00"}
                 href="/hotels"
-                onClick={() => {
-                  router.push("hotels");
-                }}
               >
-                Hotels
+                <a>Hotels</a>
               </Link>
             </Button>
             <Button fontSize={"1rem"} backgroundColor={"transparent"}>
@@ -83,11 +72,8 @@ function Navbar() {
                 _hover={{ textDecoration: "none" }}
                 href="/activities"
                 fontWeight={"00"}
-                onClick={() => {
-                  router.push("activities");
-                }}
               >
-                Activities
+                <a>Activities</a>
               </Link>
             </Button>
             <Button fontSize={"1rem"} backgroundColor={"transparent"}>
@@ -95,11 +81,8 @@ function Navbar() {
                 _hover={{ textDecoration: "none" }}
                 href="/aboutus"
                 fontWeight={"00"}
-                onClick={() => {
-                  router.push("aboutus");
-                }}
               >
-                About Us
+                <a>Aboutus</a>
               </Link>
             </Button>
             <Button fontSize={"1rem"} backgroundColor={"transparent"}>
@@ -107,23 +90,13 @@ function Navbar() {
                 _hover={{ textDecoration: "none" }}
                 href="/transport"
                 fontWeight={"00"}
-                onClick={() => {
-                  router.push("transport");
-                }}
               >
-                Transport
+                <a>Transport</a>
               </Link>
             </Button>
             <Button fontSize={"1rem"} backgroundColor={"transparent"}>
-              <Link
-                _hover={{ textDecoration: "none" }}
-                href="/contact"
-                fontWeight={"00"}
-                onClick={() => {
-                  router.push("contact");
-                }}
-              >
-                Contact Us
+              <Link _hover={{ textDecoration: "none" }} href="/contact">
+                <a>Contact us</a>
               </Link>
             </Button>
           </Flex>
@@ -137,11 +110,10 @@ function Navbar() {
           variant="solid"
           _hover={{ bg: "blue.500", color: " white" }}
         >
-          <Link className={styles.link} href={"#contact"}>
-            Book now
+          <Link className={styles.link} href="#contact">
+            <a>Book now</a>
           </Link>
         </Button>
-
         <Box
           zIndex={"1000"}
           backgroundColor={"#25D366"}
@@ -158,7 +130,7 @@ function Navbar() {
           <BsWhatsapp fontSize={"1.3rem"} color={"#fff"} />
           <Link
             className={styles.whatsapp}
-            href={"https://wa.me/919906191921"}
+            href="https://wa.me/919906191921"
             color={"#fff"}
           >
             WhatsApp
@@ -190,8 +162,13 @@ function Navbar() {
         py={"8"}
         color={"white"}
       >
-        <Link href="/">
-          <button className={styles.link}>Syed Travels</button>
+        <Link
+          fontSize={"1.4rem"}
+          _hover={{ textDecoration: "none" }}
+          href="/"
+          fontWeight={"600"}
+        >
+          <a>Syed Travels</a>
         </Link>
         <Box
           zIndex={"10000000"}
@@ -216,59 +193,48 @@ function Navbar() {
               >
                 <Link
                   _hover={{ textDecoration: "none" }}
-                  href="tours"
+                  href="/tours"
                   fontWeight={"00"}
                   color={"#fff"}
-                  onClick={() => {
-                    router.push("tours");
-                  }}
                 >
-                  Tours
+                  <a>Tours</a>
                 </Link>
               </Button>
               <Button fontSize={"1rem"} backgroundColor={"transparent"}>
                 <Link
                   _hover={{ textDecoration: "none" }}
                   fontWeight={"00"}
-                  href="hotels"
+                  href="/hotels"
                 >
-                  Hotels
+                  <a>Hotels</a>
                 </Link>
               </Button>
               <Button fontSize={"1rem"} backgroundColor={"transparent"}>
-                <Link
-                  _hover={{ textDecoration: "none" }}
-                  href="activities"
-                  fontWeight={"00"}
-                >
-                  Activities
+                <Link _hover={{ textDecoration: "none" }} href="/activities">
+                  <a>Activities</a>
                 </Link>
               </Button>
               <Button fontSize={"1rem"} backgroundColor={"transparent"}>
-                <Link
-                  _hover={{ textDecoration: "none" }}
-                  fontWeight={"00"}
-                  href="aboutus"
-                >
-                  About Us
+                <Link _hover={{ textDecoration: "none" }} href="/aboutus">
+                  <a>About Us</a>
                 </Link>
               </Button>
               <Button fontSize={"1rem"} backgroundColor={"transparent"}>
                 <Link
                   _hover={{ textDecoration: "none" }}
                   fontWeight={"00"}
-                  href="transport"
+                  href="/transport"
                 >
-                  Transport
+                  <a>Transport</a>
                 </Link>
               </Button>
               <Button fontSize={"1rem"} backgroundColor={"transparent"}>
                 <Link
                   _hover={{ textDecoration: "none" }}
                   fontWeight={"00"}
-                  href="contactus"
+                  href="/contactus"
                 >
-                  Contact Us
+                  <a>Contact us</a>
                 </Link>
               </Button>
             </Flex>
@@ -304,5 +270,4 @@ function Navbar() {
     </Container>
   );
 }
-
 export default Navbar;
