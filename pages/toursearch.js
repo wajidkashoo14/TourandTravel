@@ -34,7 +34,7 @@ function Toursearch() {
       gap={"1rem"}
       flexWrap={"wrap"}
       position={"relative"}
-      mx={["2", "2", "0"]}
+      px={["2", "2", "0"]}
     >
       <Flex
         width={"20%"}
@@ -104,6 +104,7 @@ function Toursearch() {
           left={["0", "0", "25%"]}
           minH={"100vh"}
           overflowY={"hidden"}
+          mx={["2", "2", "0"]}
         >
           {filteredData.map((item) => {
             return (
