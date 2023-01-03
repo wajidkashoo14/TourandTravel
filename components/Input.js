@@ -55,7 +55,7 @@ function Input() {
         display={{ base: "block", md: "block", lg: "flex" }}
         justifyContent={"center"}
         alignItems={"center"}
-        gap={{ base: "2", md: "5", lg: "5" }}
+        gap={{ base: "0", md: "5", lg: "5" }}
         w={{ base: "90vw", md: "90vw", lg: "60vw" }}
         borderRadius={"5"}
         height={{ base: "14rem", md: "14rem", lg: "5rem" }}
@@ -64,6 +64,7 @@ function Input() {
         backgroundColor={"rgba(255,255,255,0.5)"}
         position={"relative"}
         zIndex={["10", "10", "100000", "100000"]}
+        mx={["auto", "auto", "1"]}
       >
         <Select
           placeholder="Where are you going"

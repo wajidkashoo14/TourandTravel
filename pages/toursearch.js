@@ -26,31 +26,29 @@ function Toursearch() {
     <Container
       pt={"10rem"}
       minHeight={"100vh"}
-      maxW={["100vw", "95vw", "100vw", "100vw"]}
+      maxW={["100vw", "100vw", "100vw", "100vw"]}
       backgroundColor={"#F7F7F7"}
       gap={"1rem"}
-      px={["2", "2", "0"]}
       overflow={"hidden"}
     >
       <Flex
         justifyContent={"center"}
         alignItems={"flex-start"}
         gap={"4rem"}
-        p={"10"}
         minH={"100vh"}
-        mx={["2", "2", "0"]}
+        flexDir={["column", "column", "row"]}
       >
         <Flex
-          width={"20%"}
-          height={"350px"}
+          width={["100%", "100%", "20%"]}
+          height={["275px", "275px", "350px"]}
           borderRadius={"5"}
           boxShadow={"lg"}
-          display={["none", "none", "flex"]}
+          display={"flex"}
         >
           <FormControl
             display={"flex"}
             flexDir={"column"}
-            gap={"5"}
+            gap={["3", "3", "5"]}
             p={"5"}
             border={"1px solid #cacfd0"}
             fontFamily={"Montserrat"}
@@ -64,20 +62,20 @@ function Toursearch() {
             </Heading>
             <Select
               placeholder="Tour type"
-              size="lg"
+              size={["sm", "sm", "lg"]}
               variant="filled"
-              zIndex={"10000"}
+              zIndex={"1000"}
             >
               <option value="">Adventure Tour</option>
               <option value="option2">City Tour</option>
               <option value="option3">Group Tour</option>
             </Select>
-            <Input type="date" placeholder="From" size="lg" />
-            <Input type="date" placeholder="To" size="lg" />
+            <Input type="date" placeholder="From" size={["sm", "sm", "lg"]} />
+            <Input type="date" placeholder="To" size={["sm", "sm", "lg"]} />
             <Button
-              size="lg"
+              size={["md", "md", "lg"]}
               bg="#5191FA"
-              mt={"2rem"}
+              mt={["1rem", "1rem", "2rem"]}
               color={"#fff"}
               variant="solid"
               _hover={{ bg: "blue.500", color: " white" }}
@@ -86,7 +84,11 @@ function Toursearch() {
             </Button>
           </FormControl>
         </Flex>
-        <Box minH={"100vh"} width={["100vw", "100vw", "80%", "80%"]}>
+        <Box
+          minH={"100vh"}
+          width={["100vw", "100vw", "80%", "80%"]}
+          mx={["auto", "auto", "0"]}
+        >
           <Heading
             fontSize={"2xl"}
             className={styles.heading}
@@ -104,6 +106,7 @@ function Toursearch() {
             width={["100vw", "100vw", "100%", "100%"]}
             minH={"100vh"}
             overflowY={"hidden"}
+            mx={["auto", "auto", "0"]}
           >
             {filteredData.map((item) => {
               return (
@@ -113,13 +116,11 @@ function Toursearch() {
                   onClick={() => router.push(`./tourdetails/${item.id}`)}
                   key={item.id}
                   fontFamily={"Montserrat"}
-                  px={["1", "1", "0"]}
                   overflowX={"hidden"}
                   w={["90vw", "100vw", "300px", "300px"]}
                   _hover={{
                     boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
                   }}
-                  mx={["auto", "auto", "0"]}
                 >
                   <Box
                     w={["100vw", "100vw", "200px", "300px"]}
