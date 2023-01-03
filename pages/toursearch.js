@@ -44,6 +44,7 @@ function Toursearch() {
         top={"25%"}
         left={"2%"}
         position={"absolute"}
+        display={["none", "none", "flex"]}
       >
         <FormControl
           display={"flex"}
@@ -84,7 +85,7 @@ function Toursearch() {
           </Button>
         </FormControl>
       </Flex>
-      <Box overflowY={"hidden"} minH={"100vh"}>
+      <Box overflowY={"hidden"} minH={"100vh"} mx={["2", "2", "0"]}>
         <Heading
           fontSize={"2xl"}
           className={styles.heading}
