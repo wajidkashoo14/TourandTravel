@@ -34,6 +34,7 @@ function Toursearch() {
       gap={"1rem"}
       flexWrap={"wrap"}
       position={"relative"}
+      mx={["2", "2", "0"]}
     >
       <Flex
         width={"20%"}
