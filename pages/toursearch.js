@@ -83,18 +83,25 @@ function Toursearch() {
           </Button>
         </FormControl>
       </Flex>
-      <Box>
+      <Box overflowY={"hidden"} minH={"100vh"}>
         <Heading
           fontSize={"2xl"}
           className={styles.heading}
           py={"5"}
           fontWeight={"500"}
+          textAlign={"left"}
         >{`${filteredData.length} tours found`}</Heading>
         <Box
           display={["block", "block", "flex", "flex"]}
           justifyContent={"flex-start"}
           alignItems={"flex-start"}
-          gap={"1.5rem"}
+          flexWrap={"wrap"}
+          gap={"2rem"}
+          width={["100vw", "100vw", "80%", "80%"]}
+          position={"absolute"}
+          left={["0", "0", "25%"]}
+          minH={"100vh"}
+          overflowY={"hidden"}
         >
           {filteredData.map((item) => {
             return (

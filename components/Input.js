@@ -23,21 +23,20 @@ function Input() {
   };
 
   const handleSearchClick = () => {
-    router.push("/toursearch");
+    router.push(
+      `/toursearch?destination=${selectedDestination}&&type=${selectedTourType}`
+    );
 
-    let newFilteredData = data;
-
-    if (selectedDestination && selectedTourType) {
-      newFilteredData = newFilteredData.filter(
+    if (selectedDestination || selectedTourType) {
+      const match = data.filter(
         (item) =>
-          item.title === selectedDestination &&
-          item.tourType === selectedTourType
+          item.title?.find((title) => title === selectedDestination) ||
+          item.tourType?.find((type) => type === selectedTourType)
       );
-      return setFiliteredData(newFilteredData);
+      console.log("match >> ", match);
+      setFiliteredData(match);
     }
   };
-
-  console.log("filteredData");
 
   return (
     <Container
@@ -76,17 +75,20 @@ function Input() {
           onChange={handleDestinationDropdownChange}
           my={{ base: "3", md: "1", lg: "0" }}
         >
-          <option value="Gulmarg">Gulmarg</option>
-          <option value="Pahalgam">Pahalgam</option>
-          <option value="Sonmarg">Sonmarg</option>
-          <option value="Doodhpathri">Doodhpathri</option>
-          <option value="Sinthan top">Sinthan top</option>
-          <option value="Srinagar">Srinagar</option>
-          <option value="Kargil">Kargil</option>
-          <option value="Leh">Leh</option>
-          <option value="Nubra Valley">Nubra Valley</option>
-          <option value="Pangong Tso">Pangong Tso</option>
-          <option value="Tso Moriri">Tso Moriri</option>
+          <option value="gulmarg">Gulmarg</option>
+          <option value="pahalgam">Pahalgam</option>
+          <option value="sonmarg">Sonmarg</option>
+          <option value="doodhpathri">Doodhpathri</option>
+          <option value="sinthan top">Sinthan top</option>
+          <option value="srinagar">Srinagar</option>
+          <option value="kargil">Kargil</option>
+          <option value="leh">Leh</option>
+          <option value="nubra-valley">Nubra Valley</option>
+          <option value="pangong-tso">Pangong Tso</option>
+          <option value="tso-moriri">Tso Moriri</option>
+          <option value="ladakh">Ladakh</option>
+          <option value="vaishnodevi">Vaishnodevi</option>
+          <option value="katra">Kartra</option>
         </Select>
         <Select
           placeholder="Tour type"
@@ -97,17 +99,17 @@ function Input() {
           my={{ base: "3", md: "1", lg: "0" }}
           onChange={handleTourTypeDropdownChange}
         >
-          <option value="Adventure Tour">Adventure Tour</option>
-          <option value="City Tour">City Tour</option>
-          <option value="Group Tour">Group Tour</option>
-          <option value="Best Sellers">Best Sellers</option>
-          <option value="City trips">City trips</option>
-          <option value="Ecotourism<3">Ecotourism</option>
-          <option value="Escorted Tour">Escorted Tour</option>
-          <option value="Honeymoon & Couples">Honeymoon & Couples</option>
-          <option value="Mountain Adventures">Mountain Adventures</option>
-          <option value="Skiing Trips">Skiing Trips</option>
-          <option value="Spiritual Tour">Spiritual Tour</option>
+          <option value="adventure-tour">Adventure Tour</option>
+          <option value="city-tour">City Tour</option>
+          <option value="group-tour">Group Tour</option>
+          <option value="best-sellers">Best Sellers</option>
+          <option value="city-trips">City trips</option>
+          <option value="ecotourism<3">Ecotourism</option>
+          <option value="escorted-tour">Escorted Tour</option>
+          <option value="honeymoon-&-couples">Honeymoon & Couples</option>
+          <option value="mountain-adventures">Mountain Adventures</option>
+          <option value="skiing-trips">Skiing Trips</option>
+          <option value="spiritual-tour">Spiritual Tour</option>
         </Select>
         <Link href="/toursearch">
           <Button

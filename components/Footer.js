@@ -97,24 +97,22 @@ function Footer() {
           </Heading>
           <Flex gap={"4"} flexDir={"column"} color={"#BECFD6"}>
             <Link className={styles.link} href="tours">
-              <Button>Tours</Button>
+              Tours
             </Link>
             <Link className={styles.link} href="hotels">
-              <Button>Hotels</Button>
+              Hotels
             </Link>
             <Link className={styles.link} href="/transport">
-              <Button>Transport</Button>
+              Transport
             </Link>
-            <Button>
-              <Link className={styles.link} href="/activities">
-                Activities
-              </Link>
-            </Button>
-            <Button>
-              <Link className={styles.link} href="/blogs">
-                <a>Blogs</a>
-              </Link>
-            </Button>
+
+            <Link className={styles.link} href="/activities">
+              Activities
+            </Link>
+
+            <Link className={styles.link} href="/blogs">
+              <a>Blogs</a>
+            </Link>
           </Flex>
         </Flex>
         <Flex flexDir={"column"}>
