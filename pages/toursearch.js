@@ -70,8 +70,8 @@ function Toursearch() {
               <option value="option2">City Tour</option>
               <option value="option3">Group Tour</option>
             </Select>
-            <Input type="date" placeholder="From" size={["sm", "sm", "lg"]} />
-            <Input type="date" placeholder="To" size={["sm", "sm", "lg"]} />
+            <Input type="date" placeholder="From" size={["md", "md", "lg"]} />
+            <Input type="date" placeholder="To" size={["md", "md", "lg"]} />
             <Button
               size={["md", "md", "lg"]}
               bg="#5191FA"

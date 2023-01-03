@@ -126,6 +126,7 @@ function Tourcategories() {
           transition={"all 0.2s"}
           h={{ base: "350px", md: "350px", lg: "400px" }}
           w={{ base: "100%", md: "100%", lg: "600px" }}
+          my={{ base: "1rem" }}
         >
           <Image
             src="https://www.peakadventuretour.com/blog/wp-content/uploads/2019/02/Dal-Lake-Srinagar.jpg"
