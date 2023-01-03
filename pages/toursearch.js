@@ -62,7 +62,7 @@ function Toursearch() {
             </Heading>
             <Select
               placeholder="Tour type"
-              size={["sm", "sm", "lg"]}
+              size={["md", "md", "lg"]}
               variant="filled"
               zIndex={"1000"}
             >
