@@ -11,7 +11,7 @@ function Footer() {
   const router = useRouter();
   return (
     <Container
-      minH={"100vh"}
+      minH={"50vh"}
       maxW={"100%"}
       bg={"#06283d"}
       display={{ base: "block", md: "block", lg: "flex" }}
