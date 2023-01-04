@@ -30,6 +30,7 @@ function Toursearch() {
       backgroundColor={"#F7F7F7"}
       gap={"1rem"}
       overflow={"hidden"}
+      mx={["8", "8", "0"]}
     >
       <Flex
         justifyContent={"center"}
@@ -43,7 +44,7 @@ function Toursearch() {
           height={["275px", "275px", "350px"]}
           borderRadius={"5"}
           boxShadow={"lg"}
-          display={"flex"}
+          display={["none", "none", "flex"]}
         >
           <FormControl
             display={"flex"}
@@ -84,17 +85,13 @@ function Toursearch() {
             </Button>
           </FormControl>
         </Flex>
-        <Box
-          minH={"100vh"}
-          width={["100vw", "100vw", "80%", "80%"]}
-          mx={["auto", "auto", "0"]}
-        >
+        <Box minH={"100vh"} width={["100vw", "100vw", "80%", "80%"]}>
           <Heading
             fontSize={"2xl"}
             className={styles.heading}
             pb={"5"}
             fontWeight={"500"}
-            ml={["5", "5"]}
+            // ml={["5", "5"]}
           >{`${filteredData.length} tours found`}</Heading>
           <Box
             display={"flex"}
@@ -106,7 +103,6 @@ function Toursearch() {
             width={["100vw", "100vw", "100%", "100%"]}
             minH={"100vh"}
             overflowY={"hidden"}
-            mx={["auto", "auto", "0"]}
           >
             {filteredData.map((item) => {
               return (

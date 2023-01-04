@@ -149,8 +149,8 @@ function Navbar() {
         zIndex={"100000000"}
         justifyContent={"space-between"}
         display={display}
-        px={"2"}
-        py={"10"}
+        px={"6"}
+        py={"2rem"}
         color={"white"}
       >
         <Link
@@ -166,8 +166,7 @@ function Navbar() {
           display={"flex"}
           flexDir={"column"}
           justifyContent={"center"}
-          alignItems={"flex-start"}
-          gap={"10"}
+          alignItems={"center"}
           color={"white"}
         >
           <Box zIndex={"10000000"}>
@@ -176,6 +175,8 @@ function Navbar() {
               fontWeight={"400"}
               flexDir={"column"}
               zIndex={"10000000"}
+              justifyContent={"center"}
+              alignItems={"center"}
             >
               <Button
                 fontSize={"1rem"}
@@ -271,28 +272,12 @@ function Navbar() {
           aria-label="Open Menu"
           size={"md"}
           color={"#06283d"}
-          mr={"2"}
           icon={<CloseIcon />}
           display={["flex", "flex", "none", "none"]}
           onClick={() => {
             setDisplay("none");
           }}
         />
-        <Box gap={"10"} position={"absolute"} bottom={"10%"}>
-          <Flex
-            alignItems="center"
-            gap={"5"}
-            borderRight="1px solid #fff"
-            paddingRight={"3"}
-          >
-            <TbBrandFacebook fontSize={"1.5rem"} />
-            <FiInstagram fontSize={"1.5rem"} />
-            <BsTwitter fontSize={"1.5rem"} />
-          </Flex>
-          <Box display={{ base: "none", md: "none", lg: "block" }}>
-            <p>wajidkashoo@gmail.com</p>
-          </Box>
-        </Box>
       </Flex>
     </Container>
   );

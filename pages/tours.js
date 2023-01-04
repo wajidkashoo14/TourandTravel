@@ -23,7 +23,7 @@ function Tours() {
       minH={"100vh"}
       fontFamily={("Montserrat", "sans-serif")}
       overflowX={"hidden"}
-      mx={["4", "4", "0"]}
+      mx={["8", "8", "0"]}
     >
       <Flex
         width={"100%"}
