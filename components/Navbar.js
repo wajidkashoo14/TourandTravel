@@ -188,7 +188,13 @@ function Navbar() {
                   fontWeight={"00"}
                   color={"#fff"}
                 >
-                  <a>Tours</a>
+                  <a
+                    onClick={() => {
+                      setDisplay("none");
+                    }}
+                  >
+                    Tours
+                  </a>
                 </Link>
               </Button>
               <Button fontSize={"1rem"} backgroundColor={"transparent"}>
@@ -197,17 +203,35 @@ function Navbar() {
                   fontWeight={"00"}
                   href="/hotels"
                 >
-                  <a>Hotels</a>
+                  <a
+                    onClick={() => {
+                      setDisplay("none");
+                    }}
+                  >
+                    Hotels
+                  </a>
                 </Link>
               </Button>
               <Button fontSize={"1rem"} backgroundColor={"transparent"}>
                 <Link _hover={{ textDecoration: "none" }} href="/activities">
-                  <a>Activities</a>
+                  <a
+                    onClick={() => {
+                      setDisplay("none");
+                    }}
+                  >
+                    Activities
+                  </a>
                 </Link>
               </Button>
               <Button fontSize={"1rem"} backgroundColor={"transparent"}>
                 <Link _hover={{ textDecoration: "none" }} href="/aboutus">
-                  <a>About Us</a>
+                  <a
+                    onClick={() => {
+                      setDisplay("none");
+                    }}
+                  >
+                    About Us
+                  </a>
                 </Link>
               </Button>
               <Button fontSize={"1rem"} backgroundColor={"transparent"}>
@@ -216,7 +240,13 @@ function Navbar() {
                   fontWeight={"00"}
                   href="/transport"
                 >
-                  <a>Transport</a>
+                  <a
+                    onClick={() => {
+                      setDisplay("none");
+                    }}
+                  >
+                    Transport
+                  </a>
                 </Link>
               </Button>
               <Button fontSize={"1rem"} backgroundColor={"transparent"}>
@@ -225,7 +255,13 @@ function Navbar() {
                   fontWeight={"00"}
                   href="/contactus"
                 >
-                  <a>Contact us</a>
+                  <a
+                    onClick={() => {
+                      setDisplay("none");
+                    }}
+                  >
+                    Contact us
+                  </a>
                 </Link>
               </Button>
             </Flex>
