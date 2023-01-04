@@ -31,6 +31,9 @@
   border-radius: 0.3rem;
   font-family: "Montserrat", sans-serif;
 }
+.a {
+  font-weight: bold;
+}
 
 @keyframes blinkCursor {
   from {

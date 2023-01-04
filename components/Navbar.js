@@ -41,7 +41,7 @@ function Navbar() {
       px={["0", "3", "10", "10"]}
       position={"fixed"}
       mt={"3rem"}
-      zIndex={"20000"}
+      zIndex={"200000"}
       style={{ background: `${navbar}`, transition: "all 0.5s" }}
       scrollBehavior={"smooth"}
       fontFamily={"Montserrat"}
@@ -159,7 +159,7 @@ function Navbar() {
           href="/"
           fontWeight={"600"}
         >
-          <Text>Syed Travels</Text>
+          <a className={styles.a}>Syed Travels</a>
         </Link>
         <Box
           zIndex={"10000000"}
@@ -253,7 +253,7 @@ function Navbar() {
                 <Link
                   _hover={{ textDecoration: "none" }}
                   fontWeight={"00"}
-                  href="/contactus"
+                  href="/contact"
                 >
                   <a
                     onClick={() => {

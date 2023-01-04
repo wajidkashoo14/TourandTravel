@@ -23,8 +23,9 @@ function Tours() {
       minH={"100vh"}
       fontFamily={("Montserrat", "sans-serif")}
       overflowX={"hidden"}
+      mx={["4", "4", "0"]}
     >
-      <Flex width={"100%"} flexDir={"column"}>
+      <Flex width={"100%"} flexDir={"column"} mx={["0"]}>
         <Box maxWidth={"100vw"} height={"40vh"}>
           <Image
             src="./tourscover.jpg"
@@ -38,8 +39,9 @@ function Tours() {
       </Flex>
 
       <Box
-        mx={"10"}
+        mx={["0", "2", "10"]}
         display={"flex"}
+        flexDir={["column", "column", "row"]}
         justifyContent={"center"}
         flexWrap={"wrap"}
         minH={"100vh"}
@@ -51,6 +53,7 @@ function Tours() {
           height={"350px"}
           borderRadius={"5"}
           boxShadow={"lg"}
+          display={["none", "none", "flex"]}
         >
           <FormControl
             display={"flex"}
@@ -91,12 +94,12 @@ function Tours() {
             </Button>
           </FormControl>
         </Flex>
-        <Flex maxWidth={"70vw"} flexWrap={"wrap"}>
+        <Flex maxWidth={["100vw", "100vw", "70vw"]} flexWrap={"wrap"}>
           <Text
-            fontSize={"3xl"}
+            fontSize={["xl", "xl", "3xl"]}
             fontWeight={"500"}
             mb={"8"}
-            ml={"10"}
+            ml={["0", "0", "10"]}
             className={styles.heading}
           >
             {`${tourCards.length} Tours found`}

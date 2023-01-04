@@ -47,7 +47,7 @@ function Input() {
       justifyContent={"center"}
       alignItems={"center"}
       fontFamily={"Montserrat"}
-      zIndex={["10", "10", "100000", "10000"]}
+      zIndex={["1000", "1000", "100000", "10000"]}
       textAlign={"center"}
     >
       {openModal && <Modal closeModal={setOpenModal} />}
