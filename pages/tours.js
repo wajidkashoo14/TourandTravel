@@ -25,7 +25,11 @@ function Tours() {
       overflowX={"hidden"}
       mx={["4", "4", "0"]}
     >
-      <Flex width={"100%"} flexDir={"column"} mx={["0"]}>
+      <Flex
+        width={"100%"}
+        flexDir={"column"}
+        display={["none", "none", "flex"]}
+      >
         <Box maxWidth={"100vw"} height={"40vh"}>
           <Image
             src="./tourscover.jpg"
