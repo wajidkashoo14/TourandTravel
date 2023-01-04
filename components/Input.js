@@ -33,7 +33,6 @@ function Input() {
           item.title?.find((title) => title === selectedDestination) ||
           item.tourType?.find((type) => type === selectedTourType)
       );
-      console.log("match >> ", match);
       setFiliteredData(match);
     }
   };
