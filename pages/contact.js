@@ -7,8 +7,6 @@ import {
   Input,
   Textarea,
   Button,
-  AspectRatio,
-  ListItem,
 } from "@chakra-ui/react";
 import React from "react";
 import styles from "../styles/contact.module.css";
@@ -73,14 +71,12 @@ function contact() {
               <Input
                 placeholder="Your Name"
                 type="text"
-                width={"50%"}
                 size={"lg"}
                 fontSize={"1rem"}
               />
               <Input
                 placeholder="Email"
                 type="email"
-                width={"50%"}
                 size={"lg"}
                 fontSize={"1rem"}
               />

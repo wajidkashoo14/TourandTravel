@@ -87,7 +87,7 @@ function Tourcategories() {
             my={{ base: "1rem" }}
           >
             <Image
-              src="./tourone.jpg"
+              src="./cycling.jpg"
               h={{ base: "350px", md: "350px", lg: "400px" }}
               w={{ base: "100%", md: "100%", lg: "600px" }}
               loading={"lazy"}
@@ -125,7 +125,7 @@ function Tourcategories() {
           overflow={"hidden"}
           transition={"all 0.2s"}
           h={{ base: "350px", md: "350px", lg: "400px" }}
-          w={{ base: "100%", md: "100%", lg: "600px" }}
+          w={{ base: "100%", md: "100%", lg: "1250px" }}
           my={{ base: "1rem" }}
         >
           <Image
@@ -138,7 +138,7 @@ function Tourcategories() {
           <Box position={"absolute"} top={"10%"} right={"5%"}>
             <AiOutlineHeart fontSize={"1.5rem"} color={"#fff"} />
           </Box>
-          <Box position={"absolute"} bottom={"5%"} left={"3%"}>
+          <Box position={"absolute"} bottom={"5%"} left={["3%", "3%", "2%"]}>
             <Heading
               fontSize={{ base: "2xl", md: "2xl", lg: "3xl" }}
               color={"#fff"}

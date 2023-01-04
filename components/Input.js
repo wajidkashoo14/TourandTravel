@@ -63,7 +63,7 @@ function Input() {
         px={{ base: "1rem", md: "1rem", lg: "2rem" }}
         backgroundColor={"rgba(255,255,255,0.5)"}
         position={"relative"}
-        zIndex={["10", "10", "100000", "100000"]}
+        zIndex={["10", "10", "100000", "1000"]}
         mx={["auto", "auto", "1"]}
       >
         <Select

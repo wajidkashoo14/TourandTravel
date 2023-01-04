@@ -5,23 +5,32 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { TbBrandFacebook } from "react-icons/tb";
 import { FiInstagram } from "react-icons/fi";
 import { BsTwitter } from "react-icons/bs";
-import { Box, Button, Container, Flex, IconButton } from "@chakra-ui/react";
-import Link from "next/link";
 import { useRouter } from "next/router";
+import {
+  Box,
+  Button,
+  Container,
+  Flex,
+  IconButton,
+  Text,
+} from "@chakra-ui/react";
+import Link from "next/link";
 function Navbar() {
-  const [navbar, setNavbar] = useState(false);
+  const [navbar, setNavbar] = useState("rgba(255,255,255,0.2)");
   const [display, setDisplay] = useState("none");
   useEffect(() => {
     window.addEventListener("scroll", changeBackgroud);
   }, []);
   const changeBackgroud = () => {
     if (window.scrollY > 50) {
-      setNavbar(true);
+      setNavbar("#83B0FB");
     } else {
-      setNavbar(false);
+      setNavbar("rgba(255,255,255,0.2)");
     }
   };
+
   const router = useRouter();
+
   return (
     <Container
       maxW="100%"
@@ -29,11 +38,11 @@ function Navbar() {
       justifyContent="space-between"
       alignItems={"center"}
       display={"flex"}
-      px={["3", "3", "10", "10"]}
+      px={["0", "3", "10", "10"]}
       position={"fixed"}
       mt={"3rem"}
       zIndex={"20000"}
-      bg={"rgba(255,255,255,0.2)"}
+      style={{ background: `${navbar}`, transition: "all 0.5s" }}
       scrollBehavior={"smooth"}
       fontFamily={"Montserrat"}
     >
@@ -50,47 +59,27 @@ function Navbar() {
         <Box zIndex={"10000"}>
           <Flex gap={"3"} fontWeight={"400"}>
             <Button fontSize={"1rem"} backgroundColor={"transparent"}>
-              <Link
-                _hover={{ textDecoration: "none" }}
-                href="/tours"
-                fontWeight={"00"}
-              >
+              <Link _hover={{ textDecoration: "none" }} href="/tours">
                 <a>Tours</a>
               </Link>
             </Button>
             <Button fontSize={"1rem"} backgroundColor={"transparent"}>
-              <Link
-                _hover={{ textDecoration: "none" }}
-                fontWeight={"00"}
-                href="/hotels"
-              >
+              <Link _hover={{ textDecoration: "none" }} href="/hotels">
                 <a>Hotels</a>
               </Link>
             </Button>
             <Button fontSize={"1rem"} backgroundColor={"transparent"}>
-              <Link
-                _hover={{ textDecoration: "none" }}
-                href="/activities"
-                fontWeight={"00"}
-              >
+              <Link _hover={{ textDecoration: "none" }} href="/activities">
                 <a>Activities</a>
               </Link>
             </Button>
             <Button fontSize={"1rem"} backgroundColor={"transparent"}>
-              <Link
-                _hover={{ textDecoration: "none" }}
-                href="/aboutus"
-                fontWeight={"00"}
-              >
+              <Link _hover={{ textDecoration: "none" }} href="/aboutus">
                 <a>Aboutus</a>
               </Link>
             </Button>
             <Button fontSize={"1rem"} backgroundColor={"transparent"}>
-              <Link
-                _hover={{ textDecoration: "none" }}
-                href="/transport"
-                fontWeight={"00"}
-              >
+              <Link _hover={{ textDecoration: "none" }} href="/transport">
                 <a>Transport</a>
               </Link>
             </Button>
@@ -103,17 +92,19 @@ function Navbar() {
         </Box>
       </Box>
       <Box display={["none", "none", "flex", "flex"]} gap={"5"}>
-        <Button
-          size="lg"
-          bg="#5191FA"
-          color={"#fff"}
-          variant="solid"
-          _hover={{ bg: "blue.500", color: " white" }}
-        >
-          <Link className={styles.link} href="#contact">
-            <a>Book now</a>
-          </Link>
-        </Button>
+        {router.pathname === "/" && (
+          <Button
+            size="lg"
+            bg="#5191FA"
+            color={"#fff"}
+            variant="solid"
+            _hover={{ bg: "blue.500", color: " white" }}
+          >
+            <Link className={styles.link} href="#contact">
+              <a>Book now</a>
+            </Link>
+          </Button>
+        )}
         <Box
           zIndex={"1000"}
           backgroundColor={"#25D366"}
@@ -159,7 +150,7 @@ function Navbar() {
         justifyContent={"space-between"}
         display={display}
         px={"2"}
-        py={"8"}
+        py={"10"}
         color={"white"}
       >
         <Link
@@ -168,11 +159,11 @@ function Navbar() {
           href="/"
           fontWeight={"600"}
         >
-          <a>Syed Travels</a>
+          <Text>Syed Travels</Text>
         </Link>
         <Box
           zIndex={"10000000"}
-          display={["flex", "flex", "flex", "flex"]}
+          display={"flex"}
           flexDir={"column"}
           justifyContent={"center"}
           alignItems={"flex-start"}
