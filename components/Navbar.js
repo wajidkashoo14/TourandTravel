@@ -161,6 +161,16 @@ function Navbar() {
         >
           <a className={styles.a}>Syed Travels</a>
         </Link>
+        <IconButton
+          aria-label="Open Menu"
+          size={"md"}
+          color={"#06283d"}
+          icon={<CloseIcon />}
+          display={["flex", "flex", "none", "none"]}
+          onClick={() => {
+            setDisplay("none");
+          }}
+        />
         <Box
           zIndex={"10000000"}
           display={"flex"}
@@ -268,16 +278,6 @@ function Navbar() {
             </Flex>
           </Box>
         </Box>
-        <IconButton
-          aria-label="Open Menu"
-          size={"md"}
-          color={"#06283d"}
-          icon={<CloseIcon />}
-          display={["flex", "flex", "none", "none"]}
-          onClick={() => {
-            setDisplay("none");
-          }}
-        />
       </Flex>
     </Container>
   );
