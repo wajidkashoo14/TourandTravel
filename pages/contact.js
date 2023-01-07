@@ -20,40 +20,48 @@ function contact() {
       bg={"#C8C9C3"}
       maxW={"100vw"}
       py={"10rem"}
-      display={"grid"}
-      placeItems={"center"}
       paddingBottom={"6rem"}
       fontFamily={"Montserrat"}
+      display={"flex"}
+      flexDir={"column"}
+      alignItems={"center"}
+      justifyContent={"center"}
+      minH={"100vh"}
     >
       <Flex
         bg={"#EDEDEB"}
-        w={"80vw"}
-        height={"100vh"}
+        w={["100vw", "100vw", "80vw"]}
+        minHeight={"100vh"}
         justifyContent={"center"}
         alignItems={"center"}
-        p={"10"}
+        p={["2", "2", "10"]}
         boxShadow={"lg"}
       >
-        <Box>
+        <Box w={["100%", "100%", "40vw"]} mx={["auto", "auto"]}>
           <Image
             src="login.jpg"
-            minWidth={"40vw"}
+            w={["100%", "100%", "40vw"]}
             height={"90vh"}
             objectFit={"cover"}
             position={"relative"}
             zIndex={"1"}
+            alt=""
           />
         </Box>
         <Box
-          w={"600rem"}
+          w={["100%", "100%", "60rem"]}
           bg={"#fff"}
-          height={"100vh"}
-          ml={"-15rem"}
+          minHeight={"100vh"}
+          mx={["auto", "auto"]}
+          ml={["0", "0", "-15rem"]}
           zIndex={"1000"}
           display={"flex"}
           justifyContent={"center"}
           alignItems={"center"}
           gap={"10"}
+          position={["absolute", "absolute", ""]}
+          top={"15%"}
+          p={["1rem 1rem", "1rem 1rem", "3rem 6rem"]}
         >
           <Box
             display={"flex"}
@@ -62,12 +70,16 @@ function contact() {
             flexWrap={"nowrap"}
             gap={"10"}
             flexDir={"column"}
-            width={"90%"}
+            width={["90%", "90%", "90%"]}
             border={"1px solid black"}
-            p={"3rem 6rem"}
+            p={["2rem 1rem", "2rem 1rem", "3rem 6rem"]}
           >
             <Heading className={styles.heading}>Contact us</Heading>
-            <Flex gap={"5"}>
+            <Flex
+              gap={"5"}
+              flexDir={["column", "column", "flex"]}
+              width={["100%", "100%"]}
+            >
               <Input
                 placeholder="Your Name"
                 type="text"
@@ -87,6 +99,7 @@ function contact() {
               type="number"
               size={"lg"}
               fontSize={"1rem"}
+              width={["100%", "100%", ""]}
             />
 
             <Textarea
@@ -109,19 +122,21 @@ function contact() {
         </Box>
       </Flex>
       <Flex
-        h={"10rem "}
-        width={"80vw"}
+        minH={"10rem "}
+        width={["100%", "100%", "80vw"]}
         bg={"#FFFFFF"}
         justifyContent={"space-around"}
         alignItems={"center"}
-        mt={"10rem"}
-        p={"10"}
+        mt={["30rem", "30rem", "10rem"]}
+        p={["2", "2", "10"]}
+        flexDir={["column", "column", "flex"]}
+        mx={["auto", "auto"]}
       >
         <Flex
           display={"flex"}
           gap={"5"}
           alignItems={"center"}
-          fontSize={"1.3rem"}
+          fontSize={["12px", "12px", "1.3rem"]}
           textTransform={"uppercase"}
         >
           <AiOutlineMobile color={"#5191FA"} />
@@ -131,7 +146,7 @@ function contact() {
           display={"flex"}
           gap={"5"}
           alignItems={"center"}
-          fontSize={"1.3rem"}
+          fontSize={["12px", "12px", "1.3rem"]}
           textTransform={"uppercase"}
         >
           <AiOutlineMail color={"#5191FA"} />
@@ -141,7 +156,7 @@ function contact() {
           display={"flex"}
           gap={"5"}
           alignItems={"center"}
-          fontSize={"1.3rem"}
+          fontSize={["12px", "12px", "1.3rem"]}
           textTransform={"uppercase"}
         >
           <GoLocation color={"#5191FA"} />
@@ -149,12 +164,13 @@ function contact() {
         </Flex>
       </Flex>
       <Box
-        mt={"10rem"}
+        mt={["5rem", "5rem", "10rem"]}
         zIndex={"100"}
         width={"100%"}
         display={"flex"}
-        justifyContent={"center"}
-        alignItems={"center"}
+        justifyContent={["center", "center"]}
+        alignItems={("center", "center")}
+        mx={["auto", "auto"]}
       >
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13217.550807480318!2d74.78689678412671!3d34.08520713954979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e18ff699d0988d%3A0x872b77bb52a66cfd!2sKaran%20Nagar%2C%20Srinagar!5e0!3m2!1sen!2sin!4v1666418211597!5m2!1sen!2sin"
