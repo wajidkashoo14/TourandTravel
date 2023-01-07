@@ -193,9 +193,9 @@ export default function Hoteldetails() {
                 <Box
                   display={"flex"}
                   alignItems={"center"}
-                  gap={"2"}
+                  gap={["1", "1", "2"]}
                   p={["1", "1", "3"]}
-                  my={"1"}
+                  my={["0", "0", "1"]}
                   boxShadow={["md", "md", "lg"]}
                   _hover={{ boxShadow: "xl" }}
                   width={["100%", "100%", "16rem"]}
