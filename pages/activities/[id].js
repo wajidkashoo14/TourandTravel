@@ -103,7 +103,7 @@ function Activitiesid() {
                   gap={"2"}
                   p={"3"}
                   key={Activity.id}
-                  width={"30rem"}
+                  width={["90%", "90%", "30rem"]}
                   cursor={"pointer"}
                 >
                   <ListItem>{item}</ListItem>

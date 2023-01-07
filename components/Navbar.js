@@ -147,30 +147,34 @@ function Navbar() {
         overflow={"auto"}
         backgroundColor={"#06283d"}
         zIndex={"100000000"}
-        justifyContent={"space-between"}
+        justifyContent={"flex-start"}
+        flexDir={"column"}
         display={display}
         px={"6"}
         py={"2rem"}
         color={"white"}
+        gap={"6rem"}
       >
-        <Link
-          fontSize={"1.4rem"}
-          _hover={{ textDecoration: "none" }}
-          href="/"
-          fontWeight={"600"}
-        >
-          <a className={styles.a}>Syed Travels</a>
-        </Link>
-        <IconButton
-          aria-label="Open Menu"
-          size={"md"}
-          color={"#06283d"}
-          icon={<CloseIcon />}
-          display={["flex", "flex", "none", "none"]}
-          onClick={() => {
-            setDisplay("none");
-          }}
-        />
+        <Flex justifyContent={"space-between"}>
+          <Link
+            fontSize={"1.4rem"}
+            _hover={{ textDecoration: "none" }}
+            href="/"
+            fontWeight={"600"}
+          >
+            <a className={styles.a}>Syed Travels</a>
+          </Link>
+          <IconButton
+            aria-label="Open Menu"
+            size={"md"}
+            color={"#06283d"}
+            icon={<CloseIcon />}
+            display={["flex", "flex", "none", "none"]}
+            onClick={() => {
+              setDisplay("none");
+            }}
+          />
+        </Flex>
         <Box
           zIndex={"10000000"}
           display={"flex"}
