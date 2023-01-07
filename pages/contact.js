@@ -19,7 +19,7 @@ function contact() {
     <Container
       bg={"#C8C9C3"}
       maxW={"100vw"}
-      py={"10rem"}
+      py={["8rem", "8rem", "10rem"]}
       paddingBottom={"6rem"}
       fontFamily={"Montserrat"}
       display={"flex"}
