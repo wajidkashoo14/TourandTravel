@@ -155,12 +155,12 @@ export default function Hoteldetails() {
               return (
                 <Flex
                   gap={"2"}
-                  p={"3"}
+                  p={["1", "1", "3"]}
                   my={"1"}
                   key={Hotel.id}
-                  boxShadow={"lg"}
+                  boxShadow={["md", "md", "lg"]}
                   _hover={{ boxShadow: "xl" }}
-                  width={"15rem"}
+                  width={["100%", "100%", "15rem"]}
                   cursor={"pointer"}
                   fontWeight={"400"}
                 >
@@ -194,19 +194,16 @@ export default function Hoteldetails() {
                   display={"flex"}
                   alignItems={"center"}
                   gap={"2"}
-                  p={"3"}
+                  p={["1", "1", "3"]}
                   my={"1"}
-                  boxShadow={"lg"}
+                  boxShadow={["md", "md", "lg"]}
                   _hover={{ boxShadow: "xl" }}
-                  width={"16rem"}
+                  width={["100%", "100%", "16rem"]}
                   cursor={"pointer"}
                   key={Hotel.id}
                   fontWeight={"400"}
                 >
-                  <MdOutlineSettingsSuggest
-                    fontSize={"1.2rem"}
-                    color={"#5191FA"}
-                  />
+                  <MdOutlineSettingsSuggest color={"#5191FA"} />
                   {theme}
                 </Box>
               );
