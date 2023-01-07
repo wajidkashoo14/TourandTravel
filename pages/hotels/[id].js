@@ -139,7 +139,7 @@ export default function Hoteldetails() {
             {Hotel.description}
           </Text>
         </Box>
-        <Box borderBottom={"1px solid #d2c5ca"} py={"10"}>
+        <Box borderBottom={"1px solid #d2c5ca"} py={"10"} mx={["2", "2", "0"]}>
           <Heading
             fontWeight={"500"}
             py={"5"}
@@ -172,7 +172,7 @@ export default function Hoteldetails() {
             })}
           </List>
         </Box>
-        <Box>
+        <Box mx={["2", "2", "0"]}>
           <Heading
             className={styles.heading}
             fontWeight={"500"}
@@ -213,7 +213,7 @@ export default function Hoteldetails() {
             })}
           </Flex>
         </Box>
-        <Box width={["100%", "100%", "25rem"]}>
+        <Box width={["90%", "100%", "25rem"]} mx={["2", "2", "0"]}>
           <Heading
             className={styles.heading}
             fontWeight={"500"}
