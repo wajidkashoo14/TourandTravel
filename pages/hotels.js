@@ -32,12 +32,12 @@ function Hotels() {
             objectFit={"cover"}
             backgroundPosition={"center"}
             loading={"lazy"}
+            alt=""
           />
         </Box>
       </Flex>
 
       <Box
-        // mx={"10"}
         display={"flex"}
         justifyContent={"center"}
         flexWrap={"wrap"}
@@ -49,6 +49,7 @@ function Hotels() {
           height={"350px"}
           borderRadius={"5"}
           boxShadow={"lg"}
+          display={["none", "none,", "flex"]}
         >
           <FormControl
             display={"flex"}
@@ -90,9 +91,9 @@ function Hotels() {
             </Button>
           </FormControl>
         </Flex>
-        <Flex maxWidth={"70vw"} flexWrap={"wrap"}>
+        <Flex maxWidth={["100vw", "100vw", "70vw"]} flexWrap={"wrap"}>
           <Text
-            fontSize={"3xl"}
+            fontSize={["xl", "xl", "3xl"]}
             fontWeight={"500"}
             mb={"8"}
             className={styles.heading}

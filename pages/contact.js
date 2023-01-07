@@ -136,7 +136,7 @@ function contact() {
           display={"flex"}
           gap={"5"}
           alignItems={"center"}
-          fontSize={["12px", "12px", "1.3rem"]}
+          fontSize={["14px", "14px", "1.3rem"]}
           textTransform={"uppercase"}
         >
           <AiOutlineMobile color={"#5191FA"} />
@@ -146,7 +146,7 @@ function contact() {
           display={"flex"}
           gap={"5"}
           alignItems={"center"}
-          fontSize={["12px", "12px", "1.3rem"]}
+          fontSize={["14px", "14x", "1.3rem"]}
           textTransform={"uppercase"}
         >
           <AiOutlineMail color={"#5191FA"} />
@@ -156,7 +156,7 @@ function contact() {
           display={"flex"}
           gap={"5"}
           alignItems={"center"}
-          fontSize={["12px", "12px", "1.3rem"]}
+          fontSize={["14px", "14px", "1.3rem"]}
           textTransform={"uppercase"}
         >
           <GoLocation color={"#5191FA"} />

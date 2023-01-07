@@ -61,13 +61,15 @@ export default function Hoteldetails() {
       overflowX={"hidden"}
       fontFamily={"Montserrat"}
       fontWeight={"300"}
-      mx={"10"}
+      mx={["3", "3", "10"]}
     >
       <Box py={"10"}>
-        <Heading className={styles.heading}>{Hotel.heading}</Heading>
+        <Heading className={styles.heading} fontSize={["xl", "xl", "3xl"]}>
+          {Hotel.heading}
+        </Heading>
         <Box display={"flex"} gap={"3"} alignItems={"center"} py={"2"}>
           <GoLocation />
-          <Text>{Hotel.address}</Text>
+          <Text fontSize={["12px", "14px", "1rem"]}>{Hotel.address}</Text>
         </Box>
       </Box>
       <Box
@@ -100,23 +102,29 @@ export default function Hoteldetails() {
         <Box display={"grid"} placeItems={"center"}>
           <Image
             src={Hotel.img[0]}
-            width={"70%"}
+            width={["100%", "100%", "70%"]}
             height={"60vh"}
             objectFit={"cover"}
             overflowX={"hidden"}
+            alt=""
           />
         </Box>
       </Box>
 
-      <Box minH={"30vh"} bg={"#fff"} mx={"5rem"} width={"75%"}>
-        <Box>
+      <Box
+        minH={"30vh"}
+        bg={"#fff"}
+        mx={["0", "1rem", "5rem"]}
+        width={["100%", "100%", "75%"]}
+      >
+        <Box mx={["2"]}>
           <Heading
             fontWeight={"500"}
-            textTransform={"uppercase"}
             py={"5"}
             className={styles.heading}
             mt={"5"}
             fontSize={"3xl"}
+            textAlign={["justify", "justify"]}
           >
             overview
           </Heading>
@@ -134,11 +142,10 @@ export default function Hoteldetails() {
         <Box borderBottom={"1px solid #d2c5ca"} py={"10"}>
           <Heading
             fontWeight={"500"}
-            textTransform={"uppercase"}
             py={"5"}
             className={styles.heading}
             mt={"5"}
-            fontSize={"3xl"}
+            fontSize={["xl", "xl", "3xl"]}
           >
             Hotel Facilities
           </Heading>
@@ -169,14 +176,18 @@ export default function Hoteldetails() {
           <Heading
             className={styles.heading}
             fontWeight={"500"}
-            textTransform={"uppercase"}
             py={"5"}
             mt={"3"}
-            fontSize={"3xl"}
+            fontSize={["xl", "xl", "3xl"]}
           >
             Hotel Theme
           </Heading>
-          <Flex gap={"10"} borderBottom={"1px solid #d2c5ca"} py={"8  "}>
+          <Flex
+            gap={["5", "5", "10"]}
+            borderBottom={"1px solid #d2c5ca"}
+            py={"8"}
+            flexDir={["column", "column", "flex"]}
+          >
             {Hotel.hoteltheme.map((theme) => {
               return (
                 <Box
@@ -202,14 +213,13 @@ export default function Hoteldetails() {
             })}
           </Flex>
         </Box>
-        <Box width={"25rem"}>
+        <Box width={["100%", "100%", "25rem"]}>
           <Heading
             className={styles.heading}
             fontWeight={"500"}
-            textTransform={"uppercase"}
             py={"5"}
             mt={"5"}
-            fontSize={"3xl"}
+            fontSize={["xl", "xl", "3xl"]}
           >
             Rules
           </Heading>
@@ -233,7 +243,12 @@ export default function Hoteldetails() {
             <Text>{Hotel.rules[1]}</Text>
           </Flex>
         </Box>
-        <Accordion defaultIndex={[0]} allowMultiple width={"45rem"} mt={"10"}>
+        <Accordion
+          defaultIndex={[0]}
+          allowMultiple
+          width={["100%", "100%", "45rem"]}
+          mt={"10"}
+        >
           <AccordionItem>
             <h2>
               <AccordionButton>
@@ -241,8 +256,7 @@ export default function Hoteldetails() {
                   <Heading
                     className={styles.heading}
                     fontWeight={"500"}
-                    textTransform={"uppercase"}
-                    fontSize={"3xl"}
+                    fontSize={["xl", "xl", "3xl"]}
                   >
                     Write a review
                   </Heading>
@@ -256,20 +270,20 @@ export default function Hoteldetails() {
                   <Input
                     type="text"
                     placeholder="Name"
-                    size={"lg"}
+                    size={["md", "md", "lg"]}
                     variant="flushed"
                   />
                   <Input
                     type="email"
                     placeholder="Email"
-                    size={"lg"}
+                    size={["md", "md", "lg"]}
                     variant="flushed"
                   />
                 </Flex>
                 <Textarea type="email" rows={"8"} />
               </FormControl>
               <Button
-                size="lg"
+                size={["md", "md", "lg"]}
                 bg="#5191FA"
                 color={"#fff"}
                 variant="solid"
