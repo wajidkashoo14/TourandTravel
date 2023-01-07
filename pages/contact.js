@@ -37,10 +37,10 @@ function contact() {
         p={["2", "2", "10"]}
         boxShadow={"lg"}
       >
-        <Box w={["100%", "100%", "40vw"]} mx={["auto", "auto"]}>
+        <Box w={"100%"} mx={["auto", "auto"]} mr={["auto"]}>
           <Image
             src="login.jpg"
-            w={["100%", "100%", "40vw"]}
+            w={["100%", "100%", "100vw"]}
             height={"90vh"}
             objectFit={"cover"}
             position={"relative"}
@@ -49,36 +49,37 @@ function contact() {
           />
         </Box>
         <Box
-          w={["100%", "100%", "60rem"]}
+          w={["100%", "100%", "40rem"]}
           bg={"#fff"}
-          minHeight={"100vh"}
+          minHeight={"80vh"}
           mx={["auto", "auto"]}
-          ml={["0", "0", "-15rem"]}
           zIndex={"1000"}
           display={"flex"}
-          justifyContent={"center"}
+          justifyContent={["space-between", "center"]}
           alignItems={"center"}
           gap={"10"}
           position={["absolute", "absolute", ""]}
-          top={"15%"}
-          p={["1rem 1rem", "1rem 1rem", "3rem 6rem"]}
+          top={["14%", "14%", "12%"]}
+          p={["1rem 1rem", "1rem 1rem", "1rem 0rem"]}
+          boxShadow={["md", "md", "xl"]}
         >
           <Box
             display={"flex"}
             justifyContent={"center"}
             alignItems={"center"}
-            flexWrap={"nowrap"}
+            flexWrap={"wrap"}
             gap={"10"}
             flexDir={"column"}
-            width={["90%", "90%", "90%"]}
-            border={"1px solid black"}
-            p={["2rem 1rem", "2rem 1rem", "3rem 6rem"]}
+            width={["100%", "100%", "95%"]}
+            border={"1px solid #C8CDC9"}
+            p={["2rem 1rem", "2rem 1rem", "3rem 4rem"]}
           >
             <Heading className={styles.heading}>Contact us</Heading>
             <Flex
               gap={"5"}
               flexDir={["column", "column", "flex"]}
               width={["100%", "100%"]}
+              flexWrap={"wrap"}
             >
               <Input
                 placeholder="Your Name"
@@ -123,17 +124,17 @@ function contact() {
       </Flex>
       <Flex
         minH={"10rem "}
-        width={["100%", "100%", "80vw"]}
+        width={["100%", "100%", "40rem"]}
         bg={"#FFFFFF"}
         justifyContent={"space-around"}
         alignItems={"center"}
-        mt={["30rem", "30rem", "10rem"]}
-        p={["2", "2", "10"]}
+        mt={["30rem", "30rem", "15rem"]}
+        p={["2", "2", "1.5rem"]}
         flexDir={["column", "column", "flex"]}
         mx={["auto", "auto"]}
+        boxShadow={["md", "md", "xl"]}
       >
         <Flex
-          display={"flex"}
           gap={"5"}
           alignItems={"center"}
           fontSize={["14px", "14px", "1.3rem"]}
@@ -143,7 +144,6 @@ function contact() {
           9596103894
         </Flex>
         <Flex
-          display={"flex"}
           gap={"5"}
           alignItems={"center"}
           fontSize={["14px", "14x", "1.3rem"]}
@@ -153,7 +153,6 @@ function contact() {
           Wkashoo@gmail.com
         </Flex>
         <Flex
-          display={"flex"}
           gap={"5"}
           alignItems={"center"}
           fontSize={["14px", "14px", "1.3rem"]}
